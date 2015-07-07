@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+The nistencorp blog!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+A place to share our thoughts and ask for recommendation for what we are building here at [http://nistencorp.com/](http://nistencorp.com/).
 
-### Contact me
+### Contact us
 
-[email@domain.com](mailto:email@domain.com)
+[nistencorp@gmail.com](mailto:nistencorp@gmail.com)
