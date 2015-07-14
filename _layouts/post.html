@@ -1,17 +1,6 @@
 ---
 layout: default
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-share-button" data-href="http://blog.nistencorp.com" data-layout="button"></div>
-
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -23,4 +12,5 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
   {% include disqus.html %}
+  {% include addThis.html %}
 </article>
