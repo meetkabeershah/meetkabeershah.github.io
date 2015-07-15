@@ -8,7 +8,8 @@ The (not very strictly) official blog for [nistencorp/](http://nistencorp.com/) 
 
 ### This blog is for
 
-Sharing our thoughts and ask for recommendations for what [we as a company](http://nistencorp.com/) are building.
+Sharing our thoughts and ask for recommendations for what [we as a company](http://nistencorp.com/) build.
+Keeping up everyone with company news and updates.
 
 ### Know more
 
