@@ -6,10 +6,10 @@
 name: nistencorp blog
 
 # Short bio or description (displayed in the header)
-description: announcements and updates from nistencorp
+description: announcements and updates from [nistencorp](http://nistencorp.com/)
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://avatars3.githubusercontent.com/u/13176038?v=3&s=200
 
 #
 # Flags below are optional
