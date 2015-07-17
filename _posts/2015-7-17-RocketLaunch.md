@@ -14,9 +14,11 @@ So project **#RocketToTheMoon** is scheduled for *die-hard* launch by the end of
 ![Launch](http://i.stack.imgur.com/WEho3.jpg)
 [sponsored](http://www.shutterstock.com/)
 
-If it is meant to fail, let it fail. The faster we fail, the faster we grow. 
+If it is meant to fail, let it fail. The faster we fail, the faster we grow. And we are ready to fail, but never to settle.
 
 >Because, sometimes when you do [something new](http://nerdspal.com/), you make mistakes. It is best to admit them quickly and get on to improve your [other things](http://nordible.com/).
+
+*If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
 
 #What this project is all about?
 
