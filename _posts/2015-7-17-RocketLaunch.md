@@ -28,4 +28,4 @@ The core idea is to help you as a student to get what you want. You may be looki
 
 >What is that better?
 
-The answer is wait and watch!
+The answer is *wait and watch!*
