@@ -7,7 +7,7 @@ We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initiall
 
 The other day, we realized that the [user shall be kept first](http://www.google.co.in/about/company/philosophy/). The other things will fall in place. Believing in this philosophy, we are taking the risk of deploying it to [windows servers](http://www.microsoft.com/en-in/server-cloud/products/windows-server-2012-r2/) instead of initially planned [ubuntu](http://www.ubuntu.com/).
 
-So project #RocketToTheMoon is scheduled for *die-hard* launch by the end of **august'2015**.
+So project **#RocketToTheMoon** is scheduled for *die-hard* launch by the end of **august'2015**.
 
 #This is our very first launch!
 
