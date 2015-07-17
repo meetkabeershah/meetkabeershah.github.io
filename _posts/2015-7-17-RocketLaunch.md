@@ -1,3 +1,8 @@
+---
+layout: post
+title: A rocket to the moon
+---
+
 #Our very first launch!
 
 We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initially, our most efforts were directed towards making it cost effective using [Mono](http://www.mono-project.com/). Somehow we understood that in order to save business expenses we are delaying it's global demo.
