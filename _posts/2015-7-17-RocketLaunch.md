@@ -7,18 +7,21 @@ We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initiall
 
 The other day, we realized that the [user shall be kept first](http://www.google.co.in/about/company/philosophy/). The other things will fall in place. Believing in this philosophy, we are taking the risk of deploying it to [windows servers](http://www.microsoft.com/en-in/server-cloud/products/windows-server-2012-r2/) instead of initially planned [ubuntu](http://www.ubuntu.com/).
 
-So project **#RocketToTheMoon** is scheduled for *die-hard* launch by the end of **august'2015**.
+So project **#RocketToTheMoon** is scheduled for *beta* (not die-hard) launch by the end of **august'2015**.
 
 #This is our very first launch!
 
 ![Launch](http://i.stack.imgur.com/WEho3.jpg)
 [sponsored](http://www.shutterstock.com/)
 
+The *die-hard* launch will be done after becoming 100% sure of the working of the project as suggested by one of our mentors [Deepak](https://in.linkedin.com/in/jadhavdeepak).
+
+![be 100% sure](http://cdn.fablefeed.com/wp-content/uploads/2015/06/Dettol-logo1.jpg)
+
 If it is meant to fail, let it fail. The faster we fail, the faster we grow. And we are ready to fail, but never to settle.
+*If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
 
 >Because, sometimes when you do [something new](http://nerdspal.com/), you make mistakes. It is best to admit them quickly and get on to improve your [other things](http://nordible.com/).
-
-*If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
 
 #What this project is all about?
 
