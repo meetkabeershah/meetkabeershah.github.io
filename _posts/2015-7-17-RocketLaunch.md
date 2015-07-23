@@ -17,6 +17,7 @@ So project **#RocketToTheMoon** is scheduled for *beta* (not die-hard) launch by
 The *die-hard* launch will be done after becoming 100% sure of the working of the project as suggested by one of our mentors [Deepak](https://in.linkedin.com/in/jadhavdeepak).
 
 ![be 100% sure](http://cdn.fablefeed.com/wp-content/uploads/2015/06/Dettol-logo1.jpg)
+[sponsored](http://fablefeed.com/)
 
 If it is meant to fail, let it fail. The faster we fail, the faster we grow. And we are ready to fail, but never to settle.
 *If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
