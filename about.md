@@ -10,6 +10,10 @@ The (not very strictly) official blog for [nistencorp](http://nistencorp.com/) -
 
  - Sharing company news and updates.
 
-### Know more
+### Connect electronically
 
 [nistencorp@gmail.com](mailto:nistencorp@gmail.com)
+
+<p style="font-size:0.5em;"> 
+Please note that all trademarks and links are owned by their respective owners.
+</p>
