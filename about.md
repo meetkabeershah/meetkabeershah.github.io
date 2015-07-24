@@ -13,7 +13,3 @@ The (not very strictly) official blog for [nistencorp](http://nistencorp.com/) -
 ### Know more
 
 [nistencorp@gmail.com](mailto:nistencorp@gmail.com)
-
-<p style="font-size:0.5em;"> 
-Please note that all trademarks and links are owned by their respective owners.
-</p>
