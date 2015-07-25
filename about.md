@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The (not very strictly) official blog for [nistencorp](http://nistencorp.com/) - builders of [project RocketToTheMoon](http://nerdspal.com/).
+The (not very strictly) official blog for [nistencorp](http://nistencorp.com/) - builders of [nerdspal](http://nerdspal.com/) and [nordible](http://nordible.com/).
 
 ### This blog is for
 
