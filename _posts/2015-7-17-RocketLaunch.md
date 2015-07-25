@@ -25,7 +25,7 @@ The *die-hard* launch will be done after becoming 100% sure of the working of th
 
 [courtesy](http://diylol.com/)
 
-#Beta launch
+#&beta; launch
 
 So project **#RocketToTheMoon** is scheduled for *beta* (and then die-hard) launch by the end of **august'2015**.
 
