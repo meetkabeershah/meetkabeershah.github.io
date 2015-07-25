@@ -11,13 +11,13 @@ So project **#RocketToTheMoon** is scheduled for *beta* (not die-hard) launch by
 
 #This is our very first launch!
 
-![Launch](http://i.stack.imgur.com/WEho3.jpg)
-[sponsored](http://www.shutterstock.com/)
+![Launch](http://img2.wikia.nocookie.net/__cb20081231161155/uncyclopedia/images/5/50/Rocket_Launch.jpg)
+[courtesy](http://thewannabescientist.com/why-are-rockets-so-expensive/)
 
 The *die-hard* launch will be done after becoming 100% sure of the working of the project as suggested by one of our mentors [Deepak](https://in.linkedin.com/in/jadhavdeepak).
 
-![be 100% sure](http://cdn.fablefeed.com/wp-content/uploads/2015/06/Dettol-logo1.jpg)
-[sponsored](http://fablefeed.com/)
+![be 100% sure](http://assets.diylol.com/hfs/0ad/4c3/93f/resized/philosoraptor-meme-generator-nothing-is-for-sure-are-you-sure-428828.jpg)
+[courtesy](http://diylol.com/)
 
 If it is meant to fail, let it fail. The faster we fail, the faster we grow. And we are ready to fail, but never to settle.
 *If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
