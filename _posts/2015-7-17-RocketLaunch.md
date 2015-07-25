@@ -25,7 +25,7 @@ The *die-hard* launch will be done after becoming 100% sure of the working of th
 
 [courtesy](http://diylol.com/)
 
- - Beta launch
+#Beta launch
 
 So project **#RocketToTheMoon** is scheduled for *beta* (and then die-hard) launch by the end of **august'2015**.
 
@@ -36,9 +36,10 @@ So project **#RocketToTheMoon** is scheduled for *beta* (and then die-hard) laun
 
 Initially a group of selected students across the globe will get free access to the beta project. These beta users will be awarded free lifetime access.
 
- - Die-hard launch
+#Die-hard launch
 
 Once all the features and paths are properly tested. We will get up our servers.
+
 ![Die hard launch](http://treasure.diylol.com/uploads/post/image/592769/resized_piseed-off-harry-meme-generator-bring-my-server-up-right-now-47e10a.jpg)
 
 
