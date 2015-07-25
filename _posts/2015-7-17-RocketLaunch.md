@@ -14,11 +14,13 @@ The other day, we realized that the [user shall be kept first](http://www.google
 #This is our very first launch!
 
 ![Launch](http://img2.wikia.nocookie.net/__cb20081231161155/uncyclopedia/images/5/50/Rocket_Launch.jpg)
+
 [courtesy](http://thewannabescientist.com/why-are-rockets-so-expensive/)
 
 The *die-hard* launch will be done after becoming 100% sure of the working of the project as suggested by one of our mentors [Deepak](https://in.linkedin.com/in/jadhavdeepak).
 
 ![be 100% sure](http://assets.diylol.com/hfs/0ad/4c3/93f/resized/philosoraptor-meme-generator-nothing-is-for-sure-are-you-sure-428828.jpg)
+
 [courtesy](http://diylol.com/)
 
  - #Beta launch
@@ -26,6 +28,7 @@ The *die-hard* launch will be done after becoming 100% sure of the working of th
 So project **#RocketToTheMoon** is scheduled for *beta* (and then die-hard) launch by the end of **august'2015**.
 
 ![Beta launch](http://www.quickmeme.com/img/b5/b54d352ef4ac12e283f6a670c54834d565e67c0fc6e1fe7149c2594776055671.jpg)
+
 [courtesy](http://www.quickmeme.com/)
 
 Initially a group of selected students across the globe will get free access to the beta project. These beta users will be awarded free lifetime access.
@@ -34,6 +37,7 @@ Initially a group of selected students across the globe will get free access to 
 
 Once all the features and paths are properly tested. We will get up our servers.
 ![Die hard launch](http://treasure.diylol.com/uploads/post/image/592769/resized_piseed-off-harry-meme-generator-bring-my-server-up-right-now-47e10a.jpg)
+
 [courtesy](http://diylol.com/)
 
 #What this project is all about?
