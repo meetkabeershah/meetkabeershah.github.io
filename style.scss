@@ -282,6 +282,11 @@ footer {
   text-align: center;
 }
 
+//Keep addThis unsticky http://stackoverflow.com/questions/31634656/how-to-hide-addthis-plugin-on-vertical-scroll
+.atss{
+  position:absolute !important;	
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
