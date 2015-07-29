@@ -7,16 +7,14 @@ We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initiall
 
 The other day, we realized that the [user shall be kept first](http://www.google.co.in/about/company/philosophy/). The other things will fall in place. Believing in this philosophy, we are taking the risk of deploying it to [windows servers](http://www.microsoft.com/en-in/server-cloud/products/windows-server-2012-r2/) instead of initially planned [ubuntu](http://www.ubuntu.com/).
 
-*If we lose - we guide. If we win - we lead.* This is the core of our risk taking strategy.
-
 >Because, sometimes when you do [something new](http://nerdspal.com/), you make mistakes. It is best to admit them quickly and get on to improve your [other things](http://nordible.com/).
 
 #This is our very first launch!
 
-![Launch](http://img2.wikia.nocookie.net/__cb20081231161155/uncyclopedia/images/5/50/Rocket_Launch.jpg)
+![Launch](http://www.vehiclehi.com/thumbnails/detail/20121027/space%20shuttle%20atlantis%20nasa%20launch%20rocket%201920x1080%20wallpaper_www.vehiclehi.com_95.jpg)
 
 
-[courtesy](http://thewannabescientist.com/why-are-rockets-so-expensive/)
+[courtesy](http://www.vehiclehi.com/)
 
 The *die-hard* launch will be done after becoming 100% sure of the working of the project as suggested by one of our mentors [Deepak](https://in.linkedin.com/in/jadhavdeepak).
 
