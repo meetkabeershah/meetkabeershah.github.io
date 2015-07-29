@@ -38,10 +38,10 @@ Initially a group of selected students across the globe will get free access to 
 
 Once all the features and paths are properly tested. We will get up our servers.
 
-![Die hard launch](http://treasure.diylol.com/uploads/post/image/592769/resized_piseed-off-harry-meme-generator-bring-my-server-up-right-now-47e10a.jpg)
+![Die hard launch](http://cdn.meme.am/instances/500x/59516253.jpg)
 
 
-[courtesy](http://diylol.com/)
+[courtesy](http://memegenerator.net/instance/59516253)
 
 #What this project is all about?
 
