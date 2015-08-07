@@ -36,7 +36,7 @@ Initially a group of selected students across the globe will get free access to 
 
 #Die-hard launch
 
-Once all the features and paths are properly tested. We will get up our servers.
+Once all the features and paths are properly tested. We will get our servers up and running.
 
 ![Die hard launch](http://cdn.meme.am/instances/500x/59516253.jpg)
 
