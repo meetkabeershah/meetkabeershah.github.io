@@ -6,7 +6,7 @@ permalink: /about/
 
 The official blog for [nistencorp](http://nistencorp.com/) - builders of [nerdspal](http://nerdspal.com/) and [nordible](http://nordible.com/).
 
-nistencorp is a technology company based directed towards academia.  
+nistencorp is a technology based company directed towards solving academia problems.  
 
 ### This blog is for
 
