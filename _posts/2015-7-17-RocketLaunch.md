@@ -3,9 +3,9 @@ layout: post
 title: A rocket to the moon!
 ---
 
-We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initially, our most efforts were directed towards making it cost effective using [Mono](http://www.mono-project.com/). It also became clear that [we are not experts for doing so](http://stackoverflow.com/a/30550090/2404470).
+We are working on our project [#RocketToTheMoon](http://nerdspal.com/). Initially, our most efforts were directed towards making it cost effective using [Mono](http://www.mono-project.com/). It also became clear that [we need to be patient for Mono](http://stackoverflow.com/a/30550090/2404470).
 
-We realized that the [user shall be kept first](http://www.google.co.in/about/company/philosophy/). The other things will fall in place. Believing in this philosophy, we are taking the risk of releasing it to [windows servers](http://www.microsoft.com/en-in/server-cloud/products/windows-server-2012-r2/) instead of initially planned [ubuntu](http://www.ubuntu.com/).
+We also realized that the [user shall be kept first](http://www.google.co.in/about/company/philosophy/). The other things will fall in place. Believing in this philosophy, we are taking the risk of releasing it to [windows servers](http://www.microsoft.com/en-in/server-cloud/products/windows-server-2012-r2/) instead of initially planned [ubuntu](http://www.ubuntu.com/).
 
 >Because, sometimes when you do [something new](http://nerdspal.com/), you make mistakes. It is best to admit them quickly and get on to improve your [other things](http://nordible.com/).
 
