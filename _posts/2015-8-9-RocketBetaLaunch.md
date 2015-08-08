@@ -15,7 +15,7 @@ So say you have a school, college or university level question for which you nee
 
  - a difficult mathematical sum,
  - some complex chemistry equation, 
- - a accounts ledger query,
+ - an accounts ledger query,
  - an wordy essay,
  - etc.
 
