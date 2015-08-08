@@ -11,12 +11,12 @@ In our [last blog post](http://nistenblog.github.io/RocketLaunch/#) we said that
 
 #nerdspal is a place to get help in your academic efforts
 
-So say you have a school, college or university level question for which you need an answer. Your question may be a:
+So say you have a school, college or university level question for which you need an answer. Your question may be:
 
- - mathematical sum,
- - chemistry equation, 
- - a accounts ledger query or
- - an essay
+ - a difficult mathematical sum,
+ - some complex chemistry equation, 
+ - a accounts ledger query,
+ - an wordy essay,
  - etc.
 
 In short you have a question which is **related to your studies**. Go ahead and ask them at [nerdspal](http://nerdspal.com/). 
