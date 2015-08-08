@@ -26,3 +26,11 @@ In short you have a question which is **related to your studies**. Go ahead and 
 [courtesy](http://sxswofficial.tumblr.com/)
 
 We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will help you as a student to get all kind of help in your academic efforts. Help us implement this vision.
+
+#Teachers like quality
+
+The most interesting part: there is no waste there at nerdspal. All users of the website are expected to maintain a nice decorum.
+
+#Boost your academic profile
+
+When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://104.197.88.155/Account/League) can award marks to them based upon the usefulness, clarity and all those nice *things*. This adds up your total marks.
