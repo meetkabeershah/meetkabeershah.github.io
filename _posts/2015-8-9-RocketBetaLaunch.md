@@ -5,13 +5,14 @@ title: Nerdspal beta released!
 
 In our [last blog post](http://nistenblog.github.io/RocketLaunch/#) we said that our project [#RocketToTheMoon](http://nerdspal.com/) will serve as the implementation of the understanding we gathered through our works. We have released a [beta for the same](https://104.197.88.155/)
 
-![http://cdn.meme.am/instances/55389939.jpg]
+![beta](http://cdn.meme.am/instances/55389939.jpg)
 
 We were very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984). 
 [courtesy](http://memegenerator.net/instance/55389939)
+
 #That's okay
 
-![http://i3.kym-cdn.com/photos/images/facebook/000/011/624/Oh_ok.png]
+![Oh ok](http://i3.kym-cdn.com/photos/images/facebook/000/011/624/Oh_ok.png)
 
 [courtesy](http://knowyourmeme.com/memes/o-rly)
 
