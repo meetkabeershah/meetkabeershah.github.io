@@ -3,7 +3,7 @@ layout: post
 title: Nerdspal beta released!
 ---
 
-In our [last blog post](http://nistenblog.github.io/RocketLaunch/#) we said that our project [#RocketToTheMoon](http://nerdspal.com/) will serve as the implementation of the understanding we gathered through our works. We have released a [beta for the same](https://104.197.88.155/)
+In our [last blog post](http://nistenblog.github.io/RocketLaunch/#) we said that our project [#RocketToTheMoon](http://nerdspal.com/) will serve as the implementation of the understanding we gathered through our works. To support our words, have released a [beta for the same](https://104.197.88.155/)
 
 ![beta](http://cdn.meme.am/instances/55389939.jpg)
 
