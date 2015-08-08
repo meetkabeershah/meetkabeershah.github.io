@@ -19,5 +19,7 @@ So say you have a school, college or university level question for which you nee
  - a wordy essay,
  - etc.
 
-In short you have a question which is **related to your studies**. Go ahead and ask them at [nerdspal](http://nerdspal.com/). 
-We were very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984).
+In short you have a question which is **related to your studies**. Go ahead and ask them at [nerdspal](https://104.197.88.155/Questions/Create).
+
+
+We were very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will help you as a student to get all kind of help in your academic efforts. Help us implement this vision.
