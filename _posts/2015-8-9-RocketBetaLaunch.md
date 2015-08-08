@@ -16,7 +16,7 @@ So say you have a school, college or university level question for which you nee
  - a difficult mathematical sum,
  - some complex chemistry equation, 
  - an accounts ledger query,
- - an wordy essay,
+ - a wordy essay,
  - etc.
 
 In short you have a question which is **related to your studies**. Go ahead and ask them at [nerdspal](http://nerdspal.com/). 
