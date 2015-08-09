@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is nerdspal?
+title: Introducing nerdspal
 ---
 
 #nerdspal is a place to get help in your academic efforts
