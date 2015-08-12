@@ -19,7 +19,7 @@ So say you have a school, college or university level question for which you nee
  - a wordy essay,
  - etc.
 
-In short you have a question which is **related to your studies**. Go ahead and [ask them](http://beta.nerdspal.com/Questions/Create) at nerdspal.
+In short you have a question which is **related to your studies**. Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 ![Ask questions](http://40.media.tumblr.com/8d5ee0ae0f4bde56ca5e8bbc330cd00c/tumblr_ns9fbzuFEd1u5n37no1_1280.jpg)
 
@@ -27,7 +27,7 @@ In short you have a question which is **related to your studies**. Go ahead and 
 
 #Complement your academic profile
 
-When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](http://beta.nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those nice *things*. This adds up your total marks.
+When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those nice *things*. This adds up your total marks.
 
 Finally demonstrable on your profile page.
 
