@@ -5,8 +5,7 @@ title: Introducing nerdspal
 
 #[nerdspal](https://nerdspal.com) is a place to get help in your academic efforts
 
-We are here to build a community of students capable of helping each other. Much inspired by [Quora](http://www.quora.com/) *(which can help you with generic queries)* and [Stackoverflow](http://stackoverflow.com/) *(the programming Q&A site)* but our domain is sharp focused on academics.
-We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will help you as a student to get all kind of help in your academic efforts. Help us implement this vision.
+We are here to build a community of students capable of helping each other.
 
 >So how does nerdspal can come to help?
 
@@ -37,5 +36,8 @@ Finally demonstrable on your profile page.
 The most interesting part: there is no waste here at nerdspal. All users of the website are expected to maintain a nice decorum. The filthy posts can be identified by voting them down.
 
 The posts with most marks are highlighted upwards.
+
+Much inspired by [Quora](http://www.quora.com/) *(which can help you with generic queries)* and [Stackoverflow](http://stackoverflow.com/) *(the programming Q&A site)* but our domain is sharp focused on academics.
+We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will help you as a student to get all kind of help in your academic efforts. Help us implement this vision.
 
 #[Any feedback?](http://goo.gl/forms/Bp2vj781QU)
