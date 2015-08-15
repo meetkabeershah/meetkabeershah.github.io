@@ -39,5 +39,7 @@ It might be very easy to solve your friend's doubt through WhatsApp or email. If
 
 >**[nerdspal](https://nerdspal.com) is currently a baby startup which is going through it's most initial phase. The phase of user acceptance. We need people like you who can help us build a firm beta user base and [provide honest feedback](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics).**
 
+Any contribution at this stage will be most valuable.
+
 <p class="casual"> Much inspired by <a href="http://www.quora.com/">Quora</a>, <a href="https://en.wikipedia.org/" >Wiki</a> and <a href="http://stackoverflow.com/">Stackoverflow</a> but our domain is sharp focused on academics.
 We are very much confident about our vision that nerdspal will complement all kind of academic efforts. And you can help us implement this vision. </p>
