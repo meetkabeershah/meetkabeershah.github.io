@@ -39,7 +39,7 @@ The posts with most marks are highlighted upwards.
 
 >**[nerdspal](https://nerdspal.com) is currently a baby startup which is going through it's most initial phase. The phase of user acceptance. We need people like you who can use it and [provide honest feedback](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics).**
 
-<p class="casual"> Much inspired by Quora (which can help you with generic queries) and Stackoverflow (the programming Q&A site) but our domain is sharp focused on academics.
-We are very much confident about our vision that nerdspal will complement all kind of academic efforts. Please, help us implement this vision. </p>
-
 #[Any feedback?](http://goo.gl/forms/Bp2vj781QU)
+
+<p class="casual"> Much inspired by [Quora](http://www.quora.com/) *(which can help you with generic queries)*, [wiki](https://en.wikipedia.org/) and [Stackoverflow](http://stackoverflow.com/) *(the programming Q&A site)* but our domain is sharp focused on academics.
+We are very much confident about our vision that nerdspal will complement all kind of academic efforts. And you can help us implement this vision. </p>
