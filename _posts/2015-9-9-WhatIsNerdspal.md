@@ -35,7 +35,7 @@ The posts with most marks are highlighted upwards.
 
 #Why shall I share my valuable knowledge?
 
-It might be very easy to solve your friend's doubt through WhatsApp or email. If you use nerdspal, your contribution will not only help us, it will also be available to people across globe.
+It might be very easy to solve your friend's doubt through WhatsApp or email. If you use nerdspal, it will be available to people across the globe.
 
 >**[nerdspal](https://nerdspal.com) is currently a baby startup which is going through it's most initial phase. The phase of user acceptance. We need people like you who can help us build a firm beta user base and [provide honest feedback](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics).**
 
