@@ -27,11 +27,11 @@ Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those nice *things*. This adds up your total marks.
 
-Finally demonstrable on your profile page.
+Finally goes to your profile page.
 
 #Quality on high
 
-The most interesting part: there is no waste here at nerdspal. All users of the website are expected to maintain a nice decorum. The filthy posts can be identified by voting them down.
+The most interesting part: there is no waste here at nerdspal. The filthy posts can be identified by voting them down. This will ensure that you trust content available on the website.
 
 The posts with most marks are highlighted upwards.
 
