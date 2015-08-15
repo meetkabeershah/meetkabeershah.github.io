@@ -7,7 +7,7 @@ title: nerdspal is a place to collaborate in your academic efforts
 
 #Ask your questions
 
-So say you have a question which is **related to your studies** for which you need an answer. Your question may be:
+So say you have a question which is **related to your academics irrespetive of field of study** for which you need an answer. Your question may be:
 
  - a difficult calculation,
  - some complex chemistry equation, 
