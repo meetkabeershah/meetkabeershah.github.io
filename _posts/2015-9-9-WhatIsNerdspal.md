@@ -23,9 +23,9 @@ Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 #Complement your academic profile
 
-When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those nice *things*. This adds up your total marks.
+When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those *nice things*. 
 
-This finally goes to your profile.
+This adds up your total marks which finally goes to your profile.
 
 #Quality on high
 
