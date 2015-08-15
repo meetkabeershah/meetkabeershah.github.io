@@ -1,11 +1,9 @@
 ---
 layout: post
-title: Introducing nerdspal
+title: nerdspal is a place to collaborate in your academic efforts
 ---
 
-#[nerdspal](https://nerdspal.com) is a place to collaborate in your academic efforts
-
->So how nerdspal can be used?
+>So how [nerdspal](https://nerdspal.com) can be used?
 
 #Ask your questions
 
