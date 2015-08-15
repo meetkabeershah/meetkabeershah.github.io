@@ -39,9 +39,9 @@ The posts with most marks are highlighted upwards.
 
 >It might be very easy to solve your friend's doubt through WhatsApp or email. If you use nerdspal, your contribution will not only help us, it will also be available to people across globe.
 
->[nerdspal](https://nerdspal.com) is currently a baby startup which is going through it's most difficult phase. The phase of **user acceptance**. We need people like you who can use it and [provide honest feedback](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics).
+>**[nerdspal](https://nerdspal.com) is currently a baby startup which is going through it's most difficult phase. The phase of **user acceptance**. We need people like you who can use it and [provide honest feedback](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics).**
 
 Much inspired by [Quora](http://www.quora.com/) *(which can help you with generic queries)* and [Stackoverflow](http://stackoverflow.com/) *(the programming Q&A site)* but our domain is sharp focused on academics.
-We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will complement student acadmic profile. Pehleez, help us implement this vision.
+We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will complement student academic efforts. Please, help us implement this vision.
 
 #[Any feedback?](http://goo.gl/forms/Bp2vj781QU)
