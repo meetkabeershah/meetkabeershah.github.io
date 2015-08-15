@@ -5,8 +5,6 @@ title: Introducing nerdspal
 
 #[nerdspal](https://nerdspal.com) is a place to get help in your academic efforts
 
-We are here to build a community of students capable of helping each other.
-
 >So how nerdspal can be used?
 
 #Ask your questions
