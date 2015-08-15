@@ -7,7 +7,7 @@ title: Introducing nerdspal
 
 We are here to build a community of students capable of helping each other.
 
->So how does nerdspal can come to help?
+>So how nerdspal can be used?
 
 #Ask your questions
 
@@ -24,7 +24,7 @@ Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 ![Ask questions](http://40.media.tumblr.com/8d5ee0ae0f4bde56ca5e8bbc330cd00c/tumblr_ns9fbzuFEd1u5n37no1_1280.jpg)
 
-[courtesy](http://tumblr.com/)
+[courtesy](http://troll.me)
 
 #Complement your academic profile
 
@@ -38,7 +38,13 @@ The most interesting part: there is no waste here at nerdspal. All users of the 
 
 The posts with most marks are highlighted upwards.
 
+>#Why shall I share my valuable knowledge?
+
+It might be very easy to solve your friend's doubt through WhatsApp or email. If you use nerdspal, your contribution will not only help us, it will also be available to people across globe.
+
+And we do appreciate contribution.
+
 Much inspired by [Quora](http://www.quora.com/) *(which can help you with generic queries)* and [Stackoverflow](http://stackoverflow.com/) *(the programming Q&A site)* but our domain is sharp focused on academics.
-We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will help you as a student to get all kind of help in your academic efforts. Help us implement this vision.
+We are very much confident about [our vision](https://twitter.com/nistencorp/status/626978947536809984) that nerdspal will complement student acadmic profile. Pehleez, help us implement this vision.
 
 #[Any feedback?](http://goo.gl/forms/Bp2vj781QU)
