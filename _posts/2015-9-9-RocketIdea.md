@@ -11,13 +11,12 @@ title: Introducing nerdspal
 
 So say you have a question which is **related to your studies** for which you need an answer. Your question may be:
 
- - a difficult mathematical sum,
+ - a difficult calculation,
  - some complex chemistry equation, 
  - an accounts ledger query,
  - a wordy essay,
- - a doubt you have,
- - etc.
-
+ - or a doubt you have
+ 
 Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 ![Ask questions](http://40.media.tumblr.com/8d5ee0ae0f4bde56ca5e8bbc330cd00c/tumblr_ns9fbzuFEd1u5n37no1_1280.jpg)
