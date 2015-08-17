@@ -12,4 +12,4 @@ You have your question - our [community](https://nerdspal.com/Account/League) go
 
 #[Sign up free](https://nerdspal.com/Account/Register)
 
-[What is nerdspal](http://blog.nistencorp.com/WhatIsNerdspal/)
+[What is nerdspal?](http://blog.nistencorp.com/WhatIsNerdspal/)
