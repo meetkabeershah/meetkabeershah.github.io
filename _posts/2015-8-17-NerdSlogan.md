@@ -11,3 +11,5 @@ A platform where you can be anonymous (or bravely open) and [ask](https://nerdsp
 You have your question - our [community](https://nerdspal.com/Account/League) got the answer!
 
 #[Sign up free](https://nerdspal.com/Account/Register)
+
+[What is nerdspal](http://blog.nistencorp.com/WhatIsNerdspal/)
