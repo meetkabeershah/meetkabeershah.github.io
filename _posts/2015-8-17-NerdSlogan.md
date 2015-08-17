@@ -1,3 +1,8 @@
+---
+layout: post
+title: nerdspal slogan
+---
+
 #Got a question which you are too ashamed to ask? Or didn't get something in the class?
 
 [**nerdspal**](https://nerdspal.com/) is an easy solution for you.
