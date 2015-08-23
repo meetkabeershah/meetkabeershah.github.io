@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The official blog for [nistencorp](http://nistencorp.com/) - builders of [nerdspal](http://nerdspal.com/) and [nordible](http://nordible.com/).
+The official blog for [nistencorp](http://nistencorp.com/) - builders of [nerdspal](https://nerdspal.com/) and [nordible](http://nordible.com/).
 
 nistencorp is a technology based company directed towards solving academia problems.  
 
