@@ -17,5 +17,5 @@ nistencorp is a technology based company directed towards solving academia probl
 [nistencorp@gmail.com](mailto:nistencorp@gmail.com)
 
 <p class="casual"> 
-Please note that all trademarks and links are owned by their respective owners.
+Please note that all 3rd party trademarks and links are owned by their respective owners.
 </p>
