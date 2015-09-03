@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -12,17 +16,8 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
   
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- simpleAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9765860196825802"
-     data-ad-slot="2383888377"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+  <div id="spot-im-frame-inpage" data-post-id={{page.title}}></div>
+  
   {% include disqus.html %}
   {% include addThis.html %}
 </article>
