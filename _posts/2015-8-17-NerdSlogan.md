@@ -3,11 +3,11 @@ layout: post
 title: nerdspal slogan
 ---
 
-#Got a question which you are too ashamed to ask? Or didn't get something in the class?
+#Get recognized for sharing your knowledge.
 
-[**nerdspal**](https://nerdspal.com/) is an easy solution for you.
+Have you been in a situation where you wanted to get a study related doubt resolved?
 
-A platform where you can be anonymous (or bravely open) and [ask](https://nerdspal.com/Questions/Create) questions. No one will know who you are but many ready to answer your question.
+[nerdspal](http://nerdspal.com) is a platform where you can [ask](https://nerdspal.com/Questions/Create) questions.
 
 ![I will ask you the question](http://cdn.meme.am/instances/55468584.jpg)
 
