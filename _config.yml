@@ -9,7 +9,7 @@ name: nistencorp blog
 description: announcements and updates from nistencorp
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
+avatar: https://www.gravatar.com/apaginate: 5vatar/9f0e86127334688292f2c7928b0750e7
 
 #
 # Flags below are optional
@@ -64,6 +64,10 @@ version: v1.1.0
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
+
+#Show 2 posts each page 
+#SOURCE : https://jekyllrb.com/docs/pagination/
+paginate: 2
 
 # Use the following plug-ins
 gems:
