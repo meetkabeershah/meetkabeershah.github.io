@@ -66,9 +66,8 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 #Show 2 posts each page 
-#SOURCE : https://jekyllrb.com/docs/pagination/
 paginate: 2
-paginate_path: "/blog/page:num/"
+paginate_path: "/_posts/page:num/"
 
 # Use the following plug-ins
 gems:
