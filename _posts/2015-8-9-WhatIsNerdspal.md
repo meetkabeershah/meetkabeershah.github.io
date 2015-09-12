@@ -5,7 +5,7 @@ title: nerdspal is a place to collaborate in your academic efforts
 
 >So how [nerdspal](https://nerdspal.com) can be used?
 
-#Ask your questions
+**Ask your questions**
 
 So say you have a question which is **related to your academics irrespetive of field of study** for which you need an answer. Your question may be:
 
@@ -21,19 +21,19 @@ Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 [courtesy](http://troll.me)
 
-#Complement your academic profile
+**Complement your academic profile**
 
 When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those *nice things*. 
 
 This adds up your total marks which finally goes to your profile.
 
-#Quality on high
+**Quality on high**
 
 The most interesting part: there is no waste here at nerdspal. The filthy posts can be identified by voting them down. This will ensure that you trust content available on the website.
 
 The posts with most marks are highlighted upwards.
 
-#Why shall I share my valuable knowledge?
+**Why shall I share my valuable knowledge?**
 
  - You get recognized for your knowledge.
  - Your concepts do get revised.
