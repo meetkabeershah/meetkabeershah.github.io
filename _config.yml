@@ -9,7 +9,7 @@ name: nistencorp blog
 description: announcements and updates from nistencorp
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.gravatar.com/apaginate: 5vatar/9f0e86127334688292f2c7928b0750e7
+avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
 
 #
 # Flags below are optional
@@ -67,6 +67,7 @@ sass:
 
 #Show 2 posts each page 
 paginate: 2
+paginate_path: "/_posts/page:num/"
 
 # Use the following plug-ins
 gems:
