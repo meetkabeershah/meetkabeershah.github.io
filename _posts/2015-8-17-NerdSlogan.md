@@ -3,7 +3,7 @@ layout: post
 title: nerdspal slogan
 ---
 
-#Get recognized for sharing your knowledge.
+**Get recognized for sharing your knowledge.**
 
 Have you been in a situation where you wanted to get a study related doubt resolved?
 
