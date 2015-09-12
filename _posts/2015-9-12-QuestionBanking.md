@@ -3,7 +3,7 @@ layout: post
 title: Banking the questions on nerdspal
 ---
 
-#Banking the questions on nerdspal
+**Banking the questions on nerdspal**
 
 The idea of having question banks is to target what is most important. So once your questions are bundled, you can save a lot of time by just going through them.
 
