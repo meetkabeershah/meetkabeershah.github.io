@@ -67,7 +67,6 @@ sass:
 
 #Show 2 posts each page 
 paginate: 2
-paginate_path: "/_posts/page:num/"
 
 # Use the following plug-ins
 gems:
