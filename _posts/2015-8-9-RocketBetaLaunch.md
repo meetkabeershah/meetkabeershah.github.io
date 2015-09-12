@@ -1,6 +1,6 @@
 ---
 layout: post
-title: beta flavoured Nerdspal
+title: &beta; flavoured Nerdspal
 ---
 
 In our [last blog post](http://nistenblog.github.io/RocketLaunch/#) we said that our project [#RocketToTheMoon](https://nerdspal.com/) will serve as the implementation of the understanding we gathered through our works. To support our words, have released a beta for the same.
