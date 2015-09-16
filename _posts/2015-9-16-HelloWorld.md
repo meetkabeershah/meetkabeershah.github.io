@@ -14,10 +14,10 @@ One day, I was going through the farewell emails I received from my friends. I s
 
 To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me, so why can't I do something worthy? 
 
-I started thinking about problems which are mostly faced by students. One of the most common problem which most of the parents face is **academic tutoring** for their child.
+I started thinking about a project idea to solve some seriou problems. One of the most common problem which most of the parents face is **academic tutoring** for their child.
 
-Especially in cities, parents do not have so much of time to sit with and solve their kids academic doubts and thus they hire tutors or admit their kids to tuitions.
+Especially in cities, parents do not have so much of time to sit with and solve their kids' academic doubts and thus they hire tutors or admit their kids to tuitions.
 
-After dropping out of the college, I got a lot of free time and to keep my time from wasting, I started a side project which I called [nerdspal](https://nerdspal.com)
+After dropping out of the college, I got a lot of free time and to keep my time from wasting, I started a side project which I called [nerdspal](https://nerdspal.com) - which is supposed to solve the problem.
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I don't know how things are going to be later, but the best way to know it is to **just do it**
