@@ -16,7 +16,7 @@ To be honest, I didn't did anything so great for them. I kept re-reading these p
 
 I asked myself - why can't I do something worthy?
 
-I started thinking about a project idea to solve some serious problems. One of the most common problem which most of the parents face is **academic tutoring** for their child.
+I started thinking about a project idea to solve some serious problems. One of the most common problems which most of the parents face is **academic tutoring** for their child.
 
 Especially in cities, parents do not have so much of time to sit with and solve their kids' academic doubts and thus they hire tutors.
 
