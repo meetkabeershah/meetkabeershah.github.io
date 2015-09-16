@@ -5,7 +5,7 @@ title: Hello world!
 
 My name is Zameer, an (ab)normal dev from Mumbai. For some *pew bling* reasons I dopped out from [my last school](http://www.nmims.edu/).
 
-One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
+One day, I was going through the farewell emails I received from my friends. I started re-reading this part of an email:
 
 
 >Hope I see you opening a multinational company, where I see a great leader and an entrepreneur just like you and I hope I have a chance of discussing this beautiful dream of you being a great friend and a famous person to my friends and my loved ones.
