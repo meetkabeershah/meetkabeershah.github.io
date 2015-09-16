@@ -12,12 +12,14 @@ One day, I was going through the [farewell](http://www.quickmeme.com/meme/3u9r00
 
 >I wish you good luck for your future endeavours.
 
-To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me, so why can't I do something worthy?
+To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me.
+
+I asked myself - why can't I do something worthy?
 
 I started thinking about a project idea to solve some serious problems. One of the most common problem which most of the parents face is **academic tutoring** for their child.
 
-Especially in cities, parents do not have so much of time to sit with and solve their kids' academic doubts and thus they hire tutors or admit their kids to tuitions.
+Especially in cities, parents do not have so much of time to sit with and solve their kids' academic doubts and thus they hire tutors.
 
-After dropping out of the college, I got a lot of free time and to keep my time from wasting, I started a side project which I called [nerdspal](https://nerdspal.com) - which is supposed to solve the problem.
+I got a lot of free time and I started this side project which I called [nerdspal](https://nerdspal.com) - which is supposed to solve the tutoring problem.
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't see [fake myself](http://fakepreneur.me/)
