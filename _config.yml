@@ -27,7 +27,7 @@ footer-links:
   pinterest:
   rss: blog.nerdspal.com # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: xameeramir
-  stackoverflow: http://stackoverflow.com/users/2404470/nerdspal-com # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/2404470/nerdspal-com # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
