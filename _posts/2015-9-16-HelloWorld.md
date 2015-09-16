@@ -20,4 +20,4 @@ Especially in cities, parents do not have so much of time to sit with and solve 
 
 After dropping out of the college, I got a lot of free time and to keep my time from wasting, I started a side project which I called [nerdspal](https://nerdspal.com) - which is supposed to solve the problem.
 
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't see myself [like this](http://fakepreneur.me/)
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't see [fake myself](http://fakepreneur.me/)
