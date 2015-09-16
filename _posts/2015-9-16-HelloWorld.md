@@ -12,7 +12,7 @@ One day, I was going through the [farewell](http://www.quickmeme.com/meme/3u9r00
 
 >I wish you good luck for your future endeavours.
 
-To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me.
+To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others motivate me.
 
 I asked myself - why can't I do something worthy?
 
