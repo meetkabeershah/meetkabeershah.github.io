@@ -9,12 +9,9 @@ For some *pew bling* reasons I dopped out. After the drop out, I had made a deci
 One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
 
 
->I must say you have the potential of being a great human being and yes!! you are no doubt. Any help you require in life no matter what please don't hesitate to contact me am like a brother to you. Hope I see you opening a multinational company, where I see a great leader and an entrepreneur just like you and I hope I have a chance of discussing this beautiful dream of you being a great friend and a famous person to my friends and my loved ones.
+>Hope I see you opening a multinational company, where I see a great leader and an entrepreneur just like you and I hope I have a chance of discussing this beautiful dream of you being a great friend and a famous person to my friends and my loved ones.
 
 >I wish you good luck for your future endeavours.
->Keep smiling always, cause you make others smile as well.:)
-
->P.S: Do keep messaging frequently...
 
 To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me, so why can't I do something worthy? 
 
