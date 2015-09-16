@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: nistencorp blog
+name: nerds's pal
 
 # Short bio or description (displayed in the header)
-description: announcements and updates from nistencorp
+description: a blog students can read
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
+avatar: https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44
 
 #
 # Flags below are optional
@@ -18,23 +18,23 @@ avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: nistencorp@gmail.com
+  email: zameeramir@gmail.com
   facebook:
   flickr:
-  github: nistencorp
+  github: xameeramir
   instagram:
   linkedin:
   pinterest:
-  rss: blog.nistencorp.com # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: nistencorp
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  rss: blog.nerdspal.com # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: xameeramir
+  stackoverflow: http://stackoverflow.com/users/2404470/nerdspal-com # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: nistenblog
+disqus: xameeramir
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-64799622-2
@@ -42,7 +42,7 @@ google_analytics: UA-64799622-2
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: blog.nistencorp.com
+url: blog.nerdspal.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -67,7 +67,7 @@ sass:
 
 #Show 2 posts each page 
 paginate: 2
-#paginate_path: "/_posts/page:num/"
+paginate_path: "/_posts/page:num/"
 
 # Use the following plug-ins
 gems:
