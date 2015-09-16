@@ -8,7 +8,7 @@ For some pew bling reason I dopped out from [NMIMS](http://www.nmims.edu/). To k
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I don't know how things are going to be later, but the best way to know it is to **just do it**
 
-I had lost all my hopes with a decision to live a plain life. I spent a few weeks in the black dark
+After the drop out, I had lost all my hopes with a decision to live a plain life. I spent a few weeks in the black dark.
 
 One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
 
