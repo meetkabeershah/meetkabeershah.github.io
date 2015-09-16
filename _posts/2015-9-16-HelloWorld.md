@@ -4,7 +4,7 @@ title: Hello world!
 ---
 
 My name is Zameer, an (ab)normal dev from Mumbai. My last school was [NMIMS](http://www.nmims.edu/).
-For some *pew bling* reasons I dopped out from there. After the drop out, I had made a decision to live a plain life.
+For some *pew bling* reasons I dopped out. After the drop out, I had made a decision to live a plain life.
 
 One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
 
