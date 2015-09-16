@@ -3,8 +3,7 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer, an (ab)normal dev from Mumbai. My last school was [NMIMS](http://www.nmims.edu/).
-For some *pew bling* reasons I dopped out with a decision to live a plain life.
+My name is Zameer, an (ab)normal dev from Mumbai. For some *pew bling* reasons I dopped out from [my last school](http://www.nmims.edu/).
 
 One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
 
