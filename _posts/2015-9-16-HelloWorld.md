@@ -16,9 +16,7 @@ One day, I was going through the farewell emails I received from my friends. I s
 
 >P.S: Do keep messaging frequently...
 
-To be honest, I didn't did anything so great for them but still they recognized me as a nice lad.
-
-I kept re-reading these paras and realized how others see me. They see a potential in me, so why can't I do something worthy? 
+To be honest, I didn't did anything so great for them. I kept re-reading these paras and realized how others see me, so why can't I do something worthy? 
 
 I started thinking about problems which are mostly faced by students. One of the most common problem which most of the students and parents face is the **academic doubts**.
 
