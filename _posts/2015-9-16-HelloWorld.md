@@ -3,7 +3,7 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer, an (ab)normal dev from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). For some *personal* reasons I dopped out from [my last school](http://www.nmims.edu/).
+My name is Zameer, an (ab)normal dev from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). For some *personal* reasons I dopped out from [my last school](http://www.nmims.edu/). A lot of my friends sent me farewell emails.
 
 One day, I was going through the [farewell](http://www.quickmeme.com/meme/3u9r00) emails I received from my friends. I started re-reading this part of an email:
 
