@@ -3,12 +3,8 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer, an (ab)normal dev from Mumbai.
-For some pew bling reason I dopped out from [NMIMS](http://www.nmims.edu/). To keep my time from wasting, I started a side project which I called [nerdspal.com](https://nerdspal.com)
-
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I don't know how things are going to be later, but the best way to know it is to **just do it**
-
-After the drop out, I had lost all my hopes with a decision to live a plain life. I spent a few weeks in the black dark.
+My name is Zameer, an (ab)normal dev from Mumbai. My last school was [NMIMS](http://www.nmims.edu/).
+For some *pew bling* reasons I dopped out from there. After the drop out, I had made a decision to live a plain life.
 
 One day, I was going through the farewell emails I received from my friends. I started re-reading this part of email from Varun:
 
@@ -20,14 +16,14 @@ One day, I was going through the farewell emails I received from my friends. I s
 
 >P.S: Do keep messaging frequently...
 
-I kept re-reading these paras. I stopped there for a moment and realized how others see me. They see a potential in me, why can't I do something worthy? 
+To be honest, I didn't did anything so great for them but still they recognized me as a nice lad.
 
-To be honest, I didn't did anything so great for them but still they recognized me as a nice friend.
+I kept re-reading these paras and realized how others see me. They see a potential in me, so why can't I do something worthy? 
 
 I started thinking about problems which are mostly faced by students. One of the most common problem which most of the students and parents face is the **academic doubts**.
 
 Especially in cities, parents do not have so much of time to sit with and solve their kids academic doubts and thus they hire tutors or admit their kids to tuitions.
 
-After dropping out of the college, I got a lot of free time. 
+After dropping out of the college, I got a lot of free time and to keep my time from wasting, I started a side project which I called [nerdspal](https://nerdspal.com)
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I don't know how things are going to be later, but the best way to know it is to **just do it**
