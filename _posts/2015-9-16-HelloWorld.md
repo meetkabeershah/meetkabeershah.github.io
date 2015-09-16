@@ -20,6 +20,6 @@ I started thinking about a project idea to solve some serious problems. One of t
 
 Especially in cities, parents do not have so much of time to sit with and solve their kids' academic doubts and thus they hire tutors.
 
-I got a lot of free time and I started this side project which I called [nerdspal](https://nerdspal.com) - which is supposed to solve the tutoring problem.
+I got a lot of free time and I started this side project which I called [nerdspal](https://nerdspal.com) - it is supposed to solve the tutoring problem.
 
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't see [fake myself](http://fakepreneur.me/)
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't want to [fake myself](http://fakepreneur.me/)
