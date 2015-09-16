@@ -9,4 +9,4 @@ My name is Zameer, an (ab)normal dev from [the city of dreams](http://www.incred
 I am currently hired at [a healthcare firm](http://www.nextservices.com/) after working in [another company](http://serco.com/). 
 I like to eat spinach and my favourite color is blue - Oh, what a coincidence!!
 
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't want to [fake myself](http://fakepreneur.me/)
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't like honeymoon periods [fake myself](http://fakepreneur.me/)
