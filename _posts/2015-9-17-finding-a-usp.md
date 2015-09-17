@@ -4,6 +4,8 @@ Say we have all the teachers of the city on [this website](https://nerdspal.com/
 
 ![Classwork vs homework](http://whyareyoustupid.com/wp-content/uploads/funny-teacher-college-meme.jpg)
 
+[courtesy](http://whyareyoustupid.com/teacher-meme-funny/funny-teacher-college-meme/)
+
 Because teachers are day to day into the textbooks, pencils and sharpners - they are credible. Yeah?
 
 Just wanted to validate this USP before committing this. 
