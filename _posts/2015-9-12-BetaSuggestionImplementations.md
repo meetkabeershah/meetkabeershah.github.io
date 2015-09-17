@@ -3,8 +3,6 @@ layout: post
 title: Implementing &beta; suggestion
 ---
 
-**Implementing &beta; suggestion**
-
 After the beta release of nerdspal, I received a lot of suggestions from my friends and colleagues. One of them was better tracking of answers and comments on posts.
 
 So to meet those suggestions, below is the plan:
