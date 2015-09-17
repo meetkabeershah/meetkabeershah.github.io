@@ -1,3 +1,8 @@
+---
+layout: post
+title: Hello world!
+---
+
 I had a question and need to make a decision for the same.
 
 Say we have all the teachers of the city on [this website](https://nerdspal.com/) - will it be a nice [USP](http://www.entrepreneur.com/encyclopedia/unique-selling-proposition-usp)? Because the users will have doubts about the credibility of the answers. And who the heck will answer?
