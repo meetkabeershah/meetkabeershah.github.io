@@ -12,5 +12,3 @@ So, I took my make-up-man hat on. To beautify them, there are so many tools but 
 So people working remotely can get into one project at the same time. Obviously, you need an internet connection.
 
 A lot of things in [nerdspal](https://nerdspal.com) need redesigning. I'm starting with the most critical ones first.
-
-The next step is to build user invitation module - which I'll be done with by tomorrow.
