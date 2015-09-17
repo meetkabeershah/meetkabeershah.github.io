@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nerdspal is a place to collaborate in your academic efforts
+title: A place to collaborate in your learning efforts
 ---
 
 >So how [nerdspal](https://nerdspal.com) can be used?
