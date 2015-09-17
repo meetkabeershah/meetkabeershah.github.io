@@ -3,7 +3,7 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer, a dev from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/). When I was leaving, a few of my friends sent me farewell emails.
+My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/). When I was leaving, a few of my friends sent me farewell emails.
 
 One day, I was going through those emails. One of them took my attention, I started re-reading this part of an email:
 
