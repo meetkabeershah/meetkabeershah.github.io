@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello world!
+title: Finding a USP
 ---
 
 I had a question and need to make a decision for the same.
