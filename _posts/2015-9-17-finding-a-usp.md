@@ -3,9 +3,11 @@ layout: post
 title: Finding a USP
 ---
 
-I had a question and need to make a decision for the same.
+So what can be the [USP](http://www.entrepreneur.com/encyclopedia/unique-selling-proposition-usp)?
 
-Say we have all the teachers of the city on [this website](https://nerdspal.com/) - will it be a nice [USP](http://www.entrepreneur.com/encyclopedia/unique-selling-proposition-usp)? Because the users will have doubts about the credibility of the answers. And who the heck will answer?
+I had this question and need to make a decision for the same.
+
+Say we have all the teachers of the city on [this website](https://nerdspal.com/) - will it be nice? Because the users will have doubts about the credibility of the answers. And who the heck will answer?
 
 ![Classwork vs homework](http://whyareyoustupid.com/wp-content/uploads/funny-teacher-college-meme.jpg)
 
