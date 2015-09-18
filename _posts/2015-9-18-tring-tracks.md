@@ -13,7 +13,7 @@ So, the **so awesome news** is that you can start tracking your tringing alarms.
 
 Any new answers or comments will be shown next to a `pink + red + orange` colored [font-awesome flag icon](http://fortawesome.github.io/Font-Awesome/icon/flag/).
 
-Faster vectoring and fan-nism of [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) made me choose it. The other good thing is that it doesn't forces [my own servers to load things](http://www.bootstrapcdn.com/#fontawesome_tab).
+Faster vectoring and my personal fan-nism for [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) made me choose it. The other good thing is it doesn't forces [my own servers](http://www.bootstrapcdn.com/#fontawesome_tab).
 
 The [community](https://fortawesome.github.io/Font-Awesome/community/) is constantly updating the toolkit and bringing new icons for production. Hats off guys!
 
