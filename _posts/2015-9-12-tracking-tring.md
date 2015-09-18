@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Implementing &beta; suggestion
+title: Tracking trings
 ---
 
 After the beta release of nerdspal, I received a lot of suggestions from my friends and colleagues. One of them was better tracking of answers and comments on posts.
