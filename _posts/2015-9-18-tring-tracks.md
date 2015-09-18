@@ -15,5 +15,5 @@ Any [new notification](https://nerdspal.com/Home/Notifications) for will be show
 
 Faster vectoring and my personal fan-nism for [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) made me choose it. The other good thing is it takes load off [from my servers](http://www.bootstrapcdn.com/#fontawesome_tab).
 
-The [community](https://fortawesome.github.io/Font-Awesome/community/) is constantly updating the toolkit and bringing new icons for production. Hats off guys!
+The [community](https://fortawesome.github.io/Font-Awesome/community/) is constantly updating the toolkit and bringing new icons for production.
 
