@@ -11,7 +11,7 @@ So, the **so awesome news** is that you can start tracking your tringing alarms.
 
 [courtesy](http://diylol.com/)
 
-Any [new notification](https://nerdspal.com/Home/Notifications) for will be shown next to a pinkish red [flag icon](http://fortawesome.github.io/Font-Awesome/icon/flag/) on the top bar on the website.
+Any [new notification](https://nerdspal.com/Home/Notifications) will be shown next to a pinkish red [flag icon](http://fortawesome.github.io/Font-Awesome/icon/flag/) on the top bar on the website.
 
 Faster vectoring and my personal fan-nism for [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) made me choose it. The other good thing is it takes load off [from my servers](http://www.bootstrapcdn.com/#fontawesome_tab).
 
