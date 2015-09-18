@@ -15,5 +15,5 @@ Any new answers or comments will be shown next to a `pink + red + orange` colore
 
 Faster vectoring and fan-nism of [font awesome](http://fortawesome.github.io/Font-Awesome/icons/) made me choose it. The other good thing is that it doesn't forces [my own servers to load things](http://www.bootstrapcdn.com/#fontawesome_tab).
 
-The [community](https://fortawesome.github.io/Font-Awesome/community/) is constantly updating the toolkit and bringing new icons for production constantly. Hats off guys!
+The [community](https://fortawesome.github.io/Font-Awesome/community/) is constantly updating the toolkit and bringing new icons for production. Hats off guys!
 
