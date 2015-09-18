@@ -3,7 +3,7 @@ layout: post
 title: Track your tring tring
 ---
 
-If you are moving along with me, I was setting up an [alarming system](http://blogx.nerdspal.com/tracking-trings/) for [nerdspal community](https://nerdspal.com/Account/League) - I called **project tring**
+If you are moving along with me, I was setting up an [alarming system](http://blogx.nerdspal.com/tracking-trings/) for [nerdspal community](https://nerdspal.com/Account/League) - secretly called **project tring**.
 
 So, the **so awesome news** is that you can start tracking your tringing alarms. In other way - the project is succesfully finished.
 
