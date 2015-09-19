@@ -20,6 +20,6 @@ The questions which are [alive](https://nerdspal.com/Questions?Sort=Live) will s
 
 [aged](https://nerdspal.com/Questions?Sort=Oldest) questions will show off the oldest posts in question category.
 
-I'm building the project with simplicity and smartness [both](https://nerdspal.com/Home/Overview#SmartSimple) both in mind.
+I'm building the project with simplicity and smartness [both](https://nerdspal.com/Home/Overview#SmartSimple) in mind.
 
 This delayed the [question banking](http://blogx.nerdspal.com/question-banking/). I need to think again on how this can be achieved.
