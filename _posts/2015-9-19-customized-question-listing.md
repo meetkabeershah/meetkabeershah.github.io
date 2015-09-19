@@ -14,11 +14,11 @@ I asked this question to myself when I was doing renovation of question listing 
 
 As a result of this brainstorming, only certain information is shown as long as question filtering is concerned, such as:
 
-[unanswered question](https://nerdspal.com/Questions?Sort=Unanswered) will show number of answers as **zero**, [newest](https://nerdspal.com/Questions?Sort=Newest) will show the date when the question was asked, [popular questions](https://nerdspal.com/Questions?Sort=Popular) will pop up number of views.
+[Unanswered questions](https://nerdspal.com/Questions?Sort=Unanswered) will show number of answers as **zero**, [newest](https://nerdspal.com/Questions?Sort=Newest) will show the date when the question was asked, [popular questions](https://nerdspal.com/Questions?Sort=Popular) will pop up number of views.
 
 The questions which are [alive](https://nerdspal.com/Questions?Sort=Live) will show how many edits were made to them, by whom and when.
 
-[aged](https://nerdspal.com/Questions?Sort=Oldest) questions will show off the oldest posts in question category.
+[Aged](https://nerdspal.com/Questions?Sort=Oldest) questions will show off the oldest posts in question category.
 
 I'm building the project with simplicity and smartness [both](https://nerdspal.com/Home/Overview#SmartSimple) in mind.
 
