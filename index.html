@@ -4,7 +4,7 @@ layout: default
 
 <div class="posts">
   <!--source: http://www.ericlagergren.com/blog/jekyll-pagination/-->
-  {% for posts in pagination.posts %}
+  {% for post in pagination.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}" >{{ post.title }}</a></h1>
