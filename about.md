@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/). I also founded [nerdspal.com](https://nerdspal.com/).
+My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/). I am currently building [nerdspal.com](https://nerdspal.com/).
 
 **nerdspal.com** is a professtional question and answer site for students, teachers and professionals to get recognized for sharing their valuable knowledge.
 
