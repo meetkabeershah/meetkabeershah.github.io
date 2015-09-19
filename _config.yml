@@ -42,7 +42,7 @@ google_analytics: UA-64799622-2
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: blog.nerdspal.com
+url: blogx.nerdspal.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -65,11 +65,9 @@ version: v1.1.0
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-#Show 2 posts each page 
-#paginate: 2
-#paginate_path: "/_posts/page:num/"
-posts_showdrafts: true
-posts_pagecount: 5
+#Show 5 posts each page 
+paginate: 5
+paginate_path: "/page:num/"
 
 # Use the following plug-ins
 gems:
