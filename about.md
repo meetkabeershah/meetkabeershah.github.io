@@ -12,7 +12,6 @@ My name is Zameer from [the city of dreams](http://www.incredibleindia.org/trave
 
 This is my [avatar](https://gravatar.com).
 
-I am currently hired at [a healthcare firm](http://www.nextservices.com/) after working in [another company](http://serco.com/). 
-I like to eat spinach and my favourite color is blue - Oh, what a coincidence!!
+My work experience spans from [healthcare](http://www.nextservices.com/) to [business outsourcing](http://serco.com/). 
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't like [honeymoon periods](http://fakepreneur.me/)
