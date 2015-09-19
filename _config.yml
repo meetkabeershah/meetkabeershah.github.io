@@ -67,7 +67,7 @@ sass:
 
 #Show 5 posts each page 
 paginate: 5
-paginate_path: "_posts/page:num/"
+paginate_path: "/index/page:num/"
 
 # Use the following plug-ins
 gems:
