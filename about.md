@@ -14,4 +14,4 @@ This is my [avatar](https://gravatar.com).
 
 My work experience spans from [healthcare](http://www.nextservices.com/) to [business outsourcing](http://serco.com/). 
 
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't like [honeymoon periods](http://fakepreneur.me/)
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. Because, I don't like [honeymoon periods](http://fakepreneur.me/).
