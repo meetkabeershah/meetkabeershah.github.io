@@ -5,8 +5,6 @@ title: Hello world!
 
 My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/). When I was leaving, a few of my friends sent me farewell emails.
 
-I like to eat spinach and my favourite color is blue - Oh, what a coincidence!!
-
 One day, I was going through those emails. One of them took my attention, I started re-reading this part of an email:
 
 >Hope I see you opening a multinational company, where I see a great leader and an entrepreneur just like you and I hope I have a chance of discussing this beautiful dream of you being a great friend and a famous person to my friends and my loved ones.
