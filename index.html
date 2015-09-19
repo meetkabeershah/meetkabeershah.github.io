@@ -4,7 +4,10 @@ layout: default
 
 <div class="posts">
   <!--source: http://www.ericlagergren.com/blog/jekyll-pagination/
-  {% for post in site.posts %}-->
+  {% comment %}
+{% for post in site.posts %}
+{% endcomment %}
+-->
   {% for posts in pagination.posts %}
     <article class="post">
 
