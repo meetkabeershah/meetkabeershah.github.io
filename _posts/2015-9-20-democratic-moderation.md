@@ -5,7 +5,10 @@ title: Democratic moderation
 
 A lot of people scream about the moderation policies used by other community driven sites. I was thinking of a [democratic](https://nerdspal.com/Home/Overview#Democratic) moderation mode.
 
-A healthy and democratic moderation will help keep the dirty spammers off as the community grows. I have built modules such that:
+
+<h1> <span style="color:#50D050; text-align:center"> Democratic - it is yours, by you and for you </span> </h1>
+
+A healthy and democratic moderation will help keep the dirty spammers off as the community grows.
 
  - You do not need **x** number of points to prove your editing intelligence
  - You do not need **x** number of points to award points to a useful post
@@ -19,7 +22,3 @@ To make sure that moderation doesn't become [suppression of speech](https://en.w
 [courtesy](https:wikimedia.org)
 
 > So, you get all the community rights from the day you [become awesome by joining the site](https://nerdspal.com/Account/Register).
-
-Repeating again - 
-
-<h1> <span style="color:#50D050; text-align:center"> Democratic - it is yours, by you and for you </span> </h1>
