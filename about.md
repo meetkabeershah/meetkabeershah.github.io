@@ -16,4 +16,4 @@ My work experience spans from [healthcare](http://www.nextservices.com/) to [bus
 
 I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I'll write this blog, until **#RocketToTheMoon** goes 100% out of **&beta;**.
 
-And yes, I don't like [honeymoon periods](http://fakepreneur.me/).
+And yes, I don't like honeymoon periods.
