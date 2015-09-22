@@ -5,9 +5,9 @@ title: Invites open
 
 How do you feel when given a royal invite? As, nerdspal is under beta - I'm giving away [invites](http://invite.nerdspal.com/) to teachers, students and professionals.
 
-![Invites](http://cdn.meme.am/instances/400x/55762817.jpg)
+![Invites](http://www.alumniconnections.com/olc/filelib/MIO/email/Library/2013%20Templates/Invitation/banner.jpg)
 
-[courtesy](http://memegenerator.net/instance/55762817)
+[courtesy](http://www.alumniconnections.com/olc/filelib/MIO/email/Library/2014%20Browser%20Views/Band.Invite.Oct14.browser.html)
 
 As an invited member, you will get premuim membership. And connect with the growing [nerdspal community](https://nerdspal.com/Account/League).
 
