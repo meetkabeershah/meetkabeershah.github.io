@@ -14,5 +14,5 @@ I'm writing this post to list all the mistakes I make during [cloud](http://clou
  - Set [IIS_IUSRS](http://stackoverflow.com/a/18621550/2404470) and [app pool](http://stackoverflow.com/a/7334485/2404470) free
  - Check that your application pool refers to correct version of .NET
  - Install [certificate](http://windows.microsoft.com/en-us/windows/import-export-certificates-private-keys#1TC=windows-7)
- - Import the same in IIS
+ - Import the same in [IIS](https://www.godaddy.com/help/installing-an-ssl-certificate-in-microsoft-iis-8-4951)
  
