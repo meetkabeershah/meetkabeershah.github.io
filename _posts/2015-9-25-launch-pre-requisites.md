@@ -9,7 +9,7 @@ title: Website launch pre-requisites
 
 I'm writing this post to list all the mistakes I make during [cloud](http://cloud.google.com/) deployments for project [**#RocketToTheMoon**](https://nerdspal.com/).
 
- - Stare that *publish successfull* notification on the Visual studio output window
+ - Stare that *publish successful* notification on the Visual studio output window
  - Grab that awesome [URL rewrite module](http://stackoverflow.com/a/25317499/2404470)
  - Set [IIS_IUSRS](http://stackoverflow.com/a/18621550/2404470) and [app pool](http://stackoverflow.com/a/7334485/2404470) free
  - Check that your application pool refers to correct version of .NET
