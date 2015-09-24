@@ -12,8 +12,4 @@ My name is Zameer from [the city of dreams](http://www.incredibleindia.org/trave
 
 This is my [avatar](https://gravatar.com).
 
-My work experience spans from [healthcare](http://www.nextservices.com/) to [business outsourcing](http://serco.com/). 
-
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. I'll write this blog, until **#RocketToTheMoon** goes 100% out of **&beta;**.
-
-And yes, I don't like honeymoon periods.
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make.
