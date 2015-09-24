@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Website launch pre-requisites
+title: nerdspal.com launch pre-requisites
 ---
 
 ![To do](http://media4.onsugar.com/files/2014/01/16/081/n/1922441/f03ad4c4d1b6bbfb_shutterstock_160289540.jpg.xxxlarge_2x.jpg)
