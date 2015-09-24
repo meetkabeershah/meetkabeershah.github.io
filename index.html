@@ -18,6 +18,13 @@ layout: default
   {% endfor %}
 </div>
 
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a rel="prev" href="{{ paginator.previous_page_path | replace: 'index.html', '/' | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
@@ -36,6 +43,3 @@ layout: default
   {% endif %}
 </div>
 {% endif %}
-  {% else %}
-    <span>&laquo; Prev</span>
-  {% endif %}
