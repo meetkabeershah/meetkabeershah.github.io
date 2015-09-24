@@ -19,6 +19,6 @@ I have tried to spread the word in *some* locations:
 
  - [product hunter](http://www.producthunt.com/tech/nersdpal-com)
 
- - [get worms](http://getworm.com/startup/nistencorp/)
+ - [get worms](http://getworm.com/startup/nerdspal/)
 
  - [betabound](http://www.betabound.com/nerdspal-public-beta/)
