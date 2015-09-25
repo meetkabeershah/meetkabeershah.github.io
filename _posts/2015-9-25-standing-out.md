@@ -7,10 +7,10 @@ title: Standing out
 
 [courtesy](http://www.theplanner.co.uk/advice/how-to-stand-out-in-the-planning-job-market)
 
-It's cool to have your own logo. To get that more trustworthy feeling.
+It's cool to have your own logo? To get that more trustworthy feeling.
 
-For now, the basic prototype of nerdspal logo is [here](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44).
-It looks like this:
+So, the basic prototype of nerdy logo is [here](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44).
+And trust me, after a deep stare, it looks like this:
 
 ![Logo](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44)
 
