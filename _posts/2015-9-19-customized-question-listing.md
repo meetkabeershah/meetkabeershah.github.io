@@ -2,11 +2,12 @@
 layout: post
 title: Customizing question listings
 ---
-How do [nerdspal](https://nerdspal.com/) handle too much info thing?
 
 ![Yikes, too much](http://cdn.meme.am/instances/54518697.jpg)
 
 [courtesy](http://memegenerator.net/)
+
+How do [nerdspal](https://nerdspal.com/) handle too much info thing?
 
 Say, if I give you food when you are thirsty or worse if I give you too much food? Will you appreciate that? It's **ok-ok**.
 
