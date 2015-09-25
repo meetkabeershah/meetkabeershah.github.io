@@ -3,11 +3,11 @@ layout: post
 title: Self promo - who need it?
 ---
 
-**err #@%$ oops, I mean... I was just giving a suggestion... yeah!**
-
 ![self promo](https://warriorwriters.files.wordpress.com/2015/01/screen-shot-2015-01-12-at-9-36-46-am.png?w=620)
 
 [courtesy](https://warriorwriters.files.wordpress.com)
+
+**err #@%$ oops, I mean... I was just giving a suggestion... yeah!**
 
 Hang on, it's going to be too much sooner!
 
