@@ -3,6 +3,10 @@ layout: post
 title: Scaling nerdy site
 ---
 
+![phew bling experience](http://www.quickmeme.com/img/19/1945d4a46c706ca44f8987302c422d93b1555ca63fbcecdc4beed53bee970998.jpg)
+
+[courtesy](http://www.quickmeme.com)
+
 I recently closed [nerdspal](http://blogx.nerdspal.com/nerdspal-closed/) to ensure new developments happens seemlessly.
 
 There was no development as such however, I tweaked the server configuration a little. During this period:
@@ -10,10 +14,6 @@ There was no development as such however, I tweaked the server configuration a l
  - Installed an 8 GB server RAM
  - Installed [missing IIS modules](http://blogx.nerdspal.com/launch-pre-requisites/)
  
-![phew bling experience](http://www.quickmeme.com/img/19/1945d4a46c706ca44f8987302c422d93b1555ca63fbcecdc4beed53bee970998.jpg)
-
-[courtesy](http://www.quickmeme.com)
-
 This was a kung-fu experience.
 
 So, why the heck I did this whole thing?
