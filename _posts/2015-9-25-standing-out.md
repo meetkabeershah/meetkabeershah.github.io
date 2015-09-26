@@ -7,13 +7,16 @@ title: Standing out
 
 [courtesy](http://www.theplanner.co.uk/advice/how-to-stand-out-in-the-planning-job-market)
 
-To stand out with that more trustworthy feeling, a logo is needed.
+To [stand out](http://www.bbc.com/news/business-32495854) with that more trustworthy feeling, a logo is needed.
 
 After lot of thinking, I have designed the basic prototype of *teh nerdy logo* [here](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44).
+
 
 After staring at it for 15 seconds, it looks like this:
 
 ![Logo](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44)
+
+I hope it's a [nice](http://www.davidairey.com/what-makes-a-good-logo/) logo.
 
 [Painted](https://en.wikipedia.org/wiki/Paint_(software)) on windows, I need to enhance it with some [cooler tools](http://www.adobe.com/in/products/illustrator.html).
 
