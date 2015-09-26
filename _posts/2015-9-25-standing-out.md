@@ -7,9 +7,9 @@ title: Standing out
 
 [courtesy](http://www.theplanner.co.uk/advice/how-to-stand-out-in-the-planning-job-market)
 
-To get that more trustworthy feeling, a logo is needed.
+To stand out with that more trustworthy feeling, a logo is needed.
 
-So, the basic prototype of *teh nerdy logo* is [here](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44).
+After lot of thinking, I have designed the basic prototype of *teh nerdy logo* [here](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44).
 
 After staring at it for 15 seconds, it looks like this:
 
