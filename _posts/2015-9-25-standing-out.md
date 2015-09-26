@@ -15,6 +15,6 @@ After staring at it for 15 seconds, it looks like this:
 
 ![Logo](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44)
 
-[Painted](https://en.wikipedia.org/wiki/Paint_(software)) on windows, I need to enhance it with some [cooler tools](http://www.adobe.com/in/products/illustrator.html)
+[Painted](https://en.wikipedia.org/wiki/Paint_(software)) on windows, I need to enhance it with some [cooler tools](http://www.adobe.com/in/products/illustrator.html).
 
-I am also planning to initiated some hardcore marketing efforts for [nerdspal](https://nerdspal.com/), but before that I wanted to keep some swag ready for [nerdy users](https://nerdspal.com/Account/League). Of course, it's part of [#LoveThyUser](http://nistencorp.com/) initiative. I'll talk about this swag thing in my upcoming posts, it's better to brag less and do more.
+I am also planning to initiate some hardcore marketing efforts for [nerdspal](https://nerdspal.com/), but before that I wanted to keep some swag ready for [new and already nerds](https://nerdspal.com/Account/League). Of course, it's part of [#LoveThyUser](http://nistencorp.com/) initiative. I'll talk about this swag thing in my upcoming posts, it's better to brag less and do more.
