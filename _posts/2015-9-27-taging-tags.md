@@ -7,9 +7,9 @@ title: Tagging tags
 
 [courtesy](http://www.memegen.com/meme/f598r2)
 
-Finding *that* someone in a crowd is a troublesome task. A ~~little~~  bit dificult task.
+Finding *that* someone or something in a crowd is a ~~little~~  bit difficult task.
 
-How do nerdspal solve this problem. So here come *tags*. 
+How do nerdspal solve this problem? *tags*?. 
 
 **What are tags on nerdspal?**
 
@@ -17,4 +17,6 @@ A tag is a field of study under which a question is posted. Each tag represents 
 
 **Why a tag is important?**
 
-A tag ensures that the posts are categorized under correct field of study. So the searches become more and more easy.
+A tag ensures that the posts are categorized under correct field of study. So searcing for a post becomes more easy.
+
+And you do need to ask about your *glasses*.
