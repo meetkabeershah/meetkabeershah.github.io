@@ -11,6 +11,4 @@ title: Giving gold!
 
 To recognise that guts, I had promised some special [worms](http://getworm.com/startup/nerdspal/) for our 1000 early adopters. A [gold premium badge](http://blogx.nerdspal.com/go-premium/).
 
-Premium members will get unfettered access to all the    inside information of all the new developments that happen at nerdspal.com. 
-
 I got [my golden badge](https://nerdspal.com/Account/Profile/42/xameeramir), grab yours.
