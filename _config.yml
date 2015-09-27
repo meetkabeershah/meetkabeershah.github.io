@@ -18,16 +18,16 @@ avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: zameeramir@gmail.com
+  email: 
   facebook:
   flickr:
-  github: xameeramir
+  github: 
   instagram:
   linkedin:
   pinterest:
   rss: blog.nerdspal.com # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: xameeramir
-  stackoverflow: users/2404470/nerdspal-com # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: 
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
