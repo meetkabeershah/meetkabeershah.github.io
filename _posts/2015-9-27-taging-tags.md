@@ -7,7 +7,7 @@ title: Tagging tags
 
 [courtesy](http://www.memegen.com/meme/f598r2)
 
-Finding *that* someone or something in a crowd is a ~~little~~  bit difficult task.
+Finding *that* someone or something in a crowd is a ~~little bit~~ difficult task.
 
 How do nerdspal solve this problem? **tags**? Yes!
 
