@@ -9,7 +9,7 @@ title: Tagging tags
 
 Finding *that* someone or something in a crowd is a ~~little~~  bit difficult task.
 
-How do nerdspal solve this problem? *tags*?. 
+How do nerdspal solve this problem? **tags**? Yes!
 
 **What are tags on nerdspal?**
 
