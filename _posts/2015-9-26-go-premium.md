@@ -10,7 +10,8 @@ We award premium badge to all who have achieved at least 1000 marks. They succes
  - Comunication skills
  - Leadership for solving the problems at hand
  - They respect their peers
-
+ - Trying out new [things](http://blogx.nerdspal.com/stranger-danger/)
+ 
 **Premium members will get:**
 
  - A special golden premium tag next to their [profile photo](https://nerdspal.com/Account/Profile)
