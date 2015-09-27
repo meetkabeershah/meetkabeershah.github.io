@@ -19,4 +19,4 @@ A tag is a field of study under which a question is posted. Each tag represents 
 
 A tag ensures that the posts are categorized under correct field of study. So searching for a post becomes more easy.
 
-And you do need to ask about your *glasses*.
+So you do need to trouble searching your *glasses* anymore.
