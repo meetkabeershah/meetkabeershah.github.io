@@ -7,7 +7,9 @@ title: Tagging tags
 
 [courtesy](http://www.memegen.com/meme/f598r2)
 
-Finding something in a crowd is a troublesome task. You do not to get what you want. To solve this your posts need to be classified. So here come *tags*. 
+Finding something in a crowd is a troublesome task. You do not to get what you want.
+
+How do nerdspal solve this problem. So here come *tags*. 
 
 **What are tags on nerdspal?**
 
