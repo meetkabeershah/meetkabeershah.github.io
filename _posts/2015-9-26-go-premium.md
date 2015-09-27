@@ -5,12 +5,14 @@ title: Go premium
 
 Who are premium members?
 
-The members who have achieved 1000 marks for a [tag](http://blogx.nerdspal.com/taging-tags).
+The members who have achieved at least 1000 marks for a [tag](http://blogx.nerdspal.com/taging-tags). They successfully demonstrate:
 
-So, we are giving away premium membership to all our beta adopters. What is that premium thing?
-
+ - Comunication skills
+ - Leadership for solving the problems at hand
+ - They respect their peers
 
 Premium members will get:
 
- - A special golden premium tag next to your [profile badge](https://nerdspal.com/Account/Profile).
+ - A special golden premium tag next to [profile photo](https://nerdspal.com/Account/Profile).
  - Premium members will get special invitations to try and use all the new featues in the future.
+ - Beta ( and non public) features will also be made available. 
