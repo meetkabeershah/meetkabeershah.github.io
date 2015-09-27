@@ -5,7 +5,7 @@ title: Go premium
 
 **Who are premium members?**
 
-We award premium badge to all who have achieved at least 1000 marks for a [tag](http://blogx.nerdspal.com/taging-tags). They successfully demonstrate:
+We award premium badge to all who have achieved at least 1000 marks. They successfully demonstrate:
 
  - Comunication skills
  - Leadership for solving the problems at hand
