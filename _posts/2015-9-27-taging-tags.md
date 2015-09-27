@@ -17,6 +17,6 @@ A tag is a field of study under which a question is posted. Each tag represents 
 
 **Why a tag is important?**
 
-A tag ensures that the posts are categorized under correct field of study. So searcing for a post becomes more easy.
+A tag ensures that the posts are categorized under correct field of study. So searching for a post becomes more easy.
 
 And you do need to ask about your *glasses*.
