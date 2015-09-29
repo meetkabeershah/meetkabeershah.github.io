@@ -13,5 +13,5 @@ Listening do help in retaining the knowledge. Students will really like if they 
 
 As nerdspal is built for use in academic field, a new feature called "**Play**" is also being actively merged into the existing platform.
 
-Currently it can only play questions (and is in beta).
+Currently it can only play questions (and is in non public alpha).
 
