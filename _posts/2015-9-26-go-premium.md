@@ -21,5 +21,4 @@ We award premium badge to all who have achieved at least 1000 marks. They succes
 **Premium members will get:**
 
  - A special golden premium tag next to their [profile photo](https://nerdspal.com/Account/Profile)
- - Premium members will get special invitations to try and use all the new featues in the future
- - Beta (and non public) features
+ - Special access to use all the new featues in the future
