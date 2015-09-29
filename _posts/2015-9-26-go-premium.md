@@ -7,7 +7,7 @@ title: Go premium
 
 [courtesy](http://www.123rf.com/photo_19022410_golden-police-badge.html)
 
-Police do have a golden badge but we're not talking about police. I wanted to introduce premium members. They get a golden badge but there is [no police here](blogx.nerdspal.com/democratic-moderation/).
+Police do have a golden badge but we're not talking about police. We wanted to introduce premium members. They get a golden badge but there is [no police here](blogx.nerdspal.com/democratic-moderation/).
 
 **Who are premium members?**
 
