@@ -3,7 +3,7 @@ layout: post
 title: Go premium
 ---
 
-<label class="pal" style='font-size:10em;' >premium</label>
+<label class="pal" style='font-size:5em;' >premium</label>
 
 **Who are premium members?**
 
