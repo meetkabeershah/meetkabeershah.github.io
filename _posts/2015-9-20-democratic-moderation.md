@@ -3,9 +3,9 @@ layout: post
 title: Democratic moderation
 ---
 
-![Censorship](https://upload.wikimedia.org/wikipedia/commons/2/26/Andr%C3%A9_Gill_-_Madame_Anastasie.jpg)
+![Democratic](https://bhodbuzz.com/wp-content/uploads/2015/09/613178_orig.jpg)
 
-[courtesy](https:wikimedia.org)
+[courtesy](https://bhodbuzz.com/what-is-democracy.html)
 
 A lot of people scream about the moderation policies used by other community driven sites. I was thinking of a [democratic](https://nerdspal.com/Home/Overview#Democratic) moderation mode.
 
