@@ -12,4 +12,4 @@ My name is Zameer from [the city of dreams](http://www.incredibleindia.org/trave
 
 This is my [avatar](https://gravatar.com).
 
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make.
+I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. To sum up what I learn and avoid making a philosophy shit.
