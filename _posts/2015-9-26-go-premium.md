@@ -3,7 +3,7 @@ layout: post
 title: Go premium
 ---
 
-<label class="pal"> premium </label>
+<label class="pal"> <h1> premium </h1> </label>
 
 **Who are premium members?**
 
