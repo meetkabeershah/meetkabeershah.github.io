@@ -13,4 +13,4 @@ To recognise that guts, I had promised some special [worms](http://getworm.com/s
 
 The only reason of blindly awarding people 1k of marks is their ability to try out a completely strange thing. 
 
-I got [my golden badge](https://nerdspal.com/Account/Profile/42/xameeramir), grab yours.
+[Dannon](https://nerdspal.com/Account/Profile/54/dannonl) is the first person to receive such badge on nerdspal. If you subscribe through [Get worms](http://getworm.com/startup/nerdspal/) and get yours.
