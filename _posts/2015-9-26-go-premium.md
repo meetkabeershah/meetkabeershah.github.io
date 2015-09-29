@@ -3,6 +3,12 @@ layout: post
 title: Go premium
 ---
 
+![Premium not police](http://previews.123rf.com/images/bryljaev/bryljaev1304/bryljaev130400031/19022410-Golden-police-badge-Stock-Vector.jpg)
+
+[courtesy](http://www.123rf.com/photo_19022410_golden-police-badge.html)
+
+Police do have a golden badge but we're not talking about police. I wanted to introduce premium members. They get a golden badge but there is [no police here](blogx.nerdspal.com/democratic-moderation/).
+
 **Who are premium members?**
 
 We award premium badge to all who have achieved at least 1000 marks. They successfully demonstrate:
