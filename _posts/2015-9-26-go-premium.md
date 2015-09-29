@@ -7,8 +7,6 @@ title: Go premium
 
 [courtesy](http://www.dukunindonesia.com/store/premium-membership/)
 
-Police do have a golden badge but we're not talking about police. We wanted to introduce premium members. They get a golden badge but there is [no police here](blogx.nerdspal.com/democratic-moderation/).
-
 **Who are premium members?**
 
 We award premium badge to all who have achieved at least 1000 marks. They successfully demonstrate:
