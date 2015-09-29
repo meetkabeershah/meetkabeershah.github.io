@@ -9,6 +9,8 @@ title: Giving gold!
 
 [project **#RocketToTheMoon**](https://nerdspal.com) aka nerdspal.com is a stranger, trusting it would be a bit gutsy. 
 
-To recognise that guts, I had promised some special [worms](http://getworm.com/startup/nerdspal/) for our 1000 early adopters. A [gold premium badge](http://blogx.nerdspal.com/go-premium/).
+To recognise that guts, I had promised some special [worms](http://getworm.com/startup/nerdspal/) for our 1000 early adopters. A [gold premium badge](http://blogx.nerdspal.com/go-premium/) with **bonus 1001 marks**.
+
+The only reason of blindly awarding people 1k of marks is their ability to try out a completely strange thing. 
 
 I got [my golden badge](https://nerdspal.com/Account/Profile/42/xameeramir), grab yours.
