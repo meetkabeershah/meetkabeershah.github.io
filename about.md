@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). After dopping out from [my last school](http://www.nmims.edu/), I started building **project #RocketToTheMoon** aka [nerdspal.com](https://nerdspal.com/).
+![Logo](https://www.gravatar.com/avatar/7244c6ceacb2e8310d4d5f8d652b0b44?s=50&d=identicon)
 
-**nerdspal.com** is a professtional question and answer site for students, teachers and professionals to get recognized for sharing their valuable knowledge.
-
-![Me](https://www.gravatar.com/avatar/0964ab778245068b9d910764125004c9)
-
-This is my [avatar](https://gravatar.com).
-
-I started writing this blog for a more selfish reason - to track the way I think. To refer back and re-inforce the commitments I make. To sum up what I learn and avoid making a philosophy shit.
+**project #RocketToTheMoon** aka [nerdspal.com](https://nerdspal.com/) is a professtional question and answer site for students, teachers and professionals to get recognized for sharing their valuable knowledge.
