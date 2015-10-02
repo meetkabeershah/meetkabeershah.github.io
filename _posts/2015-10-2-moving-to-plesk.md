@@ -13,4 +13,4 @@ I spent a lot of time maintaining than building. Now, I wanted to say goodbye to
 
 It looks like it will reduce costs by **10x** - the actual benefit of choosing it.
 
-At the same time, I'm may lose that tight control offered by cloudy options. I'm not at all interested in control or authority, I just want to see my vision implemented.
+At the same time, I'm may lose that tight control offered by cloudy options. I'm not at all interested in stupid dictatorship, I just want to see my vision implemented.
