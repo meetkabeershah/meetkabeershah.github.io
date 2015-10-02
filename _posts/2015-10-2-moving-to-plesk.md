@@ -11,6 +11,6 @@ It was recently that I went too much into [server](http://blogx.nerdspal.com/lau
 
 I spent a lot of time maintaining than building. Now, I wanted to say goodbye to it. I'm trying to get my hands dirty with [plesk](http://www.odin.com/products/plesk/).
 
-It looks like it will reduce costs by **50X** - the actual benefit of choosing it.
+It looks like it will reduce costs by **10x** - the actual benefit of choosing it.
 
 At the same time, I'm may lose that tight control offered by cloudy options.
