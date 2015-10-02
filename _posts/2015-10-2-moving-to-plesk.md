@@ -3,9 +3,9 @@ layout: post
 title: Bye bye administration
 ---
 
-![Administration](http://i2.kym-cdn.com/photos/images/original/000/253/408/9b2.jpg)
+![Administration](http://ct.perceptionvsfact.com/ol/pf/se/i58/2/4/9/frabz-Network-Administration-What-my-friends-think-I-do-What-the-compa-938d91.jpg)
 
-[courtesy](http://knowyourmeme.com/photos/253408-what-people-think-i-do-what-i-really-do)
+[courtesy](http://perceptionvsfact.com/50pr)
 
 It was recently that I went too much into [server](http://blogx.nerdspal.com/launch-pre-requisites/) and database administration. Doing it for others vs doing it for yourself has a big diferrence.
 
