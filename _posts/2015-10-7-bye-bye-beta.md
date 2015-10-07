@@ -9,9 +9,9 @@ Just today, I gave order of 2k stickers as the first marketing endeavour for ner
 
 Why the heck I can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**. I really don't believe in astrology.
 
-![Stupidity](http://i2.wp.com/69.195.124.219/~irkitate/wp-content/uploads/2013/07/3odlv6-300x298.jpg?resize=200%2C198)
+![Stupidity astrology](http://cdn.meme.am/instances/59902750.jpg)
 
-[courtesy](http://www.irkitated.com/2013/07/horoscopes-are-bullshit.html)
+[courtesy](http://memegenerator.net/instance/59902750)
 
 Which student will not like if they get answers for their academic queries? They will love it. They pay for it [online](https://www.chegg.com/homework-help/questions-and-answers) and offline both. This is a real problem.
 
