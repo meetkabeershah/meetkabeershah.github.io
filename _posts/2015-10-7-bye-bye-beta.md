@@ -3,7 +3,7 @@ layout: post
 title: The departure from &beta;
 ---
 
-[nerdspal](https://nerdspal.com/) seems to be stable now but still I wanted to keep that *careful* **&beta;** *symbol*. I always worked as a windows app developer. To get started into web based development, I started working on this nerdy site. 
+[nerdspal](https://nerdspal.com/) seems to be stable now but still I wanted to keep that *careful* ***&beta;*** *symbol*. I always worked as a windows app developer. To get started into web based development, I started working on this nerdy site. 
 
 Why the heck I can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**. I really don't believe in astrology.
 
