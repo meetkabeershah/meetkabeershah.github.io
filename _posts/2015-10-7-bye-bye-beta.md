@@ -11,7 +11,7 @@ Why the heck I can say nerdspal will not work? Who knows about it? No one. The o
 
 Which student will not like if they get answers for their academic queries? They will love it. They pay for it - [online](https://www.chegg.com/homework-help/questions-and-answers) and offline both. This is a real problem.
 
-I'm dedicating october towards deciding my foolishness. If nerdspal is not something which [helps users](http://startupclass.samaltman.com/courses/lec07/), the best thing will be to shut it. I don't want to force anything on anyone.
+I'm dedicating october towards deciding my foolishness. If **(and only if)** nerdspal is not something which [helps users](http://startupclass.samaltman.com/courses/lec07/), the best thing will be to shut it. I don't want to force anything on anyone.
 
 These 2k stickers will help me decide how stupid I'm. I did this because I believe that:
 
