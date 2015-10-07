@@ -3,7 +3,7 @@ layout: post
 title: The departure from &beta;
 ---
 
-I always worked as a windows app developer. To get into web based development, I started working on [nerdspal](https://nerdspal.com/) and it seems to be stable now but still I wanted to keep that &beta; symbol.
+I always worked as a windows app developer. To get into web based development, I started working on [nerdspal](https://nerdspal.com/). It seems to be stable now but still I wanted to keep that &beta; symbol.
 
 Just today, I gave order of 2k stickers as the first marketing endeavour for nerdspal. So by tomorrow or the day after, I will be able to get started with spreading of word. **Two thousand?** may look difficult but not impossible. I am estimating that in 1 week I will be able to hand over all the stickers to almost all major college students.
 
