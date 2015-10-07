@@ -7,7 +7,7 @@ title: The departure from &beta;
 
 Just today, I gave order of 2k stickers as the first marketing endeavour for nerdspal. So by tomorrow or the day after, I will be able to get started with spreading of word. **Two thousand?** may look difficult but not impossible. I am estimating that in 1 week I will be able to hand over all the stickers to almost all major college students.
 
-Why the heck anyone can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**.
+Why the heck I can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**.
 
 Which student will not like if they get answers for their academic queries? They will love it. They pay for it - [online](https://www.chegg.com/homework-help/questions-and-answers) and offline both. This is a real problem.
 
