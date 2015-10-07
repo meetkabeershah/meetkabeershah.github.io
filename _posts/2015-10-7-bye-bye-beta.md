@@ -9,7 +9,7 @@ Just today, I gave order of 2k stickers as the first marketing endeavour for ner
 
 Why the heck I can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**. I really don't believe in astrology.
 
-![Stupidity astrology](http://cdn.meme.am/instances/59902750.jpg)
+![Stupidity astrology](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUOwD2rO1h8mQwj4ftEY6ebu43YZKPWtRp33OyWlwArn2-0k08)
 
 [courtesy](http://memegenerator.net/instance/59902750)
 
