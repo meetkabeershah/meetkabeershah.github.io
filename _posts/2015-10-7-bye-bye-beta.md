@@ -33,10 +33,3 @@ If things work well:
 else:
 
  - I'll select one of the big breaks.
- 
-And thinking is free.
-
-![free thinking](https://imgflip.com/readImage?iid=8334183)
-
-[courtesy](https://imgflip.com/memegenerator/8334183/thinking-meme)
-
