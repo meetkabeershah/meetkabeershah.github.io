@@ -14,6 +14,6 @@ I'm writing this post to list all the mistakes I make during [cloud](http://clou
  - Set [IIS_IUSRS](http://stackoverflow.com/a/18621550/2404470) and [app pool](http://stackoverflow.com/a/7334485/2404470) free
  - Check that your application pool refers to correct version of .NET
  - Get [re-certified](https://in.godaddy.com/help/request-an-ssl-certificate-562) - obviously it's a new server, right?
- - Install [certificate](http://windows.microsoft.com/en-us/windows/import-export-certificates-private-keys#1TC=windows-7)
+ - [Import](http://windows.microsoft.com/en-us/windows/import-export-certificates-private-keys#1TC=windows-7) and [install](https://in.godaddy.com/help/installing-an-ssl-certificate-in-microsoft-iis-5-and-6-4875) certificate
  - Import the same in [IIS](https://www.godaddy.com/help/installing-an-ssl-certificate-in-microsoft-iis-8-4951)
  
