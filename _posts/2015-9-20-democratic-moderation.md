@@ -7,7 +7,7 @@ title: Democratic moderation
 
 [courtesy](https://bhodbuzz.com/what-is-democracy.html)
 
-A lot of people scream about the moderation policies used by other community driven sites. I was thinking of a [democratic](https://nerdspal.com/Home/Overview#Democratic) moderation mode.
+A lot of people scream about the moderation policies used by other community driven sites. I was thinking of a [democratic](http://nerdspal.com/Home/Overview#Democratic) moderation mode.
 
 <h1> <span style="color:#50D050; text-align:center"> Democratic - it is yours, by you and for you </span> </h1>
 
@@ -18,6 +18,6 @@ A healthy and democratic moderation will help keep the dirty spammers off as the
  - etc.
 
 
-To make sure that moderation doesn't become [suppression of speech](https://en.wikipedia.org/wiki/Censorship) by anonymous police, [nerdspal](https://nerdspal.com) will show you who have made changes to your post. 
+To make sure that moderation doesn't become [suppression of speech](https://en.wikipedia.org/wiki/Censorship) by anonymous police, [nerdspal](http://nerdspal.com) will show you who have made changes to your post. 
 
-> So, you get all the community rights from the day you [become awesome by joining the site](https://nerdspal.com/Account/Register).
+> So, you get all the community rights from the day you [become awesome by joining the site](http://nerdspal.com/Account/Register).
