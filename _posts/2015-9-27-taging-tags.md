@@ -13,7 +13,7 @@ How do nerdspal solve this problem? **tags**? Yes!
 
 **What are tags on nerdspal?**
 
-A tag is a field of study under which a question is posted. Each tag represents an area of study like [HTML](https://nerdspal.com/Questions/Tagged?field=HTML), [intellectual property](https://nerdspal.com/Questions/Tagged?field=Intellectual%20property), [law](https://nerdspal.com/Questions/Tagged?field=Law).
+A tag is a field of study under which a question is posted. Each tag represents an area of study like [HTML](http://nerdspal.com/Questions/Tagged?field=HTML), [intellectual property](http://nerdspal.com/Questions/Tagged?field=Intellectual%20property), [law](http://nerdspal.com/Questions/Tagged?field=Law).
 
 **Why a tag is important?**
 
