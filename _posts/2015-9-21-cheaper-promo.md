@@ -11,9 +11,9 @@ title: Self promo - who need it?
 
 Hang on, it's going to be too much sooner!
 
-Over self promotion is not at all needed at [nerdspal](https://nerdspal.com).
+Over self promotion is not at all needed at [nerdspal](http://nerdspal.com).
 
-Because **ads on nerdspal are very cheap**, you can send in your ad enquiries to [hello@nerdspal.com](mailto:hello@nerdspal.com).
+Because **ads on nerdspal are very cheap**, you can send in your ad enquiries to [nerdspal@gmail.com](mailto:nerdspal@gmail.com).
 
 #And for some good cause
 
@@ -24,4 +24,4 @@ We will distribute **100% free ads** for [non profits](https://en.wikipedia.org/
  - Orphanage
  - Other NGOs
 
-So, don't lose your [awesomeness](https://nerdspal.com/Home/Overview#Avoid).
+So, don't lose your [awesomeness](http://nerdspal.com/Home/Overview#Avoid).
