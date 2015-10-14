@@ -3,7 +3,7 @@ layout: post
 title: Tracking trings
 ---
 
-After the [beta release](http://blogx.nerdspal.com/beta-launching/) of [project #RocketToTheMoon](https://nerdspal.com), I received a lot of suggestions from my friends and colleagues. One of them was better tracking of answers and comments on posts.
+After the [beta release](http://blogx.nerdspal.com/beta-launching/) of [project #RocketToTheMoon](http://nerdspal.com), I received a lot of suggestions from my friends and colleagues. One of them was better tracking of answers and comments on posts.
 
 So to meet those [suggestions](https://docs.google.com/forms/d/1tmL5Is22aNc6pfALj--OatM5TnhjJLZd50auN3WgM24/viewanalytics), below is the plan:
 
