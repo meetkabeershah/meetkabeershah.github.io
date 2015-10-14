@@ -7,7 +7,7 @@ title: nerdspal launch pre-requisites
 
 [courtesy](http://www.popsugar.com/smart-living/Career-Money-News-Jan-16-2014-33539493)
 
-I'm writing this post to list all the mistakes I make during [cloud](http://cloud.google.com/) deployments for project [**#RocketToTheMoon**](https://nerdspal.com/).
+I'm writing this post to list all the mistakes I make during [cloud](http://cloud.google.com/) deployments for project [**#RocketToTheMoon**](http://nerdspal.com/).
 
  - Get the [database connector](http://dev.mysql.com/downloads/connector/net)
  - Stare that *publish successful* notification on the Visual studio output window
