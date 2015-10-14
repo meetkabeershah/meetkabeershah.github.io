@@ -20,4 +20,4 @@ I hope it's a [nice](http://www.davidairey.com/what-makes-a-good-logo/) logo.
 
 [Painted](https://en.wikipedia.org/wiki/Paint_(software)) on windows, I need to enhance it with some [cooler tools](http://www.adobe.com/in/products/illustrator.html).
 
-I am also planning to initiate some hardcore marketing efforts for [nerdspal](https://nerdspal.com/), but before that I wanted to keep some swag ready for [new and already nerds](https://nerdspal.com/Account/League). Of course, it's part of [#LoveThyUser](http://nistencorp.com/) initiative. I'll talk about this swag thing in my upcoming posts, it's better to brag less and do more.
+I am also planning to initiate some hardcore marketing efforts for [nerdspal](http://nerdspal.com/), but before that I wanted to keep some swag ready for [new and already nerds](http://nerdspal.com/Account/League). Of course, it's part of [#LoveThyUser](http://nistencorp.com/) initiative. I'll talk about this swag thing in my upcoming posts, it's better to brag less and do more.
