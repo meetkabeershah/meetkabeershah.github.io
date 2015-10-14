@@ -3,7 +3,7 @@ layout: post
 title: A place to collaborate in your learning efforts
 ---
 
->So how [nerdspal](https://nerdspal.com) can be used?
+>So how [nerdspal](http://nerdspal.com) can be used?
 
 **Ask your questions**
 
@@ -15,7 +15,7 @@ So say you have a question which is **related to your academics irrespetive of f
  - a wordy essay,
  - or a doubt you have
  
-Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
+Go ahead and ask them at nerdspal.
 
 ![Ask questions](http://40.media.tumblr.com/8d5ee0ae0f4bde56ca5e8bbc330cd00c/tumblr_ns9fbzuFEd1u5n37no1_1280.jpg)
 
@@ -23,7 +23,7 @@ Go ahead and [ask them](https://nerdspal.com/Questions/Create) at nerdspal.
 
 **Complement your academic profile**
 
-When you post something on nerdspal, your post is accompanied with a marks awarding section. Your [peers](https://nerdspal.com/Account/League) can award marks to them based upon the usefulness, clarity and all those *nice things*. 
+When you post something on nerdspal, your post is accompanied with a marks awarding section. Your peers can award marks to them based upon the usefulness, clarity and all those *nice things*. 
 
 This adds up your total marks which finally goes to your profile.
 
