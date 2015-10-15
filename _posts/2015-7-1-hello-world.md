@@ -5,7 +5,7 @@ title: Hello world!
 
 My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I dopped out from [my last school](http://www.nmims.edu/).
 
-![Avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=460)
+![Avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80)
 
 This is my [avatar](https://gravatar.com)
 
