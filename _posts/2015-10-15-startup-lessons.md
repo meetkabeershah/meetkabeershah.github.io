@@ -11,7 +11,7 @@ Don't play solo song. For a startup you need a team.
 
 Do not launch a product on 3+ billion users when nobody knows about it. Make sure you do a survey of how many people might be interested in the solution. [Help us with that please :)](http://invite.nerdspal.com)
 
-[![want](http://cdn.meme.am/instances/500x/54204520.jpg)](http://it.ign.com/forum/threads/assassins-creed-1886-ac-next-gen-2015.3609/)
+[![want](https://lovestats.files.wordpress.com/2012/07/success-kid-short-survey.jpg?w=620)](https://lovestats.wordpress.com/dman/survey-research-statistics-meme/)
 
 Have 6 month cash ready, so you can completely focus on not spending your time on other things
 
