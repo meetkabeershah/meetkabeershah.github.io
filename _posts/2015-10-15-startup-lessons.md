@@ -5,12 +5,13 @@ layout: post
 
 Here is the process correction plan.
 
-#Don't play solo song. For a startup you need a team.
+#Don't play solo song.
+For a startup you need a team.
 
 [![alone](http://cdn.meme.am/instances/400x/49930952.jpg)](http://memegenerator.net/instance/49930952)
 
-#Make sure you do a survey of how many people might be interested in the solution.
-Do not launch a product on 3+ billion users when nobody knows about it. [Help us with that please :)](http://invite.nerdspal.com)
+#Make sure you do a survey
+of how many people might be interested in the solution. Do not launch a product on 3+ billion users when nobody knows about it. [Help us with that please :)](http://invite.nerdspal.com)
 
 [![want](https://lovestats.files.wordpress.com/2012/07/success-kid-short-survey.jpg?w=620)](https://lovestats.wordpress.com/dman/survey-research-statistics-meme/)
 
