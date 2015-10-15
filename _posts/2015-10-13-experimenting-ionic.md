@@ -13,7 +13,7 @@ Initially, I started buliding nerdspal on web with a feeling that it will be eas
 
 I'm thinking of [ionic framework](http://ionicframework.com/) as my preferred choice. This will completely be a new experience. I have 7-9 views which needs to be rendered on mobile. I have a lot of other things to be also added.
 
-I'm considering the project [failed](http://blogx.nerdspal.com/bye-bye-beta/) and it's totally fine. Even [Phil](http://www.wired.co.uk/news/archive/2013-10/30/evernote-on-failure) agrees.
+I'm considering the **"web"** project [failed](http://blogx.nerdspal.com/bye-bye-beta/) and it's totally fine. Even [Phil](http://www.wired.co.uk/news/archive/2013-10/30/evernote-on-failure) agrees.
 
 I will keep this as the side project now. Yes, I'll keep developing this in my spare time. Because I learnt a lot of things which I never thought before. It changed the way I work.
 
