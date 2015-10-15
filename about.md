@@ -6,7 +6,7 @@ permalink: /about/
 
 This is [Zameer](http://blogx.nerdspal.com/hello-world/). I write about stuff so I can track the way I think.
 
-I found the following five things to be true:
+I found the following [five things](https://www.themuse.com/advice/5-ways-successful-people-become-more-innovative-every-day) to be true:
 
 ![They Don’t Discount Their Crazy Ideas](https://tm-prod.global.ssl.fastly.net/uploaded/attachments/18863.jpg?v=db4f81a4ba3dfbe4053617a8267589c9)
 
