@@ -15,6 +15,4 @@ I'm thinking of [ionic framework](http://ionicframework.com/) as my preferred ch
 
 I'm considering the **"web"** project [failed](http://blogx.nerdspal.com/bye-bye-beta/) and it's totally fine. Even [Phil](http://www.wired.co.uk/news/archive/2013-10/30/evernote-on-failure) agrees.
 
-I will keep this as the side project now. Yes, I'll keep developing this in my spare time. Because I learnt a lot of things which I never thought before. It changed the way I work.
-
-That change would have never came if I would not have found my love.
+I will keep this as the side project now. Yes, I'll keep developing this in my spare time. Because I learnt a lot of things which I never thought before.
