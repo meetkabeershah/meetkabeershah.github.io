@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is Zameer, a dev from Mumbai. I write about stuff I learn doing crazy things.
+This is [Zameer](http://blogx.nerdspal.com/hello-world/). I write about stuff so I can track the way I think.
