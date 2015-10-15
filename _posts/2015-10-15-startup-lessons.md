@@ -5,7 +5,7 @@ layout: post
 
 [![Correct](http://www.memebucket.com/mb/2012/07/Made-A-Correction-While-Typing-Password-834.png)](http://www.memebucket.com/made-a-correction-while-typing-password/)
 
-Here is the correction plan.
+Here is the process correction plan.
 
 Don't play solo song. For a startup you need a team.
 
