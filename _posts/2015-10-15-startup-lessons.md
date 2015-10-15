@@ -3,7 +3,7 @@ title: Please don't do that
 layout: post
 ---
 
-I'm writing things to avoid for my next startups.
+I'm writing things to be avoided by any startup.
 
 Don't play solo song. For a startup you need a team.
 
