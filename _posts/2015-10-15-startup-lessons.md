@@ -3,6 +3,10 @@ title: Correction required
 layout: post
 ---
 
+[![Correct](http://www.memebucket.com/mb/2012/07/Made-A-Correction-While-Typing-Password-834.png)](http://www.memebucket.com/made-a-correction-while-typing-password/)
+
+Here is the correction plan.
+
 Don't play solo song. For a startup you need a team.
 
 [![alone](http://cdn.meme.am/instances/400x/49930952.jpg)](http://memegenerator.net/instance/49930952)
@@ -28,4 +32,4 @@ Give a definite reason for investors to join you
 
 [![planning](http://www.honeytechblog.com/wp-content/uploads/2009/05/business-plan.jpg)](http://startupmeme.com/tag/business-structure/)
 
-Soon, I may fly out of India to get more exposure to learning.
+Soon, I may fly out of India to get more exposure to learning. I wanted to keep it **(alive)[http://amazingspiderman.wikia.com/wiki/Gwen_Stacy]**.
