@@ -17,4 +17,4 @@ I'm considering the **"web"** project [failed](http://blogx.nerdspal.com/bye-bye
 
 I will keep this as the side project now. Yes, I'll keep developing this in my spare time. Because I learnt a lot of things which I never thought before. It changed the way I work.
 
-That change would have never came without this extraordinary experience.
+That change would have never came if I would not have found my love.
