@@ -1,9 +1,7 @@
 ---
-title: Please don't do that
+title: Startup correction steps
 layout: post
 ---
-
-I'm writing things to be avoided by any startup.
 
 Don't play solo song. For a startup you need a team.
 
