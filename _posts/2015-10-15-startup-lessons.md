@@ -7,7 +7,7 @@ I'm writing things to be avoided by any startup.
 
 Don't play solo song. For a startup you need a team.
 
-[![alone](http://geekologie.com/2013/04/02/forever-alone-statue-3.jpg)](http://geekologie.com/2013/04/be-my-friend-forever-alone-meme-desktop.php)
+[![alone](http://cdn.meme.am/instances/400x/49930952.jpg)](http://memegenerator.net/instance/49930952)
 
 Do not launch a product on 3+ billion users when nobody knows about it. Make sure you do a survey of how many people might be interested in the solution. [Help us with that please :)](http://invite.nerdspal.com)
 
