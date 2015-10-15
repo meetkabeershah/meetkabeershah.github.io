@@ -34,4 +34,4 @@ for investors to join you
 
 [![planning](http://www.honeytechblog.com/wp-content/uploads/2009/05/business-plan.jpg)](http://startupmeme.com/tag/business-structure/)
 
-Soon, I may fly out of India to get more exposure to learning. I wanted to keep it **(alive)[http://briandoddonleadership.com/2014/05/03/20-leadership-quotes-and-lessons-from-the-amazing-spider-man-2-gwen-stacy-speech/]**.
+Soon, I may fly out of India to get more exposure to learning. I wanted to keep it (alive)[http://briandoddonleadership.com/2014/05/03/20-leadership-quotes-and-lessons-from-the-amazing-spider-man-2-gwen-stacy-speech/].
