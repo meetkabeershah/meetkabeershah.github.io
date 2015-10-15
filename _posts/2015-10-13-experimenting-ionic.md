@@ -3,7 +3,7 @@ title: Getting mobile first
 layout: post
 ---
 
-[![Mobile](https://s-media-cache-ak0.pinimg.com/736x/75/2d/bb/752dbbd6dd85cad85150e6f8e2eede2f.jpg)](https://www.pinterest.com/pin/361906520029013636/)
+[![Mobile](http://cdn.meme.am/instances/55313941.jpg)](http://memegenerator.net/instance/55313941)
 
 
 
