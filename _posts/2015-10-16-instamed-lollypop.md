@@ -13,4 +13,4 @@ As a dev, you can embed their solutions in your own app. The only problem which 
 
 If you're already a healthcare company using their solutions and (obviously) paying for it. Having an API integrated will make you brag more in parties. You don't need to be worried about that maintenance and regressions.
 
-[Here](http://www.nextservices.com/), this looks really relevant. Let me get my hair pulled for simplifying that eligibility process.
+[Here](http://www.nextservices.com/), this looks really relevant.
