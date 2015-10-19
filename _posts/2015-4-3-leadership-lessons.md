@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: leadership lessons
 ---
 
 ![leadership](https://media.licdn.com/mpr/mpr/jc/AAEAAQAAAAAAAAOeAAAAJGVlZjk5NmMyLTM2NWEtNDliZi04N2Y5LTAwYjUxYjBkZDQ1Yg.jpg)
