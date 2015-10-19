@@ -1,9 +1,7 @@
 ---
-title: Process correction
+title: Startup needs
 layout: post
 ---
-
-Here is the process correction plan.
 
 #Don't play solo song
 For a startup you need a team.
@@ -11,7 +9,7 @@ For a startup you need a team.
 [![alone](http://cdn.meme.am/instances/400x/49930952.jpg)](http://memegenerator.net/instance/49930952)
 
 #Make sure you do a survey
-of how many people might be interested in the solution. Do not launch a product on 3+ billion users when nobody knows about it. [Help us with that please :)](http://invite.nerdspal.com)
+of how many people might be interested in the solution. Do not launch a product on 3+ billion users when nobody knows about it.
 
 [![want](https://lovestats.files.wordpress.com/2012/07/success-kid-short-survey.jpg?w=620)](https://lovestats.wordpress.com/dman/survey-research-statistics-meme/)
 
@@ -20,7 +18,7 @@ So you can completely focus on not spending your time on other things
 
 [![money](http://blog.dwolla.com/wp-content/uploads/2013/01/found-money-meme.jpg)](http://blog.dwolla.com/7-smart-tools-for-tracking-your-finances/found-money-meme/)
 
-#Make it easy for [users](http://blogx.nerdspal.com/experimenting-ionic/)
+#Make it easy for users
 
 [![easy](http://www.quickmeme.com/img/6f/6f704886df13893db5223284b5d98cd1cbc3a59343a3a1a113d862b3afcc249a.jpg)](http://www.quickmeme.com/Panda-Take-It-Easy)
 
@@ -33,5 +31,3 @@ So you can completely focus on not spending your time on other things
 for investors to join you
 
 [![planning](http://www.honeytechblog.com/wp-content/uploads/2009/05/business-plan.jpg)](http://startupmeme.com/tag/business-structure/)
-
-I wanted to keep it [alive](http://briandoddonleadership.com/2014/05/03/20-leadership-quotes-and-lessons-from-the-amazing-spider-man-2-gwen-stacy-speech/).
