@@ -3,7 +3,7 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). Dopped out from [my last school](http://www.nmims.edu/).
+My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). A drop out from [a cool school](http://www.nmims.edu/).
 
 ![Avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80)
 
