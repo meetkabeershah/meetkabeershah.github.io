@@ -3,33 +3,22 @@ layout: post
 title: The departure from &beta;
 ---
 
-[nerdspal](http://nerdspal.com/) seems to be stable now but still I wanted to keep that *careful* ***&beta;*** *symbol*. I always worked as a windows app developer. To get started into web based development, I started working on this nerdy site. 
+If a software seems to be stable, it's still wise to keep that *careful* ***&beta;*** *symbol*. 
 
-Why the heck I can say nerdspal will not work? Who knows about it? No one. The only way I'll decide things is **by doing**. I really don't believe in astrology.
+The only way to decide things is **by doing**. I really don't believe in astrology.
 
 ![Stupidity astrology](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUOwD2rO1h8mQwj4ftEY6ebu43YZKPWtRp33OyWlwArn2-0k08)
 
 [courtesy](http://memegenerator.net/instance/59902750)
 
-Which student will not like if they get answers for their academic queries? They will love it. They pay for it [online](https://www.chegg.com/homework-help/questions-and-answers) and offline both. This is a real problem.
+I feel that if a software can address users' problems it is worth doing.
 
-I'm dedicating october towards deciding my foolishness. If **(and only if)** nerdspal is not something which [helps users](http://startupclass.samaltman.com/courses/lec07/), the best thing will be to shut it. I don't want to force anything on anyone.
+I usually dedicate some time deciding my foolishness. If **(and only if)** the software is not something which [helps users](http://startupclass.samaltman.com/courses/lec07/), the best thing is to shut it without forcing anything on anyone.
 
-Just today, I gave order of 2k stickers as the first marketing endeavour for nerdspal. So by tomorrow or the day after, I will be able to get started with spreading of word. **Two thousand?** may look difficult but not impossible. I am estimating that in 1 week I will be able to hand over all the stickers to almost all major college students.
-
-These 2k stickers will help me decide how stupid I'm. I did this because I believe that:
+I do stuff because I believe that:
 
 > It's better to try and fail then to never try.
 
-If eventually I fail, at least I'll be happy that I tried something which I was always afraid of. Having experience of a startup is really cool (and a little painful).
+If eventually you fail, at least you'll be happy that you tried something which you were always afraid of. Having experience of a failure is really cool (and a little painful).
 
-I understand that [traction](https://www.quora.com/Startup-Traction/How-do-social-sites-e-g-Hunch-Foursquare-Reddit-Digg-go-from-1-to-1000K-users) is the most important element here. I also understand that my vision shall not be a [blind passion](http://www.examiner.com/article/how-blind-passion-can-lead-you-straight-off-the-cliff).
-
-If things work well:
-
- - I wanted a team. Not employees but partners to push things forward.
- - I wanted investors to extend help to every student of the entire globe.
-
-else:
-
- - I'll select one of the big breaks and use lessons I have learnt.
+I understand that usage is the most important element for a software's success. I also understand that a vision shall not be a [blind passion](http://www.examiner.com/article/how-blind-passion-can-lead-you-straight-off-the-cliff).
