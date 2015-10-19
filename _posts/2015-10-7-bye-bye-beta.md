@@ -13,7 +13,7 @@ The only way to decide things is **by doing**. I really don't believe in astrolo
 
 I feel that if a software can address users' problems it is worth doing.
 
-I usually dedicate some time deciding my foolishness. If **(and only if)** the software is not something which [helps users](http://startupclass.samaltman.com/courses/lec07/), the best thing is to shut it without forcing anything on anyone.
+I usually dedicate some time deciding my foolishness. If **(and only if)** the software is not something which helps users, the best thing is to shut it without forcing anything on anyone.
 
 I do stuff because I believe that:
 
