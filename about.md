@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is [Zameer](/hello-world/). I briefly write about stuff to complement my work.
+This is [Zameer](https://www.linkedin.com/in/xameeramir). I briefly write about stuff to complement my work.
 
 I found the following [five things](https://www.themuse.com/advice/5-ways-successful-people-become-more-innovative-every-day) to be true:
 
