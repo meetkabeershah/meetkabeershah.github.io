@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google cloud conference
+title: Cloudy conference
 ---
 
 ![conference](https://pbs.twimg.com/media/CKWlYRmUMAACNtA.png)
