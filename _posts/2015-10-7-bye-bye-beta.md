@@ -5,7 +5,7 @@ title: The departure from &beta;
 
 If a software seems to be stable, it's still wise to keep that *careful* ***&beta;*** *symbol*. 
 
-The only way to decide things is **by doing**. I really don't believe in astrology.
+The only way to decide things is **by doing**.
 
 ![Stupidity astrology](https://i.imgflip.com/892wd.jpg)
 
@@ -13,10 +13,9 @@ The only way to decide things is **by doing**. I really don't believe in astrolo
 
 I feel that if a software can address users' problems it is worth. Give the software as a toy in user's hands. If **(and only if)** they start playing with it, it's really cool. Some kids like to break toys also.
 
-I do stuff because I believe that:
+> Sometimes, it's better to try and fail then to never try.
 
-> It's better to try and fail then to never try.
+If eventually you fail, at least you'll be happy that you tried something which you were afraid of. Having experience of a failure is really cool (and a little painful).
 
-If eventually you fail, at least you'll be happy that you tried something which you were always afraid of. Having experience of a failure is really cool (and a little painful).
-
-I understand that usage is the most important element for a software's success. I also understand that a vision shall not be a [blind passion](http://www.examiner.com/article/how-blind-passion-can-lead-you-straight-off-the-cliff).
+<!--
+I understand that usage is the most important element for a software's success. I also understand that a vision shall not be a [blind passion](http://www.examiner.com/article/how-blind-passion-can-lead-you-straight-off-the-cliff).-->
