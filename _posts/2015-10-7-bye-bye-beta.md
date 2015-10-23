@@ -14,5 +14,3 @@ The only way to decide things is **by doing**.
 I feel that if a software can address users' problems it is worth. Give the software as a toy in user's hands. If **(and only if)** they start playing with it, it's really cool. Some kids like to break toys also.
 
 > Sometimes, it's better to try and fail then to never try.
-
-If eventually you fail, at least you'll be happy that you tried something which you were afraid of. Having experience of a failure is really cool (and a little painful).
