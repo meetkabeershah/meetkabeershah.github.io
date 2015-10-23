@@ -7,13 +7,11 @@ If a software seems to be stable, it's still wise to keep that *careful* ***&bet
 
 The only way to decide things is **by doing**. I really don't believe in astrology.
 
-![Stupidity astrology](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUOwD2rO1h8mQwj4ftEY6ebu43YZKPWtRp33OyWlwArn2-0k08)
+![Stupidity astrology](https://i.imgflip.com/892wd.jpg)
 
-[courtesy](http://memegenerator.net/instance/59902750)
+[courtesy](https://imgflip.com/tag/astrology)
 
-I feel that if a software can address users' problems it is worth doing.
-
-I usually dedicate some time deciding my foolishness. If **(and only if)** the software is not something which helps users, the best thing is to shut it without forcing anything on anyone.
+I feel that if a software can address users' problems it is worth. Give the software as a toy in user's hands. If **(and only if)** they start playing with it, it's really cool. Some kids like to break toys also.
 
 I do stuff because I believe that:
 
