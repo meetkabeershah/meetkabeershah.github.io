@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digital marketing and communications workshop
+title: Dig marketing workshop
 ---
 
 Last sunday I attended a workshop for digital marketing and communication strategies. The communication part was explained well, while I felt that digital marketing was a revision.
