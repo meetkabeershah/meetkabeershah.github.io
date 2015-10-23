@@ -3,6 +3,10 @@ layout: post
 title: Dig marketing workshop
 ---
 
+![SEO](http://nandojourneyman.com/wp-content/uploads/sites/2/2014/12/what-is-seo-meme.jpg)
+
+[courtesy](http://nandojourneyman.com/category/digital-marketing-category/)
+
 Last sunday I attended a workshop for [digital marketing and communication](http://www.knowdigitalmarketing.com/) strategies. The communication part was explained well, while I felt that digital marketing was a revision.
 
 My take way was the few lines I heard:
