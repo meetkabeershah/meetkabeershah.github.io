@@ -3,9 +3,9 @@ layout: post
 title: Digi marketing workshop
 ---
 
-![SEO](http://40.media.tumblr.com/tumblr_mejowwoc311ri59r2o1_500.jpg)
+![SEO](http://www.upswinginteractive.com/wp-content/uploads/2014/05/SocialBuzz.jpg)
 
-[courtesy](http://digitalmarketingschools.tumblr.com/)
+[courtesy](http://www.upswinginteractive.com/wp-content/uploads/2014/05/SocialBuzz.jpg)
 
 Last sunday I attended a workshop for [digital marketing and communication](http://www.knowdigitalmarketing.com/) strategies. The communication part was explained well, while I felt that digital marketing was a revision.
 
