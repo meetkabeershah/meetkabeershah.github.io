@@ -16,6 +16,3 @@ I feel that if a software can address users' problems it is worth. Give the soft
 > Sometimes, it's better to try and fail then to never try.
 
 If eventually you fail, at least you'll be happy that you tried something which you were afraid of. Having experience of a failure is really cool (and a little painful).
-
-<!--
-I understand that usage is the most important element for a software's success. I also understand that a vision shall not be a [blind passion](http://www.examiner.com/article/how-blind-passion-can-lead-you-straight-off-the-cliff).-->
