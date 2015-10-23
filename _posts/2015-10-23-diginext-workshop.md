@@ -3,7 +3,7 @@ layout: post
 title: Dig marketing workshop
 ---
 
-Last sunday I attended a workshop for digital marketing and communication strategies. The communication part was explained well, while I felt that digital marketing was a revision.
+Last sunday I attended a workshop for [digital marketing and communication](http://www.knowdigitalmarketing.com/) strategies. The communication part was explained well, while I felt that digital marketing was a revision.
 
 My take way was the few lines I heard:
 
@@ -26,7 +26,3 @@ The answer:
  - Offer solutions (If this time is not fine, we can meet at everyone's coolest time)
 
 Humans, they're sense making species.
-
-![That guy in black shirt](https://scontent-sin1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/12118951_1205072442842637_6038800200756631743_n.jpg?oh=b854aeb6a1ecb580a25250f0e7183804&oe=56C74025)
-
-[courtesy](https://www.facebook.com/LearnDigitalMarketing)
