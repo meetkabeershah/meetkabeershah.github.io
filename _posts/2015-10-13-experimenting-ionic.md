@@ -11,6 +11,6 @@ Initially, I started buliding apps on desktop and web with a feeling that it wil
 
 I'm thinking of [ionic framework](http://ionicframework.com/) as my preferred choice. This will completely be a [new experience](http://stackoverflow.com/questions/33152154/is-ionic-framework-free).
 
-I'm considering the web and desktop projects **old** and it's totally fine. Even [Satya](http://www.informationweek.com/software/enterprise-applications/microsofts-mobile-first-cloud-first-strategy-explained/d/d-id/1234865) agrees.
+I'm considering the web and desktop projects **old** and it's totally fine. Even [Satya](https://news.microsoft.com/2014/03/27/satya-nadella-mobile-first-cloud-first-press-briefing/) agrees.
 
 Yes, I'll still develop those stuff, because I learnt a lot of things which I never knew before.
