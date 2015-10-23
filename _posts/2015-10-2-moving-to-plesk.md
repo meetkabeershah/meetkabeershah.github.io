@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Bye bye administration
+title: Hello plesk
 ---
 
-![Administration](http://ct.perceptionvsfact.com/ol/pf/se/i58/2/4/9/frabz-Network-Administration-What-my-friends-think-I-do-What-the-compa-938d91.jpg)
+![Administration](http://cdn.meme.am/instances/61735265.jpg)
 
-[courtesy](http://perceptionvsfact.com/50pr)
+[courtesy](http://memegenerator.net/instance/61735265)
 
-It was recently that I went too much into [server](/launch-pre-requisites/) and database administration.
+It was recently that I went too much into [server](/launch-pre-requisites/) and database administration for hosting [ASP.NET on  cloud](https://cloud.google.com/launcher/solution/click-to-deploy-images/aspnet)
 
-I spent a lot of time maintaining than building. Now, I wanted to say goodbye to it. I'm trying to get my hands dirty with [plesk](http://www.odin.com/products/plesk/).
+I spent a lot of time maintaining than building. Now, I'm trying to get my hands dirty with [plesk](http://www.odin.com/products/plesk/).
 
-It looks like it will reduce costs by **10x** - the actual benefit of choosing it.
+Hosting providers provide plesk as a packaged tool with hosting plans. Plesk helps you manage the hosting of your ASP.NET website. 
 
-At the same time, I may lose that tight control offered by cloudy options.
+Shared hosting reduces site costs by **10x** - the actual benefit of choosing it.
+
+At the same time, one may lose that tight control offered by cloudy options.
