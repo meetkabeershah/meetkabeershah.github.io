@@ -74,4 +74,6 @@ Go polite with with your group. Admit mistakes and quickly correct them. If bend
 #Invest in relationships
 What if you reach where you want. Is it worth alone? Really not! I remember, when my colleagues at Next Services helped me raise funds to pay my educational expenses. The trust factor is very important. So, take time and effort to build your relations.
 
+<p class="casual">
 *** Exposure is one of the best teachers. Like any skill, leadership skills cannot be learned by reading or writing. The best way to learn it is to... just do it. Above is a series of lessons I learned as the class rep at NMIMS, MU and AUHS. I'll keep updating this list as and when I go back in flashback. This role helped me transform myself in many ways - both professionally as well as personally.
+</p>
