@@ -7,7 +7,7 @@ title: Hello world!
 
 [courtesy](http://ticketsynergy.com/2015/06/hello-world/)
 
-This is Zameer from [financial capital of India](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in).
+This is Zameer from [India's financial capital](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in).
 
 This is my [avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80)
 
