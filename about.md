@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This is [Zameer](https://www.linkedin.com/in/xameeramir). I briefly write about stuff I learn along.
+This is [Zameer](/hello-world/). I briefly write about stuff I learn along.
 
 I found the following things to be true:
 
