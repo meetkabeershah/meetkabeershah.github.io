@@ -10,3 +10,12 @@ This attendance helped me take first steps in cloud technologies.
 A lot of things came up and one line which I still remember is:
 
 > People do not buy technology, they buy what it does for them
+
+We were shown how cloud technologies can help reduce on premise cost and resources.
+
+ - You can create and destroy instances in minutes
+ - Take entire control of your IT infrastructure in your own hands
+ - Pause instances to avoid unbearable bills
+ - Pay as you go
+ - Get backup and security of your data and apps
+ - And many more
