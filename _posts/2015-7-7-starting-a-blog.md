@@ -3,6 +3,10 @@ layout: post
 title: Here you come - choosing a blog platform
 ---
 
+![Jekyll](http://www.girliemac.com/assets/images/articles/2013/12/jekyll.png)
+
+[courtesy](http://www.girliemac.com/blog/2013/12/27/wordpress-to-jekyll/)
+
 Anyone there? So, here you are... Yes talking to you!
 
 Since many days I was thinking to build a platform to share our thoughts and ask for advice about what I build.
