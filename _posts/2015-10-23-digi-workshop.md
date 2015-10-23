@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dig marketing workshop
+title: Digi marketing workshop
 ---
 
 ![SEO](http://40.media.tumblr.com/tumblr_mejowwoc311ri59r2o1_500.jpg)
