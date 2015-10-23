@@ -9,7 +9,7 @@ title: Here you come - choosing a blog platform
 
 Anyone there? So, here you are... Yes talking to you!
 
-Since many days I was thinking to build a platform to share our thoughts and ask for advice about what I build.
+Since many days I was thinking to setup a platform to share our thoughts and ask for advice about what I do.
 
 I thought about [wordpress](https://wordpress.com/), [ghost](https://ghost.org/) and [tumblr](https://www.tumblr.com/). We loved tumblr for some *pew pew* reason.
 
