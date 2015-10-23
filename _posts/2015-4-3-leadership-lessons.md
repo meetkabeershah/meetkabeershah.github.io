@@ -1,6 +1,6 @@
 ---
 layout: post
-title: leadership lessons
+title: Lessons learned as a class rep
 ---
 
 ![leadership](https://media.licdn.com/mpr/mpr/jc/AAEAAQAAAAAAAAOeAAAAJGVlZjk5NmMyLTM2NWEtNDliZi04N2Y5LTAwYjUxYjBkZDQ1Yg.jpg)
