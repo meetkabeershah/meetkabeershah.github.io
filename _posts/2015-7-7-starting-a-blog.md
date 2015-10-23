@@ -15,4 +15,6 @@ I thought about [wordpress](https://wordpress.com/), [ghost](https://ghost.org/)
 
 This blog is written using [jekyll](http://jekyllrb.com/), which was never in my mind. It offers quite simple ways to get our blog [up and ready](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/). Yes, it doesn't make us feel *pew pew* but it's nice enough to get our job done.
 
-So, this blog is where we will meet again and again.
+ It's blog aware and tweakable for accomodating features such as pagination. Jekyll runs on [Github servers](https://pages.github.com/) so it can easily take care of high volume of traffic.
+
+Helps you take care of SEO by giving [sitemaps](http://xameeramir.github.io/sitemap.xml).
