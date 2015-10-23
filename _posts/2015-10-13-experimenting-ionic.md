@@ -5,12 +5,10 @@ layout: post
 
 [![Mobile](http://cdn.meme.am/instances/55313941.jpg)](http://memegenerator.net/instance/55313941)
 
-Since a very long time I was thinking about the problem for users to adopt any software. I'm feeling that mobile is going to take large of part of the user base. [Android](https://www.android.com/)'s future is looking promising.
+Since a very long time I was thinking about the problem for users to adopt any software. I'm feeling that mobile is taking large part of the user base. [Android](http://www.forbes.com/sites/dougolenick/2015/05/27/apple-ios-and-google-android-smartphone-market-share-flattening-idc/)'s future is looking promising.
 
-Initially, I started buliding apps on desktop and web with a feeling that it will be easy for end users. I'm finding mobile as more of a long running horse.
+In my current day job, I bulid projects on desktop and web. I'm finding mobile as more of a long running horse.
 
-I'm thinking of [ionic framework](http://ionicframework.com/) as my preferred choice. This will completely be a [new experience](http://stackoverflow.com/questions/33152154/is-ionic-framework-free).
+I'm thinking of [hybrid mobile apps](http://ionicframework.com/) as my preferred choice. This will completely be a [new experience](http://stackoverflow.com/questions/33152154/is-ionic-framework-free).
 
-I'm considering the web and desktop projects **old** and it's totally fine. Even [Satya](https://news.microsoft.com/2014/03/27/satya-nadella-mobile-first-cloud-first-press-briefing/) agrees.
-
-Yes, I'll still develop those stuff, because I learnt a lot of things which I never knew before.
+Even [Satya](https://news.microsoft.com/2014/03/27/satya-nadella-mobile-first-cloud-first-press-briefing/) agrees.
