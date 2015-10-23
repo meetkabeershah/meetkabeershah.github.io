@@ -3,7 +3,11 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer from [financial capital of India](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from Mumbai University. 
+![hello](http://ticketsynergy.com/wp-content/uploads/2015/06/Hello-World.png)
+
+[courtesy](http://ticketsynergy.com/2015/06/hello-world/)
+
+This is Zameer from [financial capital of India](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from Mumbai University. 
 
 ![Avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80)
 
