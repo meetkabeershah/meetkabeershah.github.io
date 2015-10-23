@@ -3,7 +3,7 @@ layout: post
 title: Hello world!
 ---
 
-My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction).
+My name is Zameer from [the city of dreams](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from Mumbai University. 
 
 ![Avatar](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80)
 
@@ -14,7 +14,3 @@ from many teams.
 
 I represent the company and team to external technical solution providers and internal teams including
 top executives. I also act as a technical trainer for new joinees.
-
-I have graduated in IT from Mumbai University.
-
-Programming came more closer to me.
