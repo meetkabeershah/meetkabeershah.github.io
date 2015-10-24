@@ -18,7 +18,7 @@ While I feel that 2nd line is a little difficult to judge upon. I have seen peop
 
 Nobody wants that crazy shiny app just to eat up (already short) memory.
 
-In the communication part, we were given scenario of a meeting where a guy comes late for meetings and every has to wait.
+In the communication part, we were given scenario of a meeting where a guy comes late for meetings and everyone has to wait.
 
 The question was how do you deal with such an individual?
 
