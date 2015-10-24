@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello plesk
+title: Hello no-no plesk
 ---
 
 It was recently that I went too much into [server](/launch-pre-requisites/) and database administration for hosting [ASP.NET on  cloud](https://cloud.google.com/launcher/solution/click-to-deploy-images/aspnet).
