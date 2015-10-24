@@ -13,5 +13,5 @@ This is Zameer from [India's financial capital](http://www.incredibleindia.org/t
 
 Currently, I’m a [software engineer](https://www.linkedin.com/in/xameeramir) for [Next Services](http://www.nextservices.com/) (a healthcare IT firm) focused on .NET and database programming. In this role I complement the staff efforts by building custom softwares, overseeing requirements for people from many teams.
 
-I represent the company and team to external technical solution providers and internal teams including
+I also represent the company and team to external technical solution providers and internal teams including
 top executives. I also act as a technical trainer for new joinees.
