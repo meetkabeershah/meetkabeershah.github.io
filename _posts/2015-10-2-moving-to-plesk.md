@@ -3,7 +3,7 @@ layout: post
 title: Hello plesk
 ---
 
-It was recently that I went too much into [server](/launch-pre-requisites/) and database administration for hosting [ASP.NET on  cloud](https://cloud.google.com/launcher/solution/click-to-deploy-images/aspnet)
+It was recently that I went too much into [server](/launch-pre-requisites/) and database administration for hosting [ASP.NET on  cloud](https://cloud.google.com/launcher/solution/click-to-deploy-images/aspnet).
 
 I spent a lot of time maintaining than building. Now, I'm trying to get my hands dirty with [plesk](http://www.odin.com/products/plesk/).
 
@@ -11,7 +11,7 @@ Hosting providers provide plesk as a packaged tool with (usually shared) hosting
 
 Shared hosting reduces site costs by **10x** - the actual benefit of choosing it.
 
-At the same time, yop lose that tight control offered by cloudy options. Easiness of scalability etcetra.
+At the same time, you lose that tight control offered by cloudy options. Easiness of scalability etcetra.
 
 Overall, I didn't found it so imprerssive.
 
