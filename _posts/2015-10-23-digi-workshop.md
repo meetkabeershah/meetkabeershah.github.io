@@ -3,9 +3,9 @@ layout: post
 title: Digi marketing workshop
 ---
 
-![SEO](http://www.upswinginteractive.com/wp-content/uploads/2014/05/SocialBuzz.jpg)
+![SEO](http://www.miragesearch.co.uk/wp-content/uploads/2015/07/Online-Marketing.png)
 
-[courtesy](http://www.upswinginteractive.com/wp-content/uploads/2014/05/SocialBuzz.jpg)
+[courtesy](http://www.miragesearch.co.uk/online-digital-marketing/)
 
 Last sunday I attended a workshop for [digital marketing and communication](http://www.knowdigitalmarketing.com/) strategies. The communication part was explained well, while I felt that digital marketing was a revision.
 
