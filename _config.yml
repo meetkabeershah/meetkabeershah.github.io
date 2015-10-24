@@ -18,16 +18,16 @@ avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: 
+  email: zameeramir@gmail.com
   facebook:
   flickr:
-  github: 
+  github: xameeramir
   instagram:
-  linkedin:
+  linkedin: xameeramir
   pinterest:
-  rss: blog.nerdspal.com # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  rss: http://xameeramir.github.io/ # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: xameeramir
+  stackoverflow: users/2404470/xameeramir # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -42,13 +42,13 @@ google_analytics: UA-64799622-2
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: blogx.nerdspal.com
+url: xameeramir.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "http://xameeramir.github.io/"
 
 #
 # !! You don't need to change any of the configuration flags below !!
