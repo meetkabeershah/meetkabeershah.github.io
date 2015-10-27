@@ -17,3 +17,6 @@ I also represent the company and team to external technical solution providers a
 top executives. 
 
 I also act as a technical trainer for new joinees.
+
+Throughtout different roles I performed, I found this to be true -
+[**first do it, then do it right, then do it better.**](http://addyosmani.com/blog/)
