@@ -8,7 +8,11 @@ function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async
 -->
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
@@ -17,7 +21,7 @@ function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-  
+
   {% include commentsSection.html %}
   {% include addThis.html %}
 </article>
