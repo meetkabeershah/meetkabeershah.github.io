@@ -1,5 +1,5 @@
 ---
-title: Instamed (API) lollypop
+title: Instamed API
 layout: post
 ---
 
