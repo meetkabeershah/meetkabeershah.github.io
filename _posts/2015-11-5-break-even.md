@@ -2,6 +2,9 @@
 title: break-even (point?)
 layout: post
 ---
+![Break even](http://media02.hongkiat.com/calculate-breakeven-point/time-money-concept.jpg)
+
+[courtesy](http://www.hongkiat.com/blog/calculate-breakeven-point/)
 
 Recently, I was just going through some documents. I saw something which caught my eyes. It was a word I never heard before (or maybe heard and forgot). Quickly a question came up.
 
