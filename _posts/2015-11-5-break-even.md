@@ -18,19 +18,19 @@ Let's take a transaction example:
  - You sold goods for $100 - **sale**
  - You also paid $5 - **miscellaneous cost such as tax, transport etc**
 
-Here, investment - $90 + $5 = $95
-Profit per transaction - $5
+Here, investment is $90 + $5 = $95
+Profit per transaction is $5
 
 Break even point is where you have recovered your investments and made zero profit.
 
 After this point your actual revenue starts.
 
-Now, how many iterations (ket's say **X**) one need to perform in order to recover that initial investment of $95 with $5 profit each time?
+Now, how many iterations (let's say **X**) one need to perform in order to recover that initial investment of $95 with $5 profit each time?
 
-It's $5 multiply by  **X** = $95
-
-Here, it's simple 19 iterations.
+Here, it's simple 19 iterations. ($5 multiply by  **X** = $95)
 
 In this example, after 19 succesful iterations, one will reach to break-even point.
 
-*It's important to understand these things along with knowing how to cook an omelette.*
+<p class='casual'>
+It's important to understand these things along with knowing how to cook an omelette.
+</p>
