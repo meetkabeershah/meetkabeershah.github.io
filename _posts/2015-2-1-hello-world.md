@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Hello world!
 ---
@@ -7,7 +7,7 @@ title: Hello world!
 
 [courtesy](http://ticketsynergy.com/2015/06/hello-world/)
 
-This is [Zameer](https://www.dropbox.com/s/v56nkguwrqrx53z/ZameerAnsariBiomc.pdf?dl=0) from [India's financial capital](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in). I believe that by **learning yourself** and **doing yourself** you can build more software.
+This is [Zameer](https://www.dropbox.com/s/6mezb2hkgj6fv8o/ZameerAnsariExpressBio.pdf?dl=0) from [India's financial capital](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in). I believe that by **learning yourself** and **doing yourself** you can build more software.
 
 [Here](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80) is my [avatar](https://gravatar.com/)
 
