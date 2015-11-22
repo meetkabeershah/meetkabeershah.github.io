@@ -61,9 +61,9 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
 Visual studio changes this section after change of the parameter name.
 
-![Change of parameters](//c1.staticflickr.com/1/781/22577070424_75c25ed9e7_n.jpg)
+![Change of parameters](https://i-msdn.sec.s-msft.com/dynimg/IC45307.gif)
 
-[courtesy](https://www.flickr.com/photos/nerdspal/22577070424/in/dateposted-public/)
+[courtesy](https://msdn.microsoft.com/en-us/library/ms364072(v=vs.80).aspx)
 
  - Summary of the returning stuff
 
