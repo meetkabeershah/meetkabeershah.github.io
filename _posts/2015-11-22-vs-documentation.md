@@ -13,49 +13,51 @@ The golden rule of code documentation:
 
 To keep up with the increasing complexity of the project, it's very important to document the coding decisions. It's one of the best practices.
 
-[Visual studio](http://visualstudio.com) provides impressive ways for code documentation (and keeps the code understandable). It can also understand the changes that one make on hard code.
+[Visual studio](https://www.visualstudio.com/) provides some elegant ways for code documentation to keep the code understandable. It can also understand the changes that one make on hard code.
 
 #Single or multi line comments
 
  - Short (or long) functional summary
 
-	//single line comment
+	`//single line comment`
 
 These are necessary to describe functionality in little.
 
-	/*
-	multiple 
-	line
-	comments
-	*/
+	`/*`
+	`multiple`
+	`line`
+	`comments`
+	`*/`
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
 #Collapsible regions
 
- - Summary of the [functional block]()
+ - Summary of the functional block
 
-	#region Short description about overall functionality of the code block
+	`#region Short description about overall functionality of the code block`
 
-	//do stuff
+	`//do stuff`
 
-	#endregion
+	`#endregion`
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
-![Glance in collapsed code]()
+![Glance in collapsed code](http://williablog.net/williablog/image.axd?picture=2011%2F4%2FCollapsing-Code-Blocks.png)
+
+[courtesy](http://williablog.net/williablog/post/2011/04/15/Visual-Studio-C-Statement-Collapsing.aspx)
 
 #Summary
 
  - Summary of the function or property
 
-        /// <summary>
-        /// Summary description for the function or property goes here
-        /// </summary>
+        `/// <summary>`
+        `/// Summary description for the function or property goes here`
+        `/// </summary>`
 
  - Summary of the function parameter
 
-        /// <param name="TestParameter">Summary description for the parameter goes here</param>
+        `/// <param name="TestParameter">Summary description for the parameter goes here</param>`
 
 Visual studio changes this section after change of the parameter name.
 
