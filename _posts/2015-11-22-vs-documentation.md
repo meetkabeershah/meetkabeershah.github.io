@@ -3,13 +3,13 @@ layout: post
 title: C# code documentation using visual studio
 ---
 
-![Documentation please]()
+![Documentation please](http://www.webpal.net/blog/wp-content/uploads/2011/11/clutter_cartoon_3.png)
 
-[courtesy]()
+[courtesy](http://www.webpal.net/blog/tag/document-management-2/)
 
-The [golden rule of code documentation]():
+The golden rule of code documentation:
 
-> Try to document why (code design decisions) and avoid what (code design descriptions).
+> Try to document [why](http://stackoverflow.com/a/4929769) (code design decisions) and avoid what (code design descriptions).
 
 To keep up with the increasing complexity of the project, it's very important to document the coding decisions. It's one of the best practices.
 
