@@ -19,7 +19,7 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional summary
 
-	//single line comment
+	`//single line comment`
 
 These are necessary to describe functionality in little.
 
@@ -67,7 +67,7 @@ Visual studio changes this section after change of the parameter name.
 
  - Summary of the returning stuff
 
-	/// <returns>Summary description for the function result goes here</returns>
+	`/// <returns>Summary description for the function result goes here</returns>`
 
 A simple example:
 
