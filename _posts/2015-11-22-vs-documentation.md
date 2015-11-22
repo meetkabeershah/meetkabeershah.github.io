@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# code documentation using visual studio
+title: C# code documentation
 ---
 
 ![Documentation please](http://www.webpal.net/blog/wp-content/uploads/2011/11/clutter_cartoon_3.png)
