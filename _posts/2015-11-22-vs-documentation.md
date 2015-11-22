@@ -19,15 +19,15 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional summary
 
-	`//single line comment`
+	//single line comment
 
 These are necessary to describe functionality in little.
 
-	`/*`
-	`multiple`
-	`line`
-	`comments`
-	`*/`
+	/*
+	multiple
+	line
+	comments
+	*/
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -51,17 +51,19 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
-        `/// <summary>`
-        `/// Summary description for the function or property goes here`
-        `/// </summary>`
+        /// <summary>
+        /// Summary description for the function or property goes here
+        /// </summary>
 
  - Summary of the function parameter
 
-        `/// <param name="TestParameter">Summary description for the parameter goes here</param>`
+        /// <param name="TestParameter">Summary description for the parameter goes here</param>
 
 Visual studio changes this section after change of the parameter name.
 
-![Change of parameters]()
+![Change of parameters](//c1.staticflickr.com/1/781/22577070424_75c25ed9e7_n.jpg)
+
+[courtesy](https://www.flickr.com/photos/nerdspal/22577070424/in/dateposted-public/)
 
  - Summary of the returning stuff
 
