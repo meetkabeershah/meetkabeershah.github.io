@@ -1,11 +1,4 @@
 
-pre, xmp, plaintext, listing {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    margin: 1em 0px;
-}
-
 /* Google custom search styling 
 .cse .gsc-control-cse, .gsc-control-cse {
     background-color: transparent !important;
