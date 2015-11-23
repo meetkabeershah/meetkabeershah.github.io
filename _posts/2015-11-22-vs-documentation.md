@@ -23,11 +23,11 @@ To keep up with the increasing complexity of the project, it's very important to
 
 These are necessary to describe functionality in little.
 
-	`/*`
-	`multiple`
-	`line`
-	`comments`
-	`*/`
+	/*
+	multiple
+	line
+	comments
+	*/
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -51,13 +51,13 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
-        `/// <summary>`
-        `/// Summary description for the function or property goes here`
-        `/// </summary>`
+        /// <summary>
+        /// Summary description for the function or property goes here
+        /// </summary>
 
  - Summary of the function parameter
 
-        `/// <param name="TestParameter">Summary description for the parameter goes here</param>`
+        /// <param name="TestParameter">Summary description for the parameter goes here</param>
 
 Visual studio changes this section after change of the parameter name.
 
@@ -71,17 +71,17 @@ Visual studio changes this section after change of the parameter name.
 
 A simple example:
 
-    `/// <summary>`
-    `/// Main class of the project`
-    `/// </summary>`
-    `class Program`
-    `{`
-        `/// <summary>`
-        `/// Main entry point of the program`
-        `/// </summary>`
-        `/// <param name="args">Command line args</param>`
-        `static void Main(string[] args)`
-        `{`
-            `//Do stuff`
-        `}`
-    `}`
+    /// <summary>
+    /// Main class of the project
+    /// </summary>
+    class Program
+    {
+        /// <summary>
+        /// Main entry point of the program
+        /// </summary>
+        /// <param name="args">Command line args</param>
+        static void Main(string[] args)
+        {
+            //Do stuff
+        }
+    }
