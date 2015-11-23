@@ -19,19 +19,15 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional summary
 
-<pre>
-	//single line comment
-</pre>
+	`//single line comment`
 
 These are necessary to describe functionality in little.
 
-<pre>
-	/*
-	multiple
-	line
-	comments
-	*/
-</pre>
+	`/*`
+	`multiple`
+	`line`
+	`comments`
+	`*/`
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -39,14 +35,11 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
  - Summary of the functional block
 
-<pre>
+	`#region Short description about overall functionality of the code block`
 
-	#region Short description about overall functionality of the code block
+	`//do stuff`
 
-	//do stuff
-
-	#endregion
-</pre>
+	`#endregion`
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
@@ -58,17 +51,13 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
-<pre>
-        /// <summary>
-        /// Summary description for the function or property goes here
-        /// </summary>
-</pre>
+        `/// <summary>`
+        `/// Summary description for the function or property goes here`
+        `/// </summary>`
 
  - Summary of the function parameter
 
-<pre>
-        /// <param name="TestParameter">Summary description for the parameter goes here</param>
-</pre>
+        `/// <param name="TestParameter">Summary description for the parameter goes here</param>`
 
 Visual studio changes this section after change of the parameter name.
 
@@ -78,25 +67,21 @@ Visual studio changes this section after change of the parameter name.
 
  - Summary of the returning stuff
 
-<pre>
-	///<returns>Summary description for the function result goes here</returns>
-</pre>
+	`///<returns>Summary description for the function result goes here</returns>`
 
 A simple example:
 
-<pre>
-    /// <summary>
-    /// Main class of the project
-    /// </summary>
-    class Program
-    {
-        /// <summary>
-        /// Main entry point of the program
-        /// </summary>
-        /// <param name="args">Command line args</param>
-        static void Main(string[] args)
-        {
-            //Do stuff
-        }
-    }
-</pre>
+    `/// <summary>`
+    `/// Main class of the project`
+    `/// </summary>`
+    `class Program`
+    `{`
+        `/// <summary>`
+        `/// Main entry point of the program`
+        `/// </summary>`
+        `/// <param name="args">Command line args</param>`
+        `static void Main(string[] args)`
+        `{`
+            `//Do stuff`
+        `}`
+    `}`
