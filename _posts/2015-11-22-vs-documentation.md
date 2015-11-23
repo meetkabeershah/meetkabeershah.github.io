@@ -19,15 +19,19 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional summary
 
-	`//single line comment`
+<pre>
+	//single line comment
+</pre>
 
 These are necessary to describe functionality in little.
 
+<pre>
 	/*
 	multiple
 	line
 	comments
 	*/
+</pre>
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -35,11 +39,14 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
  - Summary of the functional block
 
-	`#region Short description about overall functionality of the code block`
+<pre>
 
-	`//do stuff`
+	#region Short description about overall functionality of the code block
 
-	`#endregion`
+	//do stuff
+
+	#endregion
+</pre>
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
@@ -51,13 +58,17 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
+<pre>
         /// <summary>
         /// Summary description for the function or property goes here
         /// </summary>
+</pre>
 
  - Summary of the function parameter
 
+<pre>
         /// <param name="TestParameter">Summary description for the parameter goes here</param>
+</pre>
 
 Visual studio changes this section after change of the parameter name.
 
@@ -67,10 +78,13 @@ Visual studio changes this section after change of the parameter name.
 
  - Summary of the returning stuff
 
-	`/// <returns>Summary description for the function result goes here</returns>`
+<pre>
+	///<returns>Summary description for the function result goes here</returns>
+</pre>
 
 A simple example:
 
+<pre>
     /// <summary>
     /// Main class of the project
     /// </summary>
@@ -85,3 +99,4 @@ A simple example:
             //Do stuff
         }
     }
+</pre>
