@@ -6,6 +6,7 @@ title: SEO cheatsheet - using HTML5 document
 <script type="text/javascript">
 the_height = document.getElementById('the_iframe').contentWindow.document.body.scrollHeight;
 document.getElementById('the_iframe').height = the_height;
+alert("test");
 </script>
 
 ![SEO](http://eqvn.net/wp-content/uploads/2015/10/SEO.jpg)
