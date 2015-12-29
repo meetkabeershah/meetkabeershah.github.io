@@ -11,12 +11,11 @@ This is [Zameer](https://www.dropbox.com/s/6mezb2hkgj6fv8o/ZameerAnsariExpressBi
 
 [Here](https://avatars3.githubusercontent.com/u/11885888?v=3&s=80) is my [avatar](https://gravatar.com/)
 
-Currently, I’m a [software engineer](https://www.linkedin.com/in/xameeramir) for [Next Services](http://www.nextservices.com/) (a healthcare IT firm) focused on .NET and database programming. In this role I complement the staff efforts by building custom softwares, overseeing requirements for people from many teams.
+I'm a continuous learner with a "go do it" attitude. Across different roles I performed, I have learned and implemented different soft skills especially communication and empathy.
 
-I also represent the company and team to external technical solution providers and internal teams including
-top executives. 
+Currently, I’m a full stack software engineer for Next Services (a healthcare IT firm) responsible for programming .NET application and databases. Configuring web servers and keeping them healthy with the help of system administrators. I work closely with operations and development teams including C suite. Collaborate with people both inside and outside of organization to help the operations processes automated.
 
-I also act as a technical trainer for new joinees.
+I like to act as a trainer.  Yes, teaching others help me learn more. I like reading technical and formal articles, staying physically fit and mentally calm.
 
-Throughtout different roles I performed, I found this to be true -
+Found this to be true -
 [**first do it, then do it right, then do it better.**](http://addyosmani.com/blog/)
