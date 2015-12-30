@@ -19,23 +19,25 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional descriptions
 
-	<pre>
-  	<code class="csharp">
+<pre>
+<code class="csharp">
 	//single line comment
-	</code>
-	</pre>
+</code>
+</pre>
 
 These are necessary to describe functionality in little.
 
-	<pre>
-  	<code class="csharp">
+<pre>
+  <code class="csharp">
+	
 	/*
 	multiple
 	line
 	comments
 	*/
-	</code>
-	</pre>
+	
+</code>
+</pre>
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -43,8 +45,8 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
  - Summary of the functional block
 
-	<pre>
-  	<code class="csharp">
+<pre>
+  <code class="csharp">
 	
 	#region Some code block
 
@@ -55,8 +57,8 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
     
 	#endregion
     
-	</code>
-	</pre>
+</code>
+</pre>
 
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
@@ -69,15 +71,15 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
-	<pre>
-	<code class="csharp">
+<pre>
+<code class="csharp">
 	
 	/// <summary>
         /// Summary description for the function or property goes here
         /// </summary>
         
-        </code>
-	</pre>
+     </code>
+</pre>
 
 ![summary method description](http://imgur.com/ksUWv5O)
 
@@ -85,11 +87,11 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function parameter
 
-	<pre>
-	<code class="csharp">
+<pre>
+<code class="csharp">
         /// <param name="TestParameter">Summary description for the parameter goes here</param>
-        </code>
-	</pre>
+     </code>
+</pre>
 
 ![parameter desc](http://imgur.com/zwKtSLt)
 
@@ -103,16 +105,16 @@ Visual studio changes this section after change of the parameter name.
 
  - Summary of the returning stuff
 
-	<pre>
-	<code class="csharp">
+<pre>
+<code class="csharp">
 	///<returns>Summary description for the function result goes here</returns>
-        </code>
-	</pre>
+   </code>
+</pre>
 
 A simple example:
 
-	<pre>
-	<code class="csharp">
+<pre>
+<code class="csharp">
 
     /// <summary>
     /// Main class of the project
@@ -129,6 +131,6 @@ A simple example:
         }
     }
     
-            </code>
-	</pre>
+</code>
+</pre>
 
