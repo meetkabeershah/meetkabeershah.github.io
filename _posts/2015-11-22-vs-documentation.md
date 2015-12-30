@@ -19,19 +19,23 @@ To keep up with the increasing complexity of the project, it's very important to
 
  - Short (or long) functional descriptions
 
-	<xmp>
+	<pre>
+  	<code class="csharp">
 	//single line comment
-	</xmp>
+	</code>
+	</pre>
 
 These are necessary to describe functionality in little.
 
-	<xmp>
+	<pre>
+  	<code class="csharp">
 	/*
 	multiple
 	line
 	comments
 	*/
-	</xmp>
+	</code>
+	</pre>
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -39,7 +43,9 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
  - Summary of the functional block
 
-	<xmp>
+	<pre>
+  	<code class="csharp">
+	
 	#region Some code block
 
 	//some code here
@@ -49,7 +55,9 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
     
 	#endregion
     
-	<xmp>
+	</code>
+	</pre>
+
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
@@ -61,9 +69,15 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function or property
 
-        /// <summary>
+	<pre>
+	<code class="csharp">
+	
+	/// <summary>
         /// Summary description for the function or property goes here
         /// </summary>
+        
+        </code>
+	</pre>
 
 ![summary method description](http://imgur.com/ksUWv5O)
 
@@ -71,7 +85,11 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
  - Summary of the function parameter
 
+	<pre>
+	<code class="csharp">
         /// <param name="TestParameter">Summary description for the parameter goes here</param>
+        </code>
+	</pre>
 
 ![parameter desc](http://imgur.com/zwKtSLt)
 
@@ -85,9 +103,16 @@ Visual studio changes this section after change of the parameter name.
 
  - Summary of the returning stuff
 
-	`///<returns>Summary description for the function result goes here</returns>`
+	<pre>
+	<code class="csharp">
+	///<returns>Summary description for the function result goes here</returns>
+        </code>
+	</pre>
 
 A simple example:
+
+	<pre>
+	<code class="csharp">
 
     /// <summary>
     /// Main class of the project
@@ -103,3 +128,7 @@ A simple example:
             //Do stuff
         }
     }
+    
+            </code>
+	</pre>
+
