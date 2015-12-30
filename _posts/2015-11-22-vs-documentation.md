@@ -17,17 +17,21 @@ To keep up with the increasing complexity of the project, it's very important to
 
 #Single or multi line comments
 
- - Short (or long) functional summary
+ - Short (or long) functional descriptions
 
-	`//single line comment`
+	<xmp>
+	//single line comment
+	</xmp>
 
 These are necessary to describe functionality in little.
 
+	<xmp>
 	/*
 	multiple
 	line
 	comments
 	*/
+	</xmp>
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
@@ -35,17 +39,23 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
  - Summary of the functional block
 
-	`#region Short description about overall functionality of the code block`
+	<xmp>
+	#region Some code block
 
-	`//do stuff`
-
-	`#endregion`
+	//some code here
+    	//some foo bar
+    	//Fizz Buzz
+    	//some unicorns
+    
+	#endregion
+    
+	<xmp>
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
-![Glance in collapsed code](http://williablog.net/williablog/image.axd?picture=2011%2F4%2FCollapsing-Code-Blocks.png)
+![Glance in collapsed code](http://imgur.com/wsEL9yo)
 
-[courtesy](http://williablog.net/williablog/post/2011/04/15/Visual-Studio-C-Statement-Collapsing.aspx)
+[courtesy](http://imgur.com/)
 
 #Summary
 
@@ -55,15 +65,23 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
         /// Summary description for the function or property goes here
         /// </summary>
 
+![summary method description](http://imgur.com/ksUWv5O)
+
+[courtesy](http://imgur.com/)
+
  - Summary of the function parameter
 
         /// <param name="TestParameter">Summary description for the parameter goes here</param>
 
+![parameter desc](http://imgur.com/zwKtSLt)
+
+[courtesy](http://imgur.com/)
+
 Visual studio changes this section after change of the parameter name.
 
-![Change of parameters](https://i-msdn.sec.s-msft.com/dynimg/IC45307.gif)
+![Change of parameters](http://imgur.com/5RWuBMJ)
 
-[courtesy](https://msdn.microsoft.com/en-us/library/ms364072(v=vs.80).aspx)
+[courtesy](http://imgur.com/)
 
  - Summary of the returning stuff
 
