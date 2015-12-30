@@ -63,7 +63,7 @@ Avoid them. It is advisable to avoid writing essays about code. The end product 
 
 Regions are collapsible. Just hover over the collapsed region and get a glance.
 
-![Glance in collapsed code](http://imgur.com/wsEL9yo)
+![Glance in collapsed code](http://i.imgur.com/wsEL9yo.png)
 
 [courtesy](http://imgur.com/)
 
@@ -81,7 +81,7 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
      </code>
 </pre>
 
-![summary method description](http://imgur.com/ksUWv5O)
+![summary method description](http://i.imgur.com/ksUWv5O.png)
 
 [courtesy](http://imgur.com/)
 
@@ -93,13 +93,13 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
      </code>
 </pre>
 
-![parameter desc](http://imgur.com/zwKtSLt)
+![parameter desc](http://i.imgur.com/zwKtSLt.png)
 
 [courtesy](http://imgur.com/)
 
 Visual studio changes this section after change of the parameter name.
 
-![Change of parameters](http://imgur.com/5RWuBMJ)
+![Change of parameters](http://i.imgur.com/5RWuBMJ.png)
 
 [courtesy](http://imgur.com/)
 
