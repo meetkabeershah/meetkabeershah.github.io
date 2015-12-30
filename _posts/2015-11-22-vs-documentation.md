@@ -74,9 +74,9 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 <pre>
 <code class="csharp">
 	
-	/// <summary>
+	/// &lt;summary&gt;
         /// Summary description for the function or property goes here
-        /// </summary>
+        /// &lt;/summary&gt;
         
      </code>
 </pre>
@@ -89,7 +89,7 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
 <pre>
 <code class="csharp">
-        /// <param name="TestParameter">Summary description for the parameter goes here</param>
+        /// &lt;param name="TestParameter"&gt;Summary description for the parameter goes here&lt;/param&gt;
      </code>
 </pre>
 
@@ -107,7 +107,7 @@ Visual studio changes this section after change of the parameter name.
 
 <pre>
 <code class="csharp">
-	///<returns>Summary description for the function result goes here</returns>
+	///&lt;returns&gt;Summary description for the function result goes here&lt;/returns&gt;
    </code>
 </pre>
 
@@ -116,15 +116,15 @@ A simple example:
 <pre>
 <code class="csharp">
 
-    /// <summary>
+    /// &lt;summary&gt;
     /// Main class of the project
-    /// </summary>
+    /// &lt;/summary&gt;
     class Program
     {
-        /// <summary>
+        /// &lt;summary&gt;
         /// Main entry point of the program
-        /// </summary>
-        /// <param name="args">Command line args</param>
+        /// &lt;/summary&gt;
+        /// &lt;param name="args"&gt;Command line args&lt;/param&gt;
         static void Main(string[] args)
         {
             //Do stuff
