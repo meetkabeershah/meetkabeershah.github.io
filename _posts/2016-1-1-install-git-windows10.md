@@ -1,3 +1,8 @@
+---
+layout: post
+title: Setting up `git` on Windows
+---
+
 [DevOps](https://en.wikipedia.org/wiki/DevOps) engineers who not only code but also take care of cofigurations know that **system administration** is ~little~ more ~painful~ than developing. I remember [configuring an ASP.NET MVC 5 website](http://xameeramir.github.io/site-pre-requisites/) on a [Google compute engine](https://cloud.google.com/compute/) instance running Windows server 2012 R2. 
 
 It was little painful, so I always prefer using [*check-lists*](http://atulgawande.com/book/the-checklist-manifesto/) and [*cheatsheets*](http://xameeramir.github.io/seo-cheat-sheet/). One can refer back to them for later use.
