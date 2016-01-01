@@ -39,8 +39,6 @@ Select which node components to install - this may be useful for server configur
 
 ![completed node installation](https://lh3.googleusercontent.com/hlb6-M3HwjCUNBIAWMJI1ZylqOiz9lNAUW1jXVLRCPysMw0_oYDLkDXaa64hqWS61dcPnoE7Z1X_-gilq0aywhwd7gZczBjZelGICTRS-cYrGs2oWTNW-1_b0IPFTsco7ErFmJHS6U1oFY9Go8_MsKqz7rlwPmJEsPBxMu58xikIeyoqVZ9SM7RRbM885mnBqngAESKzecc5wNPAV4hBMMF_DklrWXgV9ax-q0NcTSHWEKfgCcUGPj21e3JtdRpJ7YPJ-aSPxViEWK2Rsm2QbunUTgYCCyTuL_WRV7D65OkSnSDToU9JDX6ZoC9JmzxE6nVb-lEJ2ZDCMGDeCIBrJFiWyyTU1H-RsMtmM6KIBQV_AD0iYkqyvQasuPmSSaORZdvPLHPams6NdPJRilGPVCZHtn4XEgz7hnSRh_n_Rt-CnCw_kna8lv0WOwa6gfNsQ2Xg8YelppCXt6lgfF3HnCdRCUgrvlIOlOwOtXD3Aw4y9jK7AEOvTCtTHKjmpVXT_3INcgosNaS3b8piuTNJqbNkkFjei1BHf8j2qTaTBU9a7ACz_l30-1YKp4fxkU6T_SIX=w495-h387-no)
 
-[Photos](https://goo.gl/photos/2tKMDYrptwJKJZFN8)
-
 #Installing node on Ubuntu
 
 There are various ways to install node on Ubuntu, one of them is [compiling and installing](https://thomashunter.name/blog/install-node-js-on-debian-6/)
@@ -70,4 +68,8 @@ $ npm -v
 </code>
 </pre>
 
+![node install verification on Ubuntu](https://lh3.googleusercontent.com/HdKLgoQCqNBSfYw2d4leCey5wDpy13hVNLaFl-lgSfzMspV6sqVDPDxIYlrziSooG-zr2_GNo9O4q1ODHriM_XBSXiAsxX2waA9lPmt191SOHXQP3zO--esmsXQXUR1mTCeMGQcQjL1bTlib8wdy-XmfV5Pn8nwmfPyNY3CkUY6QcXOZ6UBGX3gU9I93Ox0kXzIwXU9S94ZXkUu3M3agVxR2yek__I16-svrc6w9ysMzjpGw4qDp1qRQDCTChpfV3LfMJjtcSYnYt2lF3N_PGYrttmwt2AH6v2cFZRRQ0ti9EZNgkofk-8eMAKH3iPg5ISqFAarW24NyYPSYgDOwbpOfiG0YpL1FvJ5Hnx_9k5G-bDrPG1M4W7vZdsa_R4_1iDZdyx73COWDlfL6hf9IP6hnnQya8tp4IQ7L9sqXHH56UnnRmwUf1mup4ajcAzw1kejs5L3uQvSscwio-tT90zHeFFNYynWISiIRaHb4PU6-rToBdX_fxLcluWPzk_gCk7i4UosWxaiumXp1GeNW8D7qwNHgYyZcSplajLNIvb_f4dfhIcJyKVZhMKBBaVB_CMaF=w353-h162-no)
+
 Yes, that's it. Done with the task!
+
+[Photos](https://goo.gl/photos/2tKMDYrptwJKJZFN8)
