@@ -7,6 +7,8 @@ title: Installing Cordova on Windows and Linux
 
 [courtesy](https://cordova.apache.org/)
 
+Once the [git](http://xameeramir.github.io/install-git-windows10/) client and [node](http://xameeramir.github.io/install-node/) are ready, [cordova](http://cordova.apache.org/) can be installed.
+
 #To [install Cordova](https://cordova.apache.org/docs/en/4.0.0/guide/cli/#link-2)
 
  - After getting an Internet connection on **Windows**, use `npm install -g cordova` command
