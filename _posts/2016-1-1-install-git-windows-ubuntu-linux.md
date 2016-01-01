@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up git on Windows
+title: Setting up git on Windows and Ubuntu linux
 ---
 
 ![git logo](https://git-for-windows.github.io/img/git_logo.png)
@@ -9,18 +9,18 @@ title: Setting up git on Windows
 
 [DevOps](https://en.wikipedia.org/wiki/DevOps) engineers who not only code but also take care of cofigurations know that **system administration** is <s>little</s> more <s>painful</s> than developing. I remember [configuring an ASP.NET MVC 5 website](http://xameeramir.github.io/site-pre-requisites/) on a [Google compute engine](https://cloud.google.com/compute/) instance running Windows server 2012 R2. 
 
-It was little painful, so I always prefer using [*check-lists*](http://atulgawande.com/book/the-checklist-manifesto/) and [*cheatsheets*](http://xameeramir.github.io/seo-cheat-sheet/). One can refer back to them for later use.
+To avoid such pain, I prefer using [*check-lists*](http://atulgawande.com/book/the-checklist-manifesto/) and [*cheatsheets*](http://xameeramir.github.io/seo-cheat-sheet/). One can refer back to them for later use.
 
-This posts is a [very short](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) and intuitive guide for installing [`git`](https://en.wikipedia.org/wiki/Git_(software)) on [Windows 10](https://en.wikipedia.org/wiki/Windows_10). I believe, the steps would be same for it's sibling versions as well.
+This posts is a [very short](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) and intuitive guide for installing [`git`](https://en.wikipedia.org/wiki/Git_(software)) on [Windows 10](https://en.wikipedia.org/wiki/Windows_10) and [Ubuntu](http://www.ubuntu.com/) linux.
 
-Yes, it's in the direction of what I need to [do](http://ionicframework.com/docs/guide/installation.html) later!
+Yes, it's in the direction of what I need to [do later](http://ionicframework.com/docs/guide/installation.html)!
 
-[Btw](www.google.com/?q=by the way), [Ionic](http://ionicframework.com) can be controlled from a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) and there are 2 options to use from:
+[Btw](www.google.com/?q=by the way), [Ionic](http://ionicframework.com) can be controlled from a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) on Windows. and there are 2 options to use from:
 
  - [Console2](http://sourceforge.net/projects/console/)
  - [Git client](http://git-scm.com/download/win)
 
-#Setting up `git` (and ignoring Console2) on Windows 10
+#Setting up `git` (and ignoring Console2) on Windows
 
 Download the latest `git` client from http://git-scm.com/download/win
 
@@ -50,10 +50,16 @@ Decide `line endings` behaviour
 
 ![Installing git completed](https://lh3.googleusercontent.com/2lU1yAK2jZpLnDMbiBLjIAPT1e3Pzpilmbn5JZYyJd97Zj1Wz-spIIv06kW_fl0R2JHSDiYdeLXlb-Ly8quaPg36LWEEf_-TM7yG_JAtwEr5oruqVaYXA-gGXwPHRy9niPcpJ5_D_pX-U2pvgZImt6mtv8dWgn99QdpSZOEq25n83oJxcxmNtvbRlixd4Z-QFPT8iZPImxPLnwyVazYIMQpgWEdcEbTkJCpnKUXbDlN39euYlZyuQY5llhwKNAE3ItXde4yRLfi51DR6Z8RvANV6SNFmN6tycQACO9d-b81-vehRAIqqqJmbJqHzVpWpBHBVwD_nGkiZOtSauY8b23k2-877ZJq2WT_KiO4xkT7pj2fppYTUIS0689pPdBo1Q1g3H-XMEI8Z8d9gAssPOiCYjFP-dAhZe0STMwMAHc9fkE3ikwMhjiL_tgJwbDjkkmHb4YO8edGeHrMutYN-pr-5iuar70Y2snHHgTMMf9eMnvsbI1y0_2X8qh4i6AM40qKsmQowphR7oyxoW0UOzUCcriJdRQ8QmEeSnJIEVRdXa_dLT9YWOANZTNJ1CAgxUdHA=w499-h387-no)
 
+#Setting up `git` on Ubuntu linux 
+
+Use `sudo apt-get install git` command and enter **root** password.
+
+The system takes care of the installation after successfull authentication.
+
+To check `git` version on Ubuntu
+
+![Checking git version on Ubuntu](https://lh3.googleusercontent.com/-KwT-1YDEYEo7QIAerj4XluxGiG1nTFnVSWf7CbavRr1GnP7wndcfdzAzWlepQQIDhfil_hR35cUYYNbQ8G7oRXHZ9Xtq_Rpz3q8-HerpXLtPKWtRLxshXpl57RDYE72Moao9nb9KJ58ChU4DFFhh1-ibIXmvDCy_LAoW_PyY_drmX5vC9spx1mrNBbBDsK2IpRkQM0R0gIw6vSQzHWe_mQFUW3T0Xwif-mqz6KQBeEKwGX4h81sIxTkykHgd2WvvLqp_fOwOOd4lmzXUoUFQw9PHY5k2R_rLvGpeImWrnB352Pzik_ggPeU90I2xE1tuIrjeaWtoZCr4GEFm1aoyCyu9vNBVH97W6fK9b-MoMCRX68luw12suXLibf4BmedBipdytqMTKVwT8VgQAr5LsV5oQ97alVDf2ClK4GccUV6mTiME4l9Hc1kEi7HG40W_HrEbzbsk_iwlmBKhcx_pdB_n7I35UgL8lqN59z9u1CEz5xPt6XraL-BiV_qRjzIICgiYFpqHxub70XyaNB8DXhMvukKF-XP8W6BtFFB5kQBhlPEW67KxdfzBLssABa34bOh=w478-h124-no)
+
 So, now things are ready for some [`git-init`](https://try.github.io/)
 
 [Photos](https://goo.gl/photos/9DymJoWNntaW85Ez7)
-
-
-
-
