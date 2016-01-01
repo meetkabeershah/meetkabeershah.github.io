@@ -3,7 +3,9 @@ layout: post
 title: Setting up git on Windows
 ---
 
-![Open the downloaded git setup file](https://lh3.googleusercontent.com/qLDgWzw1qHknFZbudjF2YOJNRbC7-EVTuBvjpQ_xqRhSKrvDS3jyVluEq6lED-_wDE5fy8Yu_kKDYXtStDINeispEZ7KOZ27_ndF_LHCeG4eySxSPjaAruRmBQDxuaIYwxtd1GROuNAuYWsiAnZpADykSFy0S1gAq8vCjothd4b3ebu-_k9IcjZUTutu3NV70BKzp1-YDHW9SZsEMu-SBZ4mzg4BIa93omH5VjQA8qJJP72a1_iumVGe0PhhEs5EtUo36sOxa455clPBcilDJR06nXfVQbmIstSkqeoWyKQG4WlU1KkWqNKO9o8brGjiaYSKE9xBKkcjZsEx8ifnrCW5pt09JwgBimN3ISJ8LS423rEgIug8mc9f0RcAT7KQIJo6E3N7qXFWNQK9Ea5CQAZn8uTv1icU3AZlRYjyuGzXFVziiDiawhsACIyCAA5ZYPRuNrxDm6bc6lWFuNqWes-V49cAUa2VfK3IKiDyTeJxhNMzEgZEohWbvg-SQCAiJd3x42TxUMARSLGMwK3Si0Io5QVmBkfAnz5jVV7W-BabutfdYanBQmvYboKZwCghEemH=w499-h387-no)
+![git logo](https://git-for-windows.github.io/img/git_logo.png)
+
+[courtesy](https://git-for-windows.github.io/)
 
 [DevOps](https://en.wikipedia.org/wiki/DevOps) engineers who not only code but also take care of cofigurations know that **system administration** is <s>little</s> more <s>painful</s> than developing. I remember [configuring an ASP.NET MVC 5 website](http://xameeramir.github.io/site-pre-requisites/) on a [Google compute engine](https://cloud.google.com/compute/) instance running Windows server 2012 R2. 
 
@@ -23,6 +25,8 @@ Yes, it's in the direction of what I need to [do](http://ionicframework.com/docs
 Download the latest `git` client from http://git-scm.com/download/win
 
 Open the downloaded setup file:
+
+![Open the downloaded git setup file](https://lh3.googleusercontent.com/qLDgWzw1qHknFZbudjF2YOJNRbC7-EVTuBvjpQ_xqRhSKrvDS3jyVluEq6lED-_wDE5fy8Yu_kKDYXtStDINeispEZ7KOZ27_ndF_LHCeG4eySxSPjaAruRmBQDxuaIYwxtd1GROuNAuYWsiAnZpADykSFy0S1gAq8vCjothd4b3ebu-_k9IcjZUTutu3NV70BKzp1-YDHW9SZsEMu-SBZ4mzg4BIa93omH5VjQA8qJJP72a1_iumVGe0PhhEs5EtUo36sOxa455clPBcilDJR06nXfVQbmIstSkqeoWyKQG4WlU1KkWqNKO9o8brGjiaYSKE9xBKkcjZsEx8ifnrCW5pt09JwgBimN3ISJ8LS423rEgIug8mc9f0RcAT7KQIJo6E3N7qXFWNQK9Ea5CQAZn8uTv1icU3AZlRYjyuGzXFVziiDiawhsACIyCAA5ZYPRuNrxDm6bc6lWFuNqWes-V49cAUa2VfK3IKiDyTeJxhNMzEgZEohWbvg-SQCAiJd3x42TxUMARSLGMwK3Si0Io5QVmBkfAnz5jVV7W-BabutfdYanBQmvYboKZwCghEemH=w499-h387-no)
 
 ![Read git license](https://lh3.googleusercontent.com/EZSNjRfWj4LgsS2CLQ4BWBUy_n6oc3gSteQt5KkEVsDFLNzO9rv1dMqJjet00Yaq-t-JiP4ngLAHC4hb7xETCuC9Z-DBekjYObLE5HcRZIfD4phHtVHScafmos2Tk0fZPRfYN1ndljYv45c8C8OVMpbTRcJD7a0ltl8126tiv-MdY_oGBL9_CC26ZiV2BkbQ0MHWhOApg_02B50LcKsica94JiGjbCfprynQkXo2Pm8IB3qWBdIiTXbYHqoAwaobgE3pbVvQNR3G9XZEUzeKeOopDzlQgV3tXpBvUikPaKwcq3zov0K4JerXPXH9v9ZiGAfQ7EAi-m88U9ZDD_PGRXdEjvubZKJahBnFaDhXSs15fGxB2pdti15I8fY4atftTbf4sFj68fKdYcA3rfAGRbbotHmuVih5eW8o9W0NP1FVMsKd2w_FXgQIgUtfIPvqA8xeSCztReqoZEg9sVz1iWthQl54MjJBR4NXjuKkMpheo9nIKRzbCiPCna2I02VbyyQ96cuvKkGnowGplRh5m6pSoY56Ki7MWULG0xxQX4EFB1Vu-Sm5-OFms2jnfsfMmwBc=w499-h387-no)
 
