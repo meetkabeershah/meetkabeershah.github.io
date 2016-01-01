@@ -1,0 +1,73 @@
+---
+layout: post
+title: Installing node.js on Windows and Ubuntu
+---
+
+![node wallpaper](https://nodejs.org/static/images/logos/nodejs-2560x1440.png)
+
+[courtesy](https://nodejs.org/en/about/resources/)
+
+To [get](http://ionicframework.com/docs/guide/installation.html) the latest [Apache conrdova](http://cordova.apache.org/), one need to make sure that [node.js](http://nodejs.org/) (and [npm](https://www.npmjs.com/)) exists.
+
+#Installing node on Windows
+
+Download the latest node.js from [http://nodejs.org/](http://nodejs.org/)
+
+Follow the below steps after opening the downloaded setup file:
+
+Let the installer compute required space.
+
+![node installer compute required space](https://lh3.googleusercontent.com/D871Sl3LW38AiXBP95tJevQeHfWa8KrQ8OpSrlKI7riiv_SvQ2Nkp-ukaVn-eAHkYaYgMeRIrY5Hk2y-BzD2L41oLZT4_D7gPlMGDO7fttjQVNPFSgiTe12WDKgi4Tw3-FF24WMUaVhD0woSsec5Wop3_cbn9Qb1HI0Y8R1_lvabCuxDnAwlljWEpjmudVR0siOzuqJdcVNrg9J0RV1HzuE6Dfrqh_D7afhRyLERgAQtckK-37N_dpco5Isr3-47Q4V_Cx-ETSy2zC_ZwOqC9jnhNiI6hmqcrHtIDa4ZNotUPB7pJq1ZSfkYNtUjNtzQvYgz1XH0h4zmcUwwFu-Zsws-lHiniyfs52fz11fToKaC1_9S5cu3fe6QyuZ07E049vo3ZgDQl7e7U5gQ5tNba5jfOj0RBW4EzGGXsuivUz6AQlhdidoDEQJVaGLHt40nEpj3ZtBczQ1D-DJB91-JRrlKTrOLCLwU8Y84Dp46XA347LoFiuUYs3X-6o6XJ7uxo5Wj2dN_HSrHgUHk1_Phgu6_Ly219Pgv2umGCPZ_-pnR3JPgG_JG6KYDi49Xa0taGzJ3=w495-h387-no)
+
+So, if we have required space:
+
+![Welcome screen node installation](https://lh3.googleusercontent.com/Ah7Zxo_i9q-ppjTpl9ywkoq8ZTsvqUFLzPUHrXMjSdO0J6BHtCgBpjBS_mQP5nq42CbP0ZR7uMCW4FJbqAUrCvnxztp32MW5TOTiwGHm2d4QIyz4EwNSj7kWI4hEAOhZbbk_kSK6tH9xcYevd6Q7n0yCzlq5t9Seeu8au3DvOgnoR80dQjdNJagHWh_4_A3BVaAVTKnwkA9cL3OZlNYtjjxndoGoKBbLYqZXVIoS1sMABQTVXQcnapAFm2uxw2HTow3P65vQGCXa-DF1hqWgQUM3fEkjkwrquOyRY52ReRnVz-AMWemZc5y4_ZDMmrStXdS726uTC02DHiD_piEDwsTBpoMzgt8NqThkNqgonpo4RPq0CD1f6XtxCaW6zRH9aP9CN3BzEFiSxVeNOts7K08Ie06Ct1CBnp_k_pN7xreIhTCs0iCvzPM-W5yN6FcRU8k-TkYQfbJQyMAOLQjstFCm8sX0-dAQeWtLBin5uhy3mjBMs_OaIzTVtN9fUOQivSOBHiEx71vIDPodyTHzIZBhQMBXqk-ZWYH1ay6ZGq2rka0XIkFZAYcVNVHkkLO2FC1G=w495-h387-no)
+
+![node license](https://lh3.googleusercontent.com/tay-rBPOpSYM9nC5JiEX9UmviL3FkM5L2PF_mBh3vkwxCyepAsj3XqUHlL91yRVgTmc3h5b-Ds2fa7ft9tjYJWgdLjWmGlbgA84PVa2KtfXUVBdNAAEfyi4dbJll7JIXopLaeR6M-I3a4hDhNQBp5Q_HD1A3rEdyqkmJp4_l2rFwjUbHVeGLOqBWmApc0_BlAIM9z9jb6g-OyPzSXChEF110cJ-5nZvlWNC2zYHO0T99AdmRxjqOZCtQ5gBQzF17SgmAfSAIC8ezUUkbpPvppwwdgO-LzhjD9eyc9_VVOmMvFYx9ZgL2V9J4wZZ9F0PPvdRjQC_YxFWHe43Wpv5kGUPm4Xe6nXuER5xgmp9k0ohf1Lz0ytmeuQzmAuJs9P7TvPtPZ9vk2SaVhJLyCDrX0SvqxWFY_74mLBAge-V6r5ziv70PYZpkgp970UKCFOTQvU4yDiTIibcpFLjP9bFHq2bUHlGu07ISgZ1Q3uvWJcgZuo8lmXtU007NsZQvektI2JY6Gnibw3RAx_BCOJliGSqsOPfNZ7lojaa8xFsRbJHP0E3BRUnGEqFgxI5FC6XrFq3l=w495-h387-no)
+
+Select destination to install node
+
+![Select destination to install node](https://lh3.googleusercontent.com/BGqX5RnVow315hY3iusYKlmJY_XsmQgE3NpbiRwjrikSkDNr_rV6I4Hpgg7zQCP4bUimY02V8DtLlONv02Ia9BFDVUSuqBLvr_hZViIa9F04MO_LZstf-AFk-I7qD83LeaWpzY-KGYskThnN7BAnasCY5dlxLeSG1xNuDGphVZbsKC3XxdaeuMrSbNa5L8PYP2ntEW2Gdzp_kNqSwdgpi2u7Hhk-icrakJtZkbxZvGeN237VC15bvMC0Gf1s5A4GPfXu_YiozMp6FCyGeXKpAkasyhx-iqo0UwNcBj9DKgr31ie-vKWmHD5C-F728FblHO3A7TpqLBPjpM_v6GBUt-mkJVz14s8N0CC-hrAjVRzB3mmDlODveI5GWZdVmRCHKeLcmxFwL68PgCWNtebdwH7QaNPAxo94FPUERaFaR_dPTkakEikjiMfuLuR59TESbI0-l6e1FqTr6J5KMwvJSaNV6c_gqd0foWFBD5IpOMelcLBL5kD7as65QvqBRrdfSANL7l85Wcj-UihBHtDOnCyzvD7PGCgDclGhJkZlwsT6hvg3V5xQFhydg9dE53bDVVyO=w495-h387-no)
+
+Select which node components to install - this may be useful for server configuration 
+
+![Select which node components to install](https://lh3.googleusercontent.com/_c5qSIah0KkcFcOOR4fKgM6KgfRaJkrvEJGGFYtoqwC8XIUvr0EpmJ5UAQGU_L1OcBVEiwweXcAAQyju7a98hzKmDHJsnYi0s8KJStm1H8lVrMryUC6sqp0klpKCHUh3HXTjRLvamaX1WpQpbb8Tgxe2l6BfvR7E1pCvbJMC3IK5nrSIFnZCfcMAXtA1Cch1RkvMgzXUWepauQCvvJM4tutBuTvsSsbvb4D1dJlI7hMBJNRCNRwIMt1Hw7bXgeeP2IWYazWBdoLhmm0Nfc5O-ocMvtVCe3aJAs27-moP03P83udKFQnCztyvulHJWdnGRBIAlBlSdnBM6ICNlFHHOamO2i_dZnHlJLq8pPeiU6wswBPSmUeqkUFGQaZr95wtiuHmKrrOZ68bMb-T1Kz95LiT8ZZyKv3jeIOh3QYd8_KYNyaawharBn7T_wU9BM5FGiqcDUukyFTMvvWfdNMpuCq569siHdpVM3ypjdHqnx5g8DTu64wgazRi18_u6SbU28j--PlCZnKqdBUoWwSRGX3YrrinO4XY7cOuB2UUNS4CbFwFV3YpubQExYcvjw6-b3HF=w495-h387-no)
+
+![Ready to install node](https://lh3.googleusercontent.com/-XLacbhNmQJYBVuTU6vN1LdczMjraCLOWNegd92eT6hmakx7ZezdCl9-lqKWEJYA9FeiG6iWFUqqoIFlF3WN5LzdoiAzPtbSsk4JC6cckUtOKaenAhQMwsoNUPE1qpj0PEASRX3NXC5dgOkPIhuyCDPsBhKVk1xx9i2VnS41MXrUsDIZqBKyyoNP48O8Ak3h2dNHYhnXgR9-9DpmElgzPkWzajzmHlQM3xWSih_xgaarx9Hw-1ZbZWtmykz7v1YrZnVlRVxk93VPQsWYyzMAKQmBnhnVvtyQP88-CDzwkWQWhYuooj8lNz095Bhcj4IXiV0fZ1YXK8G0fx8Hk6fV3qoeNtJ9y6f6jwjEi6SN-b0AQ-6R9r051DjVcYuXMGn7wUzo81WMV8ti7RAy2tvc21PivTJa5fQke6EWNCShODYokcV_3oHyPm6hMAhWzUA_9gZxAjsxBngtAejKjkJs4M1HlMf0bomm0Z4ho49IxtTqM8jc3cHTnijw6sptxadkrs3VU4Cpb0Bui0cUZ08tyjBr85MU7ZFlCyA8RBqETrr4MR41Nug8PKelDvw_BnifdeRw=w495-h387-no)
+
+![installing node](https://lh3.googleusercontent.com/slI01xsjVCuSCkqV2P0XfV0BybwNMfxhcEQBvhWzq3b2MXswTrh5_bs6GUbrz7pyWy84pX2EqAztWsFJV4DZu7HRxIFUlItblVbaxaRDWaSfEyFJHSMOnHbkUNS7dinsWqQ1mVUkHxAzQgy9-mc9Sf1fiQLOuzJgu-nZjUjlCRw5XdXhQqdd_mtQemmsB-Yy_eVX7Q_OclSZMVqor0RTprCd6abd8XulbUQZ3WwCT-5bA5qHOS7miSZFfBHefTldQ-0KT6UdDF_RswJ337cN1JWq1b-XpWyHkOm0ZUQyO2RhF59Gz_3GUjcG_e7fldC_lHFTzenhNqwq_ZQMtrfDun5wo0WDjphWOTR2uzrlCC4lvkH6txWZRS5fHHDWTYW59Wnr7w0j0V3eq0z4b76WmXyLbcs7mAGEalREFZwhM4T4bKb5M3Mi_gZrn5uFimEFVD_RvoMlCAjRiTxt7UYGQeGC_eqx5Zhyb0JLOqCm_NS0au6NmmU2ab98WYQG6KEiHL4eyAUrXJRSao5VB2iPxAiHxunq51vtW6XFj2iPSFpWj0WahWI4ChwYlxI3f7ze522T=w495-h387-no)
+
+![completed node installation](https://lh3.googleusercontent.com/hlb6-M3HwjCUNBIAWMJI1ZylqOiz9lNAUW1jXVLRCPysMw0_oYDLkDXaa64hqWS61dcPnoE7Z1X_-gilq0aywhwd7gZczBjZelGICTRS-cYrGs2oWTNW-1_b0IPFTsco7ErFmJHS6U1oFY9Go8_MsKqz7rlwPmJEsPBxMu58xikIeyoqVZ9SM7RRbM885mnBqngAESKzecc5wNPAV4hBMMF_DklrWXgV9ax-q0NcTSHWEKfgCcUGPj21e3JtdRpJ7YPJ-aSPxViEWK2Rsm2QbunUTgYCCyTuL_WRV7D65OkSnSDToU9JDX6ZoC9JmzxE6nVb-lEJ2ZDCMGDeCIBrJFiWyyTU1H-RsMtmM6KIBQV_AD0iYkqyvQasuPmSSaORZdvPLHPams6NdPJRilGPVCZHtn4XEgz7hnSRh_n_Rt-CnCw_kna8lv0WOwa6gfNsQ2Xg8YelppCXt6lgfF3HnCdRCUgrvlIOlOwOtXD3Aw4y9jK7AEOvTCtTHKjmpVXT_3INcgosNaS3b8piuTNJqbNkkFjei1BHf8j2qTaTBU9a7ACz_l30-1YKp4fxkU6T_SIX=w495-h387-no)
+
+[Photos](https://goo.gl/photos/2tKMDYrptwJKJZFN8)
+
+#Installing node on Ubuntu
+
+There are various ways to install node on Ubuntu, one of them is [compiling and installing](https://thomashunter.name/blog/install-node-js-on-debian-6/)
+
+Use the below commands one-line-after-the-other
+
+<pre>
+<code>
+$ sudo apt-get install build-essential
+$ wget http://nodejs.org/dist/v0.8.16/node-v0.8.16.tar.gz
+$ tar -xzf node-v0.8.16.tar.gz
+$ cd node-v0.8.16/
+$ ./configure
+$ make
+$ sudo make install
+</code>
+</pre>
+
+To verify the installation:
+
+<pre>
+<code>
+$ node -v
+v0.8.16
+$ npm -v
+1.1.69
+</code>
+</pre>
+
+Yes, that's it. Done with the task!
