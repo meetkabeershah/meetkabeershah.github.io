@@ -3,6 +3,10 @@ layout: post
 title: Installing Cordova on Windows and Linux
 ---
 
+![Cordova logo](https://cordova.apache.org/static/img/cordova_bot.png)
+
+[courtesy](https://cordova.apache.org/)
+
 #To [install Cordova](https://cordova.apache.org/docs/en/4.0.0/guide/cli/#link-2)
 
  - After getting an Internet connection on **Windows**, use `npm install -g cordova` command
