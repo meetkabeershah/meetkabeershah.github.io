@@ -56,4 +56,6 @@ Incase you already have Java installed, a warning will be shown
 
 ![Successfully installed Java](https://lh3.googleusercontent.com/eNquPMrsiH30992DhWrUYbolTjB5SVUNsVAl03jvXjgCTzeXjk74_dQDbWvZCYgP4dMvUUfjerOvRa-tZU03KsxziSIYWT1_hxw-S_KiBMz8xvV7yQqBB5JO_IIjfQf4LU3gUJzXBbT_7g1eTWepZL5g5oat8_A-dEmbhd3HQJEMwMyvHW6ZSxXcOVt5A7zRmIjkNQymYyUeqRRtcguiGbe1G4iWNDKieWWczcr_BtWM-rOtVCJQp4IstQR7XJdhc2UxqfWJy1XbOKCN6TXmm9qTpBpnPcyFShWeFyGJN8Bwy_331IBAmkFOURegNur0MIROyN-QR-uUuADH-TJ0jAkwlNAIMNhd8VhsgZLt4keZVtnnLwyTX-Jmk1xlU2F-llUFUVZv9okypCaclDtNhzytYAz7J8wQ-vnEXD5goi8H0Oa-nknFCW6nj_9AOLNz_ZwfOfVhwpylvawSsgUTCvgy118U2B4NBox1VDN_RAxQMi5-QzXKecCHKnPCywRhK995P4OAWrGRdVs7KJ78LyeOsZIyt99ZduVjqF06f6u6qsMWNbHeyGZzXsEnqiOBp_4f=w500-h381-no)
 
+Now, [we just need to setup environment variables](http://www.computerhope.com/issues/ch000549.htm).
+
 [Photos](https://goo.gl/photos/caGGuZ1UnVGxhBaq6)
