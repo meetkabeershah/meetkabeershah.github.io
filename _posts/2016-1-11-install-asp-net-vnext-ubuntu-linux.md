@@ -7,7 +7,7 @@ title: Installing vNext on Ubuntu Linux
 
 [courtesy](https://twitter.com/sjvn/status/646381868133273600)
 
-Since, the [open source](https://dotnet.github.io/) [.NET core](https://dotnet.github.io/)'s [`1.0.0` release is nearby](https://github.com/aspnet/Home/wiki/Roadmap), I was trying to get my hands dirty with [.NET](https://www.microsoft.com/en-in/windows) *outside [Windows](https://www.microsoft.com/en-in/windows)*.
+Since, [ASP.NET vNext's](http://www.asp.net/vnext) [open source](https://dotnet.github.io/) [.NET core](https://dotnet.github.io/)'s [`1.0.0` release is nearby](https://github.com/aspnet/Home/wiki/Roadmap), I was trying to get my hands dirty with [.NET](https://www.microsoft.com/net) *outside [Windows](https://www.microsoft.com/en-in/windows)*.
 
 #[Install](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-the-net-version-manager-dnvm) the .NET Version Manager (DNVM)
 
