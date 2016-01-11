@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing ASP.NET 5 on Ubuntu Linux
+title: Installing vNext on Ubuntu Linux
 ---
 
 ![MS with linux](https://pbs.twimg.com/media/CPdDZ2XVEAAgIA6.png)
