@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing vNext on Ubuntu Linux
+title: Getting started with .NET on Ubuntu Linux
 ---
 
 ![MS with linux](https://pbs.twimg.com/media/CPdDZ2XVEAAgIA6.png)
@@ -65,6 +65,19 @@ To [host ASP.NET MVC 5 apps outside IIS](http://stackoverflow.com/q/34649424/240
     sudo ldconfig
 </code>
 </pre>
+
+#Install Monodevelop IDE
+
+From [VS code docs](https://code.visualstudio.com/Docs/languages/csharp)
+> An example of a non-supported project type is an ASP.NET MVC Application.
+
+In this case, [MonoDevelop](http://www.monodevelop.com/download/linux/) can be used
+
+`sudo apt-get install monodevelop`
+
+which supports ASP.NET MVC projects.
+
+![Monodevelop works with ASP.NET MVC projects](https://lh3.googleusercontent.com/lvkPVzBw0KNyohIJK2aWPjGurWsspstj-7v9ofUq-qt9JY-pszXOpccLsMj7_S69HTxjsM6rd-tt3eWbSKaRif0DAzwQUDKOg5o6iWEZCKkjbVQDITGao-J_clWkcXn8uj2oysrQI1Ixh17jr8mvlmsRjHpIgx9897U-wEqT3rfkI1Cfb9pfNjjK905kv2JWgmr9aZni5YhET87kkbNAjvkw7hBISGw330RViDydD-ev_Z_CBc5IeibYHefs2MBBev6cdAYwC2JPp25KgaxOLXiPyLGbQG90Cf8d3VgYtvDp1gA9itFnry_mvaPHakYQuy39mkuB5mZUuOi_0aovJwY6pUigFxxe66B4OQeJgO93_87YS-XGrd7d2evWzy7KY28OOsefafzaFN6IPQP31451p6KaQDmwwlC2H4sWNFL3aULsEYmmjqS2X6AyJGjvgmubAz8C9_94med7gFwLgzyIBiK2ORQ6o5cPEHzo9mODIqdmu-rCT1afazvsFSbrjMUOMot0nr77ABoLdwrVsnLhEAUiPZ3eC-_k3A9wgkW2mPg0AaZ7oGmoGn3HrkT7b3l_=w901-h660-no)
 
 Phew, it looks like everything is ready to see .NET in action outside Windows.
 
