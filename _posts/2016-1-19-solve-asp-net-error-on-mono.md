@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Solve xsp4 web server error
+title: Solving ASP.NET MVC project runtime errors on Mono
 ---
 
 ![Monodevelop logo](https://chornsokun.files.wordpress.com/2011/11/monodevelop-2-8-2-git.png)
@@ -24,5 +24,13 @@ This solved the above error.
 ![mono-xsp4 in Ubuntu software center](https://lh3.googleusercontent.com/C5-5C3FHK2RE7--bmz6VSqU6keQXyvUAxhtoGOPt2xXrp1oZVOhMdgF0-J91A7ptJWyyu33OY1I6s6oToOeV8B3IvC2XT6pU1FNb-WqIOA4xs3Xp6Eo0lK8CRsNrza4j6HXGZQUg536VoCbAaCvOykTkll0Rxo7aJp8etcKT6v7UvQvqUv5si9agQoVeF5n6fenW9evfZ55VoHldYUnYM2qcKe8BKIg5GXEya4sv0ESPktYXfZfi3VPVvhuzk-NqvNJrriTGiWnUgPm9Vci1efPzeriHgVx6L91WoBwrs0d5M8eNZxm1dg9G_22i5f3WuZe65QOkuT9AO_3ysC9o9ZLpIM6JQNNS6expj9sXAqMVUhTBm7yzV5EoeHOWE9XIA6R1C9eo-00JvWxDDhABP6U8aMbYeT_10yy0v_jfP2Y-qk3m1st-lnSBnQyCNBuj_qNMcxK7sR0zh4lDIbNEha_wKMy1rsfUEUexYFspMDBXLkZz1kJt9qnPgyVMp5rYIGLt5i_Kn32IfLDmqwA2aePfyTE3i_6LIq7S5eU3cuP6VqiSMxI11hcB8lYAFjI0ofbo=w1088-h637-no)
 
 After the `xsp4` server is installed and ready. The project will start running at [http://127.0.0.1:8080/](http://127.0.0.1:8080/)
+
+A directory access error saying [`Access to the path “/etc/mono/registry” is denied`](http://stackoverflow.com/q/24872394/2404470) may also show up which can be solved by *simply* creating the folder using [`mkdir`](http://alvinalexander.com/unix/edu/examples/mkdir.shtml)
+
+`sudo mkdir /etc/mono/registry`
+
+and setting the right permissions using [`chmod`](https://en.wikipedia.org/wiki/Chmod) 
+
+`sudo chmod uog+rw /etc/mono/registry`
 
 [Photos](https://goo.gl/photos/1GKy1Q5cQErmafNWA)
