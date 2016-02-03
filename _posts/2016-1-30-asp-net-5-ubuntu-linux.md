@@ -1,45 +1,11 @@
 ---
 layout: post
-title: Running ASP.NET 5 on Ubuntu linux
+title: Building ASP.NET 5 on Ubuntu linux
 ---
 
-![Running ASP.NET 5 with on Ubuntu linux](https://lh3.googleusercontent.com/0sxgq8spWKYyayyuUBBTAZB90UaS8N2wnLPrvVQ3D7B-3YMcdoK5SQ-IAOk-D7m5Ifskm62lVf_ZhGq-2JuxKSoS-nJxLHxANDJpwV9rGjP5cgQ7kEvzadAh0-QcRjxYPN-PBuwd_esMRbD11wzEByVsUqLZVhSLa2GuTakMl3OgvchtnA2dEz-dfCRU_Z-bqDeCRJRMxAypQhnKkG0cklaq1SAXprqkMqiJB66KzI7OtmxUsstHqcQpKYWuaV8nOvblt4pLV0caltkfFqUhXUJkV9gyGB4cTrksTZBOix8A5hv63Wexl_JHKNUUvgHrSfgL8TUHwLS2Oqy_CCvl4m2rdT79QWHIn2Qj0FjgQJIF7zKbWCfVsYPUvN34VVLy9HPxIllMEasWeiOc9mIi7HlrdpfamRqdbFPRsWl6B3sQ0ScsXMRDoJ6wPxDV_HCXsuxPn67N64FeTCXG6BHk7zkW-DDBwIclbhsNjpsiVsCTnJ-KqKBI5ZKACXDP12efoqbW_v291B6kbiPCkQztDs5QTuYtXN9g-JZeeIYiSCQamdBrTOA4a2qriq9V0_gz_Z9u=w492-h199-no)
+![Building ASP.NET 5 with on Ubuntu linux](https://lh3.googleusercontent.com/0sxgq8spWKYyayyuUBBTAZB90UaS8N2wnLPrvVQ3D7B-3YMcdoK5SQ-IAOk-D7m5Ifskm62lVf_ZhGq-2JuxKSoS-nJxLHxANDJpwV9rGjP5cgQ7kEvzadAh0-QcRjxYPN-PBuwd_esMRbD11wzEByVsUqLZVhSLa2GuTakMl3OgvchtnA2dEz-dfCRU_Z-bqDeCRJRMxAypQhnKkG0cklaq1SAXprqkMqiJB66KzI7OtmxUsstHqcQpKYWuaV8nOvblt4pLV0caltkfFqUhXUJkV9gyGB4cTrksTZBOix8A5hv63Wexl_JHKNUUvgHrSfgL8TUHwLS2Oqy_CCvl4m2rdT79QWHIn2Qj0FjgQJIF7zKbWCfVsYPUvN34VVLy9HPxIllMEasWeiOc9mIi7HlrdpfamRqdbFPRsWl6B3sQ0ScsXMRDoJ6wPxDV_HCXsuxPn67N64FeTCXG6BHk7zkW-DDBwIclbhsNjpsiVsCTnJ-KqKBI5ZKACXDP12efoqbW_v291B6kbiPCkQztDs5QTuYtXN9g-JZeeIYiSCQamdBrTOA4a2qriq9V0_gz_Z9u=w492-h199-no)
 
 After [configuring .NET on Ubuntu Linux](http://xameeramir.github.io/configure-net-ubuntu-linux/), I was looking at ways to start developing [ASP.NET vNext](http://www.asp.net/vnext) projects on [Ubuntu 14.04 Linux](http://releases.ubuntu.com/14.04/) using [Visual Studio Code](https://code.visualstudio.com/docs/runtimes/ASPnet5).
-
-#First, install ASP.NET for Ubuntu Linux
-
-Although [official instuctions are given](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html), I [re-wrote them again](http://xameeramir.github.io/configure-net-ubuntu-linux/) since details related to [Mono](http://www.mono-project.com/) are <s>less</s> invisible.
-
-After installation, [make sure to always run the `dnvm` and `dnu` commands by adding to `.bash_profile`](http://stackoverflow.com/a/35031584/2404470) using the below commands:
-
-    echo 'source dnvm.sh' >> ~/.bash_profile
-    echo 'export MONO_MANAGED_WATCHER=disabled' >> ~/.bash_profile
-
-Verify that commands are actually added:
- 
- - Go to **Home** in Files explorer
-
-![Home in file explorer](https://lh3.googleusercontent.com/qNKdbe5SLANvFBO35_1kqJA4R424zia1zgSYAsMYZsig9fWVVuP39ih18XAkWrnsUeRNndMH-nHlWEFrRF15kc1zBEHSdPjX6xCN8hy1zbUzlgIpjZPVXfk6X1ymCE53CBrVfoZD5agsXdl5Nmf8a21lfl1CwZWgW1l7QA2RNBFipI3yf24WPvzipXM-p0i2YnBm1MvbTQK71jxsSJB9oYow8iFujo-rF6lX0Gnefn7vfamJwFjm3MOyXcOn4RMK7IK4SNZ-jhUE_VwNWKhBTCqE7l9Xw-ulG_zcJyWzlAYVRFq-P0luL6mvSo9nhfN9HWlUUWSw0k8pxl0bg1bZO-I7tZJt5klVr6yfp8RNp_F5GoEOWkxCdL35-wXu7Wcs8rtzRSPkMylccEvrjLFl8fdMtV9dO2LTk_32cr8IEmCLk64sP-97sqrTEP_OI17zgTAxp2xBPa1st2ldAc2eHXHymzpO1bHInpx1yppzovI9Cv4V1AwaGOAS2OZ81wwlVcXDyfw8_LI02va4AaEZH8bSfSL_fs4fAQzbYeLEVshInrQc8_4xl06QbgtZP8a-x2sT=w88-h241-no)
-
- - Unhide hidden files using <kbd>Ctrl</kbd>+<kbd>H</kbd>
- - Locate the `.bash_profile` file
- - Open it with `gedit` or your favourite editor
-
-![.bash_profile in gedit](https://lh3.googleusercontent.com/up-4rd2-wzt7vC9ossJ0RZADJFhQ0NwOqMkQOrtRdaMky6HIOyPnKGhhUbmm80bEVoJPK45yHn0tyCRDJyvwbls8ASHsUXNJKgs3CQYeVE17StRPtTNjd_UbE8W0zZ3eKn9KxIzzgiu0rlXtjEUvwlItlcs1Zi_PvQHUyBkQbRUdGS62GZHdoDGr9AAUff55wsi9eaoAuHGJYlyuKStqH0loYS2Xv8MjroDqkZTJuAVem0e3VXJYYngH_7vVHPJqutoYKA3_7ClEoo454MiCjvbuBAXJdyf1Ou09fZ9tJAXmDQIgxcUrSk4HfqZs62GeTNaPIv2LBlcN2f9E6ZOQaTVG61ubBIdTt2TTc-SuwP6XEIv5eD3T9-ADKOBK5q2iQDpDcpLzYhT-ve0KC2Gg2MOpHSootqN_gpjEVtWMqWcg_YfBQlfX8hSpbQ2k8iF8ZsTg3-VwEnZAbwRtZ_BgKP92crNKT3qtfIKw-ongOgErlVODHnulaqw4ZysAk1QmqFNtJuTnEOh_WMRKQhzNM-erZiJgZIR6CAPDPOE2ankj37d-owAxnbz-XPmB0dgmjUUU=w665-h277-no)
-
- - Locate the below lines:
-
-<pre>
-<code>
-    source dnvm.sh
-    export MONO_MANAGED_WATCHER=disabled
-</code>
-</pre>
- 
-Alternatively, [use `cat` or `less` commands](http://askubuntu.com/a/261902/219603):
-
-![using cat command for .bash_profile file](https://lh3.googleusercontent.com/uTHD-VFvkelKxKwrETcCHGlW5CzqhtWlLXmuiotBAplc_xKOrqsPKb9l2yKat5uILtQJMCd2twI9CXQ_fltWzZv-9xnObT_QpTvjD1WFzdoirsrh-IYu1NHhV0jnXvxMAdZ03li97GFmnyRPWnvK1WAiXt4Zi3FPaQDrkUv6c-ld2sprOivOz--wViw9jxYxL89X-J3PDyNzfHAdUrcxiDces01vG4k7VvWyjymQUcUVxMhJXQZRH7EW55Kgv3f-8HzCeqW7TZdcSActhBal8KPv-IFOA5qTBU32qxLkatf0sAmELW5PLZTPr603oeHkwCnPDZQqtWlf2kk1ScPlON8UkPq1KfcyuYu88Hs5lEXd2My2ZdS_SE-aj3xLCJc--NYxOhsIYOu-zPi_O8vjcMHRNU2MG-mZx_9AbKtTjG1o_dgPtt_VzXX6foILuYsqpwTKTi_SvPWWdM59jP3EMMudpfLFFb-TX10eQM2DK48hrScwfMB7p87HdR6Mm81RIqwnNHLjMpWoE6guT4PwBgVz-q7wAP1PSzImmYMOiRJ_ix49XyKKLQEcjuEvRBY494c8=w507-h203-no)
 
 #Scaffolding the ASP.NET project
 
