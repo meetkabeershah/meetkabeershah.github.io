@@ -40,6 +40,36 @@ From next time, we can just open a terminal with <kbd> Ctrl </kbd> <kbd> Alt </k
 
 ![open visual studio code on terminal](https://lh3.googleusercontent.com/-gGXfrVgvd2QWSGg6ZK2VqsDkJnoSI2Sx5reaCgGBrWSuXM79e63Mj9PKRuVksDKZpuPuP7V2o0QQi_xc0a-CtIJk4q3UObOVxPNISLD2MnPagwwtng8Ew7ZKgiu7UDHg_v5opKgqPerdHnFUtgjydPm_eo0CyluiwW6uP3h4jaaXbLtP5mynOMwly9VPt3iEzeQqeYJnU1XGY9ivAEOuj5Q2-h7lM4bNPZRmANgtnDfZMRO6sMh3nlZz1Wuu_Pdnp2qldHJlksk1hWrOkt_sU3uBseMq0TrCAFX5LP2TbQYfifjEJpfAi3lHvDn6M8SX20_9GmHwjmuA1w__GQASr4KWqvF4vahquBwuDPeMORF_cRpDyhVZ_pyX1Qk4lVwlXXrXALnI4fEYpvZtekRLzKf0cyYqbS69UKJpLWodUtk8a9SSMFTbwcg_Q3bIwBkkKNd7NkDcqqDH9ODA0YztSE5364oHnlIV0XHEqm7tH1otALMZ84FmcZLbAIbbz8JaLw7L0ZoGzjU3Nti86ry65YtK2_5ba9l2KsldC7H_3uGfqJxLIYLSAskYAg5GM1OTfUz=w722-h199-no)
 
+After installation, [make sure to always run the `dnvm` and `dnu` commands by adding to `.bash_profile`](http://stackoverflow.com/a/35031584/2404470) using the below commands:
+
+    echo 'source dnvm.sh' >> ~/.bash_profile
+    echo 'export MONO_MANAGED_WATCHER=disabled' >> ~/.bash_profile
+
+Verify that commands are actually added:
+ 
+ - Go to **Home** in Files explorer
+
+![Home in file explorer](https://lh3.googleusercontent.com/qNKdbe5SLANvFBO35_1kqJA4R424zia1zgSYAsMYZsig9fWVVuP39ih18XAkWrnsUeRNndMH-nHlWEFrRF15kc1zBEHSdPjX6xCN8hy1zbUzlgIpjZPVXfk6X1ymCE53CBrVfoZD5agsXdl5Nmf8a21lfl1CwZWgW1l7QA2RNBFipI3yf24WPvzipXM-p0i2YnBm1MvbTQK71jxsSJB9oYow8iFujo-rF6lX0Gnefn7vfamJwFjm3MOyXcOn4RMK7IK4SNZ-jhUE_VwNWKhBTCqE7l9Xw-ulG_zcJyWzlAYVRFq-P0luL6mvSo9nhfN9HWlUUWSw0k8pxl0bg1bZO-I7tZJt5klVr6yfp8RNp_F5GoEOWkxCdL35-wXu7Wcs8rtzRSPkMylccEvrjLFl8fdMtV9dO2LTk_32cr8IEmCLk64sP-97sqrTEP_OI17zgTAxp2xBPa1st2ldAc2eHXHymzpO1bHInpx1yppzovI9Cv4V1AwaGOAS2OZ81wwlVcXDyfw8_LI02va4AaEZH8bSfSL_fs4fAQzbYeLEVshInrQc8_4xl06QbgtZP8a-x2sT=w88-h241-no)
+
+ - Unhide hidden files using <kbd>Ctrl</kbd>+<kbd>H</kbd>
+ - Locate the `.bash_profile` file
+ - Open it with `gedit` or your favourite editor
+
+![.bash_profile in gedit](https://lh3.googleusercontent.com/up-4rd2-wzt7vC9ossJ0RZADJFhQ0NwOqMkQOrtRdaMky6HIOyPnKGhhUbmm80bEVoJPK45yHn0tyCRDJyvwbls8ASHsUXNJKgs3CQYeVE17StRPtTNjd_UbE8W0zZ3eKn9KxIzzgiu0rlXtjEUvwlItlcs1Zi_PvQHUyBkQbRUdGS62GZHdoDGr9AAUff55wsi9eaoAuHGJYlyuKStqH0loYS2Xv8MjroDqkZTJuAVem0e3VXJYYngH_7vVHPJqutoYKA3_7ClEoo454MiCjvbuBAXJdyf1Ou09fZ9tJAXmDQIgxcUrSk4HfqZs62GeTNaPIv2LBlcN2f9E6ZOQaTVG61ubBIdTt2TTc-SuwP6XEIv5eD3T9-ADKOBK5q2iQDpDcpLzYhT-ve0KC2Gg2MOpHSootqN_gpjEVtWMqWcg_YfBQlfX8hSpbQ2k8iF8ZsTg3-VwEnZAbwRtZ_BgKP92crNKT3qtfIKw-ongOgErlVODHnulaqw4ZysAk1QmqFNtJuTnEOh_WMRKQhzNM-erZiJgZIR6CAPDPOE2ankj37d-owAxnbz-XPmB0dgmjUUU=w665-h277-no)
+
+ - Locate the below lines:
+
+<pre>
+<code>
+    source dnvm.sh
+    export MONO_MANAGED_WATCHER=disabled
+</code>
+</pre>
+ 
+Alternatively, [use `cat` or `less` commands](http://askubuntu.com/a/261902/219603):
+
+![using cat command for .bash_profile file](https://lh3.googleusercontent.com/uTHD-VFvkelKxKwrETcCHGlW5CzqhtWlLXmuiotBAplc_xKOrqsPKb9l2yKat5uILtQJMCd2twI9CXQ_fltWzZv-9xnObT_QpTvjD1WFzdoirsrh-IYu1NHhV0jnXvxMAdZ03li97GFmnyRPWnvK1WAiXt4Zi3FPaQDrkUv6c-ld2sprOivOz--wViw9jxYxL89X-J3PDyNzfHAdUrcxiDces01vG4k7VvWyjymQUcUVxMhJXQZRH7EW55Kgv3f-8HzCeqW7TZdcSActhBal8KPv-IFOA5qTBU32qxLkatf0sAmELW5PLZTPr603oeHkwCnPDZQqtWlf2kk1ScPlON8UkPq1KfcyuYu88Hs5lEXd2My2ZdS_SE-aj3xLCJc--NYxOhsIYOu-zPi_O8vjcMHRNU2MG-mZx_9AbKtTjG1o_dgPtt_VzXX6foILuYsqpwTKTi_SvPWWdM59jP3EMMudpfLFFb-TX10eQM2DK48hrScwfMB7p87HdR6Mm81RIqwnNHLjMpWoE6guT4PwBgVz-q7wAP1PSzImmYMOiRJ_ix49XyKKLQEcjuEvRBY494c8=w507-h203-no)
+
 And VS code is ready to use:
 
 ![visual studio code welcome page](https://lh3.googleusercontent.com/RTMTkA9XdbBo-mzjSGfYSaX0vox9NwlgVgrb7nFV7mGN3jl-tH1kAeXTJ2_CCvonp2xi4xUrE3FC7N1JPozx3NYYXakLno4BPrr0oRfVoHSze7bGyHkeSqd8Pfr_jomLLoLB-GNPHf2cWBrdwoghBoM63YUQtIcpA8ssO98wNY9aEiz7HxIUB0nsrrDXaJ0jUYk3Rtu4fS_FQ7_ETuAv0lRQ72twH6FDBVeTPOSvZlb1xdQpdkyd-Ise3EuszMy7hzQgPI4_cU_Ah8NCeD4sLb3Qq9d6M7TSe8FgGMo8EOW3s3j-a-noagUysJhF6i6-UgUUfIz1L_f2fKA28eN2oO_-QeBuKJ-Qfh9tGZzEx4cFMiTDhWJALPcJKHP8g6USLQ3gzBAUC2Pw_zBL68RMMoeeuQDv5VaJWMWPzNQmsLLgQipaiL-a1Q35yiJtNLMZDQPOHup4aFxWm3bvyhkFQi9V9xvdtZLeUingqKCgSvqgKZkDqhpgqTuDzQYz1rs-7dg9vYieBkZh1ru2QHq8Jj0oJYW_2B7Q3HI7S9moGESX8CzF6ymfXpuKcmhqouxMajQL=w1114-h637-no)
