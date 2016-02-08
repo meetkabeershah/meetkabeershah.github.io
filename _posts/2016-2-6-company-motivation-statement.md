@@ -11,7 +11,7 @@ I have read many company values but the ones from [Google](https://www.google.co
 
 Thinking of how people write, I tried to jump in and here is a fleshy document stating a nice company's motivation.
 
-#Focus on user
+# Focus on user
 
 We build everything from the ground up with **you** in mind. Whether it's something new or an enhancement, it is forced to serve **you**.
 
@@ -22,7 +22,7 @@ Believing this give us enough confidence that, everything else will follow us.
  - **democratize** and respect it
  - **don’t #@!%** the user
 
-#Innovate with focus
+# Innovate with focus
 
  - **hack** - a lot, break your head (not mirrors), repeat
  - do **one** thing really, really good
@@ -30,7 +30,7 @@ Believing this give us enough confidence that, everything else will follow us.
  - always ask this - **is there a need?**
  - **balance** 
  
-#Be bold and honest
+# Be bold and honest
 
 Doing big things requires lot of courage. Be bold, **just do it**.
 
