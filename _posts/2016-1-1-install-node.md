@@ -9,7 +9,7 @@ title: Installing node.js on Windows and Ubuntu
 
 To [get](http://ionicframework.com/docs/guide/installation.html) the latest [Apache conrdova](http://cordova.apache.org/), one need to make sure that [node.js](http://nodejs.org/) (and [npm](https://www.npmjs.com/)) exists.
 
-#Installing node on Windows
+# Installing node on Windows
 
 Download the latest node.js from [http://nodejs.org/](http://nodejs.org/)
 
@@ -39,7 +39,7 @@ Select which node components to install - this may be useful for server configur
 
 ![completed node installation](https://lh3.googleusercontent.com/hlb6-M3HwjCUNBIAWMJI1ZylqOiz9lNAUW1jXVLRCPysMw0_oYDLkDXaa64hqWS61dcPnoE7Z1X_-gilq0aywhwd7gZczBjZelGICTRS-cYrGs2oWTNW-1_b0IPFTsco7ErFmJHS6U1oFY9Go8_MsKqz7rlwPmJEsPBxMu58xikIeyoqVZ9SM7RRbM885mnBqngAESKzecc5wNPAV4hBMMF_DklrWXgV9ax-q0NcTSHWEKfgCcUGPj21e3JtdRpJ7YPJ-aSPxViEWK2Rsm2QbunUTgYCCyTuL_WRV7D65OkSnSDToU9JDX6ZoC9JmzxE6nVb-lEJ2ZDCMGDeCIBrJFiWyyTU1H-RsMtmM6KIBQV_AD0iYkqyvQasuPmSSaORZdvPLHPams6NdPJRilGPVCZHtn4XEgz7hnSRh_n_Rt-CnCw_kna8lv0WOwa6gfNsQ2Xg8YelppCXt6lgfF3HnCdRCUgrvlIOlOwOtXD3Aw4y9jK7AEOvTCtTHKjmpVXT_3INcgosNaS3b8piuTNJqbNkkFjei1BHf8j2qTaTBU9a7ACz_l30-1YKp4fxkU6T_SIX=w495-h387-no)
 
-#Installing node on Ubuntu
+# Installing node on Ubuntu
 
 There are various ways to install node on Ubuntu, one of them is [compiling and installing](https://thomashunter.name/blog/install-node-js-on-debian-6/)
 
