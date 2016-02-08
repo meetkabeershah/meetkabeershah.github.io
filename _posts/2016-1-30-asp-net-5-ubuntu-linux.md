@@ -7,7 +7,7 @@ title: Running ASP.NET 5 on Ubuntu linux
 
 After [configuring .NET on Ubuntu Linux](http://xameeramir.github.io/configure-net-ubuntu-linux/), I was looking at ways to start developing [ASP.NET vNext](http://www.asp.net/vnext) projects on [Ubuntu 14.04 Linux](http://releases.ubuntu.com/14.04/) using [Visual Studio Code](https://code.visualstudio.com/docs/runtimes/ASPnet5). So, let's jump in.
 
-#Scaffolding the ASP.NET project
+# Scaffolding the ASP.NET project
 
 Since, there is no **File** -> **New Project** facility in [Code](https://code.visualstudio.com) till now, we can either use [MonoDevelop](http://www.monodevelop.com/) or alternatives such as [Yeoman](http://yeoman.io/), asp.net generator, bower and gulp.
 
@@ -29,7 +29,7 @@ Yeoman is a scaffolding tool for modern webapps. Install it, asp.net generator, 
  
 The project will [start running](https://lh3.googleusercontent.com/IIl36_X3S5-bs3qkLqTH_DN8vuUkKLf3QuTuVnlhdTgFwQv9xHYl70lveYXoYN6tBgch5kjYJrQgQk7uUMbb6lrmT5xoSZuXyLJdvmnd_Ly-RkYs0TgMYwrMMKsUALUFr5OoxPKmozc_vvcyJGuODf6cA52H-CbJ1eGbi0_wMvKCDv0EVmLqX342Q2t8qXQYTNZ9Q5DZojlrk9iYQGeM-rh-pwkh83hF9JVOZlCxOmiPoZfeEf7xIc6yTWiGOEHyd4j4FRQDsZbd7fIaWm5VeJIrZmXqBlEmpKqgQMdHDHHGw-Yxj3OG7oH7vsyUDkk88c2rly56eQhQLaaE0UsbDEPAVpzS6vKDQ3QbbrkNwJyBb5lKJH2GdhvUBqJkShMSpeS3yPZF310f_kv6rJIr6fE_bKl2XcQGUYp_ANzuxPYS9Ueptq9oubNAHD5j6GJyC7mSW8cw4OAGAMXeh21XnlddqZAm5S35XlKtkp0bXqOd9e6i3vA3iRPmDwnysRrYCyeCigw9tnZt35DUjXBlY-5SlsCU_wosAGl5W7knmt8TcyA6V0WOfUeeReu6ryttseE4=w722-h462-no) at [http://localhost:5000](http://localhost:5000).
 
-#Troubleshooting
+# Troubleshooting
 
 >Side note: There seems to be some [issue with running ASP.NET with VS Code](https://github.com/Microsoft/vscode/issues/2659).
 
