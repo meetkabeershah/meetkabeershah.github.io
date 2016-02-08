@@ -9,7 +9,7 @@ title: Setting up Java on Ubuntu linux and Windows
 
 After setting up [Git](http://xameeramir.github.io/install-git-windows-ubuntu-linux/), [node](http://xameeramir.github.io/install-node/) and [Cordova](http://xameeramir.github.io/installing-cordova/) one need to get the [Java](https://www.oracle.com/java/index.html) setup done for moving towards getting [Ionic ready](http://ionicframework.com/docs/guide/installation.html) on [Ubuntu linux](http://www.ubuntu.com/).
 
-#Setting up Java on Ubuntu Linux
+# Setting up Java on Ubuntu Linux
 
 Enter the command `sudo apt-get install openjdk-7-jdk`. Enter the root password and let the system do it's tasks.
 
@@ -28,7 +28,7 @@ Finished, now just verify the installation by checking the installed version:
 
 ![Checking Java version on Ubuntu linux](https://lh3.googleusercontent.com/Sax04bsurKTc1u5wpYvoiv7Th111iIfwUIYpZcTHoE3Oj6m1fiaUH23ZyYFKXI0Lvj0FTqspd7tOA4SpK_k3FC5e3uVASd4qjF152FHfAkgpi9iH2kcvGu_ln3nQ5wQrIhUvkHdbLuVrAvtU5fYu8FjQJHYG4nhZQoGt0laABkC8pL9uEqtmCFUpNI2i8NOdei_je23iibWl2EKjqaAa5uTGhG3loNLXn_XfBCmG_WGBrVYaUoYpvjpMDCklkEAzOAuNo2Ca4G9X90DJsimjokCVCr8DBQTLU0I4C6LipVFCtxu2axWkYkbbNh8He7MThUe623k8e6B9Z8UnJLsGZMowJtOQ7QJYXdw2lV-olJARTMFxwiNG8I989t73O5YMkHVj51h9kqFzCmITFozQBY9yc0Bk45QttQYxs5mX0LOtU1YjtlIllhrTLdr4TWovMKE9UUtfxuzCjPLdtLHG13p8scSqgrD9yvq3DfVDxg2mMr9uQ475_W_Ds-gq9YwugRDae8knsOmXj1PmMFtwTNvmKohEw0T6ygylmh6rtCRmotVZ62R0ii9L7tjpyrRwhcJB=w670-h172-no)
 
-#Installing Java on Windows
+# Installing Java on Windows
 
 Open the setup file downloaded from [here](https://www.java.com/en/download/manual.jsp)
 
