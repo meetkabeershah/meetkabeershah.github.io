@@ -19,7 +19,7 @@ During the process, the [software center](https://apps.ubuntu.com/cat/applicatio
 
 Initially, I tried individual installations of [Workbench](https://www.mysql.com/products/workbench/) and [Mysql from APT](https://dev.mysql.com/downloads/repo/apt/). However, since I was not 100% sure (and the above eclipse), I just [purged](http://askubuntu.com/q/151941/219603) everything and followed the [sure](http://askubuntu.com/a/323715/219603) way.
 
-#Setup Mysql on Ubuntu
+# Setup Mysql on Ubuntu
 
 Installed mysql server using command `sudo apt-get install mysql-server`
 
@@ -37,7 +37,7 @@ And/Or from [UI](https://www.mysql.com/products/workbench/) using `sudo apt-get 
 
 ![Accessing Mysql from workbench](https://lh3.googleusercontent.com/2Tb-zqVp5nBgt04cTTjT1hUNnAqG8qxyf2wo8PSUYUdsTR4HC6GzIKW6S-Ld8wDWTJIG74es8XR5NcXAs8qTVEgV5gFFW5Dz_oB33A6gSnJXSxcL3u6olxqe0t_z9XzgcdHCg1Zl9w0UY9IVj-MVbGpSnPjwamoYtyOU6zQzKHym_3rwXeu4iUr1alY3D_mk9DvaxKc7TGPEhYf44EXR-Porb0QsmQ6Z0qWr7aCtw8y995VsAq9QbH4XCCqLfORmLfBpR8lqC0N_eqzgFwIwl7pdkC-vAZvaKhGOzt2OtYu2x8tAOE3PpuizYMy0LNTx1qcvizthrQMFsczM7ObibZJfUrAgl2R9duZo7XXG1y0Xq8VvvuipvuXnlWIzLG_xjpRGrs7Um9E4guBKeveZi4hH_v0LVSOEnKEUc-CJi1iU-6_Y6bzpmhU3WNokvDE1dx1DixIBVBN5dpjh-D2fqnWzYqSCEuzQz7RVYlBybDU1alWo1zqUii0S6GZFIlTTXLPbxYUG0lr-vP-P952O7lvRVx7z6Vookb30L56mH6IC6oja57x6ewRAif9UOxncUDbB=w512-h293-no)
 
-#Setting up Mysql connector
+# Setting up Mysql connector
 
 Go [here](http://dev.mysql.com/downloads/connector/net/) to download the connector. Select `.NET & Mono` platform and initiate download process.
 
