@@ -20,7 +20,7 @@ Yes, it's in the direction of what I need to [do later](http://ionicframework.co
  - [Console2](http://sourceforge.net/projects/console/)
  - [Git client](http://git-scm.com/download/win)
 
-#Setting up `git` (and ignoring Console2) on Windows
+# Setting up `git` (and ignoring Console2) on Windows
 
 Download the latest `git` client from http://git-scm.com/download/win
 
@@ -50,7 +50,7 @@ Decide `line endings` behaviour
 
 ![Installing git completed](https://lh3.googleusercontent.com/2lU1yAK2jZpLnDMbiBLjIAPT1e3Pzpilmbn5JZYyJd97Zj1Wz-spIIv06kW_fl0R2JHSDiYdeLXlb-Ly8quaPg36LWEEf_-TM7yG_JAtwEr5oruqVaYXA-gGXwPHRy9niPcpJ5_D_pX-U2pvgZImt6mtv8dWgn99QdpSZOEq25n83oJxcxmNtvbRlixd4Z-QFPT8iZPImxPLnwyVazYIMQpgWEdcEbTkJCpnKUXbDlN39euYlZyuQY5llhwKNAE3ItXde4yRLfi51DR6Z8RvANV6SNFmN6tycQACO9d-b81-vehRAIqqqJmbJqHzVpWpBHBVwD_nGkiZOtSauY8b23k2-877ZJq2WT_KiO4xkT7pj2fppYTUIS0689pPdBo1Q1g3H-XMEI8Z8d9gAssPOiCYjFP-dAhZe0STMwMAHc9fkE3ikwMhjiL_tgJwbDjkkmHb4YO8edGeHrMutYN-pr-5iuar70Y2snHHgTMMf9eMnvsbI1y0_2X8qh4i6AM40qKsmQowphR7oyxoW0UOzUCcriJdRQ8QmEeSnJIEVRdXa_dLT9YWOANZTNJ1CAgxUdHA=w499-h387-no)
 
-#Setting up `git` on Ubuntu linux 
+# Setting up `git` on Ubuntu linux 
 
 Use `sudo apt-get install git` command and enter **root** password.
 
