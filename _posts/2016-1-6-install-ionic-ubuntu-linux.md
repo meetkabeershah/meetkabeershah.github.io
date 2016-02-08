@@ -15,7 +15,7 @@ For [installing Ionic](http://ionicframework.com/docs/guide/installation.html) s
  - Install [Java](http://xameeramir.github.io/install-java-windows-ubuntu-linux/)
  - Install [Android](http://xameeramir.github.io/install-android-studio-ubuntu-linux/)
 
-#Installing ionic 
+# Installing ionic 
 
 If you are running a 64-bit version of Ubuntu, you'll need to install the 32-bit libraries since Android is only 32-bit at the moment. Use the below command:
 
