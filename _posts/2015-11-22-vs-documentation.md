@@ -15,7 +15,7 @@ To keep up with the increasing complexity of the project, it's very important to
 
 [Visual studio](https://www.visualstudio.com/) provides some elegant ways for code documentation to keep the code understandable. It can also understand the changes that one make on hard code.
 
-#Single or multi line comments
+# Single or multi line comments
 
  - Short (or long) functional descriptions
 
@@ -41,7 +41,7 @@ These are necessary to describe functionality in little.
 
 Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.
 
-#Collapsible regions
+# Collapsible regions
 
  - Summary of the functional block
 
@@ -67,7 +67,7 @@ Regions are collapsible. Just hover over the collapsed region and get a glance.
 
 [courtesy](http://imgur.com/)
 
-#Summary
+# Summary
 
  - Summary of the function or property
 
