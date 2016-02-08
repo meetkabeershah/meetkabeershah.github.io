@@ -9,7 +9,7 @@ title: Getting started with .NET on Ubuntu Linux
 
 Since, [ASP.NET vNext's](http://www.asp.net/vnext) [open source](https://dotnet.github.io/) [.NET core](https://dotnet.github.io/)'s [`1.0.0` release is nearby](https://github.com/aspnet/Home/wiki/Roadmap), I was trying to get my hands dirty with [.NET](https://www.microsoft.com/net) *outside [Windows](https://www.microsoft.com/en-in/windows)*.
 
-#[Install](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-the-net-version-manager-dnvm) the .NET Version Manager (DNVM)
+# [Install](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-the-net-version-manager-dnvm) the .NET Version Manager (DNVM)
 
 First install `unzip` and `curl` if you don’t already have them
 
@@ -23,7 +23,7 @@ Use `dnvm` to verify installation
 
 ![verify dnvm installation](https://lh3.googleusercontent.com/qQFjNyFUZHwM4wj-5hr4XLrUEzK97CijVOC47dYXqBizF1xk2tUEoI8p6SfG3EAoCfwjJWYpsiRN4PWCTtiy8hI2Sf5M40zGVraTt-RAQ7oUrAVwse0rX5ZupCRnQSuDWhQCKKoxMQhCqFOJKZfJsez1jSyNgJU_jyZYOQvWsOWya8D-YelZ0cSfsa2ieYYc1rGWaarfuSpRfN_zRZfcUrf0YEivfXU-qM8XZMGjrYIrUWO4AiopnD6ZrEVtqO7-r1jj4iJvN7sBUEUyQSOorevyEPXDXOe3lqOlgmsxGY5FFPmYc51NZnc0Uw96YCGT1VmHgdsnWf1Opo5GUSBpjme1tKXU3wrAY1KSSwFE7QBjs4JKGRpUx5SmuVPKZaSynti1jM8rxyA_1TBOfrowIh5zdm5tqSyz_p6bfP5613XQLTCKFftw2a2R5Zh6SQkCXjhV8NjAuMb_8ukQw7qRWsv1APSJs_5ap8rKarND7Jr7L8geX9bCk34EWQzKsGdP9kBvX166cwpP9cZmnxbddxsEOfrq5YQ1uabmktDGPySJbG_cDMgab5-xk4BoSimN3Mt_=w1086-h395-no)
 
-#Installing the .NET Execution Environment (DNX) for Mono
+# Installing the .NET Execution Environment (DNX) for Mono
 
 [.NET core is still immature](https://docs.asp.net/en/latest/getting-started/choosing-the-right-dotnet.html), so for the time being it's better to at least get started with [Mono](http://www.mono-project.com/). 
 
@@ -48,7 +48,7 @@ I was having troubles setting up Mono on my [Ubuntu 14.4](http://releases.ubuntu
 
 So, I had uninstalled Mono with `sudo apt-get purge mono-complete` and followed the above commands.
 
-#Installing libuv
+# Installing libuv
 
 To [host ASP.NET MVC 5 apps outside IIS](http://stackoverflow.com/q/34649424/2404470), it's necessary to [install](https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-libuv) [libuv](https://github.com/libuv/libuv), follow the below commands:
 
@@ -66,7 +66,7 @@ To [host ASP.NET MVC 5 apps outside IIS](http://stackoverflow.com/q/34649424/240
 </code>
 </pre>
 
-#Install Monodevelop IDE
+# Install Monodevelop IDE
 
 From [VS code docs](https://code.visualstudio.com/Docs/languages/csharp)
 > An example of a non-supported project type is an ASP.NET MVC Application.
