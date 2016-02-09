@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Running ASP.NET 5 on Ubuntu linux
+title: Building ASP.NET 5 on Ubuntu linux
 ---
 
 ![Running ASP.NET 5 with on Ubuntu linux](https://lh3.googleusercontent.com/0sxgq8spWKYyayyuUBBTAZB90UaS8N2wnLPrvVQ3D7B-3YMcdoK5SQ-IAOk-D7m5Ifskm62lVf_ZhGq-2JuxKSoS-nJxLHxANDJpwV9rGjP5cgQ7kEvzadAh0-QcRjxYPN-PBuwd_esMRbD11wzEByVsUqLZVhSLa2GuTakMl3OgvchtnA2dEz-dfCRU_Z-bqDeCRJRMxAypQhnKkG0cklaq1SAXprqkMqiJB66KzI7OtmxUsstHqcQpKYWuaV8nOvblt4pLV0caltkfFqUhXUJkV9gyGB4cTrksTZBOix8A5hv63Wexl_JHKNUUvgHrSfgL8TUHwLS2Oqy_CCvl4m2rdT79QWHIn2Qj0FjgQJIF7zKbWCfVsYPUvN34VVLy9HPxIllMEasWeiOc9mIi7HlrdpfamRqdbFPRsWl6B3sQ0ScsXMRDoJ6wPxDV_HCXsuxPn67N64FeTCXG6BHk7zkW-DDBwIclbhsNjpsiVsCTnJ-KqKBI5ZKACXDP12efoqbW_v291B6kbiPCkQztDs5QTuYtXN9g-JZeeIYiSCQamdBrTOA4a2qriq9V0_gz_Z9u=w492-h199-no)
