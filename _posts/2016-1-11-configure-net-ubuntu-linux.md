@@ -23,7 +23,7 @@ Use `dnvm` to verify installation
 
 ![verify dnvm installation](https://lh3.googleusercontent.com/qQFjNyFUZHwM4wj-5hr4XLrUEzK97CijVOC47dYXqBizF1xk2tUEoI8p6SfG3EAoCfwjJWYpsiRN4PWCTtiy8hI2Sf5M40zGVraTt-RAQ7oUrAVwse0rX5ZupCRnQSuDWhQCKKoxMQhCqFOJKZfJsez1jSyNgJU_jyZYOQvWsOWya8D-YelZ0cSfsa2ieYYc1rGWaarfuSpRfN_zRZfcUrf0YEivfXU-qM8XZMGjrYIrUWO4AiopnD6ZrEVtqO7-r1jj4iJvN7sBUEUyQSOorevyEPXDXOe3lqOlgmsxGY5FFPmYc51NZnc0Uw96YCGT1VmHgdsnWf1Opo5GUSBpjme1tKXU3wrAY1KSSwFE7QBjs4JKGRpUx5SmuVPKZaSynti1jM8rxyA_1TBOfrowIh5zdm5tqSyz_p6bfP5613XQLTCKFftw2a2R5Zh6SQkCXjhV8NjAuMb_8ukQw7qRWsv1APSJs_5ap8rKarND7Jr7L8geX9bCk34EWQzKsGdP9kBvX166cwpP9cZmnxbddxsEOfrq5YQ1uabmktDGPySJbG_cDMgab5-xk4BoSimN3Mt_=w1086-h395-no)
 
-# Installing the .NET Execution Environment (DNX) for Mono
+# Installing the Mono.NET Execution Environment (DNX)
 
 [.NET core is still immature](https://docs.asp.net/en/latest/getting-started/choosing-the-right-dotnet.html), so for the time being it's better to at least get started with [Mono](http://www.mono-project.com/). 
 
@@ -36,7 +36,7 @@ The below [commands were tested on a 64bit laptop to install Mono](http://askubu
  - Install mono-complete using `sudo apt-get install mono-complete`
  - Install referenceassemblies-pcl using `sudo apt-get install referenceassemblies-pcl`
 
-[Verify installation](http://askubuntu.com/a/423556/219603)
+[Verify installation](http://askubuntu.com/a/423556/219603) using `dpkg`
 
 ![Verify mono-devel, mono-complete and referenceassemblies-pcl installation](https://lh3.googleusercontent.com/rdfvoQiVOeNtzC1cCaYe3SpkGZgzaSKZXNpyidq_kEwRWUPJ467gjZrDnekSn3_MxWY_zaRHoNOg4-rI5olRSICZWlb8RfleqAVEHnW1UO8Dof9X6r3aCSQl0XHCgv_ov0rVigTfU_uJprLcRFk1-d3AGCx3TXuMAPCGWB8_d6leH_WxGaCbYRm-JF8h_q0kTMnL9LTcelxgIADYtOXJ_7Q4uQ_t96JU2zH7K15N5NPXjtbDo5NzOgMD0DY22DRICWxIk7Tr1OYrdQgJL_hzBWnzoH60fVacEidqTKHZ73xy5vkdBgRyXhC9mnLBL9oA91An1FKi1AqTt7B04anVVYSfTa5WhHKJZOwYdlly8teswo9JNFrRUB70ZdbJd-3TcFh6J-1aOmMHsAJ7pJbE8DOD26BsyQnDmhgAdYt-nHd3ciOyEjCCbWjTa8vRv1VfXeyV3e9Pic2gBPXWfqxPCWl864mpQHSrFXV4Tsf8xfKGXC0FV7SmuzbWCSy63U_7z9jjQPDhCxbiTMkmJ4TL9djCp0XWbU99GYh0BenRAFA1_EJ2vOeeMpk0UgQRvIaqCvMQ=w1301-h480-no)
 
