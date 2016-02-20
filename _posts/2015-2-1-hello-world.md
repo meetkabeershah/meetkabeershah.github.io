@@ -11,11 +11,10 @@ This is [Zameer](https://www.dropbox.com/s/6mezb2hkgj6fv8o/ZameerAnsariExpressBi
 
 [Here](https://www.gravatar.com/avatar/0964ab778245068b9d910764125004c9) is my [avatar](https://gravatar.com/)
 
-I'm a continuous learner with a "go do it" attitude. Across different roles I performed, I have learned and implemented different soft skills especially communication and empathy.
+Currently, I’m a [full stack software engineer  and technical evangelist](https://www.linkedin.com/in/xameeramir) for [NextServices](http://www.nextservices.com/) responsible for programming web and desktop applications based on [.NET](https://en.wikipedia.org/wiki/.NET_Framework) with [MySql](https://en.wikipedia.org/wiki/MySQL) and [MSSql](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) databases. Configuring servers and keeping them healthy with the help of SysAdmins. Doing front-end with [bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)) and javascript-ing.
 
-Currently, I’m a [full stack software engineer](https://www.linkedin.com/in/xameeramir) for [NextServices](http://www.nextservices.com/) responsible for programming .NET applications and databases. Configuring web servers and keeping them healthy with the help of system administrators. I work closely with operations and development teams including C suite. Collaborate with people both inside and outside of organization to help the operations processes automated.
+I work closely with operation leads and development teams including [C suite](http://www.investopedia.com/terms/c/c-suite.asp). Collaborate with people both inside and outside of organization to help the operations processes automated.
 
-I like to act as a trainer. Yes, teaching others help me learn more. I like reading technical and formal articles, staying physically fit and mentally calm.
+I'm a continuous learner with a **go do it** attitude. Across different roles I performed, I have learned and implemented different soft skills especially communication and empathy.
 
-This is something which looks so true to me -
-> [first do it, then do it right, then do it better.](http://addyosmani.com/blog/)
+Sometimes, I act as a trainer. Yes, teaching others help me learn & grow more. I prefer [staying up to date with the industry](http://techcrunch.com/), reading a lot of [*technical*](http://blog.codinghorror.com/) and [formal](https://www.themuse.com/) articles, contribute to the [community](https://news.ycombinator.com/), [stay mission focused](http://xameeramir.github.io/), physically fit and mentally calm.
