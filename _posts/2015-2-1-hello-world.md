@@ -16,3 +16,7 @@ Currently, I’m a [full stack software engineer  and technical evangelist](http
 I work closely with operations including [C suite](http://www.investopedia.com/terms/c/c-suite.asp). Listening carefully, asking questions and collaborating with people both inside and outside of organization.
 
 I'm a continuous learner with a **go do it** attitude. Educating others help me learn & grow more. I prefer [staying up to date with the industry](http://techcrunch.com/), reading a lot of [*technical*](http://blog.codinghorror.com/) and [formal](https://www.themuse.com/) articles, contribute to the [community](https://news.ycombinator.com/), [stay mission focused](http://xameeramir.github.io/), physically fit and mentally calm.
+
+I feel I got a much better education in weeks writing code with programmers more experienced and knowledgeable than years in school.
+
+I feel that I've learned most by reading and doing, but overall it's such a small portion of what's out there. I still consider myself a student and continue to learn new tricks, shortcuts, or just something entirely new almost daily.
