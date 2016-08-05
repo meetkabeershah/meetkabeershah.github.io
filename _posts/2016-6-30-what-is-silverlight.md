@@ -98,7 +98,7 @@ When the application starts up, the `Test` HTML page (generated inside the `Bin`
 
 <pre>
 <code>
-<object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%">
+&lt;object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%"&gt;
 </code>
 </pre>
 
@@ -107,7 +107,7 @@ The browser plugin then later asks for the `.xap` file. Which is basically a `.z
 To not allow browser to load the default error page when the Silverlight plugin isn't available, set the `object` tag's `autoUpgrade` parameter to `false`
 
 <pre><code>
-<param name="autoUpgrade" value="false" />
+&lt;param name="autoUpgrade" value="false" /&gt;
 </code></pre>
 
 with url set to the download link of the required Silverlight plugin. The javascript `onSilverlightError` needs to be used. The `ErrorCode` to watch for is `8001`:
@@ -137,13 +137,13 @@ When we assign a property in XAML, we're passing a
 **Passing values at compile time**
 
 <pre><code>
-<TextBox Text='abc' Background='Orange' />
+&lt;TextBox Text='abc' Background='Orange' /&gt;
 </code></pre>
 
 **Passing values at run time**
 
 <pre><code>
-<TextBox Text='{local:LatinWords}' Background='{StaticResource warning}' />
+&lt;TextBox Text='{local:LatinWords}' Background='{StaticResource warning}' /&gt;
 </code></pre>
 
 Types of data binding in XAML are:
@@ -157,53 +157,53 @@ Types of data binding in XAML are:
  - Element to element binding:
 
 <pre><code>
-		<!-- Make this element idenfiable by name -->
-		<TextBox Text='Hello' x:Name='textHello' Background='Goldenrod' />
-		<!-- Assign value from the above textHello to this element -->
-		<TextBox Text='Goodbye' Background='{Binding ElementName=textHello, Path=Background}' />
+		&lt;!-- Make this element idenfiable by name --&gt;
+		&lt;TextBox Text='Hello' x:Name='textHello' Background='Goldenrod' /&gt;
+		&lt;!-- Assign value from the above textHello to this element --&gt;
+		&lt;TextBox Text='Goodbye' Background='{Binding ElementName=textHello, Path=Background}' /&gt;
 </code></pre>
 
  - Self binding:
 
 <pre><code>
-		<!-- Read value red from Text property and assign it to Background property -->
-		<TextBox Text='Red' Background='{Binding Text, RelativeSource={RelativeSource Self }}' />
+		&lt;!-- Read value red from Text property and assign it to Background property --&gt;
+		&lt;TextBox Text='Red' Background='{Binding Text, RelativeSource={RelativeSource Self }}' /&gt;
 </code></pre>
 
  - StaticResource binding:
 
 <pre><code>
-		<!-- Define a static resource -->
-		<LinearGradientBrush x:Key='seaBrush'>
-			<LinearGradientBrush.GradientStops>
-				<GradientStop Offset="0" Color="Yellow" />
-				<GradientStop Offset="0.5" Color="Orange" />
-				<GradientStop Offset="0.8" Color="LightCoral" />
-			</LinearGradientBrush.GradientStops>
-		</LinearGradientBrush>
+		&lt;!-- Define a static resource --&gt;
+		&lt;LinearGradientBrush x:Key='seaBrush'&gt;
+			&lt;LinearGradientBrush.GradientStops&gt;
+				&lt;GradientStop Offset="0" Color="Yellow" /&gt;
+				&lt;GradientStop Offset="0.5" Color="Orange" /&gt;
+				&lt;GradientStop Offset="0.8" Color="LightCoral" /&gt;
+			&lt;/LinearGradientBrush.GradientStops&gt;
+		&lt;/LinearGradientBrush&gt;
 
-		<!-- use the seaBrush static resource for the Background property -->
-		<TextBox Text='StaticResource' Background='{StaticResource seaBrush}' />
+		&lt;!-- use the seaBrush static resource for the Background property --&gt;
+		&lt;TextBox Text='StaticResource' Background='{StaticResource seaBrush}' /&gt;
 </code></pre>
 
  - Null binding:
 
 <pre><code>
-		<!-- Null MarkupExtension -->
-		<TextBox Text='Null MarkupExtension' Background='{x:Null}' />
+		&lt;!-- Null MarkupExtension --&gt;
+		&lt;TextBox Text='Null MarkupExtension' Background='{x:Null}' /&gt;
 </code></pre>
 
  - Custom markup extension binding:
 
 <pre><code>
-		<!-- The XML namespace abc is defined which refers to abcLib in UserControl -->
-		<UserControl xmlns:abc='clr-namespace:abcLib;assembly=abcLib' >
+		&lt;!-- The XML namespace abc is defined which refers to abcLib in UserControl --&gt;
+		&lt;UserControl xmlns:abc='clr-namespace:abcLib;assembly=abcLib' &gt;
 
 				... rest of the code ...
 
-		<!-- use our custom markup extension-->
-		<TextBox Text='{abc:LatinWords WordCount=5}' Background='{x:Null}' />
-		</UserControl>
+		&lt;!-- use our custom markup extension--&gt;
+		&lt;TextBox Text='{abc:LatinWords WordCount=5}' Background='{x:Null}' /&gt;
+		&lt;/UserControl&gt;
 </code></pre>
 
 and the implementation of custom markup extension is:
@@ -290,7 +290,7 @@ Case:
  - In `XAML` file
 
 <pre><code>
-		<Button x:Name='sampleButton' Content='Set the Properties in Code' Click='sampleButton_Click' />
+		&lt;Button x:Name='sampleButton' Content='Set the Properties in Code' Click='sampleButton_Click' /&gt;
 </code></pre>
 
  - In code behind
