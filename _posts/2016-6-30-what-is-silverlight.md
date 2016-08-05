@@ -96,11 +96,11 @@ When doing the deployment, the mime types need to be mapped in IIS by following 
 
 When the application starts up, the `Test` HTML page (generated inside the `Bin` folder) asks the browser to load the Silverlight plugin which is specified in the following tag:
 
-<code>
 <pre>
+<code>
 <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="100%" height="100%">
-</pre>
 </code>
+</pre>
 
 The browser plugin then later asks for the `.xap` file. Which is basically a `.zip` folder containing application and other `.dlls` with information inside the application manifest file.
 
