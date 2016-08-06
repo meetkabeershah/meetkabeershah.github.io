@@ -209,7 +209,6 @@ Types of data binding in XAML are:
 and the implementation of custom markup extension is:
 
 <pre><code>
-
 namespace abcLib
 {
 	public class LatinWords : IMarkupExtension<string>
@@ -257,7 +256,6 @@ namespace abcLib
 
 	}
 }
-
 </code></pre>
 
 # Dependency property system - DPS
