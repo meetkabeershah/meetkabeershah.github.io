@@ -10,7 +10,7 @@ title: What is Silverlight?
 Recently, I was learning about `Silverlight` for a project. Here is what I'm keeping for future reference:
 
 # Silverlight 5
-A Microsoft platform for developing and deploying Rich internet applications.
+A Microsoft platform for developing and deploying Rich internet applications. Right now, it's considered as a depreceated technology.
 Runs as a browser plugin.
 Supports .NET languages like `C#` and `VB.NET`, `IronPython` and `IronRuby` using DLR (Dynamic Language Runtime).
 
