@@ -206,60 +206,8 @@ Types of data binding in XAML are:
 		&lt;/UserControl&gt;
 </code></pre>
 
-and the implementation of custom markup extension is:
-
-<pre><code>
-
-namespace abcLib
-{
-	public class LatinWords : IMarkupExtension<string>
-	{
-
-		public bool RandomStartPoint { get; set; }
-		public int WordCount { get; set; }
-
-
-		private Int32 _numberOfWords;
-		private static Random ran = new Random();
-		private string[] _words;
-
-		public void SetupWords()
-		{
-			// for demo limit the number of words to 100
-			if (WordCount <= 1)
-			{
-				_numberOfWords = 1;
-			}
-			if (_numberOfWords > 100)
-			{
-				_numberOfWords = 100;
-			}
-			else
-			{
-				_numberOfWords = WordCount;
-			}
-
-			_words = _sourceString.Split(' ');
-
-		}
-		public string ProvideValue(IServiceProvider serviceProvider)
-		{
-			SetupWords();
-			int skipCount = 0;
-			if (this.RandomStartPoint)
-			{
-				skipCount = ran.Next(3, 20);
-			}
-			return string.Join(" ", _words.Skip(skipCount).Take(_numberOfWords).ToArray());
-		}
-
-		private string _sourceString = "Lorem ipsum. Erant deseruisse et pro, eu duo error audiam referrentur. Malis inani erroribus ei ius, usu veniam eirmod scaevola ut, quo an omnesque ocurreret eloquentiam. Nulla harum mediocrem vel.";
-
-	}
-}
-
-</code></pre>
-
+and the implementation of custom markup extension can also be done.
+	
 # Dependency property system - DPS
 
 Silverlight uses a unique property system which was invented by WPF team. This provides services for UI like Animation, Templates, Styles and reduces critical resource usage (e.g. memory). It has two parts:
