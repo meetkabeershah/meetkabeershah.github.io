@@ -10,7 +10,7 @@ title: What is Silverlight?
 Recently, I was learning about `Silverlight` for a project. Here is what I'm keeping for future reference:
 
 # Silverlight 5
-A Microsoft platform for developing and deploying Rich internet applications. Right now, it's considered as a depreceated technology.
+A Microsoft platform for developing and deploying Rich internet applications. Right now, it's a **depreceated** technology.
 Runs as a browser plugin.
 Supports .NET languages like `C#` and `VB.NET`, `IronPython` and `IronRuby` using DLR (Dynamic Language Runtime).
 
@@ -20,20 +20,27 @@ There're 3 options:
 
  - Install silverlight using WPI
  - Install Expression blend for designing purposes
-  - Install XNA Game studio for working with 3D
+ - Install XNA Game studio for working with 3D
 
-Also need to install the Silverlight SDK.
+We also need to install the Silverlight SDK.
 
 # Creating a Silverlight project
 
- - Create a new project in VS under `C#` -> `Silverlight`
+ - Create a new project in [VS](https://www.visualstudio.com) under `C#` -> `Silverlight`
+ 
+![Creating a Silverlight project](https://lh3.googleusercontent.com/V06tfnM0rmM84LVLfZhIT263P6BcB85WE6Dvf-6JeLN2o90YgYVJgydYh8DtEA5Lg5mmW34TN9JwqRwwlSzvjGSNN2jiMLRXWN_81hw00JAiK50Z2ozgMQSVMud-D1TPnZ_-EoT5MpdI0R2TLpimDDjQHGkX_FhMJHAblBafUozDiv5OtzN9Jk7wSl6uAjla7RQXQvu92YmMVR6SAvmqa2wUl-CYzwFjCPSqXZuSKxsIsttSGN7_Esjd4MtIeSZnXaAjgNYpbEF0jUmU2vO01GnR38lDU85ft7MgIh7pQeRXN1xzJiSDnjREaDn5R5w2HPQJNrk0J15KAu_v0cQvtvaMnDbYznnUEqcCbgkdK0lTEgpY8s_8e9KsFr8i57De_WATOCV0rcLlLz27GuQzcsY3aer-lCUGdeRlU5Cw2y1Rp2Ba_XJy1CW4VXCKJe_aOMuQq01E6iDep74NqRCUXcH-587DCjCoKNkqBQrl9koxxakNDS8hFs_TOByVJQKcJzxCzOiJ0TZ0hdt15M335dqXFtX__QmgmYOWc7onrsFqTvk0PI4DeSTenjtXt8ptQ8S52bOPiHbnJQ332IPm24zBkCAL9Zk=w955-h582-no)
+
  - Make sure to check **Host the Silverlight application in a new website**
 
 # Running the project
 
 If the developer runtime for `Silverlight` is not installed, the following popup will be shown
 
-When running the project, in case the Silverlight is not installed in the browser, the following browser notification will be shown:
+![developer runtime for Silverlight is not installed](https://lh3.googleusercontent.com/RdPeAPujcDG9EpUDIcLGI6R0aNr4gCKmgvu6Zz0cTGc6F8J5htppsiNEgLk2VrVWMoGM0gwQxIsUOiSDmoQVbr_vyAnvyqO_yJiSqpLj7L9KGWMtrCj4KAKf6SjR6o3zjPxNzQrmKjYf2RvsCgPRGPjtoTso6ulSwdarqBzTUFmVSgMO6gQdnI-tm2mCshMyF2fgCw1vILn7oKlAFOII5f4SMcnA71JT7-6jsZ3U4C4lpF3AUyF5SHknlKzF80YTy0C9eWl7SjmL1rI9MmpoZ2L4ulkkeRTZkyRnnCUR7WWxQY9D6HPJQ3OVuRdFQ7dwxXm_psvtWhvohTOQndIp-K6N2-vhpGBPNoBDJH1WDAzFyTgs5RB0U8BtDwfNL3lgnkh1hwPUC4TBm01s6wc0vby7JTP78NRpeBA9CSc0IXPs0GxGTsURejRGbN9m4rs9ZeH9XiRe-l6_F4IPxRScyQSobpTYK5pEvU5WUxLz3JGKsYGCqYyO9u2deoBHgfOXdYChet_Jz-eM8gAPUtPHmSTHI7AaN29maOQPLcfMKooYsXjlHshYu-Ri6d5NvBuuxfs5z2hs3lPhNzOkl1Y7Z9qL8acnhIk=w497-h199-no)
+
+When running the project, in case the `Silverlight` is not installed in the browser, the following browser notification will be shown:
+
+![Running Silverlight in Chrome](https://lh3.googleusercontent.com/FNzB1QBestDTfS1pRNWXFd_VAfBAKY4AnQU_D8f7B_3m5so3M-ZVGLPhxaIGJ-d5ep7pMU99zioVkOeUWbxdIP4Eo1EE8d1xBDegZ8ee1X3K-VtukN1H47gdc2mqP8codvc9Ux2NMydnmUw35flAVm4gjqxl77HSDChLC1i-Lcx8N60RzGZi_AwmBecs9-2XjVHoeiR5b0FJ1yRUYs37m96thWmHGW3hNGOrze33BDJqeVs1_fdklnG_Xoa6k9A1BTLykuxIvGkJsNFyt3sTs3QiCpR0pdFU1GqrfPjRvoQLZZ92c13iUT-9J-s6_3r9gVnj8Il0rHZ73pbQmn32JOt8vMOHvfAI8NK34tZALKlRMQV3Jw6dIhtLcw0uN0YJLEpBFlEz9NK85DkUaRra4qOk8a30kpDVc2CUyD8LwMEgbEwJW2ETwxLG04Yyporj4xR1CCqGcWk0-UtS6un9AfS3tEnVJrCeciWmdMFL69orcEYx4JhkDagvz92BuxzgAYJvfXLjtWt1ZQGWbOjIiGXSJu2A9uXAH1qhr0-uL_73S3TN4zmK7-2Az-l_mrB7Dii8sHhItGKWrK7IFPfpGLMUnd7CsWM=w357-h278-no)
 
 >Clicking the install link will take us to the Microsoft website for downloading and installing the plugin
 
@@ -85,8 +92,6 @@ With Solution configuration set to `Debug`, the Visual studio will create a `Deb
 
 When doing the deployment, the mime types need to be mapped in IIS by following the below steps:
 
-
-
  - Select the application in concern from Sites node
  - Double click `Mime Types` and the entries as shown below:
 
@@ -122,7 +127,6 @@ function onSilverlightError(sender, args) {
 </code></pre>
 
 The Silverlight code behind files are in `partial` classes (one holding the event handling, another for the UI handling).
-
 Using a `XAML` element is equal to instantiating a `.NET` class. The `XML` elements are validated against xml namespaces.
 
 # Binding
@@ -152,61 +156,108 @@ Types of data binding in XAML are:
  - Template: get value from control template and assign it to property
  - StaticResource: Lookup resource defined in ResourceDictionary
  - Null: Assing null value to preperty
-
-
  - Element to element binding:
 
 <pre><code>
-		&lt;!-- Make this element idenfiable by name --&gt;
-		&lt;TextBox Text='Hello' x:Name='textHello' Background='Goldenrod' /&gt;
-		&lt;!-- Assign value from the above textHello to this element --&gt;
-		&lt;TextBox Text='Goodbye' Background='{Binding ElementName=textHello, Path=Background}' /&gt;
+&lt;!-- Make this element idenfiable by name --&gt;
+&lt;TextBox Text='Hello' x:Name='textHello' Background='Goldenrod' /&gt;
+&lt;!-- Assign value from the above textHello to this element --&gt;
+&lt;TextBox Text='Goodbye' Background='{Binding ElementName=textHello, Path=Background}' /&gt;
 </code></pre>
 
  - Self binding:
 
 <pre><code>
-		&lt;!-- Read value red from Text property and assign it to Background property --&gt;
-		&lt;TextBox Text='Red' Background='{Binding Text, RelativeSource={RelativeSource Self }}' /&gt;
+&lt;!-- Read value red from Text property and assign it to Background property --&gt;
+&lt;TextBox Text='Red' Background='{Binding Text, RelativeSource={RelativeSource Self }}' /&gt;
 </code></pre>
 
  - StaticResource binding:
 
 <pre><code>
-		&lt;!-- Define a static resource --&gt;
-		&lt;LinearGradientBrush x:Key='seaBrush'&gt;
-			&lt;LinearGradientBrush.GradientStops&gt;
-				&lt;GradientStop Offset="0" Color="Yellow" /&gt;
-				&lt;GradientStop Offset="0.5" Color="Orange" /&gt;
-				&lt;GradientStop Offset="0.8" Color="LightCoral" /&gt;
-			&lt;/LinearGradientBrush.GradientStops&gt;
-		&lt;/LinearGradientBrush&gt;
+&lt;!-- Define a static resource --&gt;
+&lt;LinearGradientBrush x:Key='seaBrush'&gt;
+	&lt;LinearGradientBrush.GradientStops&gt;
+		&lt;GradientStop Offset="0" Color="Yellow" /&gt;
+		&lt;GradientStop Offset="0.5" Color="Orange" /&gt;
+		&lt;GradientStop Offset="0.8" Color="LightCoral" /&gt;
+	&lt;/LinearGradientBrush.GradientStops&gt;
+&lt;/LinearGradientBrush&gt;
 
-		&lt;!-- use the seaBrush static resource for the Background property --&gt;
-		&lt;TextBox Text='StaticResource' Background='{StaticResource seaBrush}' /&gt;
+&lt;!-- use the seaBrush static resource for the Background property --&gt;
+&lt;TextBox Text='StaticResource' Background='{StaticResource seaBrush}' /&gt;
 </code></pre>
 
  - Null binding:
 
 <pre><code>
-		&lt;!-- Null MarkupExtension --&gt;
-		&lt;TextBox Text='Null MarkupExtension' Background='{x:Null}' /&gt;
+&lt;!-- Null MarkupExtension --&gt;
+&lt;TextBox Text='Null MarkupExtension' Background='{x:Null}' /&gt;
 </code></pre>
 
  - Custom markup extension binding:
 
 <pre><code>
-		&lt;!-- The XML namespace abc is defined which refers to abcLib in UserControl --&gt;
-		&lt;UserControl xmlns:abc='clr-namespace:abcLib;assembly=abcLib' &gt;
+&lt;!-- The XML namespace abc is defined which refers to abcLib in UserControl --&gt;
+&lt;UserControl xmlns:abc='clr-namespace:abcLib;assembly=abcLib' &gt;
 
-				... rest of the code ...
+		... rest of the code ...
 
-		&lt;!-- use our custom markup extension--&gt;
-		&lt;TextBox Text='{abc:LatinWords WordCount=5}' Background='{x:Null}' /&gt;
-		&lt;/UserControl&gt;
+&lt;!-- use our custom markup extension--&gt;
+&lt;TextBox Text='{abc:LatinWords WordCount=5}' Background='{x:Null}' /&gt;
+&lt;/UserControl&gt;
 </code></pre>
 
-and the implementation of custom markup extension can also be done.
+and the implementation of custom markup extension is:
+ 
+<pre><code>
+namespace abcLib
+{
+  public class LatinWords : IMarkupExtension<string>
+  {
+
+    public bool RandomStartPoint { get; set; }
+    public int WordCount { get; set; }
+
+
+    private Int32 _numberOfWords;
+    private static Random ran = new Random();
+    private string[] _words;
+
+    public void SetupWords()
+    {
+      // for demo limit the number of words to 100
+      if (WordCount <= 1)
+      {
+        _numberOfWords = 1;
+      }
+      if (_numberOfWords > 100)
+      {
+        _numberOfWords = 100;
+      }
+      else
+      {
+        _numberOfWords = WordCount;
+      }
+
+      _words = _sourceString.Split(' ');
+
+    }
+    public string ProvideValue(IServiceProvider serviceProvider)
+    {
+      SetupWords();
+      int skipCount = 0;
+      if (this.RandomStartPoint)
+      {
+        skipCount = ran.Next(3, 20);
+      }
+      return string.Join(" ", _words.Skip(skipCount).Take(_numberOfWords).ToArray());
+    }
+
+    private string _sourceString = "Lorem ipsum. ";
+
+  }
+}</code></pre>
 	
 # Dependency property system - DPS
 
@@ -238,7 +289,7 @@ Case:
  - In `XAML` file
 
 <pre><code>
-		&lt;Button x:Name='sampleButton' Content='Set the Properties in Code' Click='sampleButton_Click' /&gt;
+&lt;Button x:Name='sampleButton' Content='Set the Properties in Code' Click='sampleButton_Click' /&gt;
 </code></pre>
 
  - In code behind
@@ -255,16 +306,13 @@ Case:
 			sampleButton.SetValue(FontSizeProperty, 30);
 			size = (double)sampleButton.GetValue(FontSizeProperty);
 
-		}
-
-</code></pre>
+		}</code></pre>
 
 Silverlight elements and controls (default or custom) have lots of dependency properties. This system provides services such as animation, data binding, control templates and styles to the Silverlight elements.To get these services a developer needs to write 'ugly' registration code.
 
 An example of declaring and registering a dependency property is:
 
 <pre><code>
-
 	public partial class StarShape : UserControl {
 
 	public StarShape()
@@ -283,9 +331,7 @@ An example of declaring and registering a dependency property is:
 			PointsProperty = DependencyProperty.Register("Points", typeof(double), typeof(StarShape), null);
 
 		}
-	}
-
-</code></pre>
+	}</code></pre>
 
 Notice that the property is declared readonly, which means it can only be instantiated in it's static constructor.
 
@@ -301,3 +347,4 @@ It is owned and registered by a Type. The method for the same is `DependencyProp
  - Value is assigned with element assigning the value
  - The owning class will query the value from the DPs
 
+[Photos](https://goo.gl/photos/fWU5PoCK333JNVpA8)
