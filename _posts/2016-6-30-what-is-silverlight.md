@@ -213,7 +213,7 @@ and the implementation of custom markup extension is:
 <pre><code>
 namespace abcLib
 {
-  public class LatinWords : IMarkupExtension<string>
+  public class LatinWords : IMarkupExtension&lt;string&gt;
   {
 
     public bool RandomStartPoint { get; set; }
