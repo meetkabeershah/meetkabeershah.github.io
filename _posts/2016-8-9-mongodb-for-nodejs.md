@@ -11,9 +11,9 @@ These're my notes for the [MongoDB for node.js course](https://university.mongod
 
 # What is MongoDB?
 
-MongoDB is a document database holding data in JSON format. Since it's not based on joining, it's easy to distribute data across servers by sharding feature. 
+MongoDB is a document database holding data in JSON format. Since it's not based on joining, it's easy to distribute data across servers by it's sharding feature. 
 
-Developers can develop applicaiton which can be agnostic about deployments. MongoDB supports scaling out as opposed to RDBMS which supports scaling up. Mongo shell is written using C++ V8 for administering the MongoDB.
+Developers can develop application which can be agnostic about deployments. MongoDB supports scaling out as opposed to RDBMS which supports scaling up. Mongo shell is written using C++ V8 for administering the MongoDB.
 
 # What is node.js
 
@@ -46,7 +46,7 @@ To a layman, [`JSON`](http://json.org/) is merely a string, anyways. `JSON` obje
 </code>
 </pre>
 
-The above example shows that `JSON` supports a number of data-types. The `object` field shows an example of nested values. As we can see `object` and `array` - MongoDB data models commonly make use of nesting and even what we might call deep nesting. The flexibility `JSON` provides makes it simple to implement different data access patterns by creating objects that contain all the data required to render a webpage full of content or say to provide another type of data view for users with very few requests.
+The above example shows that `JSON` supports a number of data-types. The `object` field shows an example of nested values. As we can see `object` and `array` - `MongoDB` data models commonly make use of nesting and even what we might call **deep nesting**. The flexibility `JSON` provides makes it simple to implement different data access patterns by creating objects that contain all the data required to render a webpage full of content or say to provide another type of data view for users with very few requests.
 
 # What is BSON?
 `MongoDB` stores data as [`BSON`](http://bsonspec.org/) (binary `JSON`). Here is the comparison:
@@ -69,12 +69,12 @@ x06\ x00\ x00\ x00world\ x00\ x00 "
 On the application side, the drivers map `BSON` to most appropriate native data types. It's
 
  - lightweight
- - traversable, to support a variety of operations necessary for writing, reading and indexing MongoDB documents
+ - traversable, to support a variety of operations necessary for writing, reading and indexing `MongoDB` documents
  - efficient, meaning encoding/decoding data to/from BSON as the drivers need to do can be performed very quickly.
 
 `JSON` doesn't distinguishes between `integer`s and `float`s. Doesn't supports `date`s. `BSON` extends the JSON value types to include `integer`s, `double`s, `date`s and binary data to support images and a number of other types of data.
 
-# Installation
+# Installation for Windows
 
 To access the `mongo` and `mongod` directly from shell, Change the path for MongoDB:
 
@@ -87,15 +87,15 @@ To access the `mongo` and `mongod` directly from shell, Change the path for Mong
 
 Sometimes, you [might need to refresh the system to see these shortcuts working](http://superuser.com/q/1111180/249540)
 
-However before making using `mongodb` from terminal, create the `C:\data\db` directory for `MongoDB` to **store** data by following the below commands:
+However before using `mongodb` from terminal, create the `C:\data\db` directory for `MongoDB` to **store** data by following the below commands:
 
 `md \data\db`
 
-Notice, the `\` before `data\db` - this makes sure that the directory is created in root directory in this case `C:\` only.
+Notice, the `\` before `data\db` - this makes sure that the directory is created in root directory (in this case `C:\`) only.
 
-Now, if you type `mongod` and hit <kbd>Enter</kbd>, it starts running. If you read the log, it says that `MongoDB` is listening on `port=27017` and that `dbpath=C:\data\db` i.e. the default path - which we created lately.
+Now, if you type `mongod` and hit <kbd>Enter</kbd>, it starts running. If you read the log printed on the terminal, it says that `MongoDB` is listening on `port=27017` and that `dbpath=C:\data\db` i.e. the default path - which we created lately.
 
-Now, once `mongod` is running, we can start `mongo` which makes a connection to `27017`.
+Now, once `mongod` is running, we can start `mongo` which makes a connection to port `27017`.
 
 # Doing some CRUD
 
@@ -113,9 +113,9 @@ We can run `MongoDB` as a [service](http://stackoverflow.com/a/2438758/2404470) 
 
 In `MongoDB`, documents are stored in colletions which are organized into databases. To see databases present in `MongoDB` run `show dbs`
 
-To insert a document into a collection, we first need to know how to specify that collection in the command. A collection and database that contains it form a namespace. When doing CRUD operations, we reference the global variable `db`. This variable holds the reference to the database we're currently using. To switch to a database test type [MySQL like command](http://stackoverflow.com/a/5287027) `use test`.
+To insert a document into a collection, we first need to know how to specify that collection in the command. A collection and database that contains it form a **namespace**. When doing `CRUD` operations, we reference the global variable `db`. This variable holds the reference to the database we're currently using. To switch to a database names **test** type [MySQL like command](http://stackoverflow.com/a/5287027) `use test`.
 
-The insert operation returns a document as well, where `acknowledged` set to true indicated that the record (or better document) was inserted successfully. All documents must have an underscore id field. Each document in a collection must a unique document id. At the heart of the query language for `MongoDB` is a query by example strategy. We can pass a blank object `{}`, key value pair `{name: "Uber"}`. The result of `find()` command is not a mere array of documents, it's instead a `cursor object`. We can see this:
+The insert operation returns a document as well, where `acknowledged` set to true indicates that the record (or better say, document) was inserted successfully. All documents must have an **underscore** _id field. Each document in a collection must have a unique document id. At the heart of the query language for `MongoDB` is a query by example strategy. We can pass a blank object `{}`, key value pair `{name: "Uber"}`. The result of `find()` command is not a mere array of documents, it's instead a `cursor object`. We can see this:
 
 <pre><code>
 var c = db.names.find();
@@ -125,7 +125,7 @@ c.next() //grabs that document
 
 # Building using node
 
-To build applications using [node.js](https://nodejs.org/en/) apps, we first need [install it](http://xameeramir.github.io/install-node/).
+To build applications using [node.js](https://nodejs.org/en/), we first need to [install it](http://xameeramir.github.io/install-node/).
 
 Let's create a simple `http` server:
 
@@ -152,7 +152,7 @@ Store the above code in a `.js` file, let's say `app.js`
 
 > And how do we start it?
 
-In the terminal, go to the location of the file and type `node app.js`. To verify, if it's running or not, go to http://localhost:8000. Notice port 8000, which **we**'ve pecified in the above code.
+In the terminal, go to the location of the file and type `node app.js`. To verify, if it's running or not, go to [http://localhost:8000](http://localhost:8000). Notice port `8000`, which **we**'ve pecified in the above code.
 
 # What is NPM
 
@@ -162,13 +162,11 @@ In the terminal, go to the location of the file and type `node app.js`. To verif
     mongodb = require('mongodb');
 </code></pre>
 
-`require()` is how we add an external library in a `node.js` application. If we run this code thorugh 
-
-`node` terminal, we'll get the below error:
+`require()` is how we add an external library in a `node.js` application. If we run this code through `node` terminal, we'll get the below error:
 
 ![could not find module express](https://lh3.googleusercontent.com/heymDr6IIbrxBAL1ZtKpC7pZBQ9uZ3jb2IGIJ9H7sceVBVg_zIx8J4hY48Ez2Vff4JMz2arwZN-Q6TAakoT_Zz1OR5cxkOtnT5qzhP9Rw_Jnc3_kS97U2H_UHOn4dFZ4-f5umRvGA-UX0z7QvsNdUinYtxdJ1eFWbyoooSzPTwd2CRsesjNth1K9s-OqaucfLSqzEzCkTAvQksHnBNyQs-q0H4gYSN80E-LJj2FApyuS514y8423lfpyWXO6JLXU3qlmCnU3E5jcPajmQVUyEREJHTVwNBxxVBtZgDpMpJ-9ME4xkZCOqA4POINzSKaGf76JCsEsq2ZN--690d_pESogGYV_hps4i15KVDfw25UqW5k5MTQC3QwjOB_ynDOhrI3GrOx-WXePjgRNQwaMH24Noga6DXbtTsCfTxAT1ICKZqWDKyicj_PWMwwDrPpc2BaFfBXJNbvfGrp5uqMpnGg3al1agYZNSj-pD-aJ7ov76oVL-FiMKo3MR3dt6U9kPXK4u0-s3ZUAwVcvxem8q0P4OE9OAHtxvXLQEgiCJbVR1-AjftZuzJNjfjDBSQfVKy20FDh560_QzQAK7oXOJgD0tpX8tK0=w643-h171-no)
 
-To get this as a `node` package, we can use `node` command line `npm install express`.
+To get this missing `express` thing as a `node` package, we can use `node` command line `npm install express`.
 In real projects, there will be a bunch of package dependencies. Installing them all one-by-one will be a big pain. To resolve this comes `package.json` file. This file contains meta data about the dependencies:
 
 <pre><code>
@@ -187,13 +185,11 @@ In real projects, there will be a bunch of package dependencies. Installing them
 }
 </code></pre>
 
-With this file in **place**, simply running `npm install` will get all the packages for us inside 
-
-**project's local** `node_modules` directory. There's also a way to install packages globally.
+With this file in **place**, simply running `npm install` will get all the packages for us inside **project's local** `node_modules` directory. There's also a way to install packages globally.
 
 # What is Node.js Driver
 
-The driver communicates with the `MongoDB` server using the wire protocol. It handles things like opening sockets, detecting errors and managing connections to replica sets. To include the driver in an application, use code `var mongodb = require('mongodb');` and install using `npm install mongodb`. As we can see, it's just a node package. Try to connect to `MongoDB` using this package:
+The driver communicates with the `MongoDB` server using it's wire protocol. It handles things like opening sockets, detecting errors and managing connections to replica sets. To include the driver in an application, use code `var mongodb = require('mongodb');` and install using `npm install mongodb`. As we can see, it's **just** a node package. Try to connect to `MongoDB` using this package:
 
 <pre><code>
 var MongoClient = require('mongodb').MongoClient,
@@ -289,11 +285,11 @@ var server = app.listen(3000, function() {
 
 //file: views/hello.html
 
-&lt;h1&gt;Hello, {{name}}!&lt;/h1&gt;
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;!&lt;/h1&gt;
 
 </code></pre>
 
-In the above code, `consolidate` is basically a set of wrappers for a number of template engines for `Express`. `Express` requires certain libraries to have a certain interface and `consolidate` handles that for us. `__dirname` is a `node.js` variable which allows us to access to the directory in which the application file (`app.js`) resides. Since, we've pass `name : 'Templates'` - we'll see the below output:
+In the above code, `consolidate` is basically a set of wrappers for a number of template engines for `Express`. `Express` requires certain libraries to have a certain interface and `consolidate` handles that for us. `__dirname` is a `node.js` variable which allows us to access to the directory in which the application file (in our case, `app.js`) resides. Since, we've passed `name : 'Templates'` - we'll see the below output:
 
 ![Hello Templates](https://lh3.googleusercontent.com/G2kdPbPZRByvK44lLOPvSLCYd7l-NOpK9MayaxFBJeme9UjdUNxvLJex0qtUHhYPi-TM-apU0SMT0ZnjtnwkmNCLxw4JkLNFHapWujKjlSbVCfDSux_J-daorCYLATI6YuedbLFhsXySXqFg5Iv4xJ-p578uxuo0C-_DYc8J4QYCo_6ppJHFH3EHATavtPwzeGdLPmspF_Px97A9WANzbtRAirmE0GjQYVptcb13AXl9bm5aJ2gFGJJLjQw18ddl7gH7E-wuOtwEy3S5fi9oirjzn5wUqvyU2UhTywMLKzPB4BMom_LW0k7-hVQp_JBsDjoZeXKuSCkL4dYk9iYKjESSPq3A693RLP83vYJq1qhK0cloVMraAeIWBfDdLWaJG3WJGxzc5GitE4LQR2PeDQDoqLylMymGoXoNuj4gEsi2UAXlO01ncifSaU7lGiIucX8hcgWZ6dCFbMgbjxlNoFqlIm3bN_G5we6o25ZAvVoabBt6csO7YS5szhFtVSLA56J2rZaFFH2-2ODqNF8_Z4hg7mKcFWRJOIqT1QC8P4NpqyE9pkMQHzfA6GwRvfBBMBVHehwHsR341FOYcdM3JNZ20RUCtF4=w276-h98-no)
 
@@ -341,7 +337,7 @@ MongoClient.connect('mongodb://localhost:27017/startup', function(err, db) {
 
 //file: views/startup.html
 
-&lt;h1&gt;Hello, {{name}}!&lt;/h1&gt;
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;!&lt;/h1&gt;
 
 </code></pre>
 
@@ -381,22 +377,20 @@ var server = app.listen(3000, function() {
 The `hello` template is:
 
 <pre><code>
-&lt;h1&gt;Hello, {{name}}, here are your GET variables:&lt;/h1&gt;
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;, here are your GET variables:&lt;/h1&gt;
 &lt;ul>
-    &lt;li&gt;{{getvar1}}&lt;/li&gt;
-    &lt;li&gt;{{getvar2}}&lt;/li&gt;
+    &lt;li&gt;&#123;&#123;getvar1&#125;&#125;&lt;/li&gt;
+    &lt;li&gt;&#123;&#123;getvar2&#125;&#125;&lt;/li&gt;
 </ul>
 </code></pre>
 
 and the `error` template goes here:
 
 <pre><code>
-&lt;h1&gt;Error: {{error}}&lt;/h1&gt;
+&lt;h1&gt;Error: &#123;&#123;error&#125;&#125;&lt;/h1&gt;
 </code></pre>
 
-In the above app, we're just registering only one route i.e. `/:name`. The colon says to take this part 
-
-of the URL and store in a variable called `name`.
+In the above app, we're just registering only one route i.e. `/:name`. The colon says to take this part of the URL and store in a variable called `name`.
 
 Will share further notes next week.
 
