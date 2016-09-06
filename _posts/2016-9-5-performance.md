@@ -339,4 +339,19 @@ e.g.: `mongotop 3`
 
 `Mongostat` is similar to `iostat` command from the `Unix`. It gives the database stats in the intervals of 1 seconds. It shows what operations happened during that 1 second. Output may vary depending upon what storage engine is being used. The results of it also shows `getmore` is how many `getmore` command we're running every seconds. It's the way we get more from a cursor, if we're doing a query that has a large result. The getmore column concerns the number of requests per time interval to get additional data from a cursor. `command` shows the number of commands running per second. `flushes` refers to the number of times the disk is flushed out per second. `mapped` is the amount of mapped memory. `res` refers to the resident memory. `faults` refers to the number of page faults that we're causing every second. It's an important number because page faults mean we're getting more I/O and more I/O means slower database. `qr` and `qw` are the queues length for a number of sockets that are requested or waiting for read and write. `ar` and `aw` are the number of active readers and writers. `netIn` & `netOut` refers to the amount that was sent into and out of the database during this time frame. `dirty` refers to the amount of cache `WiredTiger` storage engine has written to and needs to be written back to the disk. `used` is the total cache size we're using.  
 
+# Sharding
+
+Sharding is a technique of splitting up a large collection amongst multiple servers. When we shard, we deploy multiple `mongod` servers. And in the front, `mongos` which is a router. The application talks to this router. This router then talks to various servers, the `mongod`s. The application and the `mongos` are usually co-located on the same server. We can have multiple `mongos` services running on the same machine. It's also recommended to keep set of multiple `mongod`s (together called **replica set**), instead of one single `mongod` on each server. A replica set keeps the data in sync across several different instances so that if one of them goes down, we won't lose any data. Logically, each replica set can be seen as a **shard**. It's transparent to the application, the way `MongoDB` chooses to shard is we choose a **shard key**.
+
+![MongoDB sharding](https://lh3.googleusercontent.com/8mQlJAlaLupNLIIPzjRAowZ2tiMx_EHE54Ssvf_Ph2bp553MLZ6Xsf_Qz6dUDW6zsX2Cb2etBt1hi-_OHW8dNOfj-A6tm3i8dLcq5dj_1B-ZeO6qJuAKLwaq9IoCdiwIz-VndrxHJ0h7A8sXhlxIathRNf2Bj8qrWiaAZpgfOWfznV84IKmxIKYPMgpW2ooAEU41cMNoYSUhlzih64qKgrWm0gGfFBnvaLIqHFIGuLwkMHBkp2QwqUE_uT9NWGS2HV9fZMqMdADZzGWRZu_GNmn0Gw9kmlfrcZfO355tT1wzI37fET-GlnDiVFEhZLa02MUiNewPihV-PkqxK3OpsGUthcZMmY-YwerOr2V-uUiNoh7wdhQjpYf5aA7ygkvcqxtNH6fs7vHsn7KqFjBV_JlWnSZo4cM_USqmW1jjpG00WNEYu_z0S_8n1RNg7BDT7ALzlVI6ceq0QtyV_2VbK-UrgZSoNRRyWgO2fghuIdDBnevSN3sgEJNVQo1gfzlQdHamSkab56jGQNsWr5DBxVQUUveXUtMJ2U-a4ly3a1ufuO09FHWuPM5apwLmspPnz6vxWjqCJgWoE_-gtXlv1hW-LsxyP6nqP0NVCyh_XXZjp86-=w1354-h624-no)
+
+Assume, for `student` collection we have `stdt_id` as the shard key or it could be a compound key. And the `mongos` server, it's a range based system. So based on the `stdt_id` that we send as the shard key, it'll send the request to the right `mongod` instance.
+
+**So, what do we need to really know as a developer?**
+
+ - `insert` must include a shard key, so if it's a multi-parted shard key, we must include the entire shard key
+ - we've to understand what the shard key is on collection itself
+ - for an `update`, `remove`, `find` - if `mongos` is not given a shard key - then it's going to have to broadcast the request to all the different shards that cover the collection.
+ - for an `update` - if we don't specify the entire shard key, we have to make it a multi update so that it knows that it needs to broadcast it
+
 [Photos](https://goo.gl/photos/Zap9QDfK48bqssgd6)
