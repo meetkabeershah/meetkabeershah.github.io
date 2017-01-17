@@ -3,9 +3,9 @@ layout: post
 title: Indexes and Performance
 ---
 
-![Performance](http://www.socialbullets.com/blog/wp-content/uploads/2014/08/Mobile-website-Performance.png)
+![Performance](https://community.dedimax.com/wp-content/uploads/2016/07/speedtest.jpg)
 
-[courtesy](http://www.socialbullets.com/blog/mobile-website-performance/)
+[courtesy](https://community.dedimax.com/index.php/2016/04/20/mettre-a-jour-ubuntu-14-04-lts-ou-15-10-vers-ubuntu-16-04-lts/)
 
 # Storage Engines: Introduction
 
