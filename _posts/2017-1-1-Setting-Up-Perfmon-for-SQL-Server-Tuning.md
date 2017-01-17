@@ -39,3 +39,5 @@ To set it up for SQL Server, do the below steps:
  - Right click this new collector set under User defined and choose start
 
 When one needs to see the report, stop this collector and open the collector file and view as report.
+
+[Source](https://www.youtube.com/watch?v=E7QIoHj1FeI)
