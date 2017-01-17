@@ -3,6 +3,9 @@ layout: post
 title: Setting Up Perfmon for SQL Server Tuning
 ---
 
+![Setting Up Perfmon for SQL Server Tuning](https://cdn.geek.hr/znanost/wp-content/uploads/sites/14/2016/12/389983090.jpg)
+[courtesy](https://geek.hr/znanost/clanak/fibonaccijev-niz-u-prirodi/)
+
 Performance Monitor, or Perfmon, measures performance statistics on a regular interval, and saves those stats in a file.
 
 To set it up for SQL Server, do the below steps:
@@ -41,3 +44,5 @@ To set it up for SQL Server, do the below steps:
 When one needs to see the report, stop this collector and open the collector file and view as report.
 
 [Source](https://www.youtube.com/watch?v=E7QIoHj1FeI)
+
+[Photos](https://goo.gl/photos/Wt5gdCP11Y3AfyiX6)
