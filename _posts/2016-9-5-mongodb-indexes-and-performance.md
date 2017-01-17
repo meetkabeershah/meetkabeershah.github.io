@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indexes and Performance
+title: MongoDB Indexes and Performance
 ---
 
 ![Performance](https://community.dedimax.com/wp-content/uploads/2016/07/speedtest.jpg)
