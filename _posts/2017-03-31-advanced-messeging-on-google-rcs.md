@@ -1,9 +1,7 @@
 ---
-title: Advanced Messaging
+title: Advanced Messaging on Google's RCS
 layout: post
 ---
-
-**Advanced Messaging**
 
 Advanced Communications is the next iteration of RCS. It is the next evolution of how
 we talk, text, and see each other. The advanced messaging is set to be implemented using [GSMA’s Universal Profile (UP)](http://www.gsma.com/network2020/universal-profile/). Approximately 47 global mobile operators are launching these services to a combined subscriber base representing 4.7 billion mobile users. Advanced Communications services are set to be the dominant messaging platform around the world.
