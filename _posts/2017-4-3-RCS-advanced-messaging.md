@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Implementing RCS Advanced Messaging for Bots
+title: RCS Advanced Messaging
 ---
 
 ![RCS Advanced Messaging](http://www.droid-life.com/wp-content/uploads/2014/11/google-messenger.jpg)
 
 [Courtesy](http://www.droid-life.com/2015/03/13/google-messenger-updated-with-gif-support-and-a-widget/)
 
-The actual [Advanced Messaging / RCS 2](http://www.gsma.com/network2020/rcs-2/) implementation is [Android Messages](https://play.google.com/store/apps/details?id=com.google.android.apps.messaging).
+Recently, I was doing some studies on implementation of [Advanced Messaging / RCS 2](http://www.gsma.com/network2020/rcs-2/).
+
+The client implementation seems to be [Android Messages](https://play.google.com/store/apps/details?id=com.google.android.apps.messaging).
 
 This platform needs to expose it's APIs so that our bots can access it. The core people working on RCS / Advanced Messaging are [Jibe](https://jibe.google.com/jibe-platform/). They seems to be in process of providing Advanced Messaging / RCS 2 APIs but technically there's nothing ready. 
 
