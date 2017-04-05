@@ -7,7 +7,7 @@ title: RCS Advanced Messaging
 
 [Courtesy](http://www.droid-life.com/2015/03/13/google-messenger-updated-with-gif-support-and-a-widget/)
 
-Recently, I was doing some studies on implementation of [Advanced Messaging / RCS 2](http://www.gsma.com/network2020/rcs-2/).
+Recently, I was doing some studies on implementation of [Advanced Messaging / RCS 2](http://www.gsma.com/network2020/rcs-2/) as a chanlle for chat bots.
 
 The client implementation seems to be [Android Messages](https://play.google.com/store/apps/details?id=com.google.android.apps.messaging).
 
