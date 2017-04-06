@@ -33,8 +33,6 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Mavenir](mailto:contactus@mavenir.com)
  - [Solaiemes](mailto:info@solaiemes.com)
  - [Muut](mailto:info@muut.com)
- - [FortyTwo](mailto:sales@fortytwo.com)
- - [Dexter](mailto:info@rundexter.com)
  - [Symsoft](mailto:sales@symsoft.com)
  - [MessageBird](mailto:support@messagebird.com)
  - [Summit Tech](mailto:info@summit-tech.com)
@@ -49,9 +47,12 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Media 5 Corp](mailto:dev_support@media5corp.com)
  - [Acision](mailto:contact@acision.com)
  - [Newnet Mobility](https://newnetmobility.com/contact/)
+ - [Wit Software](https://www.wit-software.com/contacts/)
  
-As of 3^rd April'2017, the following vendors do not support Advanced Messaging
+As of april'2017, the following vendors do not support Advanced Messaging
 
+ - [FortyTwo](mailto:sales@fortytwo.com)
+ - [Dexter](mailto:info@rundexter.com)
  - [Gateway API](mailto:support@gatewayapi.com)
  - [GupShup](http://gupshup.io)
  - [InfoBip](https://www.infobip.com/)
