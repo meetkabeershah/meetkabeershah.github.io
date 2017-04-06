@@ -51,6 +51,7 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [TelesTax](https://telestax.com/contact/)
  - [Tropo](https://www.tropo.com/help/contact-us/)
  - [Tatango](https://www.tatango.com/platform/rcs-messaging/)
+ - [Interop](http://interoptechnologies.com/rcs/)
  
 As of april'2017, the following vendors do not support Advanced Messaging
 
