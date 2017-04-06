@@ -48,6 +48,8 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Acision](mailto:contact@acision.com)
  - [Newnet Mobility](https://newnetmobility.com/contact/)
  - [Wit Software](https://www.wit-software.com/contacts/)
+ - [TelesTax](https://telestax.com/contact/)
+ - [Tropo](https://www.tropo.com/help/contact-us/)
  
 As of april'2017, the following vendors do not support Advanced Messaging
 
