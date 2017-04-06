@@ -22,9 +22,8 @@ Was having a look at the [Solaiemes RCS API](https://solaiemes-rcs-api.3scale.ne
 
 The following API seems to be the most close to what is actually needed:
 
- - [Mavenir](http://www.mavenir.com/our-solutions/rich-communication-rcs)
- - [42 AMP API](https://www.fortytwo.com/solutions/amp/)
  - [Jibe](https://jibe.google.com/jibe-platform/)
+ - [Mavenir](http://www.mavenir.com/our-solutions/rich-communication-rcs)
  
 The following vendors are yet to confirm whether they support Advanced Messaging / RCS 2:
 
