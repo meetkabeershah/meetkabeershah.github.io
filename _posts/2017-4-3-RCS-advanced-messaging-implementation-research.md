@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RCS Advanced Messaging
+title: RCS 2 / Advanced Messaging - implementation research
 ---
 
 ![RCS Advanced Messaging](http://www.droid-life.com/wp-content/uploads/2014/11/google-messenger.jpg)
