@@ -50,6 +50,7 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Wit Software](https://www.wit-software.com/contacts/)
  - [TelesTax](https://telestax.com/contact/)
  - [Tropo](https://www.tropo.com/help/contact-us/)
+ - [Tatango](https://www.tatango.com/platform/rcs-messaging/)
  
 As of april'2017, the following vendors do not support Advanced Messaging
 
