@@ -52,6 +52,17 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Tropo](https://www.tropo.com/help/contact-us/)
  - [Tatango](https://www.tatango.com/platform/rcs-messaging/)
  - [Interop](http://interoptechnologies.com/rcs/)
+ - [SkyCore](https://www.skycore.com/contact-us/)
+ - [CLX](https://www.clxcommunications.com/contact-us/)
+ - [3C](https://www.3cinteractive.com/)
+ - [Experian](https://www.experian.com/corporate/business-services-contacts.html)
+ - [M Gage](http://www.mgage.com/products-services/channels/rcs)
+ - [Mobivity](https://mobivity.com/contact/)
+ - [Movile messaging](https://www.movile.com/en/contact/)
+ - [Nexmo](https://www.nexmo.com/contact-sales/)
+ - [Open market](https://www.openmarket.com/contact/)
+ - [Waterfall](https://www.openmarket.com/contact/)
+ - [Zip Whip](https://www.zipwhip.com/contact-us)
  
 As of april'2017, the following vendors do not support Advanced Messaging
 
