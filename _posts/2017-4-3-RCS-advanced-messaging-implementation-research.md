@@ -20,16 +20,17 @@ Was having a look at the [Solaiemes RCS API](https://solaiemes-rcs-api.3scale.ne
  - [https://tadhack.3scale.net/rcsapi](https://tadhack.3scale.net/rcsapi)
  - [http://tadhack.solaiemes.com/rcsapi](http://tadhack.solaiemes.com/rcsapi)
 
-The following API seems to be the most close to what is actually needed:
+The following provider seems to be in a position to provide RCS 2 / Advanced Mesaging APIs:
 
  - [Jibe](https://jibe.google.com/jibe-platform/)
  - [Mavenir](http://www.mavenir.com/our-solutions/rich-communication-rcs)
+ - [SkyCore](https://www.skycore.com/contact-us/)
+ - [CLX](https://www.clxcommunications.com/contact-us/)
  
 The following vendors are yet to confirm whether they support Advanced Messaging / RCS 2:
 
  - [Twilio](https://www.twilio.com/console/support/tickets/927458)
- - [Mavenir](mailto:contactus@mavenir.com)
- - [Solaiemes](mailto:info@solaiemes.com)
+ - [Solaiemes](mailto:info@solaiemes.com) - end points not woring, probably closed
  - [Muut](mailto:info@muut.com)
  - [Symsoft](mailto:sales@symsoft.com)
  - [MessageBird](mailto:support@messagebird.com)
@@ -50,8 +51,6 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [Tropo](https://www.tropo.com/help/contact-us/)
  - [Tatango](https://www.tatango.com/platform/rcs-messaging/)
  - [Interop](http://interoptechnologies.com/rcs/)
- - [SkyCore](https://www.skycore.com/contact-us/)
- - [CLX](https://www.clxcommunications.com/contact-us/)
  - [3C](https://www.3cinteractive.com/)
  - [Experian](https://www.experian.com/corporate/business-services-contacts.html)
  - [M Gage](http://www.mgage.com/products-services/channels/rcs)
