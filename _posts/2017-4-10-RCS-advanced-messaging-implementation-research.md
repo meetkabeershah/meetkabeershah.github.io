@@ -36,7 +36,6 @@ The following vendors are yet to confirm whether they support Advanced Messaging
  - [MessageBird](mailto:support@messagebird.com)
  - [Summit Tech](mailto:info@summit-tech.com)
  - [RCS](https://www.richcommunicationsuite.com/contact.php)
- - [Spirent](mailto:support@spirent.com)
  - [Nablecomm](mailto:contact@nablecomm.com)
  - [RCS-RDS](mailto:sales@rcs-rds.ro)
  - [NewPace](http://www.newpace.ca/contact)
@@ -70,7 +69,8 @@ As of april'2017, the following vendors do not support Advanced Messaging
  - [InfoBip](https://www.infobip.com/)
  - [TeleMessage](https://www.telemessage.com/contact-us/)
  - [Airbop](http://support.airbop.com/discussions/questions/662-how-rcsadvanced-messaging-can-be-used-with-botframework)
-  
+ - [Spirent](mailto:support@spirent.com)
+
 Although, [GSMA](mailto:info@gsma.com) is not supposed to, and has not responded to our technical questions. GSMA has specified [RCS API](http://www.gsma.com/network2020/wp-content/uploads/2013/08/RCC_13_v2.0.pdf) requirements so far.
 
 # Btw, what is RCS?
