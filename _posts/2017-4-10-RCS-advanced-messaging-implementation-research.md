@@ -85,7 +85,13 @@ Although, [GSMA](mailto:info@gsma.com) is not supposed to, and has not responded
 
 **WHAT IS ‘MESSAGING AS A PLATFORM (MAAP)?**
 
-To most users messaging is just an ‘app’ – a program on their phones they use to keep in touch. Advanced Messaging will change that though – messaging is now becoming a ‘platform’ on which applications will be built to deliver whole new levels of interaction and experience. It is where SMS is headed. End-users simply want all the services they need as quickly and conveniently as possible, and MaaP lets operators deliver that. If you want to book a taxi, a flight or look up train times for example, you will not need to download a specific new app – just hit your messenger. MaaP removes that barrier of another app to download and connects suppliers directly to consumers. Messaging as a Platform will give operators all new possibilities for developing and implementing innovative services, and most importantly, for generating new revenues.
+To most users messaging is just an ‘app’ 
+– a program on their phones they use to keep in touch. Advanced Messaging will change that though 
+– messaging is now becoming a ‘platform’ on which applications will be built to deliver whole new levels of interaction and experience. 
+
+It is where SMS is headed. End-users simply want all the services they need as quickly and conveniently as possible, and MaaP lets operators deliver that. If you want to book a taxi, a flight or look up train times for example, you will not need to download a specific new app – just hit your messenger. 
+
+MaaP removes that barrier of another app to download and connects suppliers directly to consumers. Messaging as a Platform will give operators all new possibilities for developing and implementing innovative services, and most importantly, for generating new revenues.
 
 **The potential for Messaging as a Platform**
 
