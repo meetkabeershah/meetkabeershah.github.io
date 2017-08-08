@@ -24,3 +24,5 @@ Shadow DOM is a way to encapsulate DOM of our custom component. This encapsulati
 The ShadowDOMs can also be provided with HTML templates like so: 
 
 <iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/0qe1jfyc/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+[Source](https://www.youtube.com/watch?v=aQxccPmNhHw)
