@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Elements Shadow DOM Templates in HTML by Examples
+title: Custom Elements, Shadow DOM & Templates in HTML by Examples
 ---
 
 ![Custom Elements](http://blog.teamtreehouse.com/wp-content/uploads/2014/04/Lego-Kenny-Louie-Flickr-2.jpg)
