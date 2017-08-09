@@ -50,7 +50,7 @@ To solve this, we need to provide the service reference to the `src\app\app.modu
 
 Initially, the default code in the service is:
 
-<code><pre>
+<pre><code>
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -59,7 +59,7 @@ export class ServiceNameService {
   constructor() { }
 
 }
-</pre></code>
+</code></pre>
 
 A service has to have a few public methods.
 
@@ -78,7 +78,7 @@ We wanted to pass some value from `parent-component` to `child-component` i.e. a
 
 `child-component.ts` looks like this:
 
-<code><pre>
+<pre><code>
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -97,7 +97,7 @@ export class ChildComponent implements OnInit {
     console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
   }
 }
-</pre></code>
+</code></pre>
 
 Notice that the value of the `@Input` value is available inside `ngOnInit()` and not inside `constructor()`.
 
