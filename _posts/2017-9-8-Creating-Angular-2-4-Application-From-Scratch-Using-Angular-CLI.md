@@ -74,7 +74,21 @@ We wanted to pass some value from `parent-component` to `child-component` i.e. a
 
 `parent-component.html` looks like this:
 
-`<child-component [someInputValue]="'Some Input Value'"></child-component>`
+`<child-component [someInputValue]="someInputValue"></child-component>`
+
+`parent-component.ts` looks like this:
+
+<pre><code>  
+  class ParentComponent {
+
+  someInputValue = 'Some Input Value';
+
+}
+</code></pre>
+
+`child-component.html` looks like this:
+
+`<p>Some Input Value {{someInputValue}}</p>`
 
 `child-component.ts` looks like this:
 
@@ -87,7 +101,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() someInputValue: String;
+  @Input() someInputValue: String = "Some default value";
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue += " modified";
+  }
 
   constructor() {
     console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
@@ -101,5 +120,154 @@ export class ChildComponent implements OnInit {
 
 Notice that the value of the `@Input` value is available inside `ngOnInit()` and not inside `constructor()`.
 
+**Objects reference behaviour in Angular 2 / 4**
+
+In Javascript, objects are stored as references:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:
+
+`parent-component.ts` looks like this:
+
+<pre><code>  
+  class ParentComponent {
+
+  someInputValue = {input: 'Some Input Value'};
+
+}
+</code></pre>
+
+`parent-component.html` looks like this:
+
+<pre><code>  
+{{someInputValue.input}}
+
+<child-component [someInputValue]="someInputValue"></child-component>
+
+</code></pre>
+
+`child-component.html` looks like this:
+
+<pre><code>
+
+<p>Some Input Value {{someInputValue}}</p>
+<button (click)="changeInput()">change input</button>
+
+</code></pre>
+
+`child-component.ts` looks like this:
+
+<pre><code>
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html'
+})
+export class ChildComponent implements OnInit {
+
+  @Input() someInputValue = {input:"Some default value"};
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue.input += " set from setter";
+  }
+
+  constructor() {
+    console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
+  }
+
+  ngOnInit() {
+    console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
+  }
+
+  changeInput(){
+    this.someInputValue.input += " changed";
+  }
+}
+</code></pre>
+
+The function `changeInput()` will change the value of `someInputValue` inside both `ChildComponent` &amp; `ParentComponent` because of their reference. Since, `someInputValue` is referenced from `ParentComponent`'s `someInputValue` **object** - the change in `ChildComponent`'s `someInputValue` **object** changes the value of `ParentComponent`'s `someInputValue` **object**. *THIS IS NOT CORRECT*. The references shall never be changed.
+
+**Angular 4 life cycle methods**
+
 `ngOnInit()`, `ngOnChanges()` and `ngOnDestroy()` etc. are lifecycle methods. `ngOnChanges()` will be the first to be called, before `ngOnInit()`, when the value of a bound property changes, it will NOT be called if there is no change. `ngOnDestroy()` is called when the component is removed. To use it, `OnDestroy` needs to be `implement`ed by the class.
+
+**DOM Manipulation in Angular 4 app**
+
+To manipulate the DOM in Angular 2/4 apps, we need to `implement` the method `ngAfterViewInit()` of `AfterViewInit`. The method `ngAfterViewInit()` is called when the bindings of the children directives have been checked for the first time. In other words, **when** the view is initially rendered.
+
+The `@ViewChild` provides access to `nativeElement`. It is recommended to not access `nativeElement` inside the `ngAfterViewInit()` because it is not browser safe. Also, it's not supported by web workers. Web workers will never know when the DOM updates. 
+
+The right way is to use `renderer`. The renderer needs to be injected to the component constructor. We need to provide an `id` reference to the `HTML` element on the view something like this:
+
+`<p #p1></p>`
+
+It shall be accessed by the corresponding coponent `.ts` file, something like this:
+
+<pre><code>
+export class SampleComponent implements AfterViewInit {
+
+  @ViewChild("p1") p1;
+
+  constructor(private renderer: Renderer2) //Renderer set to be depreciated soon
+  { }
+
+  ngAfterViewInit() {
+
+    //recommended DOM manipulation approach
+    this.renderer.setStyle(this.p1.nativeElement, //setElementStyle for soon to be depreciate Renderer
+      'color',
+      'red');
+
+    //not recommended DOM manipulation approach
+    //this.p1.nativeElement.style = "color:blue;";
+  }
+
+}
+</code></pre>
+
+**Programmatically add components to DOM in Angular 2/4 app**
+
+We need to use `ngAfterContentInit()` lifecycle method from `AfterContentInit`. It is called after the directive content has been fully initialized.
+
+In the `parent-component.html`, add the a `div` like this:
+
+`<div #container> </div>`
+
+The `parent-component.ts` file looks like this:
+
+<pre><code>
+
+class ParentComponent implements AfterContentInit {
+
+  @ViewChild("container", { read: ViewContainerRef }) divContainer
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+
+  ngAfterContentInit() {
+    let childComponentFactory = this.componentFactoryResolver.resolveComponentFactory(childComponent);
+    this.divContainer.createComponent(childComponentFactory);
+    let childComponentRef = this.divContainer.createComponent(childComponentFactory);
+    childComponentRef.instance.someInputValue = "Assigned value";
+
+  }
+}
+</code></pre>
+
+Inside `src\app\app.module.ts`, add the following entry to the `@NgModule()` method parameters:
+
+<pre><code>
+  entryComponents:[
+    childComponent
+  ],
+</code></pre>
+
+
+Notice that we're not accessing the `div#container` using the `@ViewChild("container") divContainer` approach. We need it's reference instead of the `nativeElement`. We will access it as `ViewContainerRef`:
+
+`@ViewChild("container", {read: ViewContainerRef}) divContainer`
+
+The `ViewContainerRef` has a method called `createComponent()` which requires a component factory to be passed as a parameter. For the same, we need to inject a `ComponentFactoryResolver`. It has a method which basically loads a component.
 
