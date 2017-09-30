@@ -17,7 +17,7 @@ The same is been verified in the code:
 
 However, the value received from FB is: `o\\/ERviEE\\/vt0|<E|\\|`
 
-[![o\\/ERviEE\\/vt0|<E|\\|  verify token get](https://i.stack.imgur.com/MKtwP.png)
+![o\\/ERviEE\\/vt0|<E|\\|  verify token get](https://i.stack.imgur.com/MKtwP.png)
 
 **This is strange**. There seems to be no document reference as such which talks about how Facebook escapes special characters for verify tokens or alike. Not sure if this happens for other entities as well.
 
