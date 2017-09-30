@@ -3,7 +3,7 @@ title: Facebook API - The URL couldn't be validated. Callback verification faile
 layout: post
 ---
 
-[Webhooks](https://images.kualo.com/mailmachine/wufoowebhook.png)
+![Webhooks](https://images.kualo.com/mailmachine/wufoowebhook.png)
 
 [courtesy](https://my.kualo.com/uk/knowledgebasekualo.php?kbcat=0&article=120)
 
