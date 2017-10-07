@@ -7,6 +7,8 @@ title: Angular 4 by examples
 
 [courtesy](http://mean.ghost.io/sandbox-eval-plunker-and-angularjs/)
 
+THIS POST IS WORK IN PROGRESS
+
 The best way to learn programming is to see code in action:
 
 <iframe style="width: 100%; height: 600px" src="http://embed.plnkr.co/p9vMvlzEwUOOlcP2FsUG" frameborder="0" allowfullscren="allowfullscren"></iframe>
