@@ -29,12 +29,12 @@ The task manager (like `gulp`, `grunt`) used by Angular CLI is `webpack`.
 
 Old apps were page centric, modern apps are component based.
 
-4 pillars of Angular 4
+# 4 pillars of Angular 4
 
-	1. Component - encapsulates the template (html), data (variables) but not source of data and the behaviour (functions) of a view.
-	2. Directives - bridges the gap between backend and front end. Used for DOM manipulation.
-	3. Routers - takes care of navigation between components.
-	4. Services - reusable tags primarily used for manipulating DOM elements
+1. Component - encapsulates the template (html), data (variables) but not source of data and the behaviour (functions) of a view.
+2. Directives - bridges the gap between backend and front end. Used for DOM manipulation.
+3. Routers - takes care of navigation between components.
+4. Services - reusable tags primarily used for manipulating DOM elements
 
 # Adding a component
 
@@ -91,8 +91,6 @@ export class FooterComponent {
 And bind them like this:
 
 <pre><code class="typecript">
-{{title}}
-
 <ul>
     <li *ngFor="let course of courses">
         {{course}}
