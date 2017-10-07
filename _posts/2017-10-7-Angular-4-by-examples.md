@@ -151,10 +151,7 @@ Use the property in the component `<img [src]=profilePic />`
 
 As of this writing the most stable version of Bootstrap is 3.3. Hence, head over to http://getbootstrap.com/docs/3.3/getting-started/#download and et CDN link under Bootstrap CDN somewhat like this:
 
-<pre><code class="typecript">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</code></pre>
+`<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">`
 
 Add this to `index.html`
 
