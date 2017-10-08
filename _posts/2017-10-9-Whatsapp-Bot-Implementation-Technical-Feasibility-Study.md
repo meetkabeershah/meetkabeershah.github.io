@@ -7,7 +7,7 @@ type: post
 
 [courtesy](https://web.whatsapp.com/)
 
-For some of my technical experiments, I was trying to figure out how beneficial and feasible it is to implement bots for different chat platforms in terms of market share and so possibilities of adaptation. Especially when you have already failed, it's important to validate ideas and fail more faster.
+For some of my technical experiments, I was trying to figure out how beneficial and feasible it is to implement bots for different chat platforms in terms of market share and so possibilities of adaptation. Especially when you have bankruptly failed twice, it's important to validate ideas and fail more faster.
 
 Popular chat platforms like [Messenger](https://developers.facebook.com/docs/messenger-platform/), [Slack](https://api.slack.com/bot-users), [Skype](https://dev.skype.com/bots) etc. have happily (in the sense officially) provided APIs for bots to interact with except, WhatsApp.
 
