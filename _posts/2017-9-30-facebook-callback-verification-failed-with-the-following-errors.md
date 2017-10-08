@@ -22,5 +22,3 @@ However, the value received from FB is: `o\\/ERviEE\\/vt0|<E|\\|`
 **This is strange**. There seems to be no document reference as such which talks about how Facebook escapes special characters for verify tokens or alike. Not sure if this happens for other entities as well.
 
 Conclusion: need to be a little bit cautious when using special characters for verify tokens.
-
-Because, Facebook escapes special characters for webhooks' verify tokens.
