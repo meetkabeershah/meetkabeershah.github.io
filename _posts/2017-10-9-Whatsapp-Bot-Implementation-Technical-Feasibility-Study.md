@@ -7,6 +7,15 @@ type: post
 
 [courtesy](https://web.whatsapp.com/)
 
+There is a secret pilot program which WhatsApp is working on with selected businesses
+- https://faq.whatsapp.com/general/26000052
+
+News coverage:
+- https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/
+- https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/
+- http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/
+- http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740
+
 For some of my technical experiments, I was trying to figure out how beneficial and feasible it is to implement bots for different chat platforms in terms of market share and so possibilities of adaptation. Especially when you have bankruptly failed twice, it's important to validate ideas and fail more faster.
 
 Popular chat platforms like [Messenger](https://developers.facebook.com/docs/messenger-platform/), [Slack](https://api.slack.com/bot-users), [Skype](https://dev.skype.com/bots) etc. have happily (in the sense officially) provided APIs for bots to interact with except, WhatsApp.
@@ -53,7 +62,3 @@ However, since many years, a lot of activities has happened around this - strugg
  This API can shut off any time.
  
  And the number goes on...
- 
- So far, [WhatsApp do not officially support APIs](https://faq.whatsapp.com/search?query=api&lang=en). There is no trace on the whole Internet which talks about **official** API support from WhatsApp.
-
-This single reason is more than enough for Chat bot building companies to not support WhatsApp and not risk their investments and resources.
