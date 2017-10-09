@@ -8,13 +8,13 @@ type: post
 [courtesy](https://web.whatsapp.com/)
 
 There is a secret pilot program which WhatsApp is working on with selected businesses
-- https://faq.whatsapp.com/general/26000052
+- [https://faq.whatsapp.com/general/26000052](https://faq.whatsapp.com/general/26000052)
 
 News coverage:
-- https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/
-- https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/
-- http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/
-- http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740
+- [https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/](https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/)
+- [https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/](https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/)
+- [http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/](http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/)
+- [http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740](http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740)
 
 For some of my technical experiments, I was trying to figure out how beneficial and feasible it is to implement bots for different chat platforms in terms of market share and so possibilities of adaptation. Especially when you have bankruptly failed twice, it's important to validate ideas and fail more faster.
 
