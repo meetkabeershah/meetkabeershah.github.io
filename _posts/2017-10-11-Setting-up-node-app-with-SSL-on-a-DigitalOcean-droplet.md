@@ -34,3 +34,5 @@ Let's see how to setup node app with SSL on a DigitalOcean VPS
 20. [Purchase a domain](https://in.godaddy.com/domains)
 21. [Set up SSL with Let's Encrypt for the purchased domain](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04)
 22. Keep a [backup of default nginx configuration](https://gist.github.com/xameeramir/a5cb675fb6a6a64098365e89a239541d) (and all other important stuff) to revert back in case of an [earthquack](http://www.n1ads.com/data-recovery/pics/raid-server-data-recovery-services.jpg)
+
+Notice that we shall use services like [heroku's git feature](https://devcenter.heroku.com/articles/git) instead of the globally famous [github](https://github.com/) for version control to keep code closed source.
