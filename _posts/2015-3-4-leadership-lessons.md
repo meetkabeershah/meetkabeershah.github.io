@@ -19,7 +19,7 @@ A few text read during graduation:
 
 The key to substantial improvement is a balanced attack across several interrelated dimensions.
 
-The best administrators are those who strike the right balance between maximum productivity and maximum safety.
+> The best administrators are those who strike the right balance between maximum productivity and maximum safety.
 
 In one of the sessions, the speaker asked - "Can we let it go for the sake of harmony?". So we don't hold on always, yes we don't...
 
