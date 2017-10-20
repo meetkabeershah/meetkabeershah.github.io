@@ -56,6 +56,7 @@ If the app submission is approved/rejected, Facebook sends a notification. Also,
 
 [![Approved permissions][6]][6]
 
+That's it.
 
   [1]: https://i.stack.imgur.com/FIjdk.png
   [2]: https://i.stack.imgur.com/EBgGi.png
