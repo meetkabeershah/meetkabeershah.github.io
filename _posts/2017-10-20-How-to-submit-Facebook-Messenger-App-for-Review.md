@@ -1,5 +1,5 @@
 ---
-title: Facebook Messenger App Review Submission
+title: How to submit Facebook Messenger App for Review
 layout: post
 ---
 
@@ -9,14 +9,14 @@ layout: post
 
 To publish a bot on the Facebook the following stuff are required to be ready:
 
- - Icon: You can upload a JPG, GIF or PNG file. The size of the image must be 1024 x 1024 pixels. File size limit 5 MB
- - App display name
- - Contact Email – In case if anyone (or Facebook) wants to contact a company
- - Category – the business category for which bot is getting published
- - Privacy policy URL
- - Terms of Service URL
- - Video - You'll be prompted to upload a screen-cast of your chat-bot working
- - Facebook page
+ - **Icon**: You can upload a JPG, GIF or PNG file. The size of the image must be 1024 x 1024 pixels. File size limit 5 MB
+ - **App display name**
+ - **Contact Email** – In case if anyone (or Facebook) wants to contact a company
+ - **Category** – the business category for which bot is getting published
+ - **Privacy policy URL**
+ - **Terms of Service URL**
+ - **Video** - You'll be prompted to upload a screen-cast of your chat-bot working
+ - **Facebook page**
 
 Most of the above stuff can be done with common sense and below is the actual review submission.
 
@@ -26,17 +26,17 @@ Most of the above stuff can be done with common sense and below is the actual re
 
 **Add permissions required by the app**
 
-Go the Messenger tab in the App Dashboard. Find the App Review section and select permissions the app for which you want to submit.
+Go to the Messenger tab in the App Dashboard. Find the App Review section and select the permissions needed by the app.
 
 [![Messenger app permissions][2]][2]
 
 **Edit Notes for Each Submission**
 
-After selecting the permissions, one can edit the notes for each submission. Click on <kbd>Edit Notes</kbd> for each permission. Be sure to complete each form and any other missing items before clicking <kbd>Submit for Review</kbd>.
+After selecting the permissions, one can edit the notes for each submission. Click on <kbd>Edit Notes</kbd> for each permission. Make sure to fill each form and any other missing items before clicking <kbd>Submit for Review</kbd>.
 
 [![Edit Notes for Each Submission][3]][3]
 
-Facebook will need confirmation before submission
+Facebook will need confirmation before submission:
 
 [![Facebook submission confirmation][4]][4]
 
