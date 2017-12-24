@@ -18,8 +18,8 @@ function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async
     {{ content }}
   </div>
 
-  <div itemprop="datePublished" content="{{page.date}}" class="postmetadata date">
-   <span class="updated"> Written on {{ page.date | date: "%B %e, %Y" }}</span> 
+  <div itemprop="datePublished" content="{{page.date}}" class="postmetadata">
+   Written on <span class="updated"> {{ page.date | date: "%B %e, %Y" }}</span> 
   </div>
 
   {% include commentsSection.html %}
