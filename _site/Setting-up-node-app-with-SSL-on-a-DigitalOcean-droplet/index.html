@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting up node app with SSL on a DigitalOcean droplet – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Setting up node app with SSL on a DigitalOcean droplet" />
+    <meta property="twitter:title" content="Setting up node app with SSL on a DigitalOcean droplet" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Setting up node app with SSL on a DigitalOcean droplet</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAJOAAAAJGMzZjVlNjM4LWI0ZTctNGY2YS1hOWFlLWI2YTRmMzNhN2U3Ng.png" alt="Digital Ocean" /></p>
+
+<p><a href="https://www.linkedin.com/pulse/five-reasons-why-developers-love-digitalocean-janakiram-msv/">courtesy</a></p>
+
+<p>You probably <a href="https://www.google.com/search?q=Setting+up+node+app+with+SSL+on+a+DigitalOcean+droplet">Googled it</a> it and are here!
+Okey, no more time waste (for MYSELF in future)…</p>
+
+<p>Let’s see how to setup node app with SSL on a DigitalOcean VPS</p>
+
+<ol>
+  <li><a href="https://devcenter.heroku.com/articles/heroku-cli#debian-ubuntu">Install Heroku for it’s versioning feature</a></li>
+  <li><a href="https://devcenter.heroku.com/articles/git#deploying-code">Git push the app to Heroku</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet">Setup a drop let</a></li>
+  <li><a href="https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html">Generate SSH keys</a></li>
+  <li><a href="http://guides.beanstalkapp.com/version-control/git-on-windows.html">Setup git bash for SSH-ing to droplet</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh">Connect to Droplet using SSH keys</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04">Install node</a></li>
+  <li>Confirm node installation using <code class="highlighter-rouge">node -v</code></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04">Install MongoDB if the app needs to persist data</a></li>
+  <li>Confirm if mongodb is running using the command <code class="highlighter-rouge">sudo systemctl status mongodb</code></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps">Setup and configure pm2 to orchestrate the node app</a></li>
+  <li>Confirm pm2 installation using <code class="highlighter-rouge">pm2 -v</code></li>
+  <li><a href="https://devcenter.heroku.com/articles/git-clone-heroku-app">Clone to a location in the server</a></li>
+  <li><a href="https://docs.npmjs.com/cli/start">Start the node app for first cut testing</a></li>
+  <li><a href="http://pm2.keymetrics.io/docs/usage/quick-start/#usage">Start node app as a process</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04">Install nginx</a></li>
+  <li>Make sure that the nginx service is running using command <code class="highlighter-rouge">sudo systemctl status nginx</code></li>
+  <li><a href="https://ubuntuforums.org/showthread.php?t=1514714">Make sure that UFW is enabled</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04#set-up-nginx-as-a-reverse-proxy-server">Setup nginx reverse proxy to the port on which the app is running</a></li>
+  <li>When reverse-proxying nginx server, keep <code class="highlighter-rouge">try_files $uri $uri/ =404;</code> inside <code class="highlighter-rouge">location</code> if absolutely necessary inside <code class="highlighter-rouge">/etc/nginx/sites-available/default</code></li>
+  <li><a href="https://in.godaddy.com/domains">Purchase a domain</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04">Set up SSL with Let’s Encrypt for the purchased domain</a></li>
+  <li>Keep a <a href="https://gist.github.com/xameeramir/a5cb675fb6a6a64098365e89a239541d">backup of default nginx configuration</a> (and all other important stuff) to revert back in case of an <a href="http://www.n1ads.com/data-recovery/pics/raid-server-data-recovery-services.jpg">earthquack</a></li>
+</ol>
+
+<p>Notice that we shall use services like <a href="https://devcenter.heroku.com/articles/git">heroku’s git feature</a> instead of the globally famous <a href="https://github.com/">github</a> for version control to keep code closed source.</p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2017-10-11 00:00:00 +0000" class="date">
+    Written on October 11, 2017
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Setting up node app with SSL on a DigitalOcean droplet></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

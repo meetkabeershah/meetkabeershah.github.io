@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MongoDB for node.js developers jumpstart – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="MongoDB for node.js developers jumpstart" />
+    <meta property="twitter:title" content="MongoDB for node.js developers jumpstart" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >MongoDB for node.js developers jumpstart</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://coenraets.org/blog/wp-content/uploads/2012/10/nodemango1.jpg" alt="MongoDB for node.js developers jumpstart" /></p>
+
+<p><a href="http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/">courtesy</a></p>
+
+<p>These’re my notes for the <a href="https://university.mongodb.com/courses/M101JS/about">MongoDB for node.js course</a></p>
+
+<h1 id="what-is-mongodb">What is MongoDB?</h1>
+
+<p>MongoDB is a document database holding data in JSON format. Since it’s not based on joining, it’s easy to distribute data across servers by it’s sharding feature.</p>
+
+<p>Developers can develop application which can be agnostic about deployments. MongoDB supports scaling out as opposed to RDBMS which supports scaling up. Mongo shell is written using C++ V8 for administering the MongoDB.</p>
+
+<h1 id="what-is-nodejs">What is node.js</h1>
+
+<blockquote>
+  <p><code class="highlighter-rouge">node.js</code> is basically a <code class="highlighter-rouge">C++</code> program that you control using <code class="highlighter-rouge">V8 javascript</code>. So any applications you write using <code class="highlighter-rouge">node.js</code> will be written in <code class="highlighter-rouge">javascript</code> and it will control this <code class="highlighter-rouge">C++</code> application (<code class="highlighter-rouge">node.js</code>) and you’ll be able to say something like they made request for this resource and your application actually in <code class="highlighter-rouge">javascript</code> will say: okey, they made a request for this resource, I don’t have to respond to that. Now respond accordingly.</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">Node.js</code> connects to <code class="highlighter-rouge">MongoDB</code> using drivers. Installing <code class="highlighter-rouge">32</code> bit release shall be avoided because it limits the addressable size of data using the default storage engine.</p>
+
+<h1 id="what-is-json">What is JSON?</h1>
+
+<p>To a layman, <a href="http://json.org/"><code class="highlighter-rouge">JSON</code></a> is merely a string, anyways. <code class="highlighter-rouge">JSON</code> objects are composed of <em>key-value</em> pairs. Keys must be strings, Keys and values must be separated by semi-colons. Fields within a <code class="highlighter-rouge">JSON</code> object are separated by commas as delimiters. <code class="highlighter-rouge">JSON</code> objects are opened and closed using curly braces:</p>
+
+<pre>
+<code>
+{
+  "string" : "sting value goes here",
+  "date" : "2015-10-27T22:35:21.908Z",
+  "number" : 123,
+  "object" : {
+    "key1" : "value1",
+    "key2" : "value2"
+  },
+  "boolean" : true,
+  "array" : [ 
+    "test", 
+    { "key1" : "a", "key2" : "b" },
+    [ "abc", "xyz" ]
+  ]
+}
+</code>
+</pre>
+
+<p>The above example shows that <code class="highlighter-rouge">JSON</code> supports a number of data-types. The <code class="highlighter-rouge">object</code> field shows an example of nested values. As we can see <code class="highlighter-rouge">object</code> and <code class="highlighter-rouge">array</code> - <code class="highlighter-rouge">MongoDB</code> data models commonly make use of nesting and even what we might call <strong>deep nesting</strong>. The flexibility <code class="highlighter-rouge">JSON</code> provides makes it simple to implement different data access patterns by creating objects that contain all the data required to render a webpage full of content or say to provide another type of data view for users with very few requests.</p>
+
+<h1 id="what-is-bson">What is BSON?</h1>
+<p><code class="highlighter-rouge">MongoDB</code> stores data as <a href="http://bsonspec.org/"><code class="highlighter-rouge">BSON</code></a> (binary <code class="highlighter-rouge">JSON</code>). Here is the comparison:</p>
+
+<pre>
+<code>
+// JSON
+{
+	"hello": "world"
+}
+
+// BSON
+"\x16\x00\x00\x00\x02hello\x00 \
+x06\ x00\ x00\ x00world\ x00\ x00 "
+</code>
+</pre>
+
+<p><code class="highlighter-rouge">MongoDB</code> drivers send and recieve data in <code class="highlighter-rouge">BSON</code> format and when the data is written to <code class="highlighter-rouge">MongoDB</code>, it’s stored in <code class="highlighter-rouge">BSON</code>.</p>
+
+<p>On the application side, the drivers map <code class="highlighter-rouge">BSON</code> to most appropriate native data types. It’s</p>
+
+<ul>
+  <li>lightweight</li>
+  <li>traversable, to support a variety of operations necessary for writing, reading and indexing <code class="highlighter-rouge">MongoDB</code> documents</li>
+  <li>efficient, meaning encoding/decoding data to/from BSON as the drivers need to do can be performed very quickly.</li>
+</ul>
+
+<p><code class="highlighter-rouge">JSON</code> doesn’t distinguishes between <code class="highlighter-rouge">integer</code>s and <code class="highlighter-rouge">float</code>s. Doesn’t supports <code class="highlighter-rouge">date</code>s. <code class="highlighter-rouge">BSON</code> extends the JSON value types to include <code class="highlighter-rouge">integer</code>s, <code class="highlighter-rouge">double</code>s, <code class="highlighter-rouge">date</code>s and binary data to support images and a number of other types of data.</p>
+
+<h1 id="installation-for-windows">Installation for Windows</h1>
+
+<p>To access the <code class="highlighter-rouge">mongo</code> and <code class="highlighter-rouge">mongod</code> directly from shell, Change the path for MongoDB:</p>
+
+<ul>
+  <li>Go to <code class="highlighter-rouge">System Properties</code></li>
+  <li>Go to <code class="highlighter-rouge">Advanced settings</code></li>
+  <li>Click <code class="highlighter-rouge">Environment variables</code></li>
+  <li>Go to <code class="highlighter-rouge">System variables</code></li>
+  <li>Go to <code class="highlighter-rouge">Path</code> (this is where Windows looks for executables)</li>
+  <li>Add the <code class="highlighter-rouge">MongoDB</code>’s startup location (eg: <code class="highlighter-rouge">C:\Program Files\MongoDB\Server\3.2\bin</code>)</li>
+</ul>
+
+<p>Sometimes, you <a href="http://superuser.com/q/1111180/249540">might need to refresh the system to see these shortcuts working</a></p>
+
+<p>However before using <code class="highlighter-rouge">mongodb</code> from terminal, create the <code class="highlighter-rouge">C:\data\db</code> directory for <code class="highlighter-rouge">MongoDB</code> to <strong>store</strong> data by following the below commands:</p>
+
+<p><code class="highlighter-rouge">md \data\db</code></p>
+
+<p>Notice, the <code class="highlighter-rouge">\</code> before <code class="highlighter-rouge">data\db</code> - this makes sure that the directory is created in root directory (in this case <code class="highlighter-rouge">C:\</code>) only.</p>
+
+<p>Now, if you type <code class="highlighter-rouge">mongod</code> and hit <kbd>Enter</kbd>, it starts running. If you read the log printed on the terminal, it says that <code class="highlighter-rouge">MongoDB</code> is listening on <code class="highlighter-rouge">port=27017</code> and that <code class="highlighter-rouge">dbpath=C:\data\db</code> i.e. the default path - which we created lately.</p>
+
+<p>Now, once <code class="highlighter-rouge">mongod</code> is running, we can start <code class="highlighter-rouge">mongo</code> which makes a connection to port <code class="highlighter-rouge">27017</code>.</p>
+
+<h1 id="doing-some-crud">Doing some CRUD</h1>
+
+<p>For the sake of testing this installation, we’ll do a simple document <code class="highlighter-rouge">insert</code> using:</p>
+
+<p><code class="highlighter-rouge">db.names.insert({name:'testing'})</code> and <code class="highlighter-rouge">find</code> (or <code class="highlighter-rouge">select</code> in relational terms) using the below command:</p>
+
+<p><code class="highlighter-rouge">db.names.find()</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/kry_91WuTGqKobZt4ma96UEYocDv8YPufHa4YA1JQdo4Or9JQZPR6hBaQbEZ3r_829TIWIPAkCPPgnC4t1g-UxkNxxc_cTULnZ6B2CLwxz94SxTC1DRS6BGuFrWUk19WLOp1Km-_FsjZKK6TUQlPurTtk7iqKaGUlXogg05Dgl4Cj4swVbi3HhuY0-7oEjXuVi52FpNZtwpG4RujgvtUQ4kZb9kC66iP328As9XpnZAiBqtmImc1vzllMIut5Zxg4TYZUlnO3DB4zYIq1_cynCmoy_kVn4u8tJ-Wtp4RFY9sOmlXMPlAT1t49H1H0OpMHjAtelVxs_BJU0TMbaphDyQ28xeepwNiSPa4IE_nxiMFGJySs6s5RN_d0mQR_kjKD3rW0uaAt5vozAQAcscrt6qzYkQxHPg8n7kBAvOCDupumKmnpbbyPzoCQpCQjvOoRojxwoemeldPNrJ1mCkYCBJjuZoCa3CIvFm2b7U0sRy3Hp7pFAgU-TVvxFA6L5hphNx-KQ0uMWaM_iAKi3isMNzneTRmtSLSLuHKfC-jWPw3AgZsi8qjX6YTx31q3VMbW21DeUvBUV-bcj-vKc_a674rt621BHc=w643-h158-no" alt="testing MongoDB installation" /></p>
+
+<p>Where <code class="highlighter-rouge"><span class="p">{</span><span class="err">name:'testing'</span><span class="p">}</span></code> is an example of document. Also, to make the result of <code class="highlighter-rouge">.find()</code> much readable, we can chain <code class="highlighter-rouge">.pretty()</code> command.</p>
+
+<p>We can run <code class="highlighter-rouge">MongoDB</code> as a <a href="http://stackoverflow.com/a/2438758/2404470">service</a> as well.</p>
+
+<p>In <code class="highlighter-rouge">MongoDB</code>, documents are stored in colletions which are organized into databases. To see databases present in <code class="highlighter-rouge">MongoDB</code> run <code class="highlighter-rouge">show dbs</code></p>
+
+<p>To insert a document into a collection, we first need to know how to specify that collection in the command. A collection and database that contains it form a <strong>namespace</strong>. When doing <code class="highlighter-rouge">CRUD</code> operations, we reference the global variable <code class="highlighter-rouge">db</code>. This variable holds the reference to the database we’re currently using. To switch to a database names <strong>test</strong> type <a href="http://stackoverflow.com/a/5287027">MySQL like command</a> <code class="highlighter-rouge">use test</code>.</p>
+
+<p>The insert operation returns a document as well, where <code class="highlighter-rouge">acknowledged</code> set to true indicates that the record (or better say, document) was inserted successfully. All documents must have an <strong>underscore</strong> _id field. Each document in a collection must have a unique document id. At the heart of the query language for <code class="highlighter-rouge">MongoDB</code> is a query by example strategy. We can pass a blank object <code class="highlighter-rouge"><span class="p">{}</span></code>, key value pair <code class="highlighter-rouge"><span class="p">{</span><span class="err">name:</span><span class="w"> </span><span class="nt">"Uber"</span><span class="err">}</span></code>. The result of <code class="highlighter-rouge">find()</code> command is not a mere array of documents, it’s instead a <code class="highlighter-rouge">cursor object</code>. We can see this:</p>
+
+<pre><code>
+var c = db.names.find();
+c.hasNext() //returns true, meaning there is a document yet to be visited by this cursor 
+c.next() //grabs that document
+</code></pre>
+
+<h1 id="building-using-node">Building using node</h1>
+
+<p>To build applications using <a href="https://nodejs.org/en/">node.js</a>, we first need to <a href="http://xameeramir.github.io/install-node/">install it</a>.</p>
+
+<p>Let’s create a simple <code class="highlighter-rouge">http</code> server:</p>
+
+<pre><code>
+// Source: howtonode.org/hello-node
+
+// Load the http module to create an http server.
+var http = require('http');
+
+// Configure our HTTP server to respond with Hello World to all requests.
+var server = http.createServer(function (request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.end("Hello World\n");
+});
+
+// Listen on port 8000, IP defaults to 127.0.0.1
+server.listen(8000);
+
+// Put a friendly message on the terminal
+console.log("Server running at http://127.0.0.1:8000/");
+</code></pre>
+
+<p>Store the above code in a <code class="highlighter-rouge">.js</code> file, let’s say <code class="highlighter-rouge">app.js</code></p>
+
+<blockquote>
+  <p>And how do we start it?</p>
+</blockquote>
+
+<p>In the terminal, go to the location of the file and type <code class="highlighter-rouge">node app.js</code>. To verify, if it’s running or not, go to <a href="http://localhost:8000">http://localhost:8000</a>. Notice port <code class="highlighter-rouge">8000</code>, which <strong>we</strong>‘ve pecified in the above code.</p>
+
+<h1 id="what-is-npm">What is NPM</h1>
+
+<pre><code>
+    var express = require('express'),
+    cons = require('consolidate'),
+    mongodb = require('mongodb');
+</code></pre>
+
+<p><code class="highlighter-rouge">require()</code> is how we add an external library in a <code class="highlighter-rouge">node.js</code> application. If we run this code through <code class="highlighter-rouge">node</code> terminal, we’ll get the below error:</p>
+
+<p><img src="https://lh3.googleusercontent.com/heymDr6IIbrxBAL1ZtKpC7pZBQ9uZ3jb2IGIJ9H7sceVBVg_zIx8J4hY48Ez2Vff4JMz2arwZN-Q6TAakoT_Zz1OR5cxkOtnT5qzhP9Rw_Jnc3_kS97U2H_UHOn4dFZ4-f5umRvGA-UX0z7QvsNdUinYtxdJ1eFWbyoooSzPTwd2CRsesjNth1K9s-OqaucfLSqzEzCkTAvQksHnBNyQs-q0H4gYSN80E-LJj2FApyuS514y8423lfpyWXO6JLXU3qlmCnU3E5jcPajmQVUyEREJHTVwNBxxVBtZgDpMpJ-9ME4xkZCOqA4POINzSKaGf76JCsEsq2ZN--690d_pESogGYV_hps4i15KVDfw25UqW5k5MTQC3QwjOB_ynDOhrI3GrOx-WXePjgRNQwaMH24Noga6DXbtTsCfTxAT1ICKZqWDKyicj_PWMwwDrPpc2BaFfBXJNbvfGrp5uqMpnGg3al1agYZNSj-pD-aJ7ov76oVL-FiMKo3MR3dt6U9kPXK4u0-s3ZUAwVcvxem8q0P4OE9OAHtxvXLQEgiCJbVR1-AjftZuzJNjfjDBSQfVKy20FDh560_QzQAK7oXOJgD0tpX8tK0=w643-h171-no" alt="could not find module express" /></p>
+
+<p>To get this missing <code class="highlighter-rouge">express</code> thing as a <code class="highlighter-rouge">node</code> package, we can use <code class="highlighter-rouge">node</code> command line <code class="highlighter-rouge">npm install express</code>.
+In real projects, there will be a bunch of package dependencies. Installing them all one-by-one will be a big pain. To resolve this comes <code class="highlighter-rouge">package.json</code> file. This file contains meta data about the dependencies:</p>
+
+<pre><code>
+{
+  "name": "project name goes here",
+  "version": "0.1.2",
+  "description": "npm introduction",
+  "main": "app.js",
+  "dependencies": {
+        "consolidate": "~0.13.1",
+        "express": "~4.13.3",
+        "mongodb": "~2.1.3"
+  },
+  "author": "ABC",
+  "license": "MIT"
+}
+</code></pre>
+
+<p>With this file in <strong>place</strong>, simply running <code class="highlighter-rouge">npm install</code> will get all the packages for us inside <strong>project’s local</strong> <code class="highlighter-rouge">node_modules</code> directory. There’s also a way to install packages globally.</p>
+
+<h1 id="what-is-nodejs-driver">What is Node.js Driver</h1>
+
+<p>The driver communicates with the <code class="highlighter-rouge">MongoDB</code> server using it’s wire protocol. It handles things like opening sockets, detecting errors and managing connections to replica sets. To include the driver in an application, use code <code class="highlighter-rouge">var mongodb = require('mongodb');</code> and install using <code class="highlighter-rouge">npm install mongodb</code>. As we can see, it’s <strong>just</strong> a node package. Try to connect to <code class="highlighter-rouge">MongoDB</code> using this package:</p>
+
+<pre><code>
+var MongoClient = require('mongodb').MongoClient,
+    assert = require('assert');
+
+var url = 'mongodb://localhost:27017/startup';
+
+MongoClient.connect(url, function(err, db) {
+
+    assert.equal(null, err);
+    console.log("Successfully connected to server");
+
+    // Find some documents in our collection
+    db.collection('startup').find({}).toArray(function(err, docs) {
+
+        // Print the documents returned
+        docs.forEach(function(doc) {
+            console.log(doc.name);
+        });
+
+        // Close the DB
+        db.close();
+    });
+
+    // Declare success
+    console.log("Last call");
+});
+</code></pre>
+
+<p>In order to use the <code class="highlighter-rouge">MongoDB Node.js driver</code>, it’s important to have a solid understanding of the <strong>asynchronous</strong> nature of <code class="highlighter-rouge">IO</code> in <code class="highlighter-rouge">javascript</code>, including database requests.</p>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">mongo</code> shell is synchronous meaning that when you issue a find command, it blocks waiting for command to return before continuing. This is not the case with <code class="highlighter-rouge">Node.js</code> driver. Whether you’re doing a query, as we are here in the call defined or just setting up a connection to the database. As is common in <code class="highlighter-rouge">Javascript</code> applications, the <code class="highlighter-rouge">Node.js</code> driver we’re going to use is designed so that it’s methods function asynchronously. What this means is that instead of waiting on a return value from any methods we call, we instead pass in a callback function.</p>
+</blockquote>
+
+<p>The second parameter in the above <code class="highlighter-rouge">MongoClient.connect</code> call is a callback function. And is going to handle the result of this connection operation. Because of <strong>anysnchronous</strong> nature of <code class="highlighter-rouge">node.js</code>, the following message gets printed before any database values:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Last call</code></p>
+</blockquote>
+
+<h1 id="what-is-express">What is Express</h1>
+
+<p><code class="highlighter-rouge">Express</code> is a <code class="highlighter-rouge">node.js</code> module that handles routing, request parameters and other details of <code class="highlighter-rouge">HTTP</code> requests.</p>
+
+<p>Here is a basic example of setting up a basic <code class="highlighter-rouge">Express</code> server:</p>
+
+<pre><code>
+var express = require('express'),
+    app = express();
+
+app.get('/', function(req, res){
+    res.send('Hello World');
+});
+
+app.use(function(req, res){
+    res.sendStatus(404); 
+});
+
+var server = app.listen(3000, function() {
+    var port = server.address().port;
+    console.log('Express server listening on port %s', port);
+});
+</code></pre>
+
+<h1 id="implementing-html-templates">Implementing HTML Templates</h1>
+
+<p>The following example shows how to <strong>implement</strong> a <code class="highlighter-rouge">HTML</code> template:</p>
+
+<pre><code>
+//file: app.js
+var express = require('express'), //set up the Express server
+    app = express(), //use it to create an Express app
+    engines = require('consolidate'); //use the wrapper library
+
+app.engine('html', engines.nunjucks); //register nunjucks template engine
+
+app.set('view engine', 'html'); //as being associated with the html extension, set the view engine app setting
+
+app.set('views', __dirname + '/views'); //specify template location
+
+app.get('/', function(req, res) {
+    res.render('hello', { name : 'Templates' });
+});
+
+app.use(function(req, res){
+    res.sendStatus(404); 
+});
+
+var server = app.listen(3000, function() {
+    var port = server.address().port;
+    console.log('Express server listening on port %s', port);
+});
+</code></pre>
+
+<pre><code>
+
+//file: views/hello.html
+
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;!&lt;/h1&gt;
+
+</code></pre>
+
+<p>In the above code, <code class="highlighter-rouge">consolidate</code> is basically a set of wrappers for a number of template engines for <code class="highlighter-rouge">Express</code>. <code class="highlighter-rouge">Express</code> requires certain libraries to have a certain interface and <code class="highlighter-rouge">consolidate</code> handles that for us. <code class="highlighter-rouge">__dirname</code> is a <code class="highlighter-rouge">node.js</code> variable which allows us to access to the directory in which the application file (in our case, <code class="highlighter-rouge">app.js</code>) resides. Since, we’ve passed <code class="highlighter-rouge">name : 'Templates'</code> - we’ll see the below output:</p>
+
+<p><img src="https://lh3.googleusercontent.com/G2kdPbPZRByvK44lLOPvSLCYd7l-NOpK9MayaxFBJeme9UjdUNxvLJex0qtUHhYPi-TM-apU0SMT0ZnjtnwkmNCLxw4JkLNFHapWujKjlSbVCfDSux_J-daorCYLATI6YuedbLFhsXySXqFg5Iv4xJ-p578uxuo0C-_DYc8J4QYCo_6ppJHFH3EHATavtPwzeGdLPmspF_Px97A9WANzbtRAirmE0GjQYVptcb13AXl9bm5aJ2gFGJJLjQw18ddl7gH7E-wuOtwEy3S5fi9oirjzn5wUqvyU2UhTywMLKzPB4BMom_LW0k7-hVQp_JBsDjoZeXKuSCkL4dYk9iYKjESSPq3A693RLP83vYJq1qhK0cloVMraAeIWBfDdLWaJG3WJGxzc5GitE4LQR2PeDQDoqLylMymGoXoNuj4gEsi2UAXlO01ncifSaU7lGiIucX8hcgWZ6dCFbMgbjxlNoFqlIm3bN_G5we6o25ZAvVoabBt6csO7YS5szhFtVSLA56J2rZaFFH2-2ODqNF8_Z4hg7mKcFWRJOIqT1QC8P4NpqyE9pkMQHzfA6GwRvfBBMBVHehwHsR341FOYcdM3JNZ20RUCtF4=w276-h98-no" alt="Hello Templates" /></p>
+
+<p>Here’s a more advanced version which connects to the database as well:</p>
+
+<pre><code>
+//file: app.js
+
+var express = require('express'),
+    app = express(),
+    engines = require('consolidate'),
+    MongoClient = require('mongodb').MongoClient,
+    assert = require('assert');
+
+app.engine('html', engines.nunjucks);
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+
+MongoClient.connect('mongodb://localhost:27017/startup', function(err, db) {
+
+    assert.equal(null, err);
+    console.log("Successfully connected to MongoDB.");
+
+    app.get('/', function(req, res){
+
+        db.collection('startup').find({}).toArray(function(err, docs) {
+            res.render('startup', { 'name': docs } );
+        });
+
+    });
+
+    app.use(function(req, res){
+        res.sendStatus(404);
+    });
+    
+    var server = app.listen(3000, function() {
+        var port = server.address().port;
+        console.log('Express server listening on port %s.', port);
+    });
+
+});
+</code></pre>
+
+<pre><code>
+
+//file: views/startup.html
+
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;!&lt;/h1&gt;
+
+</code></pre>
+
+<h1 id="handling-get-requests-using-express">Handling GET requests using Express</h1>
+
+<pre><code>
+var express = require('express'),
+    app = express(),
+    engines = require('consolidate');
+
+app.engine('html', engines.nunjucks);
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+
+// Handler for internal server errors
+function errorHandler(err, req, res, next) {
+    console.error(err.message);
+    console.error(err.stack);
+    res.status(500).render('error_template', { error: err });
+}
+
+app.get('/:name', function(req, res, next) {
+    var name = req.params.name;
+    var getvar1 = req.query.getvar1;
+    var getvar2 = req.query.getvar2;
+    res.render('hello', { name : name, getvar1 : getvar1, getvar2 : getvar2 });
+});
+
+app.use(errorHandler);
+
+var server = app.listen(3000, function() {
+    var port = server.address().port;
+    console.log('Express server listening on port %s.', port);
+});
+</code></pre>
+
+<p>The <code class="highlighter-rouge">hello</code> template is:</p>
+
+<pre><code>
+&lt;h1&gt;Hello, &#123;&#123;name&#125;&#125;, here are your GET variables:&lt;/h1&gt;
+&lt;ul&gt;
+    &lt;li&gt;&#123;&#123;getvar1&#125;&#125;&lt;/li&gt;
+    &lt;li&gt;&#123;&#123;getvar2&#125;&#125;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>and the <code class="highlighter-rouge">error</code> template goes here:</p>
+
+<pre><code>
+&lt;h1&gt;Error: &#123;&#123;error&#125;&#125;&lt;/h1&gt;
+</code></pre>
+
+<p>In the above app, we’re just registering only one route i.e. <code class="highlighter-rouge">/:name</code>. The colon says to take this part of the URL and store in a variable called <code class="highlighter-rouge">name</code>.</p>
+
+<p>Will share further notes next week.</p>
+
+<p><a href="https://goo.gl/photos/Yuigw4S9mLXDpSZN6">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-08-09 00:00:00 +0000" class="date">
+    Written on August  9, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=MongoDB for node.js developers jumpstart></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

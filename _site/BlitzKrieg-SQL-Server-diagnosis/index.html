@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlitzKrieg SQL Server diagnosis – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="BlitzKrieg SQL Server diagnosis" />
+    <meta property="twitter:title" content="BlitzKrieg SQL Server diagnosis" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >BlitzKrieg SQL Server diagnosis</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://s-media-cache-ak0.pinimg.com/736x/25/fc/94/25fc94b2bd5c96e67912534644f3856e.jpg" alt="BlitzKrieg" /></p>
+
+<p><a href="https://www.pinterest.com/pin/253749760225683004/">courtesy</a></p>
+
+<p>Found a few cool tools for disgnosing the SQL Server issues. Here is the share for you:</p>
+
+<h1 id="using-sp_blitzcache-to-find-your-worst-performing-queries">Using sp_BlitzCache to Find Your Worst-Performing Queries</h1>
+
+<p><code>sp_BlitzCache</code> is <a href="https://www.brentozar.com/blitzcache/">a free tool</a> that help analyze which queries are consuming most resources like CPU, disk, time etc.</p>
+
+<p>To learn about this tool, use the help parameter <code>sp_BlitzCache @help=1</code>
+When ran without parameters, it returns top 10 most CPU expensive queries: <code>sp_BlitzCache</code></p>
+
+<p>It results in all the diagnosis information like which database and stored procedures are taking the most time. It has a column named <code>Query Plan</code> which links to the actual execution plan. This execution can be shared through <a href="https://www.brentozar.com/pastetheplan/">pastetheplan.com</a></p>
+
+<p>To narrow down the results to a single database use the parameter <code>sp_BlitzCache @DatabaseName='DBName'</code></p>
+
+<p>To sort the results by number of reads, pass the <code>SortOrder</code> parameter <code>sp_BlitzCache @SortOrder='reads'</code>. Other options include CPU, duration, executions, XPM, memory grant, or recent compilations.</p>
+
+<p>To limit the number of results use the <code>@Top</code> parameter. Remember that the more queries you analyze, the slower it goes <code>sp_BlitzCache @DatabaseName='DBName', @Top=50 </code></p>
+
+<p>To do an expert level analysis and see more info, use <code>@ExpertMode</code> parameter <code>sp_BlitzCache @ExpertMode = 1 </code></p>
+
+<p>For an export to excel friendly result, use <code>@ExportToExcel</code> parameter <code>sp_BlitzCache @ExportToExcel = 1 </code></p>
+
+<p>To write the results to a separate database, use the new db entity parameters <code>sp_BlitzCache @OutputDatabaseName = 'NewDB', @OutputSchemaName = 'dbo',  @OutputTableName = 'OutputTable' </code></p>
+
+<h1 id="sp_blitz--free-sql-server-health-check-script">sp_Blitz – Free SQL Server Health Check Script</h1>
+
+<p><code>sp_Blitz</code> is an easy to use <a href="https://www.brentozar.com/blitz/">free simple health check tool</a> for SQL Server. Shows stuff like non-backuped databases etc.</p>
+
+<p>To learn about this tool, use the help parameter <code>sp_Blitz @help=1</code></p>
+
+<p>When executed without parameters, gives the list of suspicous things. Notice that issues upto priority <strong>50</strong> are urgent issues. So to see only the urgent issues use the priorities parmeter <code>sp_Blitz @IgnorePrioritiesAbove = 50</code></p>
+
+<p>Writing the results is also possible like this <code>sp_Blitz @OutputDatabaseName = 'DBName', @OutputSchemaName = 'dbo' , @OutputTableName = 'SomeTable'</code></p>
+
+<h1 id="sp_blitzfirst-helps-troubleshoot-slow-sql-servers">sp_BlitzFirst Helps Troubleshoot Slow SQL Servers</h1>
+
+<p><code> sp_BlitzFirst </code> when executed on it’s own gives all the stuff which are causing the server to run slow like ongoing backup execution, high CPU utilization.</p>
+
+<p>To see the detiled wait stats use the expert mode <code> sp_BlitzFirst @ExpertMode = 1 </code> and gives 3 resultsets:</p>
+
+<ul>
+  <li>Result set 1 : queries currently executing</li>
+  <li>Result set 2 : the troubleshooting info like that of without any params</li>
+  <li>Result set 3 : WAIT STATS (read below for the description of the same)</li>
+  <li>Result set 4 : FILE STATS (read and write speeds for each database file – both data and log file)</li>
+  <li>Result set 5 : Perfmon counters (statistics from the <a href="http://xameeramir.github.io/Setting-Up-Perfmon-for-SQL-Server-Tuning/">performance monitor</a>)</li>
+  <li>Last result set : gives the currently executing queries</li>
+</ul>
+
+<p>To see the results since SQL Server started, use since startup param <code> sp_BlitzFirst @SinceStartup = 1 </code></p>
+
+<p>The results can be stored in an output database as well.</p>
+
+<h1 id="sp_blitzindex--sql-servers-index-sanity-test">sp_BlitzIndex – SQL Server’s Index Sanity Test</h1>
+
+<p>To run the index tests on all of the databases on the server use the parameter <code> @GetAllDatabases = 1 </code> like so <code> sp_BlitzIndex @GetAllDatabases = 1 </code></p>
+
+<p>If you’ve got more than 50 databases on the server, this only works if you also pass in @BringThePain = 1, because it’s gonna be slow.</p>
+
+<p>To get the database specific details set mode to 4 as <code> sp_BlitzIndex @Mode = 4 </code></p>
+
+<h1 id="wait-stats">WAIT STATS</h1>
+
+<p>Whenever SQL Server is running queries, it’s tracking how much time it spends waiting on bottlenecks. These wait statistics are the easiest way to identify your bottleneck and in general called <strong>wait stats</strong> or <strong>waits and queues</strong>.</p>
+
+<p>These statistics are tracked automatically in every version/edition of SQL Server, and they’re easy to query.</p>
+
+<p><a href="https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit">Source</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-17 00:00:00 +0000" class="date">
+    Written on January 17, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=BlitzKrieg SQL Server diagnosis></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

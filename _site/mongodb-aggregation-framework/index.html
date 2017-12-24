@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Aggregation framework – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="The Aggregation framework" />
+    <meta property="twitter:title" content="The Aggregation framework" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >The Aggregation framework</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://lh3.googleusercontent.com/KCXoOKQIIxCJYAjPPjaIyBzm5aC6PbDpMqV6--qJZ4pLLDx7EHrnjnN5ZamCPxSSIVrPqKTf9bdafFC3KGmDAXetPn7JEwzpwf8XWDFabgUGYfY63_ZqAmfUDX1e00c5RjZoA-OJRgBzVKTXnkkHutAqrWFCk5gKvCiaV7tv3nDOipIpIYbFZNldXeO7V_VjdRGEmr7sgHqaa9HxgBq1X8vZC-ApX1Fa55GOpRl2UzKgMR9WHZcs4bx4Z4MAfyZK3p3YnZ2G-KW30i-nuP7HB-GavXTpDzVM_irJiQn_ZNEQanL9ZLHtoMbCeDc1ofC-miN1vKF6QsvDXLgGBCQ6Z9Fw8n1xc9f9hWbRClHIr3xu2UAz0ASmiRGupb29LBJ0T9_ZE92JiNA9ofiKbuaLaNaoy3ueVaTg90yBwQP3CePNGeXosP35jw-21IYq4Uc6MpK0kHC7zCys4vlVEKDnrRFabIvjdRtShs3Vl1Tcq4_P0EHVCSBTxkx17l4yGZpvB3OgOjNpefX_unfdL9FzyieSHUcmSKjAenOEE2xTUvzl6RAagvZIEwLGzqtz1gdUaqKak2GSH0ixp97fomhsuXxvt1FCFx4_1SDOEJqFr1_8ITo3=w665-h310-no" alt="The Aggregation framework" /></p>
+
+<p>And here is the Week 6’s <a href="https://university.mongodb.com/courses/MongoDB/M101JS/2016_August/syllabus">course</a> notes:</p>
+
+<p>The aggregation framework is a set of analytics tools within <code class="highlighter-rouge">MongoDB</code> that allows us to run various types of reports or analysis on documents in one or more collections. Based on the idea of a pipeline. We take input from a <code class="highlighter-rouge">MongoDB</code> collection and pass the documents from that collection through one or more stages, each of which performs a different operation on it’s inputs. Each stage takes as input whatever the stage before it produced as output. And the inputs and outputs for all stages are a stream of documents. Each stage has a specific job that it does. It’s expecting a specific form of document and produces a specific output, which is itself a stream of documents. At the end of the pipeline, we get access to the output.</p>
+
+<p><img src="https://lh3.googleusercontent.com/94DZVWvokpQxASevDZqq1L9tVauVMg20OGfn6zCn3V_PmA7ArWpEbqqnKURY15v3fdKcZQ323ojvKXJ0kPsWPZsLkPElFLW7pRr8suMuHqBOe4lMj1fAJvz0JiZ-qmSS6l51scltQwUEZ3algd_u-MR7Jbd5l9hcTXgQx59ryFjxf1dThIjY85am9BBvyh9baQ4fGCZ_w1QyvlwBrHHIrUFJfuMkFXzxbcva7gYAM5EBAEmmSZkCbBG5oMebhf4z0lWvC1lvWZZ0NOun7onFc-GkmLkZx1JIsh1lRnxTfNTAHSCuG2j3G4Yw3waZGhq7EvNEVRxgQIelEV9kbmBWgsj1Lp809BRzjae-Aqml_uNe-m-S1Y8r2KNRT5K5mAMJLHEKBMRIoTmPUrQsHqGHLAAB14tyeD44n4SnarML44W3u947ugYje1u-XWbfgteLJTreMS0JS09eRx5tCxbyev0RXhwBPVbmnwqZuImFRb1Xseivh3rnGz9qGfJj6wK-JC0Ez54sQp9mYAW4F7BhT8cHEU_zd1naOwMgEIEaeyrfKL0QnPU7hskAEuHwMJ4dnb9STT1gTQ8gIHJ8QjVISWR299erQ0wOFEieXvq_ffB-dxob=w656-h292-no" alt="aggregation framework stage" /></p>
+
+<p>An individual stage is a data processing unit. Each stage takes as input a stream of documents one at a time, processes each document one at a time and produces the output stream of documents. Again, one at a time. Each stage provide a set of knobs or tunables that we can control to parameterize the stage to perform whatever task we’re interested in doing. So a stage performs a generic task - a general purpose task of some kind and parameterize the stage for the particular set of documents that we’re working with. And exactly what we would like that stage to do with those documents. These tunables typically take the form of operators that we can supply that will modify fields, perform arithmetic operations, reshape documents or do some sort of accumulation task as well as a veriety of other things. Often times, it the case that we’ll want to include the same type of stage multiple times within a single pipeline.</p>
+
+<p><img src="https://lh3.googleusercontent.com/mWNoePqRo5B6KHaTT_8A9oGoGdTTS-uWCYGJtWtV1e_kRREELGt7LYAI31BKR7isICF4peK1z7CG21QKGh7XJZlnfB55f48SjanovPRTihvSN7FZYqV3rz4Vprpb7t2nyLQcLaHUbSiKKK3SXlZbIkattNe_ISn94u9j2bOcYsXqVHQNPKYuWZ2ndECd-x8d1OMIS5q77q2w7Jo46A4D1JKuFFLf0KncTjb18kif2VUPX67Iq6nlAKGXl2_WEOxGlF4THp6qWbt-o7MKN8caiexQ5TE7SyD5YQE3vZgLyil_bwj801UBp3dltkpZMb5Iy_Hiq4sHCwd9wLC-_rxEMLu1N7Mi02qCkPbxwO2p085UF5zRqwv4rvdN4SHay_8XGOZEVoa9pC0RG3FXri3oNr5mMv6N15CezjpxwG-uM4bTL4W7lx5dr2ecUWiPDLG0_hK3KA03SiNuQpCDIV39_lY55aaXOrTnZO-97hBJNcKgJJgqDGJ7er9PHzofNgej3O38NDvT4Bm0aYBCl0Fa4fWGB9Qq3pD_aHtX09Kkylem8HESLS_zSg1mzWSYfVMr-95sb1zEceFJqCr4cVMod3VkShYDpemVxVN8N4RsdkwguDTX=w1359-h541-no" alt="same type of stage multiple times within a single pipeline" /></p>
+
+<p>e.g. We may wish to perform an initial filter so that we don’t have to pass the entire collection into our pipeline. But, then later on, following some additional processing, want to filter once again using a different set of criteria. So, to recap, pipeline works with a <code class="highlighter-rouge">MongoDB</code> collection. They’re composed of stages, each of which does a different data processing task on it’s input and produces documents as output to be passed to the next stage. And finally at the end of the pipeline output is produced that we can then do something within our application. In many cases, it’s necessary to include the same type of stage, multiple times within an individual pipeline.</p>
+
+<h1 id="familiar-aggregation-operations">Familiar Aggregation Operations</h1>
+
+<p>As our first step in developing aggregation pipelines, what we’d like to do is take a look at building some pipelines that involve operations that are already familiar to us. So, we’re going to look at the following stages:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">match</code> - this is filtering stage, similar to <code class="highlighter-rouge">find</code>.</li>
+  <li><code class="highlighter-rouge">project</code></li>
+  <li><code class="highlighter-rouge">sort</code></li>
+  <li><code class="highlighter-rouge">skip</code></li>
+  <li><code class="highlighter-rouge">limit</code></li>
+</ul>
+
+<p>We might ask ourself why these stages are necessary, given that this functionality is already provided in the <code class="highlighter-rouge">MongoDB</code> query language, and the reason is because we need these stages to support the more complex analytics-oriented functionality that’s included with the aggregation framework. The below query is simply equal to a <code class="highlighter-rouge">find</code>:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, ])
+</code>
+</pre>
+
+<p>Let’s introduce a project stage in this aggregation pipeline:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded_year: 1
+  }
+}])
+</code>
+</pre>
+
+<p>We use <code class="highlighter-rouge">aggregate</code> method for implementing aggregation framework. The aggregation pipelines are merely an array of documents. Each of the document should stipulate a particular stage operator. So, in the above case we’ve an aggregation pipeline with <strong>two</strong> stages. The <code class="highlighter-rouge">$match</code> stage is passing the documents one at a time to <code class="highlighter-rouge">$project</code> stage.</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    "funding_rounds.investments.financial_org.permalink": "greylock"
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    ipo: "$ipo.pub_year",
+    valuation: "$ipo.valuation_amount",
+    funders: "$funding_rounds.investments.financial_org.permalink"
+  }
+}, ])
+</code>
+</pre>
+
+<p>In the above example, we’re promoting deeply nested fields to upper level in the output we’ll produce from this aggregation pipeline. If we specify <code class="highlighter-rouge">$1</code> in the quotes, <code class="highlighter-rouge">MongoDB</code> interprets it as give me the value identified by this key. We cannot change the <code class="highlighter-rouge">datatype</code> for a value from the project stage.</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    "funding_rounds.investments.financial_org.permalink": "greylock"
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded: {
+      year: "$founded_year",
+      month: "$founded_month",
+      day: "$founded_day"
+    }
+  }
+}, ])
+</code>
+</pre>
+
+<p>In this case, we’re taking the top level <code class="highlighter-rouge">founded_year</code>, <code class="highlighter-rouge">founded_month</code> &amp; <code class="highlighter-rouge">founded_day</code> documents and showing them as part of the nested document <code class="highlighter-rouge">founded</code>. Now, let’s extend to <code class="highlighter-rouge">limit</code> stage:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $limit: 5
+}, {
+  $project: {
+    _id: 0,
+    name: 1
+  }
+}])
+</code>
+</pre>
+
+<p>This gets the <strong>matching</strong> documents and limits to <strong>five</strong> before projecting out the fields. So, projection is working only on <strong>5</strong> documents. Assume, if we were to do something like this:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1
+  }
+}, {
+  $limit: 5
+}])
+</code>
+</pre>
+
+<p>This gets the <strong>matching</strong> documents and projects those large number of documents and finally limits to <strong>five</strong>. So, projection is working on large number of documents and finally limiting to <strong>5</strong>. This gives us a lesson that we should <strong>limit the documents to those which are absolutely necessary</strong> to be passed to the next stage. Now, let’s look at <code class="highlighter-rouge">sort</code> stage:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $sort: {
+    name: 1
+  }
+}, {
+  $limit: 5
+}, {
+  $project: {
+    _id: 0,
+    name: 1
+  }
+}])
+</code>
+</pre>
+
+<p>This will sort all documents by name and give only <strong>5</strong> out of them. Assume, if we were to do something like this:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $limit: 5
+}, {
+  $sort: {
+    name: 1
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1
+  }
+}])
+</code>
+</pre>
+
+<p>This will take first <strong>5</strong> documents and sort them.</p>
+
+<p>Let’s add the <code class="highlighter-rouge">skip</code> stage:</p>
+
+<pre>
+<code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: 2004
+  }
+}, {
+  $sort: {
+    name: 1
+  }
+}, {
+  $skip: 10
+}, {
+  $limit: 5
+}, {
+  $project: {
+    _id: 0,
+    name: 1
+  }
+}, ])
+</code>
+</pre>
+
+<p>This will sort <strong>all</strong> the documents and skip the initial <strong>10</strong> documents and return to us. We should try to include <code class="highlighter-rouge">$match</code> stages as early as possible in the pipeline. To filter documents using a <code class="highlighter-rouge">$match</code> stage, we use the same syntax for constructing query documents (filters) as we do for <code class="highlighter-rouge">find()</code>.</p>
+
+<h1 id="the-unwind-stage">The $unwind stage</h1>
+
+<p><img src="https://lh3.googleusercontent.com/JQSpp4ukNmQnAcbRCGF-PfzQtcLuCrXSPiI1ZtOBz6GLHmBhU85WgUf0ksM_CtNcyxMlHDXYfC6fIXSr6KR6zfIr6mhQG6e_aHIHaBZhBXC0mnKU7QJbn67OVfVzkHuQEcZvegnifGCzf9_DnBKYeNUbJWPr2rLNaxXfhIhHFb0_O_waybvY6o4jiQlYUpEFnNVv5t-97VngtsBwHL1XP5sKmhUuSXUbIJIxQKNysX32QWgH4T82R2p538N1rMIpMoBJi_JuGGT09gFX6YOsLG6I2qjLlMMdtzBnB64lpC8_GkIiFshvQ_6Fo0_G-pbGpZKP-G_mqeYpiqF0jCV23ld1vPZP_K2VQoM_hHON80mKBPmSq4-8-ZuJePm7cB_AcE_AFP7HimrC9KZ_WOvyyuNquDnfjgCyNKXAJqpyxgQkycqZKUl3NiEl-6QNMKTuz3nwr3obtkHYb10yWlvijbrSejmZ0Hdb4i_OQX0VC3MkY24081WgGP-DnIYC0CAIWc4OMdqSopEN1Czxa_YK9B1tGSai63y2MpF7H-b8VYb8lrpeCZkXpKPuazkPHmoLzXZOO691ADRq3M1SY1hoGoE13dkf4AUySkXWqprWr4c9k3L1=w1316-h677-no" alt="The $unwind stage" /></p>
+
+<p>The <code class="highlighter-rouge">$unwind</code> allows us to take documents as input that have an array valued field and produces output documents, such that there’s one output document for each element in the array. <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/unwind/#examples">source</a></p>
+
+<p>So let’s go back to our companies examples, and take a look at the use of unwind stages. This query:</p>
+
+<pre>
+<code>
+db.companies.aggregate([
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $project: {
+        _id: 0,
+        name: 1,
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } }
+])
+</code>
+</pre>
+
+<p>produces documents that have arrays for both amount and year.</p>
+
+<p><img src="https://lh3.googleusercontent.com/IIQAkdNosQFdyCWm4QRSwFcX45-5Eo3mC48rIKKtZsOStC7VllsxXMqrOX9yOH3BE4FGIrOJyxWoBCzEcA15_Yl-FXiBn_rWgvGehqIfceqIWyh3-FRsMviGbtpDOaSkzqBkf9SAdOQVamwAvJS_ssuAETcWETiVpCYSvVt2SQ6geaV_UwPy5LIVB2WtTriJFxL4KYagPyEkOCllkCnQvHDbIPYKqesHUCTl31uuOlpQL8rPZUh2s4uv7FLgkbYHkQD9EiXEL2ExIPDPLFjQ3aNmnzVO7h8a5WY4pOsSVPldZZg3MNPYLysLLbhLWgF1O-qx_bBtP66vgq2YdLnq9l_fhgl6yqY0-71kLVnKA1ZSCCgSc6WUOKouA7wI0H9-771lq41SLFqQuuPlFS_g5RDM1YVUBVTtJgnUMp-M3cNIw-kZz4tF2mZGuUWSF6yZjxjJeGfy-ZlQFzwsmOLqENCmaWXeq05J693xyV3nnrHEuopg350evUllzhNiiloMYNws4K52NPOPOnufwf9onFxa13wYHNRYEnFftcJ4ELPDJ7PFzGDFb9FGFSwvtI7BnIJdelCzb0XT-L39X7gDDyRiv1w3EESRF12EcUOoeUwp-B7V=w217-h185-no" alt="project output" /></p>
+
+<p>Because we’re accessing the raised amount and the funded year for every element within the funding rounds array. To fix this, we can include an unwind stage before our project stage in this aggregation pipeline, and parameterize this by saying that we want to <code class="highlighter-rouge">unwind</code> the funding rounds array:</p>
+
+<pre>
+<code>
+db.companies.aggregate([
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $unwind: "$funding_rounds" },
+    { $project: {
+        _id: 0,
+        name: 1,
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } }
+])
+</code>
+</pre>
+
+<p><img src="https://lh3.googleusercontent.com/Cmoobrm_U8Pj8Bq6pu3luA9kc8-EDumWXTT1K5UymkHXGXhkZjhjed3ZOZYeMuQB0Q66EjOcspiRaOeaKtcSWoUx1b_-LR-6FI1QfMT6_tA1mEFxk04LIUr8veYCPMGj4W9AwIztSE4fNYFvfzl433E2-A22rP86TwNnvqnxiPy9Cze4GQKQGKG45wulQVuaq9xG0_eEV4QWkoSqRmGYT45ZTC6AtJAVWr8tuYh524a0D1BfengaTOeXewSQesI9S8lWDtaerN1ViyjwzK9AWnMx2U7_ftZC4QbXpLytuRl9uOLUzxQtr0mThiF65YzjFi831oXG6L3710JbMCO0srMjQdL1NHMMOcczXSnKbKoei5OJciAVb5xS35RpfiIy0dt4GBy3u_P4ZYjGx9QA8O9aZJCWn-ZFTnylQ3EvwCdMNZEljzXt-VFd3yarikgzFK4lfQaHhX00AYl5-qD4xGDFnkemq2DZb0eO51RwTSZjIhgit4VAvTU3IdcyFqDe_EHKiX9jt4AuVDOMOvQylO9BStwQmlAflaneCA4iQJiQb2sg8ejzvW1iF2CSXkj8LG7UTzBrF8IGh78KYgX7exI58NtGtsnCVj5uPt9Ve9ohlowz=w503-h256-no" alt="unwind has the effect of outputting to the next stage more documents than it receives as input" /></p>
+
+<p>This is how the document looks like:</p>
+
+<p><img src="https://lh3.googleusercontent.com/ahadVLSLDSIfwdcYIu0o-MdwGGsf27JpNERF4RJE-naDeD0O7aqlVkWi4kj1mDHjsqRTTCG_bO4192koLbrBt4a-4o75IiTHsGfF6kXnq2iXfC88dXPf0lVW3bqdphCd7F8_3gXKxh3qoIG3O1fsbn284lXhAghSXeC6QMfsDCAVOl9FZWSoNkTt4fxhy2QuwsJ08FtXUMs2zciyBUbqyj62_vUlJHyfhA_ZlgPONXH2s3N1Wvm7TVb92cBUKfruSq29Ih1wnGVXYSQvEvqYaDr28dv6AVZ7R-RJL9lXyEG2XCykipf6LsuoubQrYAEiDmGqkn2WOWPCi0_f_o6cbLp7zZeLzD8nrIfkMf1jgpfDOQsyObksd_me1QVdEpPgZampvI-h4ksSFs0lK0KfLEOJvCAN8NZ42Iz877qs95lor-NNc5RO1kmB0IszI7c1T2mDBM4vjb8zUZMa7qdk0HepKvzxUi9xYlbO_o6PcOeegCK-RKgs5hWlYeB_CJqqf1RB09O_tNWyC9AJsVCdKSpEYGUJFqJ5Y2D6OJRXJ_mM9GZh8EuSI9ra4Rr5y6Jg-RscMefKVh-e2O7NwT61mq4EmTJOV59Oob_c3uo3iVS0Pv-W=w831-h511-no" alt="original document" /></p>
+
+<p>If we look at the <code class="highlighter-rouge">funding_rounds</code> array, we know that for each <code class="highlighter-rouge">funding_rounds</code>, there is a <code class="highlighter-rouge">raised_amount</code> and a <code class="highlighter-rouge">funded_year</code> field. So, <code class="highlighter-rouge">unwind</code> will for each one of the documents that are elements of the <code class="highlighter-rouge">funding_rounds</code> array produce an output document. Now, in this example, our values are <code class="highlighter-rouge">string</code>s. But, regardless of the type of value for the elements in an array, <code class="highlighter-rouge">unwind</code> will produce an output document for each one of these values, such that the field in question will have just that element. In the case of <code class="highlighter-rouge">funding_rounds</code>, that element will be one of these documents as the value for <code class="highlighter-rouge">funding_rounds</code> for every document that gets passed on to our <code class="highlighter-rouge">project</code> stage. The result, then of having run this, is that now we get an <code class="highlighter-rouge">amount</code> and a <code class="highlighter-rouge">year</code>. One for <strong>each funding round for every company</strong> in our collection. What this means is that our match produced many company documents and each one of those company documents results in many documents. One for each funding round within every company document. <code class="highlighter-rouge">unwind</code> performs this operation using the documents handed to it from the <code class="highlighter-rouge">match</code> stage. And all of these documents for every company are then passed to the <code class="highlighter-rouge">project</code> stage.</p>
+
+<p><img src="https://lh3.googleusercontent.com/QEaWqaVrBK_E32vf1f7livxwP0vCmWmubTDMb2Om-Nj-8G9zD0zB-VUfocK0mGw-oVd_Y5PiVqzHBM85CFstH8LBCj5KxfhSE7oOy21pQqB9i3Cb1ZJXSIxrR09K8yisWUTElyDn6v0ylo4GYer-BulP9jQSSLbRc3bHl6zlDGPN2x3hupVVeWLx9ElNeAxSMzdf5xrpaRITIYteJI37Cd_7MnSzLb60titRFd3JJHk31w6fHUTr5RSx1i25i00xHUaLDh0pMDtyVA-Vi8y-vsOIkAC3WSpm1ky0kZWTfGBbc-_C18ZaI3DGo63NjRpfHglYZ5gQ75f07-s3tjsdRCDTBE6GjTolNdthOQJVs8-TR8mPfToENxrRhX0QeXzIgzuObIqfJRlkQoMn0qg74x658k4nbkxsphDQY64EziDCEFOBO5YU5rrhlgDZpNM1OeMeeP2wDv7k3_dBsyTXcr3zjcUQ_XVfloiKeEnlx8i1bsSzfkJd2VduApu-n8u8ZGYqgzuhGqBfVVbQ_OMw1rQVYmezuQ5iGejws6nLVjS7Y-WMIa5rXmokJU65pSpoMLolSKLKd2egy416bIpVKb_Co-z7828PkNh1O20EthPq0bKn=w1324-h576-no" alt="unwind output" /></p>
+
+<p>So, all documents where the funder was <strong>Greylock</strong> (as in the query example) will be split into a number of documents, equal to the number of funding rounds for every company that matches the filter <code class="highlighter-rouge">$match: {"funding_rounds.investments.financial_org.permalink": "greylock" }</code>. And each one those resulting documents will then be passed along to our <code class="highlighter-rouge">project</code>. Now, <code class="highlighter-rouge">unwind</code> produces an exact copy for every one of the documents that it receives as input. All fields have the same key and value, with one exception, and that is that the <code class="highlighter-rouge">funding_rounds</code> field rather than being an array of <code class="highlighter-rouge">funding_rounds</code> documents, instead has a value that is a single document, which is an individual funding round. So, a company that has <strong>4</strong> funding rounds will result in <code class="highlighter-rouge">unwind</code> creating <strong>4</strong> documents. Where every field is an exact copy, except for the <code class="highlighter-rouge">funding_rounds</code> field, which will instead of being an array for each of those copies will instead be an individual element from the <code class="highlighter-rouge">funding_rounds</code> array from the company document that <code class="highlighter-rouge">unwind</code> is currently processing. So, <code class="highlighter-rouge">unwind</code> has the effect of outputting to the next stage more documents than it receives as input. What that means is that our <code class="highlighter-rouge">project</code> stage now gets a <code class="highlighter-rouge">funding_rounds</code> field that again, is not an array, but is instead a nested document that has a <code class="highlighter-rouge">raised_amount</code> and a <code class="highlighter-rouge">funded_year</code> field. So, <code class="highlighter-rouge">project</code> will receive multiple documents for each company <code class="highlighter-rouge">match</code>ing the filter and can therefore process each of the documents individually and identify an <strong>individual amount and year for each funding round for each company</strong>.</p>
+
+<p>We’ll add an additional field for understanding this and in doing so, we’ll identify a little bit of a problem with this aggregation query as currently written. So, what I’m going to do is a <code class="highlighter-rouge">funder</code> field and this will access the <code class="highlighter-rouge">investments</code> field of the <code class="highlighter-rouge">funding_rounds</code> embedded document, that it gets from unwind and for the <code class="highlighter-rouge">financial_org</code> gets the <code class="highlighter-rouge">permalink</code> (refer to the <code class="highlighter-rouge">$match</code> filter in the below snippet).</p>
+
+<pre>
+<code>
+// Add funder to output documents.
+db.companies.aggregate([
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $unwind: "$funding_rounds" },
+    { $project: {
+        _id: 0,
+        name: 1,
+        funder: "$funding_rounds.investments.financial_org.permalink",
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } }
+])
+</code>
+</pre>
+
+<p>Notice, that <code class="highlighter-rouge">funder</code> and <code class="highlighter-rouge">$match</code> are very similar. We need to be sure that the funder is what we have stipulated. In general, when building aggregation pipelines - it’s a good idea to put in checks as we’re constructing them to <strong>make sure they’re doing what we think they’re doing</strong>. The output looks like this:</p>
+
+<p><img src="https://lh3.googleusercontent.com/2psAv6IgTI_UgQQnxyRfDBEFmk1iQ9OYuAuljJV3RnA5_M_R3BJnTyi-xt1CeLTmn4ShCPhY_2XMwb06mKsNyroyaJeddpIsowrE9vJSkZoqZmRqxm1FG2eD5ICDIEaZ2Dvw1CdsGIYM2vJQhFy9VcdpKotCrYcemm--Zv-drkI1I3UhpaM4pvKlH_6PuHU8dQjXgt8VHLXmt_Q7elbUMcMdhJGjAQ820Y_dOPXElzmnL7kjoavHyBFS0q1I2AiHogKkwcoNTTaqppxjmu_IIy999nWDT4F5mnCMBPs4SuU-PP2Avu42ictBX7b5KNC2fsalTlIydKv0g1M2lH2_zCgtGXBxqBeO0LgWiotj0T-vm_1206zCfIshioPMo6DXu68FvshVAdUiMTUSuO1NBn_yiToGL_cYYHATBqfdG7xtVdqUEzrvYmQNCcjXt5RgVio2M7-RKau9x3mBguS2Lpqlevj-WojZku0VW7r63F0bngTHoIVnpUnsxa1yoXzqIg0XPZxxmFKtx9s0N2Ae5lJ3p6Rd394vrOiSLAgWHep77Gs8G_OLvR8EXmtedwZhpkgcJbgoLEHFbP07IVTVzZ2IbPvlM4VZgWVUUCzOsF5DOQyU=w283-h245-no" alt="full output with funder details" /></p>
+
+<p>If, we look at the document and look at the <code class="highlighter-rouge">investments</code> field. We find that it’s an array:</p>
+
+<p><img src="https://lh3.googleusercontent.com/I8_YY5_Q_UTNQK7iBUkfYCMnLZ0fQrIW4A_EFVels2Cvb3k0rYG7iOy1a6pvsqr8Qe4hzQonGjg_nu-V_ZGVzRDktnOkUJTrg5PTJz3XksEhRN0TE0pv2auYq1naIYb5wSqbyFMAOKGi9zmbcwLT_328_QPDqIyuEz4yyfMuQ0FaSExSNonSP3ooPo1Lsie-SypiLPZsxlvBX_lYplFF9GjLsTHuUdHQUeMW6yKuLyvj_aEQ12eN5UJgrIPTpN_xFTWwwUG25_8Ryy2ZlU-r9mKqnD550jUQx-2n1EYKUVQknMOhEFuzX736ojmpVfRQQ2R7jimAYTfY37G6QhRc5kLXNGNWwDV6Z4TM7OUiBF25ZztPNe4nHQsPE715OD77Gvv_Wq0VEsUsR52rnhmC75w7c4STurmmgOMo8ClSZJVt8FZpsjEGIdsd5h6PvlNcTJ9c1rZHPjDcWFDviclrU9TkSFQZMXNV85UtmgiFIx4CUNXe2pi2XUniZu4FvEkNNCtEUvwg0ORB1FSesbi3nE1aIq1oR4P6xPDTErviRKez1KMz9MIUy3wc3rWIgpJWQZr49ZlzyMdFtOW67VUhlSssOcnrz5ITtgR-0yCuZpjkil-R=w308-h163-no" alt="investments array" /></p>
+
+<p>Multiple funders can participate in a single funding round.</p>
+
+<p><img src="https://lh3.googleusercontent.com/yyJWT0lN-_OecyYxitRAatHTv2TZZIS91GgYKSumrs0p3ySLmk44d0p6ZM0CUUUzKuvXtNXF-PC5WctxVb-52PQFgk6GqifOp2HdIBmwzhUJlzLqRXA_zt-fP3ujalNaC3uLcFmI-jKzpcjpgs1UbQ29EMTyqtv7wa6N-tvZCpiCqmNuxjY8cGpEMwzEpTylIq1udDv8nhX3PkvT9MaFRoRgkoaidXLgHFkzrPxh6xX18mxGoPM1ebvUx-Q6OJ6LLCKcyssm5ArBN8M6ZeK6AIFJuFcLzjApo2MDpu_FnlFc0EizSMBJXmzhcYZ92AHckT_nj5INCYNIyUGFCA7uBonjrUz1anaEmCUPQmX9_4W9viNDym_ZCnxRiOcxecnhz5SjLQqtxE9g01FoWsyP6gBIHEJfB_LXOKOxdjksgrCfr45yrS_2mc1-U-8sPeFioCjFpi9DjYWj8fGmJxKgYEnytbz1YY5iRRfG_CYSgalEsE5KpBknRsQw4fH3BSbNBF3-xRJIv65NcZPc_LbfCVvRi0LabV2kPIPSHzzAZJ-O9UTZCaBDjw6AqlG_fz5ClVmgju1-iRtQ-G75pGA0Pjrj4Ia0eq1rWEc-c8aLhE2yQGf4=w380-h305-no" alt="multiple funders" /></p>
+
+<p>So, <code class="highlighter-rouge">investments</code> will list every one of those funders. The output, as we originally saw with the <code class="highlighter-rouge">raised_amount</code> and <code class="highlighter-rouge">funded_year</code> - we’re now seeing an array for <code class="highlighter-rouge">funder</code>. Because, <code class="highlighter-rouge">investments</code> is an array valued field and as we know, the semantics for a project, on an array valued field is to produce all of the values for whatever field we’ve stipulated.</p>
+
+<p><strong>The above query returns companies for which at least in one of the funding rounds, Greylock participated in</strong>, what we’d like to do is <strong>constrain our results so that we only see results that Greylock participated in</strong>. Not, all the companies for which Greylock participated in at least one. So, in order to do that, what we’re going to have to do is figure out a way to filter this further. One possibility is to <strong>reverse the order</strong> in which we’re doing our <code class="highlighter-rouge">$unwind</code> and <code class="highlighter-rouge">$match</code>:</p>
+
+<pre>
+<code>
+// Add second unwind stage.
+db.companies.aggregate([
+    { $unwind: "$funding_rounds" },
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $project: {
+        _id: 0,
+        name: 1,
+        funder: "$funding_rounds.investments.financial_org.permalink",
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } },
+])
+</code>
+</pre>
+
+<p>This will guarantee that we’ll only match documents coming out of <code class="highlighter-rouge">$unwind</code> that represent funding rounds that Greylock actually participated in. If we run this, we see a <strong>slight delay</strong> - but then we see that Greylock is one of the funders. To make it more clear, we can include a second <code class="highlighter-rouge">$unwind</code>:</p>
+
+<pre>
+<code>
+// Add second unwind stage.
+db.companies.aggregate([
+    { $unwind: "$funding_rounds" },
+    { $unwind: "$funding_rounds.investments" },
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $project: {
+        _id: 0,
+        name: 1,
+        funder: "$funding_rounds.investments.financial_org.permalink",
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } },
+])
+</code>
+</pre>
+
+<p>Which outputs this:</p>
+
+<p><img src="https://lh3.googleusercontent.com/76FS_Pi3aVLXHA_uNgGeSKCB5ajb5xGmX9oSeaa4kg1be89iLn_m132jiR229YRdpC7WfLrBKtqRa2N57lUTH2xmsqLu4z9Gydwrzmudr0oQGc6BDicOgtdXlPKR3xfoOOjAodcKE4ocOZ4epX81moowkp-C_nMr6jMO--0iTSaGeNdwHXNp68LFuzGd_gKtB7Ky1_T60g633QBI-RJCFR-o3DXWcbm7V_tyfduNDIoCOEXX4NDopnmwaTu4sqXP3HHH9MfdaPo5yjjs66A9CaYv_DXHhmnKQIWzlixr_pcpwAGvq4d6zOWipePqbh3rmb7kx0Jd8AvjEwQOJZBRRn0TInaKczLNjsIFX_UoNLhqhF2P5cdKBY88r7tiCDjs1OuQnc-64ZPgmDKXy_nWV8SCv6jqlhdbe_TwsmayiaOQwl3NbY2TOD0c8bDTHvpmlc-vRg3qt5AUY6cmsyfXkxSpc_ksR0uegq0MwGN7PtoJ01Tj6fXtnvAX0MqtpwT5LjHOxgYp43yCc1lpdC8u1wKNRRlWW2JyMjJbC8YHnd6Sx0HkR0yfR2l35BwBnjeTJL8NPxbCXVcuP0R9E2H2yq4CB-h7RF2FrokFP4skkz3KAkc6=w254-h218-no" alt="double unwind output" /></p>
+
+<p>So, what are these two <code class="highlighter-rouge">$unwind</code> stages doing? Both of these are running through the entire collection. However, the <code class="highlighter-rouge">$match</code> operation should occur as early as possible. So, that for each stage we have least number of documents to work with.</p>
+
+<p>So, what we can do is - leave the <code class="highlighter-rouge">$match</code> filter as a first stage in our pipeline and simply include a second match:</p>
+
+<pre>
+<code>
+// Instead, use a second match stage.
+db.companies.aggregate([
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $unwind: "$funding_rounds" },
+    { $unwind: "$funding_rounds.investments" },
+    { $match: {"funding_rounds.investments.financial_org.permalink": "greylock" } },
+    { $project: {
+        _id: 0,
+        name: 1,
+        individualFunder: "$funding_rounds.investments.person.permalink",
+        fundingOrganization: "$funding_rounds.investments.financial_org.permalink",
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+    } },
+])
+</code>
+</pre>
+
+<p>The first <code class="highlighter-rouge">$match</code> will return company documents for which Greylock participated in at least one of the funding rounds. We’ll then unwind the <code class="highlighter-rouge">funding_rounds</code> and the <code class="highlighter-rouge">investments</code> nested array. And then finally filter again - so that any funding rounds, any documents that represent funding rounds, that Greylock did not participated in will be removed from what’s passed on to project. <strong>Sometimes, we need to include multiple stages of the same type</strong>. This <strong>query is a bit faster</strong> because of less documents.</p>
+
+<h1 id="array-expressions">Array Expressions</h1>
+
+<p>These expressions are used to work with arrays and can be used with project stages. There are a couple of different array expressions such as:</p>
+
+<ul>
+  <li><a href="https://docs.mongodb.com/manual/reference/operator/aggregation/filter/"><code class="highlighter-rouge">$filter</code></a> for selecting a subset of elements in the array based on a certain set of filter criteria that should be passed, in the documents, passed to the next stage in the aggregation pipeline:</li>
+</ul>
+
+<pre>
+ <code>
+ db.companies.aggregate([{
+   $match: {
+     "funding_rounds.investments.financial_org.permalink": "greylock"
+   }
+ }, {
+   $project: {
+     _id: 0,
+     name: 1,
+     founded_year: 1,
+     rounds: {
+       $filter: {
+         input: "$funding_rounds",
+         as: "round",
+         cond: {
+           $gte: ["$$round.raised_amount", 100000000]
+         }
+       }
+     }
+   }
+ }, {
+   $match: {
+     "rounds.investments.financial_org.permalink": "greylock"
+   }
+ }, ]).pretty()
+ </code>
+ </pre>
+
+<p>Here is where things gets interesting. We’re using a <code class="highlighter-rouge">$filter</code> expression - it is designed to work with array fields and has <strong>3</strong> fields we must supply as part of it’s parameters, or this document that we set as the value for our <code class="highlighter-rouge">$filter</code> operator. The first is <code class="highlighter-rouge">input</code> which is an array, <code class="highlighter-rouge">as</code> specifies the alias we need to use for the <code class="highlighter-rouge">input</code> array throughout the rest of the filter expression. And the <code class="highlighter-rouge">cond</code> parameter will provide the condition used to filter whatever array we’ve provided as input selecting a subset. In the above case, we’re selecting elements where <code class="highlighter-rouge">raised_amount</code> is greater than or equal to 100 million. There’s <code class="highlighter-rouge">$$round</code> - where <code class="highlighter-rouge">$</code> refers to a variable named <code class="highlighter-rouge">round</code>. <code class="highlighter-rouge">$$</code> says that we want to <strong>dereference a variable specified in this expression</strong>. This is to disambiguate the reference to a variable from a reference to, say, fields in the input document. Returns an array with only those elements that match the condition. The returned elements are in the original order.</p>
+
+<p>Let’s look at <a href="https://docs.mongodb.com/manual/reference/operator/aggregation/arrayElemAt/"><code class="highlighter-rouge">$arrayElemAt</code></a> for returning the element at the specified array index. Let’s pull out the first round and the last round (maybe for comparison).</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "founded_year": 2010
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded_year: 1,
+    first_round: {
+      $arrayElemAt: ["$funding_rounds", 0]
+    },
+    last_round: {
+      $arrayElemAt: ["$funding_rounds", -1]
+    }
+  }
+}]).pretty()
+</code></pre>
+
+<p>This requires the array name and the index of the element which needs to be returned. 0 means the first one and -1 refers to last one. -2 would give the second to last or penultimate element in the array. The output will look likes this:</p>
+
+<p><img src="https://lh3.googleusercontent.com/jbmORWw7GdoYCVwpjK8xMSlI3ZrwxdendKuhNTg-t25RnY98xAeDeBLkOispOhYyrGJRzSLBOz2ml2JiYKNFD5sw151gAcSHojE_cJFjf3b5OnM4v6J-PGegrdQRmd9_7Zv0-JMrTcpirTkW9gqWGQqKtA15A1ayNLAm3C-sM1fvDWErvD4A_9dRRm-D84_-BxJ2syv6BQKqfb7rfJ5ANjAFvWfaZz_onKoJmS7WszDw1ccjFIVSeK3lKoAwiFMTAlpsn1IuJkYTei6c87HiW0F2m7TaaHa4_49yvlek-ElshOGtD9Rxc4v7eJhsyJ5_6pMqyrMIUlB1rU-fEdlLYJJJDcdfOyKDRXQ3ahbdPjPrm3keiX1mxXcd5jrD9qGcCXvH8e8MVGBXkAahvRF9woXhsHSmrcPWyP5Sw5XwMpC8ghCKFZTiKvQEaaGPldm0Nbjgxl5U4pUVjNCvx8ZL18VVfZOVKtVywqoEJbJu4nrf5YZbyCcAV3BjAZQ-ylxmmxK0biKblZ9gpOwej5zGFrMbr5Me_OPsKr4M3Ljbqtpf2XfxHlktE1MxqeXgoshxrAqlX39DlfgXH-wZBLjIPnOgthObM4vyilFelNPV5rJyuh7h=w387-h344-no" alt="arrayElemAt output MongoDB" /></p>
+
+<p>This can also be done by <code class="highlighter-rouge">$slice</code>:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "founded_year": 2010
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded_year: 1,
+    first_round: {
+      $slice: ["$funding_rounds", 1]
+    },
+    last_round: {
+      $slice: ["$funding_rounds", -1]
+    }
+  }
+}]).pretty()
+</code></pre>
+
+<p>Now, related to <code class="highlighter-rouge">$arrayElemAt</code> is the <code class="highlighter-rouge">$slice</code> expression which allows us to return multiple items from an array in sequence beginning with a particular index.</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "founded_year": 2010
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded_year: 1,
+    early_rounds: {
+      $slice: ["$funding_rounds", 1, 3]
+    }
+  }
+}]).pretty()
+</code></pre>
+
+<p>Notice that the index is 1, <strong>skipping the first</strong> (which is 0) funding round.</p>
+
+<p><img src="https://lh3.googleusercontent.com/9pR9sntbgYGEn55vmdQxZclfgrluLL-HJZN-db1h5IUvkioZh4iacHDOos01l8opC46mnhs-u2Lx-IbhRblSl7dkaazxD8t25YuQ3xPHFzVXjK9AlVoU8dp1PavCGNjqM9cQ1F4zXHIapkvmhRqlhB6OfSZ8YZ0ELqETQB0mxcs-QlgAJJZcD2c6Vr1iTcfn7MtXV-r7dF4Vofk5VnK0v6F33lhECRYKcj7Z1j6nICfw98bE0OA58UrSnM_xdbdlLdXqeutuQkn0aVXIHGMFrwIE4920VosjQX8k5k9F12oWD1aBI8EYCHMmwKc1MJqrAYHwMVHF_TNkCzamLeZ-C-2mPKzQMikJhkfbj4y1rZy8mm8oyziK0VWSkThVN8GdUajFWcuX1Z4uqC3D8Yaenq0aBjdRiFVZN5jxEkJkkBuAI_UQYin452KKmjuwdJR4dn7jRkCvBG-NgCeAwJUteUfhygbhVhsJk2DWhcsTEf_XAjA-LDbNNsiY8xJ-i3JuWTQaKI5vyjc1tIwRtlvSi6ctmjbPP5_OyjQk18ePEC-4AGW6T0229_B0w906xPK1vzjoVa4prXaQ2_RwzdX6H0PxmgSnTZlMIQCwOhDzjmBBAGGz=w451-h363-no" alt="slice output in MongoDB" /></p>
+
+<p>The last one we need to see is $size - which simply returns the size of the array:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "founded_year": 2004
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    founded_year: 1,
+    total_rounds: {
+      $size: "$funding_rounds"
+    }
+  }
+}]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/BN7z1zh7kg2HmGtqidwYad_KGYtrbERVXexoVbkHackZMWe2_mhD4OgYx83hkXDuwyVS-WYF4ptPsiVCKNlqDH_CWHSYygIDKAb7WQthnb4tx0v4e_aXwFG_qb2iJqDyphw8kjwpZTAfz5V0dPhcWS7_fRMDMhhdcYM_lsYGJIS4_tkqkx75sRlQV9U4VS_h62msxE3cwAqghxoGO3Q7aHbBkI3JqYEw1V6cBOveaAlxUIxm1aRT57Q_z4OxG0I2GXSNmBn4IqtM1hu-mm3wlILzd_PKxxqSclJSMakB7ET1W2HKZGoGpPxiidES0ii2__DMaHCqQoj6TYzzGCWdRv6Rn3RMaVJPHhxKJHXMzLY6qM6uMZ_KAb0DwmWnwMBWHze2YUQkWk88k8xJrPVYb64P-DOhLsEOgoxALVyPINicIN3_QUrdLtOPO8b_MinfoRXUG-sVH0sOERtDlZyANJuoJTE2WJEbtPTmQM7d2b-by2NkIPlz1DR5kTH83F9GKf0zFRhuUf2VoLXWS-XF5IJ49VbE_7QT7MkVQ-BLDtzA9IcCa_ub_XiIBF8buC5M6jTzFtrJCzgxMfYZLmd5EA0VKiBcbj206D347LZNPOVLyHgT=w580-h90-no" alt="$size output MongoDB" /></p>
+
+<h1 id="accumulators">Accumulators</h1>
+
+<p><a href="https://docs.mongodb.com/manual/reference/operator/aggregation-group/">Accumulators</a> are another type of expressions. They involve calculating values from fields in multiple documents. Prior to <code class="highlighter-rouge">MongoDB</code> 3.2 accumulators were available only in the <code class="highlighter-rouge">group</code> stage. We’ve ability to access a subset of accumulators within the <code class="highlighter-rouge">project</code> stage. The primary difference between the accumulators in the <code class="highlighter-rouge">group</code> stage and the <code class="highlighter-rouge">project</code> stage is that in the project stage accumulators, such as <code class="highlighter-rouge">$sum</code> and <code class="highlighter-rouge">$avg</code> must operate on arrays within a single document. Whereas accumulators in the <code class="highlighter-rouge">group</code> stage provide us the ability to perform calculations on values across multiple documents.</p>
+
+<h1 id="using-accumulators-in-project-stages">Using Accumulators in $project Stages</h1>
+<p>There’re multiple accumulators. The <code class="highlighter-rouge">$max</code> accumulator gives the largest value from the passed in array.</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "funding_rounds": {
+      $exists: true,
+      $ne: []
+    }
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    largest_round: {
+      $max: "$funding_rounds.raised_amount"
+    }
+  }
+}]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/Xzc8vJ4nLjlkIg_kNudODemBhi8LWJiT59F6b6KlooRsHiByKghGdE1wdTWZ2P07XRZS9hG3YuWWKphINh0PExnNRlzFeeeQF699EF4QUwWnNEE-sP2h5LuFbKggmVj6uRQ3AUQLrMVKFqpOPVsMxEsEB8ja7zguagxq9vBKyMA-zYnd131E1TLCONU2pmkZHmQw7uegmUI8TnJxj6pn5vtuu6x6L0hdZah0fBaaUeFL6-31-hDV47D9HTkORcjd4YBlTKmvLmvXq0Ehx3xweoNhoQuUKvQ39GN1GPiAQgmbc_zkxmjV923cEeGZVIwWKiaSXUy73q96o0DY3v9pf_CFBmc51kItw1f4vP8bn78ilCk_kMVbBdAjiaNyfyhNagHf0kDM4e3jnE4dvYVHbNgqOIDA1eU7iI1F4kxZ6xuYBdSREhxhuR0o_uH-iTtetO2g7M1DEua-Lb3L6oJ4xZxxA5-AUcHiVjF09pA_4Gm6hoDKwlPSChnENhD8h9FMQ3H9eyUpfQTvg7vw-GfyPwMrayLavpsn1HnrVJMat7_CSjaTY2Dd5uSYJsdOjJFRdW9VSAynHImsLXMT4zfFGRjx0ftr8UdgXIKUmBUGuw2DWufp=w465-h114-no" alt="$max operator in MongoDB" /></p>
+
+<p>The below examples shows the uses of <code class="highlighter-rouge">sum</code> &amp; <code class="highlighter-rouge">avg</code>:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "funding_rounds": {
+      $exists: true,
+      $ne: []
+    }
+  }
+}, {
+  $project: {
+    _id: 0,
+    name: 1,
+    total_funding: {
+      $sum: "$funding_rounds.raised_amount"
+    }
+  }
+}])
+
+db.companies.aggregate([{
+    $group: {
+      _id: {
+        founded_year: "$founded_year"
+      },
+      average_number_of_employees: {
+        $avg: "$number_of_employees"
+      }
+    }
+  }, {
+    $sort: {
+      average_number_of_employees: -1
+    }
+  }
+])
+</code></pre>
+
+<h1 id="introduction-to-group">Introduction to $group</h1>
+
+<p><code class="highlighter-rouge">$group</code> is similar to SQL Group by command. In the below example, we’re going to aggregate companies on the basis of the year in which they were founded. And calculate the average number of employees for each company.</p>
+
+<pre><code>
+db.companies.aggregate([{
+    $group: {
+      _id: {
+        founded_year: "$founded_year"
+      },
+      average_number_of_employees: {
+        $avg: "$number_of_employees"
+      }
+    }
+  }, {
+    $sort: {
+      average_number_of_employees: -1
+    }
+  }
+])</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/uQ1ZUarX8PJ9XytFlKr4gOjnGVuoWpFrLw42WiOj1FGADly5h9Hu_Yal3iiRdTpsTmdh4CR7OCB-nCBae5iNoxHhdIdJvLw5tEc-ovF_ZxxjrF0TFRb92rEHeS3eH981Fg9FybqCsyElwJEzlSRf2fENCOLM86TDaNdNSdYDzbps2arTDO_av_sOO6mR8iBgDQHHhSjBVVs6csLOHuD--AHoBrAr9pX0uSvCbBaSEVi--XUpmfZClz4cI7sFZunkv-ndzwVqcKbPH5Nl5lEp4NPnXDVVf5WS3wMaBgpelpPhchX3OI8laH9_2bW1JOOXxVF4G0GiiHD2pYjiyGQvUEiWwOn1AWhVlUjcQolNoTruHPXoykTYf6i3M00ihpM-fW2MYi28ZKbWM4PynZ956vPcd8Ah3gjBkOBWlyw_08p_FfeXAhbekw9TV9gFWkcCxsNWTDwS2XOvDb9nhxVPEYWsiLWm1NvgJDprdA3MYVxvc1J1o3fjkSEldpRrTGpQVu4RJu7KGm7Zj-fCVky1_6G77TP2a6U6hh5A-NxtZhd9MCLwCvjzvF3T_BsqXfUBLO2KcdpKZZ7B3HmdsrZ1SHIdlejtcVBrfSWb3BbHqurlw99c=w626-h102-no" alt="$avg operator MongoDB" /></p>
+
+<p>This aggregation pipeline has 2 stages</p>
+
+<ol>
+  <li><code class="highlighter-rouge">$group</code></li>
+  <li><code class="highlighter-rouge">$sort</code></li>
+</ol>
+
+<p>Now, fundamental to the <code class="highlighter-rouge">$group</code> stage is the <code class="highlighter-rouge">_id</code> field that we specify as the part of the document. That is the value of the <code class="highlighter-rouge">$group</code> operator itself using a very strict interpretation of the arrogation framework syntax. <code class="highlighter-rouge">_id</code> is how we define, how we control, how we tune what the group stage uses to organize the documents that it sees.</p>
+
+<p>The below query find the relationships of the people with companies using <code class="highlighter-rouge">$sum</code> operator:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    "relationships.person": {
+      $ne: null
+    }
+  }
+}, {
+  $project: {
+    relationships: 1,
+    _id: 0
+  }
+}, {
+  $unwind: "$relationships"
+}, {
+  $group: {
+    _id: "$relationships.person",
+    count: {
+      $sum: 1
+    }
+  }
+}, {
+  $sort: {
+    count: -1
+  }
+}])</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/VxlQ5BLNDRxYL9sBNHCFzY7GMhcS4B48_8K27wsBRPcgUJ9SBERPZgHjVuXVL7_G0NWKZfv6Yp_LH14IG_KqC7qmIRJNEgfCDgAM9CkanRQxQ-3Gddth-p_o3mmn7AkecMtpUPPEKcr5ZaQ3-HBBDTsiY4ojiHIZERscBGT4MTP3hfYQraG5Og5p_VZKW1j0NmLlv-Y2cXeo_Xo2uMi5S39j827C-SQo1avlUL240qA_mc3orjeTipeYJvIOAexiZKItWcPTn5_iz6-7YHQaQ8ojKp562tzbP50NDmdHDvByRMzLm5X41kWQWPOVzv4vwidAv8LkWaE8eonyd1a9d1MOUUZlu11GLwuADesqZ93Sn7rAkUgN6Qu4uB8pan9CLfOozgufmxJ7EVVqxaQAacqBP1BIX7JaFY7ku_nwID-xk25klYSoCfiANLTmhCZewVs63Gso52canottIwRUN384-DVeKZ91RaOeN_pzgnxZ-2jotOvlYl7TwRLmkvZHwOybGyMXMaZxPWlUHUuk3fyIr37STLV5R-X6lm58ATpBeL_QYWbq52bMYMfcGQD68nby0L5EPIDEYvMPwr_dJZiKMskVfeiBphUginEPfTGsfp2U=w359-h194-no" alt="$sum in MongoDB" /></p>
+
+<h1 id="_id-in-group-stages">_id in $group Stages</h1>
+
+<p>We’re going to understand the <code class="highlighter-rouge">_id</code> field within the <code class="highlighter-rouge">$group</code> stage &amp; look at some best practices for constructing <code class="highlighter-rouge">_id</code>s in group aggregation stages. Let’s look at this query:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: {
+      $gte: 2010
+    }
+  }
+}, {
+  $group: {
+    _id: {
+      founded_year: "$founded_year"
+    },
+    companies: {
+      $push: "$name"
+    }
+  }
+}, {
+  $sort: {
+    "_id.founded_year": 1
+  }
+}]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/cZdysCDFCMxAH0aA5UaCSKgsa23oINU-cC81I72xoB-dJaTYoCAC_Z29Jbf4DYgCPPnadfThclubc4d6bYGEGKI40-mp-Nqh5NSKezeS1W6HHzy7HCVi-BYLWNf2Qzo_lGtvDEjdS1bijrMao9pimLRSophJHrIeF0yq4DcutY6CG9l1DUarH4Chz1jjzcozOkgsU44W0AoAVX413CzX-Bm4hwR-z_XCNXDMAAuJOJUgm5tSGAyvanCbegqFc5MIH3bcwY21-BYlr2PZbX8wp9veq2h6l9Igiu1Ghw73WxMwzEKy7Q1smjigWNJUAwNJArJxdahO-WeWLDtNC0rQltt0Q5-eeKtei0I1Vr117qCyerREiUunDyZt7cOK9rDI0BqoFGQKaAuST5XK95BrUOj-S7PP-YcpsxiQmWQZgOilr3x-muwxy48MxM-qhvEkFYIWbDjS_H5RzRY17jJkFgPStt8WkbcNT6FwOlNLWhW3pXm0tbcvP37jOzZy_IZvatZEcYpCSuiYrEMvqdDB4tmV6kRcIxbaZ3wlZL-zGWopfo98HyLQqziwowKhr1v3Fp1ueY_m9mSOG3vH2dnj_wM384TaB5IB3Pxwjm4lTHSbkscK=w323-h246-no" alt="MongoDB $group with document approach" /></p>
+
+<p>One thing which might not be clear to us is why the <code class="highlighter-rouge">_id</code> field is constructed this “document” way?  We could have done it this way as well:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: {
+      $gte: 2010
+    }
+  }
+}, {
+  $group: {
+    _id: "$founded_year",
+    companies: {
+      $push: "$name"
+    }
+  }
+}, {
+  $sort: {
+    "_id": 1
+  }
+}]).pretty()</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/wt6rd44VLJdMXAM0_bafbHEEAH9r5DZvE-Jurpe3FM64nWQtk4XFTInfjYcc93c2n3Ms-r9hykOLXqcGCkhk7cQ0jyFgfBw3XZSVaOhZ94DxsYlMGXE-kXjhLu-rtcNDzqZ8_9K9GHGexwH2I9dX3jalSPIcoprKv6Noqo6whMZRAsmNZt93gimVP6q5kYFbly0LTWYBnh4c3qnZE0q1OounH6pP_KmI0k04WMuvRUvr7adIrXpslRIW-Aq6QrpV3HVhp398cQtW4mT45qqru2ZiTHaPVJCJ2sV0fqboJbKYweG8LcTlraBaNLj0vfMG-SGElc6PG6WhU5C7-i1ZMMqu60l9FlPCyKG3AJacqhAeiCefTC3vbB9uZ027IS0mWhSuwhRrMmy-hsjlBBLplGJ3Ry88fSwroNqlYxOFSlalmse--PP91BXCTW_DH_Kt19Iw2tRr89EyRQ2aurqZkP0pPsdLJppbS7HegGTmBhaAEu28ooFDAXT9mUZrIXBL6ObwtktVpLAsrRlg8o9P9iIwTDIiHebewSUG57VoC3BsEZE4pSOhK5lyLBdaYGvnc7LiwzHQS8l9yCSpmnInaSQ9LB6zgAfM0Skr-ig7B29y1qZd=w322-h220-no" alt="MongoDB $group without document approach" /></p>
+
+<p>We don’t do it this way, because in these output documents - it’s not explicit what exactly this number means. So, we actually don’t know. And in some cases, that means there maybe confusion in interpreting these documents. So, another case maybe to group an <code class="highlighter-rouge">_id</code> document with multiple fields:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    founded_year: {
+      $gte: 2010
+    }
+  }
+}, {
+  $group: {
+    _id: {
+      founded_year: "$founded_year",
+      category_code: "$category_code"
+    },
+    companies: {
+      $push: "$name"
+    }
+  }
+}, {
+  $sort: {
+    "_id.founded_year": 1
+  }
+}]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/Dp75pUue_R3I8DI18FVuErEUeBNBomiGTQcVO45FoBeHgu9H_MAfGSpgmxOyVQddvuNTnv_oDMIoQWMsrQKmETdDLjBk8Yj6vh8cLmxrpbZd6u2g2qBJWkgBNvQRKVIpflDo9-7-tdOhneJ6QC_DqC4Nhb68Yac42rlzNeHjlrz8lKYLZFJMQ79m3dodgI6bI9JGHHKPfdHE7X_ypVxbARpqvYO8J6lh4Rtg6VshULFnskCQHBQYsCXfs3RtSaNi3t-D5dGSbf7RUuoTFaXxWGco6lBiALZze8Dfnen2wPHhTVDzqzDthR1o7NwB_VviKSMtFHZsb8B9lxzRy8X3DxCx297p8qG1R6xHKbw5lG5rawpIs-HCBkreXavm3MDwhrLbAnZuimFLTzVqxYBeICKSX1uCnzRKNKZkUAdhSDm4tof4nAJkkkP5RcOU7r7dNGLUMiK9bdHqqZVoTLopwRY8dcSW7OfPky3kyk5LKlGAG2jUJBaDY95WojrnSkZ2e8f7m6oocAaXPevZ0oqpg_Tp4jAoftsUoqcr3az3_3vL1JPweM3eNnyQQWIQUrvsOOIEGO3DWYTDE12zEy0ZBeoVNWVgNKINz0DA-aADQNVVL0aP=w354-h219-no" alt="group an _id document with multiple fields in MongoDB" /></p>
+
+<p><code class="highlighter-rouge">$push</code> simply pushes the elements to generating arrays. Often, it might be required to group on promoted fields to upper level:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $group: {
+    _id: {
+      ipo_year: "$ipo.pub_year"
+    },
+    companies: {
+      $push: "$name"
+    }
+  }
+}, {
+  $sort: {
+    "_id.ipo_year": 1
+  }
+}]).pretty()</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/XqzUb0ni8-HrWSEsiUydzqXjJX0snqmU5NaHaZzKoubs3iy8Zp20F18g-fKt3cSiJucKtAkc72L2I7LI0BWrWmCL29ZmOZueKt3HCcONkTVnwRWPXkHWmotQ8-8ebeN2rKIYP0J6GWbfSQkjVq4vTgnoqnSIZv0CSRhSbh3NhjYv8xLxSf_bYvP6QNGUndBbJPwlE5wmCCpmiuNhVRgTz3XNkdYFsjbzzFUSrarnNtls9k9WnLMRlyx8_VWP-7iwWoQHY2WlLdff7VNAUF6IC4ih0mA8wV6GxyX5l_Bw9AqRj8rCgeDhGCpNzteUg0WTfxae0xyVqe73GjaA-o6j9mx-qch1RC1gf1xWXUEhdcxz2hBlJS6JjXPW95o43wNr-YJm-TAyp8Y38aLe7vgw75fO6Jl5mq3AGnoBrBFqceK6luEhe76QupAPQalWabE7JDAp4dEZ3ruvX7998vHR1afrShPG1DyP8DN267ef7UookJNbpq1scFqbX5DxNQZqCYZ89re5uW3dKiDq-Hqnx-h9a5oCLJ03HNapyg9i3T3e96hsPDAiIWahlQ0b_33jzZhiT1premDidg3pLIr_DHniV0YVSiK0Sffm7hN4MUpVlOBf=w280-h123-no" alt="group on promoted fields to upper level in MongoDB" /></p>
+
+<p>It’s also perfect to have an expression that resolves to a document as a <code class="highlighter-rouge">_id</code> key.</p>
+
+<pre><code>db.companies.aggregate([{
+  $match: {
+    "relationships.person": {
+      $ne: null
+    }
+  }
+}, {
+  $project: {
+    relationships: 1,
+    _id: 0
+  }
+}, {
+  $unwind: "$relationships"
+}, {
+  $group: {
+    _id: "$relationships.person",
+    count: {
+      $sum: 1
+    }
+  }
+}, {
+  $sort: {
+    count: -1
+  }
+}])</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/GrLY0VWm7RExvL4So548j-OPoeBlcB4t8YlsPNfWuvM1zLHEwf2XaJly-Cg-wqu8_avEz3qYiYvY2quN3q4eVnok9DhAwAF8E-MPw3q1orDOipb-9mXnLzZPdNgIyAlVPBo3oQuPChXa1flWvNNz9xLD1QHQN_H4UiEo4SB2FONhMZ5QlebWfSSPiJlpE4LJupomYINf1kiFx-mD2p_Hfol7HB2VZEUxT4kgOlHo02hvXWh0k-CHr7sloJXnuEWM_cKIajOGyZLVbfsgEtf-2lMLJMQOIqcPP6fJ54sWjsVr2dMD6b7QtBUOgaR0E_-z_8Zik9wkHA3d6ShpUuPUaFpbHPre8UwVCRVOBcTuryn8JoRTHrVso4HshELeNp4XZTnz1oFDVKdFSOJ3eawiO3_0SWaNr6KJltgxAOAODX80nYp8r7rawWtMiCSX_GgmV7UELNKHemACsoykNpmTjqc5eWBx0B_HuhJmxN9sZY2Y0pDmaQdOwzKPMTTBFZyrwyLEAegARNM3DcEi1suRWnJWJZBhcpArVNggHpstSMK9BbM-fdvUcR6pGdtXE3a4_S6A28zDf68OqELWuFzNe5WMW1scoyAkg4svzvHJQZ_aCCdx=w346-h101-no" alt="expression that resolves to a document" /></p>
+
+<h1 id="group-vs-project">$group vs. $project</h1>
+
+<p>Not all accumulators are available in <code class="highlighter-rouge">$project</code> stage. We need to consider what we can do in project with respect to accumulators and what we can do in group. Let’s take a look at this:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    funding_rounds: {
+      $ne: []
+    }
+  }
+}, {
+  $unwind: "$funding_rounds"
+}, {
+  $sort: {
+    "funding_rounds.funded_year": 1,
+    "funding_rounds.funded_month": 1,
+    "funding_rounds.funded_day": 1
+  }
+}, {
+  $group: {
+    _id: {
+      company: "$name"
+    },
+    funding: {
+      $push: {
+        amount: "$funding_rounds.raised_amount",
+        year: "$funding_rounds.funded_year"
+      }
+    }
+  }
+}, ]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/iP9Z2s3BhkLDDkkNwvOG8PhmdkUn4vfCDjxflG41nvKIiwiUsJj4tlojJS256qmu3OD_5jL7nJdXj3HPyB6s7wYdqjTt9sAKwtjW-cxSW2pkUU_uE4CKSryguEq_T8KxmV7chfDxTB06TqVrHrZhj7HNne0xdbt3ybgdnMurQvBTCEMiV01_qCaXT9-NjBhQLCahcFqlfpM17Jk65I1VOqPZGUOdtInqKHCZ8ikAoZmyYP6wMThL6CjHHaf5rzjFrP1RQs8wVwN7xJ8J95EYSOIGbOXuFLwnxvU8HgOLF-QAE_YyII3aRwws-sdAD1F8QP5mZMBJKk8pdbcwtBCJRKkC98Uw77vCUOpfkQI9t-50Agv-0mxZkfb8VCh-Kk2z8YU64Czp6UwftiEVdH9qIHbtGhz42ZPvCKNTHOlkxfZDBKty_PguxuqwSBT1tdzUkE22GTF06WvmJEJBZRnBZnaqyILaN3EpZKZk1BS67bBlH-1bfCQA1I4YQnfgg4zpaLyvjaElZEPo-Pg259hFnwMN_avT9PYNwQl3a4k8aqhQlQtRS3QRzBjK4tuoAFDpHus-rlBqzjv5Top3y-y65TKSlGp16U3MkuWE0pzD53aJfuoN=w366-h134-no" alt="$group in MongoDB" /></p>
+
+<p>Where we’re checking if any of the <code class="highlighter-rouge">funding_rounds</code> is not empty. Then it’s <code class="highlighter-rouge">unwind</code>-ed to <code class="highlighter-rouge">$sort</code> and to later stages. We’ll see one document for each element of the <code class="highlighter-rouge">funding_rounds</code> array for every company. So, the first thing we’re going to do here is to <code class="highlighter-rouge">$sort</code> based on:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">funding_rounds.funded_year</code></li>
+  <li><code class="highlighter-rouge">funding_rounds.funded_month</code></li>
+  <li><code class="highlighter-rouge">funding_rounds.funded_day</code></li>
+</ol>
+
+<p>In the group stage by company name, the array is getting built using <code class="highlighter-rouge">$push</code>. <code class="highlighter-rouge">$push</code> is supposed to be part of a document specified as the value for a field we name in a group stage. We can push on any valid expression. In this case, we’re pushing on documents to this array and for every document that we push it’s being added to the end of the array that we’re accumulating. In this case, we’re pushing on documents that are built from the <code class="highlighter-rouge">raised_amount</code> and <code class="highlighter-rouge">funded_year</code>. So, the <code class="highlighter-rouge">$group</code> stage is a stream of documents that have an <code class="highlighter-rouge">_id</code> where we’re specifying the company name.</p>
+
+<p>Notice that <code class="highlighter-rouge">$push</code> is available in <code class="highlighter-rouge">$group</code> stages but not in <code class="highlighter-rouge">$project</code> stage. This is because <code class="highlighter-rouge">$group</code> stages are designed to take a sequence of documents and accumulate values based on that stream of documents.</p>
+
+<p><code class="highlighter-rouge">$project</code> on the other hand, works with one document at a time. So, we can calculate an average on an array within an individual document inside a project stage. But doing something like this where one at a time, we’re seeing documents and for every document, it passes through the group stage pushing on a new value, well that’s something that the <code class="highlighter-rouge">$project</code> stage is just not designed to do. For that type of operation we want to use <code class="highlighter-rouge">$group</code>.</p>
+
+<p>Let’s take a look at another example:</p>
+
+<pre><code>
+db.companies.aggregate([{
+  $match: {
+    funding_rounds: {
+      $exists: true,
+      $ne: []
+    }
+  }
+}, {
+  $unwind: "$funding_rounds"
+}, {
+  $sort: {
+    "funding_rounds.funded_year": 1,
+    "funding_rounds.funded_month": 1,
+    "funding_rounds.funded_day": 1
+  }
+}, {
+  $group: {
+    _id: {
+      company: "$name"
+    },
+    first_round: {
+      $first: "$funding_rounds"
+    },
+    last_round: {
+      $last: "$funding_rounds"
+    },
+    num_rounds: {
+      $sum: 1
+    },
+    total_raised: {
+      $sum: "$funding_rounds.raised_amount"
+    }
+  }
+}, {
+  $project: {
+    _id: 0,
+    company: "$_id.company",
+    first_round: {
+      amount: "$first_round.raised_amount",
+      article: "$first_round.source_url",
+      year: "$first_round.funded_year"
+    },
+    last_round: {
+      amount: "$last_round.raised_amount",
+      article: "$last_round.source_url",
+      year: "$last_round.funded_year"
+    },
+    num_rounds: 1,
+    total_raised: 1,
+  }
+}, {
+  $sort: {
+    total_raised: -1
+  }
+}]).pretty()
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/mRiC7j6YFAk080yqyikHn0jyUO80jb9JT6dOgD5v6Gt6VRvbnVN4mr5YJs4t80zVhflyJMtiQJe-edk7RJcR378OkToVa1Wh5mMSZUTHp_9s-uGHf851eVOByztPWZZ8Xhpcl2r3-MsK45rY5yg2SI5h6nVhCpyvfHl1o55sgkKc-9p_1MsMIZlcYZG9J-eSSxCrQP0rl4LaAdxWZ72fZ5w7FstYRYPrUh1cG9OTZPncmoFTA2mN4IfRW201QBK2Xt4AvhKRBbwXyPc4QfWPvTU8j25BImEKyWbtKynluMMhRmLl8dUuZYAXznNZFegQ2yIwV3PZZLIYfg0JFrec6_gGvqZbdSpNzbyLzmOj6MqJJJyBS4r9Z_7NnUH1_gw6oTwu1z6dJVpvaF6wB5wuC9tsxiV5hxXfI2q7mPMwVcq6rECoRH-IMyOgK9gyI34HUirWEaZoV4cdYmrOCh8DhWuYt6ggGrejTqEOfbTyORyMQVDfoxytqrElabsN_ZRHUqurPpcu48h1gKTyv8SwKK4sgPKbtw6fxZOs2A0_NEKsxGNfSbrGWHQCuswTOPLoWS9t5X3lwO92UxBzBr74G9NkLJpEQO1nzOn4B4omClDeLO1P=w642-h207-no" alt="group vs project in MongoDB" /></p>
+
+<p>In the <code class="highlighter-rouge">$group</code> stage, we’re using <code class="highlighter-rouge">$first</code> and <code class="highlighter-rouge">$last</code> accumulators. Right, again we can see that as with <code class="highlighter-rouge">$push</code> - we can’t use <code class="highlighter-rouge">$first</code> and <code class="highlighter-rouge">$last</code> in project stages. Because again, project stages are not designed to accumulate values based on multiple documents. Rather they’re designed to reshape documents one at a time. Total number of rounds is calculated using the <code class="highlighter-rouge">$sum</code> operator. The value <strong>1</strong> simply counts the number of documents passed through that group together with each document that matches or is grouped under a given <code class="highlighter-rouge">_id</code> value. The project may seem complex, but it’s just making the output pretty. It’s just that it’s including <code class="highlighter-rouge">num_rounds</code> and <code class="highlighter-rouge">total_raised</code> from the previous document.</p>
+
+<p><a href="https://goo.gl/photos/VdyC1uyf62GcsJKx7">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-09-24 00:00:00 +0000" class="date">
+    Written on September 24, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=The Aggregation framework></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

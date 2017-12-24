@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Building ASP.NET 5 on Ubuntu linux – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Building ASP.NET 5 on Ubuntu linux" />
+    <meta property="twitter:title" content="Building ASP.NET 5 on Ubuntu linux" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Building ASP.NET 5 on Ubuntu linux</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://lh3.googleusercontent.com/0sxgq8spWKYyayyuUBBTAZB90UaS8N2wnLPrvVQ3D7B-3YMcdoK5SQ-IAOk-D7m5Ifskm62lVf_ZhGq-2JuxKSoS-nJxLHxANDJpwV9rGjP5cgQ7kEvzadAh0-QcRjxYPN-PBuwd_esMRbD11wzEByVsUqLZVhSLa2GuTakMl3OgvchtnA2dEz-dfCRU_Z-bqDeCRJRMxAypQhnKkG0cklaq1SAXprqkMqiJB66KzI7OtmxUsstHqcQpKYWuaV8nOvblt4pLV0caltkfFqUhXUJkV9gyGB4cTrksTZBOix8A5hv63Wexl_JHKNUUvgHrSfgL8TUHwLS2Oqy_CCvl4m2rdT79QWHIn2Qj0FjgQJIF7zKbWCfVsYPUvN34VVLy9HPxIllMEasWeiOc9mIi7HlrdpfamRqdbFPRsWl6B3sQ0ScsXMRDoJ6wPxDV_HCXsuxPn67N64FeTCXG6BHk7zkW-DDBwIclbhsNjpsiVsCTnJ-KqKBI5ZKACXDP12efoqbW_v291B6kbiPCkQztDs5QTuYtXN9g-JZeeIYiSCQamdBrTOA4a2qriq9V0_gz_Z9u=w492-h199-no" alt="Running ASP.NET 5 with on Ubuntu linux" /></p>
+
+<p>After <a href="http://xameeramir.github.io/configure-net-ubuntu-linux/">configuring .NET on Ubuntu Linux</a>, I was looking at ways to start developing <a href="http://www.asp.net/vnext">ASP.NET vNext</a> projects on <a href="http://releases.ubuntu.com/14.04/">Ubuntu 14.04 Linux</a> using <a href="https://code.visualstudio.com/docs/runtimes/ASPnet5">Visual Studio Code</a>. So, let’s jump in.</p>
+
+<h1 id="scaffolding-the-aspnet-project">Scaffolding the ASP.NET project</h1>
+
+<p>Since, there is no <strong>File</strong> -&gt; <strong>New Project</strong> facility in <a href="https://code.visualstudio.com">Code</a> till now, we can either use <a href="http://www.monodevelop.com/">MonoDevelop</a> or alternatives such as <a href="http://yeoman.io/">Yeoman</a>, asp.net generator, bower and gulp.</p>
+
+<p>Yeoman is a scaffolding tool for modern webapps. Install it, asp.net generator, bower and gulp using <a href="http://xameeramir.github.io/install-node/">node</a>, using the following command:</p>
+
+<p><code class="highlighter-rouge">sudo npm install -g yo generator-aspnet gulp bower</code></p>
+
+<p><strong>Scaffolding the ASP.NET 5 project:</strong></p>
+
+<ul>
+  <li>run <code class="highlighter-rouge">yo aspnet</code></li>
+  <li>select <strong>Web Application</strong></li>
+</ul>
+
+<p><img src="https://lh3.googleusercontent.com/3vi6In7tDIe2i4rSvWy4DE6mYIHyTiJVHOTn3Y9fKh5rlly5CYQ47ZU0K5pArTkOwm_JONI8UXFwN2Z_YPRmthz8jxYcrnRFQtSavn17_3hNoOT_PIg4qu8F3SUlt5vXUQl5iwT14sem3I49zINREjHZGx8Zy7c-QSpEljeRE1FTodgG0JXvGFs37RZtA3nwLynutdxzLO_tlTam3kII34x86-tls7gO1H7lVLbhyQgIAgYXsXTa5l1ESmQHABXs7nfpba8OdCTUB4ks0DmYpgvccHuXdyRGrLRURlLJ6ZoiVMn__L8cgKpHVIWi-b63Non6XhJVvPmFZpRx32fQCu2qMrPNgynTjtCX82D30E9ebeIOmZEVhDrBNsnuXqOfBNgisgCo9uR5Vbt2bflQ__VrYBGHeSxCQrw8oP8tGYOUdk3Ku8wkdYxaz2YxJhvN74jeK0QwD7IeyAfDYySZCnXtL-3qXbdIgmvy-Zv1N9sW0bB4xMk3Lt5W3-VeK-5pnOgKBVn2sHTgd_Ytes5GYRPWRKhyM652TVGhO8dGOOCk0_CuyHN2p62IAhBbgutoRB9j=w1091-h516-no" alt="generating ASP.NET project with yeoman" /></p>
+
+<ul>
+  <li>give name to your project on <strong>What’s the name of your ASP.NET application?</strong> prompt, I named it <code class="highlighter-rouge">FirstASPNET5</code></li>
+  <li>go to the project folder, in this case using <code class="highlighter-rouge">cd FirstASPNET5</code></li>
+  <li>install the necessary <a href="https://www.nuget.org/">NuGet</a> packages using <code class="highlighter-rouge">dnu restore</code></li>
+  <li>run the project using <code class="highlighter-rouge">dnx web</code></li>
+</ul>
+
+<p>The project will <a href="https://lh3.googleusercontent.com/IIl36_X3S5-bs3qkLqTH_DN8vuUkKLf3QuTuVnlhdTgFwQv9xHYl70lveYXoYN6tBgch5kjYJrQgQk7uUMbb6lrmT5xoSZuXyLJdvmnd_Ly-RkYs0TgMYwrMMKsUALUFr5OoxPKmozc_vvcyJGuODf6cA52H-CbJ1eGbi0_wMvKCDv0EVmLqX342Q2t8qXQYTNZ9Q5DZojlrk9iYQGeM-rh-pwkh83hF9JVOZlCxOmiPoZfeEf7xIc6yTWiGOEHyd4j4FRQDsZbd7fIaWm5VeJIrZmXqBlEmpKqgQMdHDHHGw-Yxj3OG7oH7vsyUDkk88c2rly56eQhQLaaE0UsbDEPAVpzS6vKDQ3QbbrkNwJyBb5lKJH2GdhvUBqJkShMSpeS3yPZF310f_kv6rJIr6fE_bKl2XcQGUYp_ANzuxPYS9Ueptq9oubNAHD5j6GJyC7mSW8cw4OAGAMXeh21XnlddqZAm5S35XlKtkp0bXqOd9e6i3vA3iRPmDwnysRrYCyeCigw9tnZt35DUjXBlY-5SlsCU_wosAGl5W7knmt8TcyA6V0WOfUeeReu6ryttseE4=w722-h462-no">start running</a> at <a href="http://localhost:5000">http://localhost:5000</a>.</p>
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<blockquote>
+  <p>Side note: There seems to be some <a href="https://github.com/Microsoft/vscode/issues/2659">issue with running ASP.NET with VS Code</a>.</p>
+</blockquote>
+
+<p>In case of errors, <a href="http://askubuntu.com/a/480642/219603">upgrade npm</a>. In my specific case, the <code class="highlighter-rouge">&lt;VERSION&gt;</code> is <code class="highlighter-rouge">5.4.1</code>:</p>
+
+<p><img src="https://lh3.googleusercontent.com/nFUbK778yH9ONxdn-q2Yuomrz2LCn1qbHXW5S7HyHpFUdfr7F32LJxoYxLMhB_NSmyuCDizyYE__ElNkgzsfBOlV6gxEj9tpBzVDhKxc6URr9ingiaEV-Y3RyApJaI1hFElgfDjBIfVTfz1OjWVqz2F55EFGv7pcqSJYNe6VPYAyp5qNaSESMJFsGWDLaI8cql0NBjCkA1l0YOR5al0rY_V31C8QtwGdXvdQUCM3OV5pdzOR13jT51xMIJNqgeWv7rt-RJUtZzwZXPqLjf4sxEITigl411qw5RXV6EWQQ0S8xHLVDsMIkoldpjYF8Kdl8G7aj4qPLlzZM_SUWKXGKE5QfIrjCG584Cpu6k2j1N2AJyXL6d3qnGGxaSCnuhZGWlEMJMeJG4pIhwQ-x8ESl5trJyNshkMpsWO1c3BQxRVXCxdyYkDUwoRJ-tbGDC0BRoBOf1umtFo-_wWIKHMOyGQQlKZmJ_GAmhBcKis8qxZDr62yHHimsDx-gC9GC0X9BZa-AVMrsvgJg2QRWrNgLA67iQa50XZNsxX-AzVXiJ20tFODF8gTTmb8lL5-Gue3s3bn=w722-h462-no" alt="Upgrading npm on Ubuntu Linux" /></p>
+
+<p>Make sure that Mono is latest using <code class="highlighter-rouge">mono --version</code>:</p>
+
+<p><img src="https://lh3.googleusercontent.com/g8eJfx3yyNx9ApVmP5jmpo_rMVHeScwpoXZ10sHZlyOl9VW-18J58oDiwXMqwo6InTmM82t5v0y_efg5awzQ21DXs19BQkZFeJ7XIflWI4Pg-HIF-i6uG6NL-luJm3gjCrVIkqsy9WwUcI9hy7YysqC4OYAm1dp7RWNwjOiI3h8TZibXP4qyr7KJp2SMxVXs2OAOq6Cqb-gQfpDcrIrzJkTrXohmLZKY03lkwn_OyFWQuwRjj3mgyW9v8enCWEb4XYp4MaSvqDMWOiBxvR0MIYacpdxwPoLe1c2moXbvJ3Nl5AZIFVVdevVh99bKXY6KSTM16Leij9guW1nqDdZtA_78CN8Mo0sc89mP1CWu5DiopeqgeEc6sncGC96EoyiNiqPYAl1N-ytTtK-I3PehGEp-bJhvVZvMOcCEnqL_kEDErAhbK7Of81WrhGP4BXyr_8RaSUyXOfF7mR2YSoOfZPGQyUFBr7qExy6cfIyOi_QlKrVt40nCheaLD9Gi8A9rPFPRxFgzVC_5mmDf9SmAOfm5ZepXl2a2S3z2azONRtlNtdrtfdpuvwpQIjcoGqiLeGNI=w722-h303-no" alt="Check Mono version" /></p>
+
+<p>Also check if <code class="highlighter-rouge">dnvm</code> (.NET version manager) is latest or not using <code class="highlighter-rouge">dnvm upgrade</code>, upgrade if not:</p>
+
+<p><img src="https://lh3.googleusercontent.com/4zlg7JmHDBscn4X0CmbQcFqSUljf6XDArRHBliSA6bPCV1QVFRYNqqg5vIL5Wdta0QeHPf56QuzQS-fxWz4UccMYdyTtotPHlACIVnkWa_lcv855ZkfDl6sXgZKZ5a4yb5DgubHBZ0hkr4yfXgJaM_4JF4a9FTYKNamF9AlHGmFLANWekqGkmbocmmx8xc_8i-N0QEfKMcgt1Aup3-wNgCwV7s7q0uESEeSgozT-W44uSzCmWFxRziPw6ebjaM69UGlsPNewxpWoVzBy8PiWkEZw4pOFcN1mb5gtiYH7eDyAVFgGpXVGFd4XS9Q0Q-C0s4a7D86-AllXO5t9Bh2Xi4qX0gi0eXJpBYucV2ATJi7bNYAY-QUA8LalD5W9HZGujjV3fYmRkKh4KYY4329mGHBi6KOyJlK6aXfRAPOWL7PG3fy7mtaqnKdp94_MxUld14JcRyccvQANVZo_byBRyK11njiBa0tuR5pB97HNlSIWRRGgJrC_GGe8Q_1tUayEH9b9GQfLoEOHpxgx40Swiq8JiygwKXHk-GnIMmL6xDCb1JASO4fufeIXjwyPdVQfJJbL=w722-h236-no" alt="upgrading dnvm" /></p>
+
+<p>After every piece fits into the place, something like this will show up:</p>
+
+<p><img src="https://lh3.googleusercontent.com/8XYNP8wNLEPU-4Xs06l4T01jrgRRbKjdSmCw0k5-lDd5n60quUqxJm0SiiJKuPPYlMO3nbZAgYkmDeBKNcgVMut5gwCrZ5PzUuabJ8pRLl_vniRKmaULdXfvqR7prnx823UQP4aEapriD9ykjT48oG-9qqEPDGTZL5lLTFZk38zVz65iou25hkkSIly6NfJiSKMynav7EgxZOE_RIIjC5ex3XTPlS6kWTUTN1TD9VFg6VCgE5rTs6PhmGOYi1I4CjuNWBOnpnz3Ck8CsIGjoITD7QKdhaiOR7zW19CCUsYhjewLgOjtPYn55RcJdl9MePHvmcIRRWpTUe3xjc6it98GLquqIzTti1jf2Mv8ahpmKBOefOi4j3Ntv7fhpSKIWW8LEp0s2tx66vR0A5p9-cQq99jr8-EP8WycV7Zud3oVQNEgW3nJ5NYdsYWeqEZERk7F1uqrx3vsgu89x1p38s3J3X1lwqp1ZwK9_WEeQGP0kEP66ZazfIl-O3exdZuoxoJLEYRpeIpuX-zoeJ7T8LkS3HixEzGomRKgSil8qr_lS0Ok3gdGJlVh5id3IonXkKSLs=w1215-h683-no" alt="Running ASP.NET 5 with on Ubuntu linux" /></p>
+
+<p><a href="https://goo.gl/photos/GVXrTLg9ugg1h5t97">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-30 00:00:00 +0000" class="date">
+    Written on January 30, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Building ASP.NET 5 on Ubuntu linux></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

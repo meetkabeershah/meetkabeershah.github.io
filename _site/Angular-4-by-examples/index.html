@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular 4 by examples – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Angular 4 by examples" />
+    <meta property="twitter:title" content="Angular 4 by examples" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Angular 4 by examples</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://terumi.me/blogs/meandev/Plunker-and-AngularJS.png" alt="Plunkr + Angular" /></p>
+
+<p><a href="http://mean.ghost.io/sandbox-eval-plunker-and-angularjs/">courtesy</a></p>
+
+<p>THIS POST IS WORK IN PROGRESS</p>
+
+<p>The best way to learn programming is to see code in action:</p>
+
+<iframe style="width: 100%; height: 600px" src="http://embed.plnkr.co/p9vMvlzEwUOOlcP2FsUG" frameborder="0" allowfullscren="allowfullscren"></iframe>
+
+<p>I have kept the following notes for future reference:</p>
+
+<p>Angular CLI helps development to debugging, testing to deploying the Angular apps.</p>
+
+<p>Here is the terminology:</p>
+
+<p><code class="highlighter-rouge">angular-cli</code> - refers to Angular 2</p>
+
+<p><code class="highlighter-rouge">@angular/cli</code> - refers to Angular 4</p>
+
+<p>To install  <code class="highlighter-rouge">npm install -g @angular/cli</code></p>
+
+<p>The underlying language used is <code class="highlighter-rouge">typescript</code> which is translated to javascript using <code class="highlighter-rouge">babel</code>.</p>
+
+<p>The task manager (like <code class="highlighter-rouge">gulp</code>, <code class="highlighter-rouge">grunt</code>) used by Angular CLI is <code class="highlighter-rouge">webpack</code>.</p>
+
+<p>Old apps were page centric, modern apps are component based.</p>
+
+<h1 id="4-pillars-of-angular-4">4 pillars of Angular 4</h1>
+
+<ol>
+  <li>Component - encapsulates the template (html), data (variables) but not source of data and the behaviour (functions) of a view.</li>
+  <li>Directives - bridges the gap between backend and front end. Used for DOM manipulation.</li>
+  <li>Routers - takes care of navigation between components.</li>
+  <li>Services - reusable tags primarily used for manipulating DOM elements</li>
+</ol>
+
+<h1 id="adding-a-component">Adding a component</h1>
+
+<p>create a <code class="highlighter-rouge">mycomp.component.ts</code> file</p>
+
+<pre><code class="typecript">
+import {Component} from '@angular/core'
+
+@Component({
+selector:'my-component',
+template:'welcome to my custom component'
+})
+
+export class MyComponent{
+    
+}
+</code></pre>
+
+<p>and add component reference to <code class="highlighter-rouge">app.module.ts</code> in <code class="highlighter-rouge">declarations</code> parameter of <code class="highlighter-rouge">@NgModule</code></p>
+
+<pre><code class="typecript">
+import { MyComponent } from './mycomp.component';
+
+@NgModule({
+  declarations: [
+    AppComponent, MyComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+</code></pre>
+
+<h1 id="adding-a-template-file-to-a-component">Adding a template file to a component</h1>
+
+<p>Create a file <code class="highlighter-rouge">footer.component.html</code> and replace the <code class="highlighter-rouge">template</code> key in <code class="highlighter-rouge">@Component</code> of a component <code class="highlighter-rouge">templateUrl:'./footer.component.html'</code>.</p>
+
+<h1 id="one-way-binding">One way binding</h1>
+
+<p>Add properties to component class:</p>
+
+<pre><code class="typecript">
+export class FooterComponent {
+
+    title = "welcome to footer component"
+
+    courses = ['Angular', 'React', 'jQuery']
+
+}
+</code></pre>
+
+<p>And bind them like this:</p>
+
+<pre><code class="typecript">
+<ul>
+    &lt;li *ngFor="let course of courses"&gt;
+        
+    &lt;/li&gt;
+</ul>
+</code></pre>
+
+<h1 id="adding-a-service">Adding a service</h1>
+
+<p>Add a file <code class="highlighter-rouge">course.service.ts</code></p>
+
+<pre><code class="typecript">
+import { Injectable } from '@angular/core'
+
+@Injectable()
+
+export class CourseService {
+
+    getCourses() {
+        return ['Angular', 'React', 'jQuery'];
+    }
+}
+</code></pre>
+
+<p>Add the reference inside <code class="highlighter-rouge">app.module.ts</code>’s <code class="highlighter-rouge">@NgModule</code></p>
+
+<p><code class="highlighter-rouge">providers: [CourseService]</code></p>
+
+<p>Inject it in a component through it’s constructor:</p>
+
+<pre><code class="typecript">
+    constructor(cs: CourseService) {
+        this.courses = cs.getCourses();
+    }
+</code></pre>
+
+<h1 id="create-a-component-from-cli">Create a component from CLI</h1>
+
+<p>Fire the command <code class="highlighter-rouge">ng g c newComponent</code>.</p>
+
+<p>There are 5 types of binding are supported</p>
+
+<ol>
+  <li>Property binding <code class="highlighter-rouge">[]</code> - bind the ts component property with html template property</li>
+  <li>Event binding <code class="highlighter-rouge">()</code> - binding the html template event to ts component</li>
+  <li>Two way data binding <code class="highlighter-rouge">[()]</code> - for component to template and vice versa data flow</li>
+  <li>Class binding - e.g.: [class.active]. Is used to add/remove a CSS class</li>
+  <li>Style binding - used to set the CSS style rules</li>
+</ol>
+
+<h1 id="property-binding">Property binding</h1>
+
+<p>Add a property to class <code class="highlighter-rouge">profilePic = "http://lorempixel.com/400/200"</code></p>
+
+<p>Use the property in the component <code class="highlighter-rouge">&lt;img [src]=profilePic /&gt;</code></p>
+
+<h1 id="add-bootstrap-to-angular-app">Add Bootstrap to Angular app</h1>
+
+<p>As of this writing the most stable version of Bootstrap is 3.3. Hence, head over to http://getbootstrap.com/docs/3.3/getting-started/#download and et CDN link under Bootstrap CDN somewhat like this:</p>
+
+<p><code class="highlighter-rouge">&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"&gt;</code></p>
+
+<p>Add this to <code class="highlighter-rouge">index.html</code></p>
+
+<h1 id="use-event-binding">Use event binding</h1>
+
+<p>Add a button like this:</p>
+
+<p><code class="highlighter-rouge">&lt;button class="btn btn-danger" (click)="clickHandler($event)"&gt;click me&lt;/button&gt;</code></p>
+
+<p>And it’s corresponding event handler in the component:</p>
+
+<pre><code class="typecript">
+    clickHandler($event) {
+        console.log($event);
+    }
+</code></pre>
+
+<h1 id="using-2-way-data-binging">Using 2 way data binging</h1>
+
+<p><code class="highlighter-rouge">&lt;input type="text" [(ngModel)]="currentCity" /&gt; </code></p>
+
+<p>This is similar to</p>
+
+<p><code class="highlighter-rouge">&lt;input type="text" [value]="currentCity" (input)="currentCity=$event.target.value" /&gt;</code></p>
+
+<h1 id="class-binding">Class binding</h1>
+
+<p>With a property isActive in the component, this</p>
+
+<p><code class="highlighter-rouge">&lt;button class="btn btn-danger" [class.active]="isActive" &gt;automatic active - click me&lt;/button&gt;</code></p>
+
+<p>is equal to</p>
+
+<p><code class="highlighter-rouge">&lt;button class="btn btn-danger active" &gt;manually active - click me&lt;/button&gt;</code></p>
+
+<h1 id="style-binding">Style binding</h1>
+
+<p>We can set the style properties of an element using style properties</p>
+
+<p><code class="highlighter-rouge">&lt;button class="btn btn-danger" [style.backgroundColor]="isActive?'green':'red'" &gt;click me&lt;/button&gt;</code></p>
+
+<h1 id="inputs">Inputs</h1>
+
+<p>Set a input property in the child component</p>
+
+<pre><code class="typecript">
+@Component({
+    selector: 'header-component',
+    template: 'welcome to header component ',
+    inputs: ['dataFromParentComponent']
+})
+
+export class HeaderComponent {
+    
+    dataFromParentComponent = ""; //or @Input dataFromParentComponent = "";
+
+}
+</code></pre>
+
+<p>Notice that there is no value assigned to <code class="highlighter-rouge">dataFromParentComponent</code>.</p>
+
+<p>In the parent component, set the value of this input with it’s own property:</p>
+
+<pre><code class="typecript">
+@Component({
+    selector: 'my-component',
+    template: `&lt;header-component [dataFromParentComponent]="myComponentData" &gt;&lt;/header-component&gt;`
+})
+
+export class MyComponent {
+
+    myComponentData = "Parent data"
+
+}
+</code></pre>
+
+  </div>
+
+  <div itemprop="datePublished" content="2017-10-07 00:00:00 +0000" class="date">
+    Written on October  7, 2017
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Angular 4 by examples></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

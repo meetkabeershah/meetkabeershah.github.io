@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Getting started with .NET on Ubuntu Linux – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Getting started with .NET on Ubuntu Linux" />
+    <meta property="twitter:title" content="Getting started with .NET on Ubuntu Linux" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Getting started with .NET on Ubuntu Linux</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://pbs.twimg.com/media/CPdDZ2XVEAAgIA6.png" alt="MS with linux" /></p>
+
+<p><a href="https://twitter.com/sjvn/status/646381868133273600">courtesy</a></p>
+
+<p>Since, <a href="http://www.asp.net/vnext">ASP.NET vNext’s</a> <a href="https://dotnet.github.io/">open source</a> <a href="https://dotnet.github.io/">.NET core</a>’s <a href="https://github.com/aspnet/Home/wiki/Roadmap"><code class="highlighter-rouge">1.0.0</code> release is nearby</a>, I was trying to get my hands dirty with <a href="https://www.microsoft.com/net">.NET</a> <em>outside <a href="https://www.microsoft.com/en-in/windows">Windows</a></em>.</p>
+
+<h1 id="install-the-net-version-manager-dnvm"><a href="https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-the-net-version-manager-dnvm">Install</a> the .NET Version Manager (DNVM)</h1>
+
+<p>First install <code class="highlighter-rouge">unzip</code> and <code class="highlighter-rouge">curl</code> if you don’t already have them</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install unzip curl</code></p>
+
+<p>Download and install <a href="https://github.com/aspnet/dnvm">DNVM</a></p>
+
+<p><code class="highlighter-rouge">curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh &amp;&amp; source ~/.dnx/dnvm/dnvm.sh</code></p>
+
+<p>Use <code class="highlighter-rouge">dnvm</code> to verify installation</p>
+
+<p><img src="https://lh3.googleusercontent.com/qQFjNyFUZHwM4wj-5hr4XLrUEzK97CijVOC47dYXqBizF1xk2tUEoI8p6SfG3EAoCfwjJWYpsiRN4PWCTtiy8hI2Sf5M40zGVraTt-RAQ7oUrAVwse0rX5ZupCRnQSuDWhQCKKoxMQhCqFOJKZfJsez1jSyNgJU_jyZYOQvWsOWya8D-YelZ0cSfsa2ieYYc1rGWaarfuSpRfN_zRZfcUrf0YEivfXU-qM8XZMGjrYIrUWO4AiopnD6ZrEVtqO7-r1jj4iJvN7sBUEUyQSOorevyEPXDXOe3lqOlgmsxGY5FFPmYc51NZnc0Uw96YCGT1VmHgdsnWf1Opo5GUSBpjme1tKXU3wrAY1KSSwFE7QBjs4JKGRpUx5SmuVPKZaSynti1jM8rxyA_1TBOfrowIh5zdm5tqSyz_p6bfP5613XQLTCKFftw2a2R5Zh6SQkCXjhV8NjAuMb_8ukQw7qRWsv1APSJs_5ap8rKarND7Jr7L8geX9bCk34EWQzKsGdP9kBvX166cwpP9cZmnxbddxsEOfrq5YQ1uabmktDGPySJbG_cDMgab5-xk4BoSimN3Mt_=w1086-h395-no" alt="verify dnvm installation" /></p>
+
+<h1 id="installing-the-mononet-execution-environment-dnx">Installing the Mono.NET Execution Environment (DNX)</h1>
+
+<p><a href="https://docs.asp.net/en/latest/getting-started/choosing-the-right-dotnet.html">.NET core is still immature</a>, so for the time being it’s better to at least get started with <a href="http://www.mono-project.com/">Mono</a>.</p>
+
+<p>The below <a href="http://askubuntu.com/a/607055/219603">commands were tested on a 64bit laptop to install Mono</a> on <a href="http://www.ubuntu.com/">Ubuntu</a>:</p>
+
+<ul>
+  <li>Add Signing Key using <code class="highlighter-rouge">wget "http://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0x3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF" -O out &amp;&amp; sudo apt-key add out &amp;&amp; rm out</code></li>
+  <li>Add Repository using <code class="highlighter-rouge">echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list</code></li>
+  <li>Update repolist using <code class="highlighter-rouge">sudo apt-get update</code></li>
+  <li>Install mono-devel using <code class="highlighter-rouge">sudo apt-get install mono-devel</code></li>
+  <li>Install mono-complete using <code class="highlighter-rouge">sudo apt-get install mono-complete</code></li>
+  <li>Install referenceassemblies-pcl using <code class="highlighter-rouge">sudo apt-get install referenceassemblies-pcl</code></li>
+</ul>
+
+<p><a href="http://askubuntu.com/a/423556/219603">Verify installation</a> using <code class="highlighter-rouge">dpkg</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/rdfvoQiVOeNtzC1cCaYe3SpkGZgzaSKZXNpyidq_kEwRWUPJ467gjZrDnekSn3_MxWY_zaRHoNOg4-rI5olRSICZWlb8RfleqAVEHnW1UO8Dof9X6r3aCSQl0XHCgv_ov0rVigTfU_uJprLcRFk1-d3AGCx3TXuMAPCGWB8_d6leH_WxGaCbYRm-JF8h_q0kTMnL9LTcelxgIADYtOXJ_7Q4uQ_t96JU2zH7K15N5NPXjtbDo5NzOgMD0DY22DRICWxIk7Tr1OYrdQgJL_hzBWnzoH60fVacEidqTKHZ73xy5vkdBgRyXhC9mnLBL9oA91An1FKi1AqTt7B04anVVYSfTa5WhHKJZOwYdlly8teswo9JNFrRUB70ZdbJd-3TcFh6J-1aOmMHsAJ7pJbE8DOD26BsyQnDmhgAdYt-nHd3ciOyEjCCbWjTa8vRv1VfXeyV3e9Pic2gBPXWfqxPCWl864mpQHSrFXV4Tsf8xfKGXC0FV7SmuzbWCSy63U_7z9jjQPDhCxbiTMkmJ4TL9djCp0XWbU99GYh0BenRAFA1_EJ2vOeeMpk0UgQRvIaqCvMQ=w1301-h480-no" alt="Verify mono-devel, mono-complete and referenceassemblies-pcl installation" /></p>
+
+<p><code class="highlighter-rouge">apt-cache policy &lt;package-name&gt;</code> can also be used to verify installation</p>
+
+<p><img src="https://lh3.googleusercontent.com/AmMeUpHLkGAgDVSWKN_dNiNZR8_leieM4OfDwqyXVtjWZ_W-HO9xu6KQ6h3z98jgCEsBWjSf-rffV8FMoUoaKi43RmPniYBtig8xeAr-NSNP9m2GYsnAgmUDz_zVDiqv-pzOsw6PJgXxR44YSoxMD9Eb3rYQ12fspmeDbLV3gTeW4Jxssp2wv8JWDyF3ArzjOGTHWhaOvee6MtfmnPnFbz27nlqjZ87vio6eClPpYw29FKmNm7Brla2Y2b8vtqpyahRpSP_r3LLegqepR_GYzmHoY5OH0IrBEO4kdhHc5z21y-wExtWVsWlBOtwuTr16_062t4fslB57VX-zXifb7Dxt90VnAcIGMUMwDhzhUe8Xb9WXEhAv5yKtMetySq4j2w1Ng9rr05HEHGpBZhkE4XHE7Wn3jpitS8Z4WcHpWX63nJYaHpY9ALumz-podZODkdnlVZuJx3PMUxve28WZ5_lrHksmL0Bk6BbTd4REbv_SnxRE-B7XmI0aW8WdSp3ptyKxwZHDiDFRUtZpIPbZu2gFe3UaNWzJXREb3JGvmdnrEk74q94RUo-BHj7WkwmQEfns=w722-h325-no" alt="verifying mono-complete install using apt-cache policy" /></p>
+
+<p>I was having troubles setting up Mono on my <a href="http://releases.ubuntu.com/14.04/">Ubuntu 14.4</a> machine, I was not able to get <a href="http://www.mono-project.com/docs/getting-started/install/linux/#notes">required <code class="highlighter-rouge">ca-certificates-mono</code> package</a>.</p>
+
+<p>So, I had uninstalled Mono with <code class="highlighter-rouge">sudo apt-get purge mono-complete</code> and followed the above commands.</p>
+
+<h1 id="installing-libuv">Installing libuv</h1>
+
+<p>To <a href="http://stackoverflow.com/q/34649424/2404470">host ASP.NET MVC 5 apps outside IIS</a>, it’s necessary to <a href="https://docs.asp.net/en/latest/getting-started/installing-on-linux.html#install-libuv">install</a> <a href="https://github.com/libuv/libuv">libuv</a>, follow the below commands:</p>
+
+<pre>
+<code>
+    sudo apt-get install make automake libtool curl
+    curl -sSL https://github.com/libuv/libuv/archive/v1.4.2.tar.gz | sudo tar zxfv - -C /usr/local/src
+    cd /usr/local/src/libuv-1.4.2
+    sudo sh autogen.sh
+    sudo ./configure
+    sudo make
+    sudo make install
+    sudo rm -rf /usr/local/src/libuv-1.4.2 &amp;&amp; cd ~/
+    sudo ldconfig
+</code>
+</pre>
+
+<h1 id="install-monodevelop-ide">Install Monodevelop IDE</h1>
+
+<p>From <a href="https://code.visualstudio.com/Docs/languages/csharp">VS code docs</a></p>
+<blockquote>
+  <p>An example of a non-supported project type is an ASP.NET MVC Application.</p>
+</blockquote>
+
+<p>In this case, <a href="http://www.monodevelop.com/download/linux/">MonoDevelop</a> can be used</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install monodevelop</code></p>
+
+<p>which supports ASP.NET MVC projects.</p>
+
+<p><img src="https://lh3.googleusercontent.com/lvkPVzBw0KNyohIJK2aWPjGurWsspstj-7v9ofUq-qt9JY-pszXOpccLsMj7_S69HTxjsM6rd-tt3eWbSKaRif0DAzwQUDKOg5o6iWEZCKkjbVQDITGao-J_clWkcXn8uj2oysrQI1Ixh17jr8mvlmsRjHpIgx9897U-wEqT3rfkI1Cfb9pfNjjK905kv2JWgmr9aZni5YhET87kkbNAjvkw7hBISGw330RViDydD-ev_Z_CBc5IeibYHefs2MBBev6cdAYwC2JPp25KgaxOLXiPyLGbQG90Cf8d3VgYtvDp1gA9itFnry_mvaPHakYQuy39mkuB5mZUuOi_0aovJwY6pUigFxxe66B4OQeJgO93_87YS-XGrd7d2evWzy7KY28OOsefafzaFN6IPQP31451p6KaQDmwwlC2H4sWNFL3aULsEYmmjqS2X6AyJGjvgmubAz8C9_94med7gFwLgzyIBiK2ORQ6o5cPEHzo9mODIqdmu-rCT1afazvsFSbrjMUOMot0nr77ABoLdwrVsnLhEAUiPZ3eC-_k3A9wgkW2mPg0AaZ7oGmoGn3HrkT7b3l_=w901-h660-no" alt="Monodevelop works with ASP.NET MVC projects" /></p>
+
+<p>Phew, it looks like everything is ready to see .NET in action outside Windows.</p>
+
+<p><a href="https://goo.gl/photos/q8uMU5v4DuyS2WVx8">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-11 00:00:00 +0000" class="date">
+    Written on January 11, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Getting started with .NET on Ubuntu Linux></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

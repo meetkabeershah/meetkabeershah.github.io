@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Installing Mysql on Ubuntu linux – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Installing Mysql on Ubuntu linux" />
+    <meta property="twitter:title" content="Installing Mysql on Ubuntu linux" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Installing Mysql on Ubuntu linux</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://kaylesblog.com/wp-content/uploads/2015/08/mysql-logo.png" alt="Mono" /></p>
+
+<p><a href="https://kaylesblog.com/tag/mysql/">courtesy</a></p>
+
+<p><a href="http://www.microsoft.com/sqlserver/">SQL server</a> is considered the best database for <a href="https://www.microsoft.com/net">.NET</a> on <a href="https://www.microsoft.com/en-in/windows">Windows</a>. In my <em>personal</em> opinion, the analogy with <a href="http://www.mono-project.com/">Mono</a> is <a href="https://www.mysql.com/">MySql</a>.</p>
+
+<p>In this post, we’ll see how to setup it and it’s <a href="https://www.mysql.com/products/connector/">connector</a> on Ubuntu.</p>
+
+<p>I was trying to do some <a href="https://www.mysql.com/">Mysql</a>, to support a project which need it and can run on <a href="http://xameeramir.github.io/install-mysql-mono-connector-ubuntu-linux/">.NET on Ubuntu linux</a>. In an effort to get everything out of <a href="https://www.microsoft.com/en-in/windows">Windows</a>.</p>
+
+<p>During the process, the <a href="https://apps.ubuntu.com/cat/applications/software-center/">software center</a> had some fever:</p>
+
+<p><img src="https://lh3.googleusercontent.com/BvpG8vJouknr4XJKWvu-PGsYkJalHlFzz4bK-msxjmjvPmsmXrUnF6n2Cj9cSj1v4cGMM-MeQZVlFjPbpifHkBFMuyzGmyd095mwWbJxa50m-sPbwqERYu1JBAtjp6IWywnpz-2hziNC6mhPC9w9GgNAqFA7Yw5ZPhvev0tkEHbSHKPh61dKQTNMUlnTF_pWZWVwEVGgXw-N5gWt1ChUVCK8nR5XFfM4WUgkwLnJRxOoIb8-o1RT-TLj0138utco2EbPyW_uZ5IQV9Z23U0LXnk7Ws1jPHTNxpybqFuPa-8rG9S2UotWoU0FTkAEq-DmY7jBBUg3pidc52feU294M12b0KdwFVvHBKtSZd0zGCVkPVJsQ-tAFDVAG_UcV6D6FJ5ltfeY0Sli_e1twoOePDbnSNXg-MqbRJvgwnlWBav9mawXLdjMTvjMRhV9MylHm6WuSzSu1aaX1lrsr8pBHdvE5vFdQN4r9ObIBKI3TGz5dVmjh1sTgDv19ZC1fWUJthHCBNBq4km83y8svw4L5Yw9WA417J2SKdy9bpI1sS5J3LImXe8CmlsXrikSxRvZ953h=w1166-h682-no" alt="Ubuntu software center greyed out" /></p>
+
+<p>Initially, I tried individual installations of <a href="https://www.mysql.com/products/workbench/">Workbench</a> and <a href="https://dev.mysql.com/downloads/repo/apt/">Mysql from APT</a>. However, since I was not 100% sure (and the above eclipse), I just <a href="http://askubuntu.com/q/151941/219603">purged</a> everything and followed the <a href="http://askubuntu.com/a/323715/219603">sure</a> way.</p>
+
+<h1 id="setup-mysql-on-ubuntu">Setup Mysql on Ubuntu</h1>
+
+<p>Installed mysql server using command <code class="highlighter-rouge">sudo apt-get install mysql-server</code></p>
+
+<p>Gave password (<em>and <a href="http://stackoverflow.com/a/5683179/2404470">forgot</a></em>):</p>
+
+<p><img src="https://lh3.googleusercontent.com/5psh3R9Fji2_bSKk4nPiA7u2kqN37rMV5l4Be-Ra_WamRh01SNvu-CapGsN9UZgfyNbw1-DpkNHAZreDL-1e_3Z_bSxfjGmiMoc5VihcbrwS7_rB-MVKGUEZUkg5qlYJBbOrvWh1GYwBDaGRylvcxeg-txyTlPx8n4oO3nE_-lrLR0GmNyxkK5vLdmIBaJemWlvXS_7tdcA8G0Dx2xAx1qyWdi3-S7MI-GEZU1DDQe2Pry1vt-3FjqDIJgtUeeX3LpwETk9v9Fx0tqvAbRqwjbvb13FAMKPHqLcrFlgu_VgJ_iBVAGfzubczs9bibmZw2VC4dX2msRLYSxZfbpvbrpW7TTs6vh--21SAjmREDHT90vu_FKdVj0N69yMiQQpXLQStUaOFmliMAVBCTNxhmS34lJ3wJLS9K5PGoISiPB-JweQxGgqgFgIR-wMBusS9f0P7T-I4zktk_5FyT3hyA2Q7-HA6VwXrOXrtxwyeMPZOCAwWhkyiFDW5GWqxtFRHTu8BeFdrOBGvfzxEa13hiOEKH4THU_yoBXqa-0UfeUxYp6ByFwd3ylHXTEtshgshXuXq=w722-h462-no" alt="Enter mysql root password" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/5psh3R9Fji2_bSKk4nPiA7u2kqN37rMV5l4Be-Ra_WamRh01SNvu-CapGsN9UZgfyNbw1-DpkNHAZreDL-1e_3Z_bSxfjGmiMoc5VihcbrwS7_rB-MVKGUEZUkg5qlYJBbOrvWh1GYwBDaGRylvcxeg-txyTlPx8n4oO3nE_-lrLR0GmNyxkK5vLdmIBaJemWlvXS_7tdcA8G0Dx2xAx1qyWdi3-S7MI-GEZU1DDQe2Pry1vt-3FjqDIJgtUeeX3LpwETk9v9Fx0tqvAbRqwjbvb13FAMKPHqLcrFlgu_VgJ_iBVAGfzubczs9bibmZw2VC4dX2msRLYSxZfbpvbrpW7TTs6vh--21SAjmREDHT90vu_FKdVj0N69yMiQQpXLQStUaOFmliMAVBCTNxhmS34lJ3wJLS9K5PGoISiPB-JweQxGgqgFgIR-wMBusS9f0P7T-I4zktk_5FyT3hyA2Q7-HA6VwXrOXrtxwyeMPZOCAwWhkyiFDW5GWqxtFRHTu8BeFdrOBGvfzxEa13hiOEKH4THU_yoBXqa-0UfeUxYp6ByFwd3ylHXTEtshgshXuXq=w722-h462-no" alt="Re-enter mysql root password" /></p>
+
+<p>Set up <a href="http://askubuntu.com/a/183777/219603">terminal</a> client using <code class="highlighter-rouge">sudo apt-get install mysql-client</code>, which can be accesed as <a href="http://askubuntu.com/a/548703/219603">root</a> by using command <code class="highlighter-rouge">mysql -u root -p</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/Hp9pT23KFMfpiAHHL2Lrlr-1IomrG5PPro1IcLrTd8lBgt_WVAxGYFRMicUP8cbTmk14J2y5gxRIZkdXqCEaJ5w0INd2QlCrF0tcknlbbQ4n1_9t51M8-H5KW5jiKuUuSbz-1rR5HWPW7BQImUO5LQSheLSt09gjMoR7q6xm1RL0jGqB_gIDoHriuhOiVv1MJO2Sa1WAOjQKuMpbCzaU6KdRcm-tddlh9Y9Xw1FCjcGq3CW13SQ5Sd_Pccu6J1u6Td2pcPIyK8IX9jzI7oL30--EZ6thAS3Wf65bHFw9Hlfy1Lt8xsBwAS2U5CE5nR9CWJEZPushJwyE7DlCksCWkrgC08yZkxGDCyegv6Uop2EtBNi32i15ayj25HtmVko8LVxqE3RELXAbCg1bwHOCTZZSFKJejRT7LydijQjLXlUcRMHxRlv_nXOQDhvfXd3zAC2whtilXfivvwkJyF2ec2kyFsaTUwCyPxkK3tjurnsMubALXk48-_2_lMvJwX8vAvTf03V_rNTBUo-3iAPc6-mkEiAbdbBiJiwxMQ_qnazjXfpmNVWWcMHTnGWoo-w9HbAI=w852-h339-no" alt="run Mysql from terminal" /></p>
+
+<p>And/Or from <a href="https://www.mysql.com/products/workbench/">UI</a> using <code class="highlighter-rouge">sudo apt-get install mysql-workbench</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/2Tb-zqVp5nBgt04cTTjT1hUNnAqG8qxyf2wo8PSUYUdsTR4HC6GzIKW6S-Ld8wDWTJIG74es8XR5NcXAs8qTVEgV5gFFW5Dz_oB33A6gSnJXSxcL3u6olxqe0t_z9XzgcdHCg1Zl9w0UY9IVj-MVbGpSnPjwamoYtyOU6zQzKHym_3rwXeu4iUr1alY3D_mk9DvaxKc7TGPEhYf44EXR-Porb0QsmQ6Z0qWr7aCtw8y995VsAq9QbH4XCCqLfORmLfBpR8lqC0N_eqzgFwIwl7pdkC-vAZvaKhGOzt2OtYu2x8tAOE3PpuizYMy0LNTx1qcvizthrQMFsczM7ObibZJfUrAgl2R9duZo7XXG1y0Xq8VvvuipvuXnlWIzLG_xjpRGrs7Um9E4guBKeveZi4hH_v0LVSOEnKEUc-CJi1iU-6_Y6bzpmhU3WNokvDE1dx1DixIBVBN5dpjh-D2fqnWzYqSCEuzQz7RVYlBybDU1alWo1zqUii0S6GZFIlTTXLPbxYUG0lr-vP-P952O7lvRVx7z6Vookb30L56mH6IC6oja57x6ewRAif9UOxncUDbB=w512-h293-no" alt="Accessing Mysql from workbench" /></p>
+
+<h1 id="setting-up-mysql-connector">Setting up Mysql connector</h1>
+
+<p>Go <a href="http://dev.mysql.com/downloads/connector/net/">here</a> to download the connector. Select <code class="highlighter-rouge">.NET &amp; Mono</code> platform and initiate download process.</p>
+
+<p>Extract the downloaded file and move it to your directory of preference.</p>
+
+<p>An inside view of the directory will look like this:</p>
+
+<p><img src="https://lh3.googleusercontent.com/nN4pQvDTU2ywT4RKpV6XVdYgZ7Pw_8CS8v2LoRkDZ0vW8LpLUU_FKUkdLWbzeMO5iUZQ8_BDedjAn8aBF1gQUdnV9sp48p-LpaNJ6QwMv2LOtpn_ydwMK9EUPJwkrFo407xvGgOPGwxADctXYpvCsbcos7sl2PkO_lAdtYus-v3YwBr_C6jG1clLS_y2hJ_ZrYDdxihiCyK4WrVGhSww8tQnGKIBEmC_7EgCc6zZS8dH_PjNXIPZOMHJcOgKsUFqAr-ZXjJoBFtCY_acAVfnUelIL5lZxSbaBSFnexLwGn6CMqPmHef6W1qnlLqm0w_NE03jgftWLm5Zb-f4sRNUbTQFjEkCRFjrCEdC5xnm7J27eXuB0fKwER4OuZO6hXjpJoEEZSkHcRumubCTsmeWi7DAqUf_4WtvSvqDr_gPgdz4YpmyoaoptX3BeONJUrJIWZOoSqJq3DnUH_gJM2gHvyN8T8z97p5-vkJOXkeD-4zi2j2tMHqeTiuzSX-f4rAwNynX6oI8buzFwqK6m6tQgnIAcO0863MnGZB6oqr798le1AnxN_D6a-Stjs7uPkbJbncQ=w1104-h262-no" alt="0" /></p>
+
+<p><code class="highlighter-rouge">cd</code> to the directory and ensure that <code class="highlighter-rouge">MySql.Data.dll</code> indeed exists by using <code class="highlighter-rouge">ls</code> command. I went to <code class="highlighter-rouge">v4.5</code> to make sure that I have all the new patches.</p>
+
+<p>Use command <code class="highlighter-rouge">sudo gacutil /i MySql.Data.dll</code> to register it to Global Assembly Cache (GAC)</p>
+
+<p><img src="https://lh3.googleusercontent.com/vjIRGDgAHD9RzRpZObBQhE9er3XsbNFNlTfFENzNakWBS-DQB3zU6yWiDpQenX8rxZbF7Z3jlSUrwHsFBpc5ZtKATbQcA2WLNpD7WMg6Aw8XXPLxOyBYbVzLvEtee6-ocrgzrsjyzXR-zAuqvMRVDWuYC0KsxKouP0uWBpwoZL51P0kR-mkzlu09sIQ_AvEC2vOrT1ZNFwa9EMewbWChOrZdkSFtuDRA6-vTl3yY8L9vYAHQDwGtmmDmAr3t-rGK5-UO0GT7COUcjQyWP4uvNUEpkZ2EASZnxZONQSCb8J04wkDk2y9TlGPfOAomEmiQVzynE4CeFzkIxjKhz-L9PZTceOUtvGqQmXasauhhV9WUV6WcLwTwi__eSJDWrcq5953-sb3RnpWvumaQRIQQx79o4-UnX7rzCraET1eRZYMlIw6kFGlBpWVjBd-niCSQXc03yBMfDOFr4b10Rmc5580JCnDMj17llBgcPbY5jDbKMfc3u3RSrLXZ4izTG0-98A7qeMwPv3Rl0ZC_E93MjGdGiMRpuTxt84YBIqpOB0KPaVCSgfx7t5l2_k4DsE-Z2Yg3=w722-h180-no" alt="1" /></p>
+
+<p>To confirm registration:</p>
+<ul>
+  <li>Go to directory <code class="highlighter-rouge">/usr/lib/mono/gac</code> by using command <code class="highlighter-rouge">cd /usr/lib/mono/gac</code></li>
+  <li>List it’s contents by using command <code class="highlighter-rouge">ls</code></li>
+</ul>
+
+<p>You will find <code class="highlighter-rouge">MySql.Data</code> if the registration has been successful.</p>
+
+<p><img src="https://lh3.googleusercontent.com/ImIP4NdoCwBJPVb7SxIfjS0jJr2CcW34JayIXGDzYY9rmhkEOM8iF-h3JBfy1cTmJ7YLIZbw0CE_3oZnov7m0Vhh6l5Gk8BzH4eASb-yXBeHNBolMVBDPpxK9MFN3ILzIsPkSrSJShrKsRLZKoxw7FMiXW7l_4l9bbDz2phmJC7u-rsJ3_9TWUo22cgx2tog2kcKEkrKM5bUA-GJsfW9kFmlmZ_SBtvUbeMyuc9TT3Pr5eKanW3EvIPXylIaIdKYF4b51qlExbVcQmI6OOAzVLwUs20zmqaBI9WQOwPaHwtHerbqh068p7fzfH2dz1hCj2vs7kVMpYcQst2YD2999vouJXqzV1DN0IkU1qRMoVSKtHtD69a5c75KCBWALctOSaMUo-XDnNHmm4qX2TfZewD_4PpE9FGdv8XhAFcBcLrirK49th35UCEYUgs-LUIHY_PN0SRqx4SM_31E1pvuYcyBtHYdzsyvvLMnms3eLmCtU_kxp2pKLkIJLF81WLtQ3ZegzoX7zC5U2kQOIGPoQb6p-HPyEUlGCMt1ruKCRGfI1DAzVcrb4jp-Wb_hAJf23RvO=w722-h138-no" alt="MySql Mono connector registered in GAC" /></p>
+
+<p>I tried following <a href="https://dev.mysql.com/doc/connector-net/en/connector-net-installation-unix.html">official installation instruction</a> but <a href="http://stackoverflow.com/questions/34357752/how-to-identify-javascript-undeletable-properties#comment56457971_34357842">didn’t found it perfect</a>, the above steps were tried on 64bit Ubuntu 14.6.</p>
+
+<p><a href="https://goo.gl/photos/A3gzYoWUq2LDBq2Q9">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-12 00:00:00 +0000" class="date">
+    Written on January 12, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Installing Mysql on Ubuntu linux></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

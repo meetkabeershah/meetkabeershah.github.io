@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Installing ionic on Ubuntu linux – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Installing ionic on Ubuntu linux" />
+    <meta property="twitter:title" content="Installing ionic on Ubuntu linux" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Installing ionic on Ubuntu linux</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://www.codetutorial.io/wordpress/wp-content/uploads/2015/03/headerIonic1.jpg" alt="Ionic framework" /></p>
+
+<p><a href="https://www.codetutorial.io/use-html-canvas-on-ionic-app-for-image-overlay/">courtesy</a></p>
+
+<p>For <a href="http://ionicframework.com/docs/guide/installation.html">installing Ionic</a> specifically on <a href="http://www.ubuntu.com/">Ubunu</a></p>
+
+<ul>
+  <li>Install <a href="http://xameeramir.github.io/install-git-windows-ubuntu-linux/">Git</a></li>
+  <li>Install <a href="http://xameeramir.github.io/install-node/">node</a></li>
+  <li>Install <a href="http://xameeramir.github.io/installing-cordova/">Cordova</a></li>
+  <li>Install <a href="http://xameeramir.github.io/install-java-windows-ubuntu-linux/">Java</a></li>
+  <li>Install <a href="http://xameeramir.github.io/install-android-studio-ubuntu-linux/">Android</a></li>
+</ul>
+
+<h1 id="installing-ionic">Installing ionic</h1>
+
+<p>If you are running a 64-bit version of Ubuntu, you’ll need to install the 32-bit libraries since Android is only 32-bit at the moment. Use the below command:</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install ia32-libs</code></p>
+
+<p>If you are on Ubuntu 13.04 or greater, <code class="highlighter-rouge">ia32-libs</code> has been removed. You can use the following packages instead:</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0</code></p>
+
+<p>Use command <code class="highlighter-rouge">sudo npm install -g ionic</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/28bTTaWn1JuJf7nxsq3TSEW4pSSmF2hNcNEOUejrhG4ywKJC2YecWqDsiEXU27-L22FPQmYKi-u6_gx5Ua_j5G_Hcvr6mY61UCOAxwbsYtTMbA1KkOq2rfL9eytSfGfSmpvs8TqIKfp0B5V6Ma9Wk3XAh1sAiRiurqDVNO4Ancav05XJmh05BNqLyEpkDv4MglVIoaLRBacRPfpLAsC23QkJJQy8fB5WbV3VFTpSS06P2AocTHpprCi4s4KLdrant7s92n_mKSIYtqiAkO4VQbFZ-xPfXjCZ9am6xXnWleSBnj_tX1cEBaqh5PXRggIBXMriOWsBT05ef6qK_LQJoMhwy6OVDTYgskqVa4KHtFaQiFnvHoy9wA8GuzabRTyiGkwzC_VM6d2NszP9Urti__TR6GOyKqqq7hFoJMZCKUxBU8VQPXRykPt1Quyj4X_6AH-4VDOC3wY_r-paGKz0ooJW_13LeKhJcBBmRR-UCyxK3t0P0z84Ghr-GgB0U6W4Op81y2TV0HXWrCxWkct3moy-nI2limUk3lmkKrQleEoAUwEVfM5XdGnSBefwZYznKxXg=w722-h417-no" alt="sudo npm install -g ionic" /></p>
+
+<p>Verify the installation of Ionic using command <a href="http://stackoverflow.com/a/31540411/2404470"><code class="highlighter-rouge">ionic info</code></a></p>
+
+<p><img src="https://lh3.googleusercontent.com/AU5-ZE9fnPTzDlhhUwhA3hR0VDb8qrkP2jriNML4cR3qvq5brysM8i5rpG2k-F84W0b6D0UmFefEf39wT0Mab0xZPKRubITCL0YBAe4kJgJI_0F-gy3cAVARnp-dyRnoBym65c4awMHgkiOh2IrvDgmGuVI2-6ZYHGb8v8fVfE99cxuHlcPYuIPtXj6KCNpZt7AtgGAXkqJEee6fF7YToaVGqA3GCXPeoZS_XrU7UJ4NK5Yys0AdSIhNZIq4iZeFt4rpicbtQp5eHDtclTXo13JCoQgbLBmEfXLMkcMzn4yhY6mQRNpFy1gdt1JD03ZPeZuNM_0v57m04vh37vMUhMC7iR6Qr7qp_W0azPpjk3ax_vmTB6zFeM-gpv4MUugfKCNPqMYMky4ApAzANfI2HIIarodtzx_FSy7YXE_02mh7NjCeH-94YJjnYGEOUv55ccMB6nHtwXkF-gCFakYincfUF_YXn0n6riuUOWdfVH8WAJfksnOWSnH0VAVRP1Kw4Q1c3ERHMIGn23q4EL7BUCWJ5L2DHrwZSLqiAoeNmBcpwVaNBQfnZXp57Swy4zWoXCqd=w664-h165-no" alt="Verify the Ionic installation" /></p>
+
+<p>In case, the Cordova CLI is undetectable, use <code class="highlighter-rouge">sudo npm install -g cordova</code> command</p>
+
+<p>And verify if it’s ready by using <code class="highlighter-rouge">npm -v cordova</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/LQbtTVGZ-MQXyIK7-hZwg0Qax5xPZ-amYzyM9e_hVWUlMHhdbnNAaPCsFBCV4nEyoWNQn7B4cSMt1fJudbOyEf78idD9AR4KhzUteUc7U2H-qeczaMH_UQWd0efQu0T3tQUXtaTErnmh0AxESFKWSBx-Ai6sjo-7sMP2i8f7_Shk36hWvhiVoabBICh_TVId7wWlC_ddABbyCiOic6G1FUiuaBs366kxDwyG4T5pmWNk1G-iJoeXuW5hmqEGaXZNZ_-wIfk_bUv8anDXtZBQFadFU8Kyl0i_StQnzw_8PLZkaKuxml21PdC7I_ik7jft8fTPg-ukkodbuj6Tu5imf8AnpDj2om_kpVUmylPLkYH1PBCgH1FIUVaM2MsBWrxm2_5rz6vlFuOHSRGvwjrXANsvcbj-AcYATxHLO8HQE3C9Yxq5ixoQgm62OtQNMsf9hZM01JBKqV2y76UP5tB1LRYD9Efb6IXfvA6USCGxsS-R_Jfmbb-3RhKq667djuafWGanfuTw7dD1CMRFmCSsrJGLW-6724UJtmJPeDkOAsqtJSAAvtPsYmsc3FqhAkQdUNdv=w507-h140-no" alt="Checking Cordova version" /></p>
+
+<p><a href="https://goo.gl/photos/2MFkc2ZFshm3ZEPYA">Photos</a></p>
+
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-06 00:00:00 +0000" class="date">
+    Written on January  6, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Installing ionic on Ubuntu linux></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

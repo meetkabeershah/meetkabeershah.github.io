@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD operations in MongoDB – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="CRUD operations in MongoDB" />
+    <meta property="twitter:title" content="CRUD operations in MongoDB" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >CRUD operations in MongoDB</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://www.codingerik.com/assets/images/crudblog.png" alt="CRUD" /></p>
+
+<p><a href="http://www.codingerik.com/CRUD_Loop_Tutorial-post.html">courtesy</a></p>
+
+<p>In this post, we’re going to see a few example of CRUD operation in <code class="highlighter-rouge">MongoDB</code></p>
+
+<h1 id="restoring-using-mongorestore">Restoring using mongorestore</h1>
+<p>After making sure that <code class="highlighter-rouge">mongod</code> and <code class="highlighter-rouge">mongo</code> are running, go to the dump’s parent directory in a new terminal. And use the command <code class="highlighter-rouge">mongorestore dump</code>. Where <code class="highlighter-rouge">dump</code> is the folder name in which the database dump is present.</p>
+
+<p><img src="https://lh3.googleusercontent.com/GsQPxzd5QaVK3bN6tQaOFAepiQ_BIVmn-CgSuPo5bVH4L3w1Ev5JJUJkO3NaOCqQK7i14uxm5QikvmCbv-6jz5hJJzcFG4-HXZo40-jxAyAPNclNx1m5puEaXUmnLA7Nss5zrP0ovBJL1jiKOBZH0Rof8Kg6yfKzdWBA8I8__kW2eXgLWVnbjqeGlz2N2tH_7Ou9eXYxGNSB4-ZuXot3_rm_GYar-TPwkr05D_0fITy2JgsPQezsTMpMHr7REkxVRK-Il-TRzktppVaS0Pd3eCnyRaK_PF867pCvWI25AkTjS_Y1VUn3BniociBqIqZBsQklP-miKtDlurav6CAh_Fek7b0vQCmfvbDX1MmpV9x00QNUrxfoCdDZ6oVuoH3jRYsVntsxmRfi5zTCqvh9ddUjPjrlBNJ9HyJrRaK5ee8P5tI_xquJODZn4CtLAU6g2oVQ4bxDtfZppzf_pYcmUBWuN1v-jQIn4zdc2xbfhePTqASgDi5NZiF83o8XhwuCjhXEY-aqGastao7ZYC77CNKodQ8knWeR9ApAq9STOQ6Orvsz-IuvCCnlG01-Qz8i2aqCz3Rr4rEX_RFIlfIHd4EmcRfvC98=w648-h443-no" alt="Restoring using mongorestore" /></p>
+
+<h1 id="creating-documents">Creating Documents</h1>
+
+<p>There’re two principal commands for creating documents in MongoDB:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">insertOne()</code></li>
+  <li><code class="highlighter-rouge">insertMany()</code></li>
+</ul>
+
+<p>There’re other ways as well such as <code class="highlighter-rouge">Update</code> commands. We call these operations, upserts. Upserts occurs when there’re no documents that match the <strong>selector</strong> used to identify documents.</p>
+
+<p>Although MongoDB inserts ID by it’s own, We can manually insert custom IDs as well by specifying <code class="highlighter-rouge">_id</code> parameter in the <code class="highlighter-rouge">insert...()</code> functions.</p>
+
+<p>To insert multiple documents we can use <code class="highlighter-rouge">insertMany()</code> - which takes an array of documents as parameter. When executed, it returns multiple <code class="highlighter-rouge">id</code>s for each document in the array. To drop the collection, use <code class="highlighter-rouge">drop()</code> command. Sometimes, when doing bulk inserts - we may insert duplicate values. Specifically, if we try to insert duplicate <code class="highlighter-rouge">_id</code>s, we’ll get the <code class="highlighter-rouge">duplicate key error</code>:</p>
+
+<pre><code class="javascript">
+
+db.startup.insertMany(
+  [
+  {_id:"id1", name:"Uber"},
+  {_id:"id2", name:"Airbnb"},
+  {_id:"id1", name:"Uber"},
+  ]
+  );
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/g_f8pkYn3-e01QF8AECbIi-n_x6qB1xhbEx-e5FEZC9KA8f5FI9mx05cGZaNAaDUCdsJ7LHJz9DH-aXpU8iZlFwu154_8FsUe8cpfLTm4yImQJ4MJv8CZyat0GqjCpbN05sZ_UgEv9HqxTTgbNjlFGrPYthKepJwZ0dQrmMNxyAJOwXU_FQd752v9l_f-1-jKzkmrgNwOmYFpkvxq1PKbmo39LJdRxjR2CUsUn0xaIvrX5Ns_dJjKAaiWZN-7Kn73i55eWWt4sZduGdpE4fsUVIUZRZmUp2RpPu6VPZ7nbRG6BVkL6oFvQYuwI0Y4aCbe8AnIlkr3Y8tpN8iSxSLnZIDSoH0KB92ldrIAZjYK2UugB5WlSLiLuJst0tdLCs2FPpbFf4nu1ajDzzpkEKsdOR79lQNRxz-uOAg8lAaXY4EY7QL7VpWNVtKhFFsuCSkcZRKDmwyFwYFVL2RrsKBB6-Jz2lAAfaFFb5tBvHClr-iH91UYoLlNcF138MtaoXanU25K_5SqicvoF7gC5J4TaeaM4Obl95dBFtIVxPdlJOc_sXrPNsCKduhtC7MR3LBj7su0MxKixG850BQApxCjX6Bk_neK8I=w603-h102-no" alt="MongoDB duplicate key error" /></p>
+
+<p>MongoDB stops inserting operation, if it encounters an error, to supress that - we can supply <code class="highlighter-rouge">ordered:false</code> parameter. Ex:</p>
+
+<pre><code class="javascript">
+
+db.startup.insertMany(
+[
+{_id:"id1", name:"Uber"},
+{_id:"id2", name:"Airbnb"},
+{_id:"id1", name:"Airbnb"},
+],
+{ordered: false}
+);
+</code></pre>
+
+<h1 id="the-_id-field">The _id field</h1>
+
+<p><code class="highlighter-rouge">MongoDB</code> assigns an <code class="highlighter-rouge">_id</code> field to each document and assigns primary index on it. There’re ways by which we can apply secondary indices as well. By default, <code class="highlighter-rouge">MongoDB</code> creates values for the <code class="highlighter-rouge">_id</code> field of type <code class="highlighter-rouge">ObjectID</code>. This value is defined in <code class="highlighter-rouge">BSON</code> spec and it’s structured this way:</p>
+
+<blockquote>
+  <p>ObjectID (12 bytes HEX string) = Date (4 bytes, a timestamp value representing number of seconds since the Unix epoch) + MAC address (3 bytes) + PID (2 bytes) + Counter (3 bytes)</p>
+</blockquote>
+
+<h1 id="reading-documents">Reading documents</h1>
+
+<p>To apply specific value filters, we can pass specific values to the <code class="highlighter-rouge">find()</code> command. Here is a SQL query:</p>
+
+<p><code class="highlighter-rouge">SELECT * FROM Table1 WHERE name = 'ABC'</code></p>
+
+<p>which is equivalent to the following in <code class="highlighter-rouge">MongoDB</code> (notice <code class="highlighter-rouge">Collection1</code> for <code class="highlighter-rouge">Table1</code>):</p>
+
+<p><code class="highlighter-rouge">db.Collection1.find({name: 'ABC'})</code></p>
+
+<p>We can chain <code class="highlighter-rouge">count()</code> to get the number of results, <code class="highlighter-rouge">pretty()</code> to get a readable result. The results can be further narrowed by adding additional parameters:</p>
+
+<p><code class="highlighter-rouge">db.Collection1.find({name: 'ABC', rollNo: 5})</code></p>
+
+<p>It’s important to notice that these filters are <strong>AND</strong>ed together, by default. To apply an <strong>OR</strong> filter, we need to use <code class="highlighter-rouge">$or</code>. These filters will be specified depending upon the structure of the document. Ex: for object attribute <code class="highlighter-rouge">name</code> for an object <code class="highlighter-rouge">school</code>, we need to specify filter like <code class="highlighter-rouge">"school.name" = 'AUHS'</code></p>
+
+<p>We’re using here the <strong>DOT</strong> notation, by trying to access a nested field <code class="highlighter-rouge">name</code> of a field <code class="highlighter-rouge">school</code>. Also notice that the filters are <strong>quoted</strong>, without which we’ll get syntax errors.</p>
+
+<p><strong>Equality matches on arrays can be performed:</strong></p>
+
+<ul>
+  <li>on the entire arrays</li>
+  <li>based on any element</li>
+  <li>based on a specific element</li>
+  <li>more complex matches using operators</li>
+</ul>
+
+<p>In the below query:</p>
+
+<p><code class="highlighter-rouge">db.Collection1.find({name: ['ABC','XYZ']})</code></p>
+
+<p><code class="highlighter-rouge">MongoDB</code> is going to identify documents by an exact match to an array of one or more values. Now for these types of queries, the <strong>order</strong> of elements matters, meaning that we will only match documents that have <code class="highlighter-rouge">ABC</code> <strong>followed</strong> by <code class="highlighter-rouge">XYZ</code> and those are the <strong>only 2</strong> elements of the array <code class="highlighter-rouge">name</code></p>
+
+<pre><code>
+{name:["ABC","GHI","XYZ"]},
+{name:["DEF","ABC","XYZ"]}
+</code></pre>
+
+<p>In the above document, let’s say that we need to get all the documnts where <code class="highlighter-rouge">ABC</code> is the first element. So, we’ll use the below filter:</p>
+
+<p><code class="highlighter-rouge">db.Schools.find({'name.0': 'ABC' })</code></p>
+
+<h1 id="cursors-in-mongodb">Cursors in MongoDB</h1>
+
+<p><code class="highlighter-rouge">MongoDB</code> returns results in batches. To see how many objects are left in a batch, we use <code class="highlighter-rouge">objLeftInBatch()</code> like this:</p>
+
+<pre><code>
+var c = db.Schools.find();
+var doc = function() {return c.hasNext()? c.next : null;}
+c.objLeftInBatch();
+</code></pre>
+
+<p>To iterate through this batch we can use <code class="highlighter-rouge">doc()</code> that we setup in the above code block. More learning on cursors can be found at <a href="https://docs.mongodb.com/">https://docs.mongodb.com/</a></p>
+
+<h1 id="projection-in-mongodb">Projection in MongoDB</h1>
+
+<p>Projection is a handy way of reducing the size of the data returned for any one query. By default <code class="highlighter-rouge">MongoDB</code> returns all fields in all documents for queries. To limit the amount of data that <code class="highlighter-rouge">MongoDB</code> sends to the application, we can include projections in the queries to reduce network overhead and processing requirements by limiting the fields that’re returned in results documents. They’re provided as second argument to the <code class="highlighter-rouge">find()</code> command. Now, if we need to limit our documents so that they just contain a title. We can do that using this <code class="highlighter-rouge">db.Schools.find({name:"ABC"},{rollNo:1}).</code> In the result, <code class="highlighter-rouge">_id</code> is always returned. To exclude it, use <code class="highlighter-rouge">db.Schools.find({name: "ABC"},{rollNo: 1, _id: 0}).</code>. So, to exclude any field, use 0 next to the colon in project query.</p>
+
+<h1 id="comparison-operators-in-mongodb">Comparison operators in MongoDB</h1>
+
+<p>We can use <a href="https://docs.mongodb.com/manual/reference/operator/query-comparison/">comparison operators</a> as well in our queries. Eg: Use <code class="highlighter-rouge">db.Schools.find({rollNo: {$gt: 10}})</code> To find all students having roll number beyond than 10. Notice the <a href="https://docs.mongodb.com/manual/reference/operator/query/gt/#op._S_gt"><code class="highlighter-rouge">$gt</code></a> operator. Combine this filter with <a href="https://docs.mongodb.com/manual/reference/operator/query/lt/#op._S_lt">$lt</a> for getting results beyond roll number 10 and before roll number 50: <code class="highlighter-rouge">db.Schools.find({rollNo: {$gt: 10, $lt: 50}})</code>.</p>
+
+<p>There’re other operators as well: <code class="highlighter-rouge">$gte</code> (greater than, equal to), <code class="highlighter-rouge">$lte</code> (less than, equal to), <code class="highlighter-rouge">$ne</code> (not equal to). One thing to notice about the not equal to (<code class="highlighter-rouge">$ne</code>) operator is that it not only returns documents having value not equal to specified value but also returns documents not having the attribute itself.</p>
+
+<h1 id="element-operators-in-mongodb">Element operators in MongoDB</h1>
+
+<p><code class="highlighter-rouge">MongoDB</code> because of it’s flexible data model supports operators that allow us to detect the presence of or absence of a given field. This flexibility in terms of data models also extends to the data type of a field value. Because it’s possible although not usually a good idea, to have the same field in a collection have a different type of value from one document to another. These operators are used for finding the existence of elements (<code class="highlighter-rouge">$exists</code>) and data type of the field using the <code class="highlighter-rouge">$type</code> operator.</p>
+
+<h1 id="logical-operators">Logical operators</h1>
+
+<p>Like SQL, there’re <a href="https://docs.mongodb.com/manual/reference/operator/query-logical/">logical operators</a> such as <code class="highlighter-rouge">$and</code>, <code class="highlighter-rouge">$or</code>, <code class="highlighter-rouge">$not</code> and <code class="highlighter-rouge">$nor</code>. These’re the examples:</p>
+
+<pre><code>
+db.Schools.find({
+  $and: [{ rollNo: { $gt: 10 }}, { rollNo: { $gt: 50 }}]
+  })
+
+db.Schools.find({
+  $or: [{ rollNo: { $gt: 10 }}, { rollNo: { $gt: 50 }}]
+  })
+</code></pre>
+
+<p>Now, why there’s an <code class="highlighter-rouge">$and</code> operator <a href="http://stackoverflow.com/q/38960922/2404470">when the filters are by default <strong>AND</strong>ed?</a> Because, in a <code class="highlighter-rouge">JSON</code> document, we cannot have duplicate keys. In the above <code class="highlighter-rouge">$and</code> example, we’re <strong>AND</strong>ing <code class="highlighter-rouge">rollNo</code> twice. Remember that <code class="highlighter-rouge">$and</code> is used we need to filter data on the same field.</p>
+
+<h1 id="regular-operators">Regular operators</h1>
+
+<ul>
+  <li>The slashes <code class="highlighter-rouge">/</code> in the below regex code means the start and end of the regular expression.</li>
+  <li>The carat <code class="highlighter-rouge">^</code> means start at the beginning of whatever value we’re matching against and match exactly a capital AB.</li>
+  <li>The dot <code class="highlighter-rouge">.</code> is the wild card character.</li>
+  <li>The arterisk <code class="highlighter-rouge">*</code> indicates match any character any number of times</li>
+  <li><code class="highlighter-rouge">\s</code> means a space character after AB</li>
+</ul>
+<pre><code>
+db.Schools.find({
+{ name: { $regex: /^AB\s.*/ }}
+})
+</code></pre>
+
+<h1 id="array-operators">Array operators</h1>
+
+<p>These operators are used to work on arrays. For getting matching values from an array (<code class="highlighter-rouge">$all</code>), arrays of a particular size (<code class="highlighter-rouge">$size</code>) and <code class="highlighter-rouge">$elemMatch</code> - which <a href="http://stackoverflow.com/q/38960922/2404470">requires all criteria be satisfied</a> within a single element of an array field.</p>
+
+<h1 id="updating-documents">Updating documents</h1>
+
+<p><code class="highlighter-rouge">MongoDB</code> provides 3 ways to update documents.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">updateOne()</code> - the first argument is the filter expression, second specifies the values to be updated</li>
+  <li><code class="highlighter-rouge">updateMany()</code></li>
+  <li><code class="highlighter-rouge">replaceOne()</code></li>
+</ul>
+
+<pre><code>
+db.Schools.updateOne({ name: "ABC" }, { $set: { rollNo: 15 } })
+</code></pre>
+
+<p>There are a couple of <a href="https://docs.mongodb.com/manual/reference/operator/update/#id1">update operators</a>. In the above query, <code class="highlighter-rouge">$set</code> operator simply replaces (or adds if not already exists) the value for the field being specified. There are <a href="https://docs.mongodb.com/manual/reference/operator/update/#array">array update operators</a> as well. To apply updates for each <code class="highlighter-rouge">array</code> element, use the <code class="highlighter-rouge">$each</code>. <code class="highlighter-rouge">$position</code> modifies the $push operator to specify the position in the array to add elements.</p>
+
+<p>Sometimes, we might see elements set to <strong>NULL</strong>. It’s better to remove them altogether using <code class="highlighter-rouge">$unset</code> operator.</p>
+
+<pre><code>
+db.Schools.updateMany({ name: null }, { $unset: { name: "" } })
+</code></pre>
+
+<h1 id="upserts-of-update-command">Upserts of update command</h1>
+
+<p>Upserts are operations for which, if no document is found matching our filter, we insert a new document - hence the term <strong>upsert</strong>.</p>
+
+<p>And here we finish second week <a href="https://university.mongodb.com/courses/M101JS/about">course</a> notes</p>
+
+<p><a href="https://goo.gl/photos/bXNX1CXXhi6qahue9">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-08-16 00:00:00 +0000" class="date">
+    Written on August 16, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=CRUD operations in MongoDB></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

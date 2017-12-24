@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>How does the SQL Server Query Optimizer Works – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="How does the SQL Server Query Optimizer Works" />
+    <meta property="twitter:title" content="How does the SQL Server Query Optimizer Works" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >How does the SQL Server Query Optimizer Works</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://emotimo.com/wp-content/uploads/2015/12/SPEED.jpg" alt="Optimization" /></p>
+
+<p><a href="https://www.keyword-suggestions.com/c3BlZWQ/">Courtesy</a></p>
+
+<p>At the core of the SQL Server Database Engine are two major components: the <strong>Storage Engine</strong> and the <strong>Query Processor</strong>, also called the Relational Engine.</p>
+
+<ul>
+  <li>Storage Engine: takes care of reading data between the disk and memory in a manner that optimizes concurrency while maintaining data integrity</li>
+  <li>Query Processor: 1. takes care of devising a query plan (what algorithms/operators to implement) by <strong>Query Optimizer</strong> 2. execute the query according to that plan by <strong>Execution Engine</strong></li>
+</ul>
+
+<p>The query processor does the following things:</p>
+
+<ol>
+  <li>Query parsing</li>
+  <li>Binding query to objects</li>
+  <li>Generate possible execution plans</li>
+  <li>Cost-assessment of each plan</li>
+</ol>
+
+<p>The Execution Engine does the following things:</p>
+<ol>
+  <li>Query execution</li>
+  <li>Plan caching</li>
+</ol>
+
+<p>Parsing translates the SQL query into an initial tree representation. Binding is mostly concerned with name resolution.</p>
+
+<h1 id="search-space">Search Space</h1>
+
+<p>We define the search space for a given query as the set of all the possible execution plans for that query, and any possible plan in this search space returns the same results.</p>
+
+<h1 id="generating-candidate-execution-plans">Generating Candidate Execution Plans</h1>
+
+<p>As discussed, the basic purpose of the Query Optimizer is to find an efficient execution plan for your query. Even for relatively simple queries, there may be a large number of different ways to access the data to produce the same end result. As such, the Query Optimizer has to select the best possible plan from what may be a very large number of candidate execution plans, and it’s important that it makes a wise choice, as the time it takes to return the results to the user can vary wildly, depending on which plan is selected.</p>
+
+<p>The Query Optimizer must strike a balance between optimization time and plan quality. SQL Server does not do an exhaustive search, but instead tries to find a suitably efficient plan as quickly as possible.</p>
+
+<h1 id="assessing-the-cost-of-each-plan">Assessing the Cost of each Plan</h1>
+
+<p>The Query Optimizer needs to estimate the cost of these plans and select the least expensive one. To estimate the cost of a plan, it estimates the cost of each physical operator in that plan using costing formulas that consider the use of resources such as I/O, CPU, and memory.</p>
+
+<p><strong>Cardinality estimation</strong> : a query plan’s cost estimation depends mostly on the algorithm used by the physical operator, as well as the estimated number of records that will need to be processed; this estimate of the number of records is known as the cardinality estimation.</p>
+
+<h1 id="query-execution-and-plan-caching">Query Execution and Plan Caching</h1>
+
+<p>Once the query is optimized, the resulting plan is used by the Execution Engine to retrieve the desired data. The generated execution plan may be stored in memory, in the plan cache (known as the procedure cache in previous versions of SQL Server) in order that it might be reused if the same query is executed again.</p>
+
+<p>However, reuse of an existing plan may not always be the best solution for a given query. Depending on the distribution of data within a table, the optimal execution plan for a given query may differ greatly depending on the parameters provided in said query, and a behavior known as <a href="https://www.brentozar.com/archive/2013/06/the-elephant-and-the-mouse-or-parameter-sniffing-in-sql-server/">parameter sniffing</a> may result in a suboptimal plan being chosen.</p>
+
+<p>Even when an execution plan is available in the plan cache, some metadata changes, such as removing an index or a constraint, or significant enough changes made to the contents of the database, may render an existing plan invalid or suboptimal, and thus cause it to be discarded from the plan cache and a new optimization to be generated.</p>
+
+<h1 id="recompiling">Recompiling</h1>
+
+<p>You can force SQL Server to recompile the stored procedure each time it is run. The benefit here is that the best query plan will be created each time it is run. However, recompiling is a CPU-intensive operation. This may not be an ideal solution for stored procedures that are run frequently, or on a server that is constrained by CPU resources already. Another thing to remember is that the plans won’t be stored in the cache, which makes them harder to find if they are problematic.</p>
+
+<pre> <code>
+ALTER PROCEDURE Get_OrderID_OrderQty
+@ProductID INT
+WITH RECOMPILE
+AS
+SELECT SalesOrderDetailID, OrderQty
+FROM Sales.SalesOrderDetail
+WHERE ProductID = @ProductID;
+</code> </pre>
+
+<h1 id="hinting">Hinting</h1>
+
+<p>Another option is to use the OPTIMIZE FOR query hint. This tells SQL Server to use a specified value when compiling the plan. If, through testing, you can find a value that produces a “good enough” plan each time, and the performance is acceptable for both mice and elephants, this is a good option for you.</p>
+
+<p>However, understand that you are bossing the query optimizer around. You are telling it what you think is best. The biggest drawback with OPTIMIZE FOR is on tables where the distribution of data changes. The faster it changes, the more out of date this hint could become. What if the value you provide is not optimal in a month, or a year? You need to have a method in place to regularly review and revise this.</p>
+
+<pre> <code>
+ALTER PROCEDURE Get_OrderID_OrderQty
+@ProductID INT
+AS
+SELECT SalesOrderDetailID, OrderQty
+FROM Sales.SalesOrderDetail
+WHERE ProductID = @ProductID
+OPTION (OPTIMIZE FOR (@ProductID=945));
+</code> </pre>
+
+<blockquote>
+  <p>The reality is that, even after more than 30 years of research, query optimizers are highly complex pieces of software which still face some technical challenges. As a result, there may be cases when, even after you’ve provided the Query Optimizer with all the information it needs and there doesn’t seem to be any apparent problem, you are still not getting an efficient plan.</p>
+</blockquote>
+
+<p>Sources:</p>
+
+<ul>
+  <li><a href="https://www.brentozar.com/archive/2013/06/the-elephant-and-the-mouse-or-parameter-sniffing-in-sql-server/">The Elephant and the Mouse, or, Parameter Sniffing in SQL Server</a></li>
+  <li><a href="https://www.simple-talk.com/sql/sql-training/the-sql-server-query-optimizer/">The SQL Server Query Optimizer</a></li>
+</ul>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-10 00:00:00 +0000" class="date">
+    Written on January 10, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=How does the SQL Server Query Optimizer Works></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

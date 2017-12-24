@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting up Java on Ubuntu linux and Windows – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Setting up Java on Ubuntu linux and Windows" />
+    <meta property="twitter:title" content="Setting up Java on Ubuntu linux and Windows" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Setting up Java on Ubuntu linux and Windows</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://wallpaperology.com/zombie/93295-Java-Logo-1920x1080-Wallpaper.jpg" alt="Java logo" /></p>
+
+<p><a href="http://wallpaperology.com/14-Technology-wallpapers/58-Technology-wallpapers/5679-Java-Logo-HD-Wallpaper.htm">courtesy</a></p>
+
+<p>After setting up <a href="http://xameeramir.github.io/install-git-windows-ubuntu-linux/">Git</a>, <a href="http://xameeramir.github.io/install-node/">node</a> and <a href="http://xameeramir.github.io/installing-cordova/">Cordova</a> one need to get the <a href="https://www.oracle.com/java/index.html">Java</a> setup done for moving towards getting <a href="http://ionicframework.com/docs/guide/installation.html">Ionic ready</a> on <a href="http://www.ubuntu.com/">Ubuntu linux</a>.</p>
+
+<h1 id="setting-up-java-on-ubuntu-linux">Setting up Java on Ubuntu Linux</h1>
+
+<p>Enter the command <code class="highlighter-rouge">sudo apt-get install openjdk-7-jdk</code>. Enter the root password and let the system do it’s tasks.</p>
+
+<p>Enter <code class="highlighter-rouge">apt-cache search jdk</code></p>
+
+<p>Set “JAVA_HOME” and “PATH” environment Variables:</p>
+
+<p><img src="https://lh3.googleusercontent.com/p_95I5vlJR5-bDhOqtFTVBBvBDgTNxO5-JS-fIF-9CX5-KGNbtJVIwLMYwwomgECtDUwUF6JKU105VoNL8YClTZ-BB3g3ksjkSA5eBuQrue6qHwkZpZRhfb7_DntvEAU8gbR1ZBqobDI1fk2fXSEd2bzWPxckz0KHJw-CalVrj171SgEV-lToOczwXSVOnMRhnXRGRk3TyMcoVEAtqR77vQNSjRFE5z6Pd5hMwxFAZDZRP15djmJzheAHJlBtg33fNelVXFUs0SGD5d0DX2a9kOaubxkuojSu9Pqe4LwKAD3PeSZ-eUeFbzw52wrlBn7dca32cf6TYwpGOXSc5q5tlLTmRwP9EG1syRHd263VOxQYqJtTOcOe-i2UObul2QofkUuk8v6K5dn2PFxP3uWKT3VJsw3tRwm7TbKCXQt1Xu-QPxEGBmGTUdjkKjmHZhcUQwri-Up6F3gdeNVYpD1EKxisT-3oyW-hq4qGC3ZSifvI1IL4YA5yKVMVf8ZOjQbirAZQru5Q81k2K1fKmYlJLGTJORlhkl8WPw81-ulcN0AX-bClTOXebV9ejGC2pOfLXVy=w695-h139-no" alt="Setting up JAVA environment variables on Ubuntu linux" /></p>
+
+<p><code class="highlighter-rouge">export JAVA_HOME=/usr/lib/jvm/java-7-openjdk</code>
+<code class="highlighter-rouge">export PATH=$PATH:/usr/lib/jvm/java-7-openjdk/bin</code></p>
+
+<p>Finished, now just verify the installation by checking the installed version:</p>
+
+<p><code class="highlighter-rouge">javac -version</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/Sax04bsurKTc1u5wpYvoiv7Th111iIfwUIYpZcTHoE3Oj6m1fiaUH23ZyYFKXI0Lvj0FTqspd7tOA4SpK_k3FC5e3uVASd4qjF152FHfAkgpi9iH2kcvGu_ln3nQ5wQrIhUvkHdbLuVrAvtU5fYu8FjQJHYG4nhZQoGt0laABkC8pL9uEqtmCFUpNI2i8NOdei_je23iibWl2EKjqaAa5uTGhG3loNLXn_XfBCmG_WGBrVYaUoYpvjpMDCklkEAzOAuNo2Ca4G9X90DJsimjokCVCr8DBQTLU0I4C6LipVFCtxu2axWkYkbbNh8He7MThUe623k8e6B9Z8UnJLsGZMowJtOQ7QJYXdw2lV-olJARTMFxwiNG8I989t73O5YMkHVj51h9kqFzCmITFozQBY9yc0Bk45QttQYxs5mX0LOtU1YjtlIllhrTLdr4TWovMKE9UUtfxuzCjPLdtLHG13p8scSqgrD9yvq3DfVDxg2mMr9uQ475_W_Ds-gq9YwugRDae8knsOmXj1PmMFtwTNvmKohEw0T6ygylmh6rtCRmotVZ62R0ii9L7tjpyrRwhcJB=w670-h172-no" alt="Checking Java version on Ubuntu linux" /></p>
+
+<h1 id="installing-java-on-windows">Installing Java on Windows</h1>
+
+<p>Open the setup file downloaded from <a href="https://www.java.com/en/download/manual.jsp">here</a></p>
+
+<p>Follow the instructions as shown:</p>
+
+<p><img src="https://lh3.googleusercontent.com/onAddfX7uX0gBa5WAe0nGtBxXj_laItMy03W_0-qVGXykdB2i2jlaRiZbUuEuq9O5xMqrQU83EefkpVRTitm-34iWdxk0gKwdzvxH4xGgKJ8KkgPUIpqKuSzOn3mGTbe7KeXw126g2sw66JRSLCvte9UxWnZk472wa2Yv7QZPu1r0SIOx1Mn-0vMW5fm6F2baUk0B7QKG2UL5PsGgmQQYEIOK5xu6v-Svi2Ub2_oPWYqN6NUayVpfmWZlw2Sfj6Vnd2wh9TYK_mJbceXtNFTHIcHVCr5j2cflie4TLM9quRAi83qOqsUZQ5fgAF3mvIYfAMLxvplgaCOCMFCeOwq25dG3XKVf18Q6l4QDZ4-qZD62mewBcrr5K61NlrYc-AWUamF33-lvfg3PscPGMqh3bNU2BLzfWexUcQciNLTHOB7FeyorZTSKfrG2DD1tSKwMxPBU_Gt-u1psRq37GMGe-_kXRNDMDyUPRuby-W7BTUj-8uurbx6AiftDfbt6zFb3sYc4AwOMehn3Hz1oN6RbdBQGKiuhJb_1SChxTmYw_Kofyzq9f0YCAc3-yCF5H9imx6f=w500-h381-no" alt="Welcome Java installation wizard" /></p>
+
+<p>Select installation components - this may be required for servers where specific configurations are needed</p>
+
+<p><img src="https://lh3.googleusercontent.com/0rD46v_RxxBCaO4I1qxG0zSO_ezE5xopaxgIhaN1C3uzypoyt6abj0rSzunOQ-qr5gS6RgriRSFM3G7IkcPQLWHI9d-JhdaVdgTa_NXlE0Obk39uT-XKFXF6Cgb9DYehkwKnS9AbQ_chabSm02W_N4dKR54QnV8p4rSFu9biGXsCddnCZqabw8aKnOLBUbRQc4YyopXYYh4FgQwF1HIiHJKTBt1XawpQegdrOYjV7IcUztYf15MZtBPCuaDeccuk6RUZOZMbIZIiCaX47FBva-TEj88mJP2YGmKm9mjz2WSo-q9fkbiJxfAQLrrqa6hl-5_Fyql-p8s3VxROKxcL_DCxDCLgPOMT2c37_AUnArgWMqLMJyasIG3Ixs8fEiW0ml8dtuql15s5bnQq1-kFWcI9nd97znGi7TOB-VUi1YjpA816dlFrUd-QsV298zNq-lZyKymok2AA4kkwX_nk_j5Jq4IGQheq5yAOP9bxkpCFok7BUYtXAMvc27ylFlC2h-xeYVjD34bEEQC8v-dCLy2Vm8drZkHPVOPrc781dNMVRqBqiT6HP5oYa6-FzyA305RU=w500-h381-no" alt="Select Java installation components" /></p>
+
+<p>Select installation path</p>
+
+<p><img src="https://lh3.googleusercontent.com/JG1nyC-gEzMFxxG4LiU2_e7pZZGMD0Kx0qmsocUi2iyqE9lEHsd1Gpb01Gzuf9_wqgIqAo2IBcKeSXIu-4IEESAUxb4qUg_6fRiY19PschExFjpEw9EOkEjZMkbBd3l56n6DyZv0MNOFn8CDknFGljqFn_pEJZUe1HqHCD5gfxhKj3JpOpJvurbvrYOWHqIo8eXo90WaQ0xNIIWQYs8qFpvdmTYPP84kpVi67sgYnZdbveWBmYPVfj_fCm2y9sXm0hQ9Ee7lwRvfKubvLVOHAJZ0nDkwLuhrE4z5OWVnZCJU_6qxu-0FdSkzp5wnowPLeHSd_sBbVjrxjTMkG8xHu3u2wdEvsNTUWEqxYjswQ9iXhglgdpl44VHbq2UA7rCDotCBkf0ksV1PKS3632Xrp5MB9seC-I0h2YQJGwc8oWUyJ3-WHe85i-kX9cOneQgIhhLm7CMCcWE8Fwwfd9vBGlArzTpBIuCxY1KgV_ZBXRNAk54tQKLARgjgch3FG_p3d3UKBtshjSplm6NzpJoXWLmwyJIab8WQUYpvLPIMmRuBC6DVMAigo3C29L-sEvsY8-XT=w500-h381-no" alt="Select Java installation path" /></p>
+
+<p>Incase you already have Java installed, a warning will be shown</p>
+
+<p><img src="https://lh3.googleusercontent.com/6xhWhze0ce57UIjxQkV6aFBm_N8hpe4_Ym5HcMlrLwioBy5BJK7s9LyoCpgxH9o6gQ8NocQ3vt8oa9Qxq3KYCzKKxqdbHF6hKvVNmW-m0BMFQeb2fNrdY_oTNWhxJI_iD5hSann6psEepOGMnnQZotvF5SdJpwko4qY7xF0qqqTmaMGRnDINXVx3wFv55pyo84FZd2RJFiA5kZNgfCd9ygEQhbq9qctwXtd7CL331yqAV7I3mj6ZRFsCFEvHyFm6ULJN3Wejd6wjSfeDsZ04M3VjdKzZifmsnnVvWqP1FVNEtJUv-yv4hDsn5fTj3LGvUyGzdvaWNsS_oamyaZCSjghc2HAUaB7efJ7s0hJEmSBJxR07PGihaLvNVIzlj8QdsPyoXZBrLEopQifoc-3IW5dA7SjcRIH9c7UPgEkbMNV1GlOn_EgVBm8BaCju_oZj-e0EvIYCpbLjcApyzodfR5Ozz-DVVQtViTwy5w2u8hHet7k7Jb-HffCSG1cE4WRfMEH-t3C_zEfpIkd9RRsD1aHbbywA_51gAwowA0PpZZy4DMNOx5U6VtT9nI2_VFPeIDQq=w348-h140-no" alt="Already installed Java warning" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/Uu1zkojeVCKv9k8c5nwJ85m7bBDIYYgoJznu12RcAyopW3tDO-V_UWOGf0x3u1i930orm_kAu-JpoCFQpv4IryxSrTYGc53gfcFMO_slshd8nIlht_t9WKzNn2Z4sXH2_2VkXLJu6TUEhoJ7Q9Ozxj9_xmlTks0EweGR-wke5kr_uivRsSRhNIdwKX17UnuBd94PY0719glqtecRq3U8DtzMWqQTLDkY9PBGFDO8RCx--P_A1eO8sKEYmC3AeQgG2JppxZ4cqXwes2QIBKRkKwkcPn0VxORGrhUcwKQeCaOSVuYDJDLzdzylY45ZMyZiObfFdcM6YPLnGXpv7P5P7yoQ6fXYDyW2c52E9_U54OSZ3c3vsAYDd5jJnZkAHPqq6EMw3AwBhtUIxkBJ8FTkW8BEbblD1TK0WLdWoyocTWvoCMyZqAvQjVzHW7KQR93XSbHj3BwBiq422kgLPw_7p-nF3EdROZvR76SAy9r__ra5Eq6dnw-Aul2dYW1S61e0VF7xgMzdJxfk_cX9unKD1Zf1cTHgqKgBhbqZ-yBm8ULLGhx_ljJZMxKsuhvIiShGvNP1=w394-h149-no" alt="Wait for Java installation" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/SabJ0d7zFT4jRJ0Sm_jCS80K8qBqT8JI6u1o3aRVWoSxpLAg-oPUBIctEE784AUDtSvhDwrcv5ms34M6gDhDn1S-gkIvN6-VgyAGE_GSWXjofL5vbNCowiV4Rh5vZZuyM269Bg8f3frY2rn4AqG3rRKZqPjgJJvWqKjuURjNl7VFz14_qOZETJ4j_4bIQg_z0KAKjrStbnwFBzU5QpA1zMxur5w1ONpG8e4_VJzjF2h6dtdVFIAheZCYuuzavZ4z6IkuXyTz7xhYIqoRLKthn1Pdk6cN1_K8Dz0C5TqBdgjy2I_2v4ijwRBXqkVxWPxalB6BWBk_gF_KKNxedeBad6NDIjHpgKpP3SQWty3u7MRKzBCAqNjpA583QOLWUG_bPenkwaRTtr676SafpeveOWFhcK20wlw20wbIrFOhF0aBWRcEPcL9m4Bcg9LXoyHP6OpWteEPqWcFUg6x_h8cHtBv9w4LdBTkycWHrvMtEIMrCM8KTW35fcxMHLK5W0PbugjLToxHv9U1LKiLLQJHzlk89cIJQtRw6x4QHA7sszMM1o7a_LG8pda8QCs0mo7Pk3oU=w500-h381-no" alt="Wait for Java installation" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/r2FdQDI8tHDsFaJMkcTwMN9jrHMkR9jx6OwUnqm3OkQdDVToOCcuAzUkP79ynIpTS5KyISfnDk_l2f_pgMUUYq49R4_SBPhh_khfwOLogIEzOE-1klY-yVHuTWzUX57ZndqxWOBDC0SfLzqSzPNQB9TRS3iOxogszAAl6l4y5imWKpR6GxrvpT7Hke0ph1gWS8FO-C7e5vkoxwse64wv1TabNueIwszAzPQbmivlRfelENDnzTi785BA512uBjYy3K2hduB89DChBYstTapqzJFO249ZZKlX492in9STcMLz7Ug12AmHHM0K0TBBIjptg3PYTtMdQ9R5pxkN5lqoR67Rv1LDG-6djsyT-FmE3hYHOWteGkXFxZaa60zq3eHUuCCDrHapkDyllg7p4OkRH1jMTO30X3MQmq-3DYVBDfnw1BVRTiB_aL6RkIGq8-CTz_MFNCW44VMJq9tqHAgXhyemqPteAMu1vkzOYcuDBfWIZDvFi9U07MNwaSbffQZtMm4YlRfMo-1SaCZKgwR7W0HuhRSsVppB5Fcim8u_wWKIKntthQHDfXf9O5m4smLzFUGC=w500-h381-no" alt="Wait for Java installation" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/eNquPMrsiH30992DhWrUYbolTjB5SVUNsVAl03jvXjgCTzeXjk74_dQDbWvZCYgP4dMvUUfjerOvRa-tZU03KsxziSIYWT1_hxw-S_KiBMz8xvV7yQqBB5JO_IIjfQf4LU3gUJzXBbT_7g1eTWepZL5g5oat8_A-dEmbhd3HQJEMwMyvHW6ZSxXcOVt5A7zRmIjkNQymYyUeqRRtcguiGbe1G4iWNDKieWWczcr_BtWM-rOtVCJQp4IstQR7XJdhc2UxqfWJy1XbOKCN6TXmm9qTpBpnPcyFShWeFyGJN8Bwy_331IBAmkFOURegNur0MIROyN-QR-uUuADH-TJ0jAkwlNAIMNhd8VhsgZLt4keZVtnnLwyTX-Jmk1xlU2F-llUFUVZv9okypCaclDtNhzytYAz7J8wQ-vnEXD5goi8H0Oa-nknFCW6nj_9AOLNz_ZwfOfVhwpylvawSsgUTCvgy118U2B4NBox1VDN_RAxQMi5-QzXKecCHKnPCywRhK995P4OAWrGRdVs7KJ78LyeOsZIyt99ZduVjqF06f6u6qsMWNbHeyGZzXsEnqiOBp_4f=w500-h381-no" alt="Successfully installed Java" /></p>
+
+<p>Now, <a href="http://www.computerhope.com/issues/ch000549.htm">we just need to setup environment variables</a>.</p>
+
+<p><a href="https://goo.gl/photos/caGGuZ1UnVGxhBaq6">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-06 00:00:00 +0000" class="date">
+    Written on January  6, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Setting up Java on Ubuntu linux and Windows></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

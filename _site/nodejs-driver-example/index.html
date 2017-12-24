@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Working with the examples for Node.js driver – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="The node.js driver is a package for interacting with MongoDB.
+
+" />
+    <meta property="og:description" content="The node.js driver is a package for interacting with MongoDB.
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Working with the examples for Node.js driver" />
+    <meta property="twitter:title" content="Working with the examples for Node.js driver" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Working with the examples for Node.js driver</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p>The <code class="highlighter-rouge">node.js</code> driver is a package for interacting with <code class="highlighter-rouge">MongoDB</code>.</p>
+
+<h1 id="importing-a-json">Importing a JSON</h1>
+
+<p>The command <code class="highlighter-rouge">mongoimport</code> allows us to import human readable <code class="highlighter-rouge">JSON</code> in a specific database &amp; a collection.
+To import a <code class="highlighter-rouge">JSON</code> data in a specific database &amp; a collection, type <code class="highlighter-rouge">mongoimport -d databaseName -c collectionName jsonFileName.json</code></p>
+
+<h1 id="find-and-cursors-in-the-nodejs-driver">find() and Cursors in the Node.js Driver</h1>
+
+<pre>
+<code>
+var MongoClient = require('mongodb').MongoClient,
+assert = require('assert');
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+assert.equal(err, null);
+console.log("Successfully connected to MongoDB.");
+
+var query = {
+"category_code": "biotech"
+};
+
+db.collection('companies').find(query).toArray(function(err, docs) {
+
+assert.equal(err, null);
+assert.notEqual(docs.length, 0);
+
+docs.forEach(function(doc) {
+console.log(doc.name + " is a " + doc.category_code + " company.");
+});
+
+db.close();
+
+});
+
+});
+</code>
+</pre>
+
+<p>Notice that the call <code class="highlighter-rouge">.toArray</code> is making the application to fetch the entire dataset.</p>
+
+<pre>
+<code>
+var MongoClient = require('mongodb').MongoClient,
+assert = require('assert');
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+assert.equal(err, null);
+console.log("Successfully connected to MongoDB.");
+
+var query = {"category_code": "biotech"};
+
+var cursor = db.collection('companies').find(query);
+
+function(doc) {
+cursor.forEach(
+console.log( doc.name + " is a " + doc.category_code + " company." );
+},
+function(err) {
+assert.equal(err, null);
+return db.close();
+}
+);
+});
+</code>
+</pre>
+
+<p>Notice that the <strong>cursor</strong> returned by the <code class="highlighter-rouge">find()</code> is assigned to <code class="highlighter-rouge">var cursor</code>. With this approach, instead of fetching all data in memort and consuming data at once, we’re streaming the data to our application. <code class="highlighter-rouge">find()</code> can create a cursor immediately because it doesn’t actually make a request to the database until we try to use some of the documents it will provide. The point of <code class="highlighter-rouge">cursor</code> is to describe our query. The 2nd parameter to <code class="highlighter-rouge">cursor.forEach</code> shows what to do when the driver gets exhausted or an error occurs.</p>
+
+<p>In the initial version of the above code, it was <code class="highlighter-rouge">toArray()</code> which forced the database call. It meant we needed <strong>ALL</strong> the documents and wanted them to be in an <code class="highlighter-rouge">array</code>.</p>
+
+<p>Also, <code class="highlighter-rouge">MongoDB</code> returns data in batch format. The image below shows, requests from cursors (from application) to <code class="highlighter-rouge">MongoDB</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/_utjj5lUN8AMPPf9JCUf3NwP6SoK14g9IrDiglPhNOyLYQq81PaoibVcsDGLxtN1GgBOrUk-_xiobeUcKSUP90crPC7JiflvblQhgRX-d_8noqoBXkQxhDGLRJs8O2LvcdwA4_hoGJSVmFgDUZUkRI-TYG2PKaQMKE171ufX3QFHkKE-jO1gZC06mHAxRLhuDkzip1IFR-Slo-Y6i4hO_bnNGSIMLflu40KZ-waxx0El1D0rNu3JfWFvMkta48SB2a9SGmSZnOD-Vl8A_8B9i7xk4oCaY4TZLq5PKOcgL8z_pCSY2sTqkYACHfl_Itd54Od38fpPAIBu7TWKKAm8hAJfU6QAfuAOiT1khMmzOqvO6zRmEAVlrXybWV26WDtvBumcfmnaZIBUUNUC7MeKP0nim32axhwJQxa_hEs7kmNHjrOzp2k4URp_mFl-XIBNfCGPkjafJkgnw2Tfz4qI8E5p1L29hlgjAmJyZWKvA8Ny5olYK7fe_N_1Sj9mc0hm3vnMnuKaA61pReh8Q2OSLqwJxyYRXhocFaNC6HXiBaqH9s4_VahUeO_xHvdgZWL1u9SGPYiNK2vVSexagjYVKJXnJ3RfJ1g=w668-h230-no" alt="MongoDB cursor requests" /></p>
+
+<p><code class="highlighter-rouge">forEach</code> is better than <code class="highlighter-rouge">toArray</code> because we can process documents <strong>as they come in</strong> until we reach the end. Contrast it with <code class="highlighter-rouge">toArray</code> - where we wait for <strong>ALL</strong> the documents to be retrieved and the <strong>entire</strong> array is built. This means we’re not getting any advantage from the fact that the driver and the database system are working together to batch results to your application. Batching is meant to provide efficiency in terms of memory overhead and the execution time. <em>Take advantage of it, if you can in your application</em>.</p>
+
+<h1 id="projection-in-the-nodejs-driver">Projection in the Node.js Driver</h1>
+
+<p>Remember that projections allows us to explicitly include or exclude fields in a <code class="highlighter-rouge">MongoDB</code> query. We use <strong><code class="highlighter-rouge">1</code></strong> to indicate that we want to include a field and <strong><code class="highlighter-rouge">0</code></strong> to indicate that we wish to exclude the field. Remember that <code class="highlighter-rouge">_id</code> field is special -</p>
+
+<ul>
+  <li><code class="highlighter-rouge">_id</code> field gets included by default, unless we explicitly exclude it</li>
+  <li>All other fields are excluded, until we explicitly include them</li>
+</ul>
+
+<p>Also, since we’re working in <code class="highlighter-rouge">javascript</code>, we can construct our project documents and documents to be inserted into our collections in a way that is very similar to the way we do this in the <code class="highlighter-rouge">mongo</code> shell. What’s different is the driver provides one set of classes and methods we use to interact with <code class="highlighter-rouge">MongoDB</code> and the <code class="highlighter-rouge">mongo</code> shell provides it’s own API.</p>
+
+<p>W. r. t. <code class="highlighter-rouge">CRUD</code> as of <code class="highlighter-rouge">MongoDB 3.2</code> the driver and the <code class="highlighter-rouge">mongo</code> shell adhere to the same spec. How you access these methods and how they’re implemented varies of course, from the <code class="highlighter-rouge">mongo</code> shell.</p>
+
+<pre>
+<code>
+
+var MongoClient = require('mongodb').MongoClient,
+    assert = require('assert');
+
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+    assert.equal(err, null);
+    console.log("Successfully connected to MongoDB.");
+
+    var query = {"category_code": "biotech"};
+    var projection = {"name": 1, "category_code": 1, "_id": 0};
+
+    var cursor = db.collection('companies').find(query);
+    cursor.project(projection);
+
+    cursor.forEach(
+        function(doc) {
+            console.log(doc.name + " is a " + doc.category_code + " company.");
+            console.log(doc);
+        },
+        function(err) {
+            assert.equal(err, null);
+            return db.close();
+        }
+    );
+
+});
+
+</code>
+</pre>
+
+<p>The current best practice in the <code class="highlighter-rouge">node.js</code> driver, is to chain a call to <code class="highlighter-rouge">project</code> onto our <code class="highlighter-rouge">cursor</code> i.e. <code class="highlighter-rouge">cursor.project</code>. This call to project sets a field projection for the query. This call does not force a request to retrieve documents from the database, as does the <code class="highlighter-rouge">foreach</code> method. Rather it adds some additional details to the query representation maintained by our <code class="highlighter-rouge">cursor</code>. There’re a number of cursor methods, we can chain together to fully express the operation we wish to execute against our <code class="highlighter-rouge">MongoDB</code> database. The call to <code class="highlighter-rouge">db.collection</code> is synchronous. We’re going to modify that <code class="highlighter-rouge">cursor</code> with a field <code class="highlighter-rouge">projection</code> here using the <code class="highlighter-rouge">project</code> method on the cursor.</p>
+
+<h1 id="query-operators-in-the-nodejs-driver">Query Operators in the Node.js Driver</h1>
+
+<pre>
+<code>
+var MongoClient = require('mongodb').MongoClient,
+    commandLineArgs = require('command-line-args'),
+    assert = require('assert');
+
+
+var options = commandLineOptions();
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+    assert.equal(err, null);
+    console.log("Successfully connected to MongoDB.");
+
+    var query = queryDocument(options);
+    var projection = {"_id": 1, "name": 1, "founded_year": 1,
+                      "number_of_employees": 1, "crunchbase_url": 1};
+
+    var cursor = db.collection('companies').find(query, projection);
+    var numMatches = 0;
+
+    cursor.forEach(
+        function(doc) {
+            numMatches = numMatches + 1;
+            console.log( doc );
+        },
+        function(err) {
+            assert.equal(err, null);
+            console.log("Our query was:" + JSON.stringify(query));
+            console.log("Matching documents: " + numMatches);
+            return db.close();
+        }
+    );
+
+});
+
+
+function queryDocument(options) {
+
+    console.log(options);
+
+    var query = {
+        "founded_year": {
+            "$gte": options.firstYear,
+            "$lte": options.lastYear
+        }
+    };
+
+    if ("employees" in options) {
+        query.number_of_employees = { "$gte": options.employees };
+    }
+
+    return query;
+
+}
+
+
+function commandLineOptions() {
+
+    var cli = commandLineArgs([
+        { name: "firstYear", alias: "f", type: Number },
+        { name: "lastYear", alias: "l", type: Number },
+        { name: "employees", alias: "e", type: Number }
+    ]);
+
+    var options = cli.parse()
+    if ( !(("firstYear" in options) &amp;&amp; ("lastYear" in options))) {
+        console.log(cli.getUsage({
+            title: "Usage",
+            description: "The first two options below are required. The rest are optional."
+        }));
+        process.exit();
+    }
+
+    return options;
+
+}
+</code>
+</pre>
+
+<p>To call it use <code class="highlighter-rouge">node app.js -f 2004 -l 2008 -e 100</code>. Notice that <code class="highlighter-rouge">commandLineArgs</code> is getting <code class="highlighter-rouge">parse</code>d. Also, you might see the difference between the <code class="highlighter-rouge">_id</code> field representation by <code class="highlighter-rouge">mongo</code> shell and <code class="highlighter-rouge">node.js</code> driver:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">_id : ObjectId("507f1f77bcf86cd799439011")</code> on <code class="highlighter-rouge">mongo</code> shell</li>
+  <li><code class="highlighter-rouge">_id : 507f1f77bcf86cd799439011</code> on <code class="highlighter-rouge">node.js</code> driver</li>
+</ul>
+
+<p>This happens because of the difference in the way <code class="highlighter-rouge">node.js</code> driver and the <code class="highlighter-rouge">mongo</code> shell chooses to stringify the <code class="highlighter-rouge">_id</code> field.</p>
+
+<h1 id="regex-in-the-nodejs-driver">$regex in the Node.js Driver</h1>
+
+<pre>
+<code>
+var MongoClient = require('mongodb').MongoClient,
+    commandLineArgs = require('command-line-args'),
+    assert = require('assert');
+
+var options = commandLineOptions();
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+    assert.equal(err, null);
+    console.log("Successfully connected to MongoDB.");
+
+    var query = queryDocument(options);
+    var projection = projectionDocument(options);
+
+    var cursor = db.collection('companies').find(query);
+    cursor.project(projection);
+
+    var numMatches = 0;
+
+    cursor.forEach(
+        function(doc) {
+            numMatches = numMatches + 1;
+            console.log( doc );
+        },
+        function(err) {
+            assert.equal(err, null);
+            console.log("Our query was:" + JSON.stringify(query));
+            console.log("Matching documents: " + numMatches);
+            return db.close();
+        }
+    );
+
+});
+
+function queryDocument(options) {
+
+    console.log(options);
+
+    var query = {};
+
+    if ("overview" in options) {
+        query.overview = {"$regex": options.overview, "$options": "i"};
+    }
+
+    if ("milestones" in options) {
+        query["milestones.source_description"] =
+            {"$regex": options.milestones, "$options": "i"};
+    }
+
+    return query;
+}
+
+function projectionDocument(options) {
+
+    var projection = {
+        "_id": 0,
+        "name": 1,
+        "founded_year": 1
+    };
+
+    if ("overview" in options) {
+        projection.overview = 1;
+    }
+
+    if ("milestones" in options) {
+        projection["milestones.source_description"] = 1;
+    }
+
+    return projection;
+}
+
+function commandLineOptions() {
+
+    var cli = commandLineArgs([
+        { name: "overview", alias: "o", type: String },
+        { name: "milestones", alias: "m", type: String }
+    ]);
+
+    var options = cli.parse()
+    if (Object.keys(options).length &lt; 1) {
+        console.log(cli.getUsage({
+            title: "Usage",
+            description: "You must supply at least one option. See below."
+        }));
+        process.exit();
+    }
+
+    return options;
+}
+</code>
+</pre>
+
+<p>The <code class="highlighter-rouge">$options</code> set to <code class="highlighter-rouge">i</code> indicates that the <code class="highlighter-rouge">regex</code> search needs to be case-insensitive. <code class="highlighter-rouge">MongoDB</code> supports <code class="highlighter-rouge">perl</code> like regular expressions. There’re a couple of ways in which we can set the values for the query documents:</p>
+
+<ul>
+  <li>
+    <p>Using curly braces <code class="highlighter-rouge"><span class="p">{</span><span class="w"> </span><span class="nt">"_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nt">"founded_year"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">}</span></code></p>
+  </li>
+  <li>
+    <p>Using dots <code class="highlighter-rouge">projection.overview = 1;</code></p>
+  </li>
+  <li>
+    <p>Using array indexing <code class="highlighter-rouge">projection["milestones.source_description"] = 1;</code></p>
+  </li>
+</ul>
+
+<h1 id="sort-skip-and-limit-in-the-nodejs-driver">Sort, Skip, and Limit in the Node.js Driver</h1>
+
+<p>To sort documents, we can apply <code class="highlighter-rouge">sort</code> on a <code class="highlighter-rouge">cursor</code> object. To enforce order of sort, instead of passing an object, we need to pass an array to the <code class="highlighter-rouge">sort</code> method.</p>
+
+<pre>
+<code>
+var MongoClient = require('mongodb').MongoClient,
+  commandLineArgs = require('command-line-args'),
+  assert = require('assert');
+
+
+var options = commandLineOptions();
+
+
+MongoClient.connect('mongodb://localhost:27017/crunchbase', function(err, db) {
+
+  assert.equal(err, null);
+  console.log("Successfully connected to MongoDB.");
+
+  var query = queryDocument(options);
+  var projection = {
+    "_id": 0,
+    "name": 1,
+    "founded_year": 1,
+    "number_of_employees": 1
+  };
+
+  var cursor = db.collection('companies').find(query);
+  cursor.project(projection);
+  cursor.limit(options.limit);
+  cursor.skip(options.skip);
+  cursor.sort([
+    ["founded_year", 1],
+    ["number_of_employees", -1]
+  ]);
+
+  var numMatches = 0;
+
+  cursor.forEach(
+    function(doc) {
+      numMatches = numMatches + 1;
+      console.log(doc.name + "\n\tfounded " + doc.founded_year +
+        "\n\t" + doc.number_of_employees + " employees");
+    },
+    function(err) {
+      assert.equal(err, null);
+      console.log("Our query was:" + JSON.stringify(query));
+      console.log("Documents displayed: " + numMatches);
+      return db.close();
+    }
+  );
+
+});
+
+function queryDocument(options) {
+
+  console.log(options);
+
+  var query = {
+    "founded_year": {
+      "$gte": options.firstYear,
+      "$lte": options.lastYear
+    }
+  };
+
+  if ("employees" in options) {
+    query.number_of_employees = {
+      "$gte": options.employees
+    };
+  }
+
+  return query;
+
+}
+
+
+function commandLineOptions() {
+
+  var cli = commandLineArgs([{
+    name: "firstYear",
+    alias: "f",
+    type: Number
+  }, {
+    name: "lastYear",
+    alias: "l",
+    type: Number
+  }, {
+    name: "employees",
+    alias: "e",
+    type: Number
+  }, {
+    name: "skip",
+    type: Number,
+    defaultValue: 0
+  }, {
+    name: "limit",
+    type: Number,
+    defaultValue: 20000
+  }]);
+
+  var options = cli.parse()
+  if (!(("firstYear" in options) &amp;&amp; ("lastYear" in options))) {
+    console.log(cli.getUsage({
+      title: "Usage",
+      description: "The first two options below are required. The rest are optional."
+    }));
+    process.exit();
+  }
+
+  return options;
+
+}
+
+</code>
+</pre>
+
+<p>One thing to notice is the order in which <code class="highlighter-rouge">MongoDB</code> applies <code class="highlighter-rouge">skip</code>, <code class="highlighter-rouge">limit</code> and <code class="highlighter-rouge">sort</code></p>
+
+<ul>
+  <li><code class="highlighter-rouge">sort</code></li>
+  <li><code class="highlighter-rouge">skip</code></li>
+  <li><code class="highlighter-rouge">limit</code></li>
+</ul>
+
+<p><img src="https://lh3.googleusercontent.com/6mhk_4rQhKp8sF03brXg-OAbsKEJtxHLFp4MtPA_eom3Dabo1ptkY5Nz7UUZ8W-q_JfGiiVVt9AGGIwJns2KoVYKk18Z5VVP6PWaC7zktndNIXzFp3U-IadJSt-KzIxL2hP4wA3vguJqZB7GP9JBOUtJWgYmgX1gEMmIXQRW2z6DKMB_J0YUcZ9pF0a_woe0Weg76MADCcxwXgeb5qRbkXKjxhsqlwgo00qYZBdhlWAExclJ0uDv0awFKQrkbGDuv6ztk1S4huyaSKpeFQq-QOof0oq0YsjRUy_npf-C36_BSV2ACOQvXihdjyVNbj8Ie31y3uNK3musJ035P-L-OAhOqFWc92UZTVVc1JXQQrHO8vTnJyLNc0mmgEfnou9iK2CiPAu4mka0lxjJamuTpnFSCk8u_oDT_mnschCPOVsQv_28YwduIXtQSDsinrw_Kgt1CYMHF3nr1yGH03-YDsZ_tMopADig7LMzaFNBNP3FZZMZyuGYJJrfmX7somz2eLBdJHg5oWX9O7mQIK2trAM4kknc1_2FqzJTDPCOYmarmo8rXP4j_bHB6no-f_FJYDdJ7_Crrnn7jXiaosLYpxMbwkoZbb0=w629-h201-no" alt="MongoDB skip, limit and sort order" /></p>
+
+<p>There’s also a possibility that we can sort data on the <code class="highlighter-rouge">MongoDB</code> side as well, provided that we’ve setup the indexing.</p>
+
+<p>Notice that <code class="highlighter-rouge">MongoDB</code> driver will send a query when we call a cursor method passing a callback function to process query results.</p>
+
+<p><a href="https://goo.gl/photos/rV5pRUS2f8PZJiKF7">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2017-02-17 00:00:00 +0000" class="date">
+    Written on February 17, 2017
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Working with the examples for Node.js driver></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

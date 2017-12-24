@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MongoDB schema design – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="MongoDB schema design" />
+    <meta property="twitter:title" content="MongoDB schema design" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >MongoDB schema design</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://files.pdfsr.com/data/screenshot/MongoDB-Schema-Design-Presentation-Transcript-13756.jpg" alt="MongoDB schema design" /></p>
+
+<p><a href="http://pdfsr.com/pdf/mongodb-schema-design">courtesy</a></p>
+
+<p>Notes for 4th week of <a href="https://university.mongodb.com/courses/MongoDB/M101JS/2016_August/"><code class="highlighter-rouge">MongoDB</code> for <code class="highlighter-rouge">node.js</code> course</a></p>
+
+<h1 id="schema-design">Schema Design</h1>
+
+<p>There is an ideal way to design databases in relational databases - 3rd normal form. In <code class="highlighter-rouge">MongoDB</code>, it’s important to keep data in way that’s conducive to the application using the data. You think about</p>
+
+<ul>
+  <li>application data patterns</li>
+  <li>what pieces of data are used together</li>
+  <li>what pieces of data are used mostly read-only</li>
+  <li>what pieces of data are written all the time</li>
+</ul>
+
+<p>In contrast, in relational DBMS - the data is organized in such a way that is agnostic to the application.</p>
+
+<p><code class="highlighter-rouge">MongoDB</code> supports <strong>rich documents</strong>. We can store an array of items, a value for a certain key can be an entire other document. This is going to allow us to <strong>pre-join/embed data</strong> for fast access. And that’s important because <strong><code class="highlighter-rouge">MongoDB</code> doesn’t support joins directly</strong> inside the kernel. Instead if we need to join, we need to join in the application itself. The reason being <em>joins are very hard to scale</em>. This forces us to <strong><em>think ahead of time about what data you want to use together with other data</em></strong>. We might wish to embed the data directly within the document. There’re <strong>no constraints</strong>. In case of <code class="highlighter-rouge">MongoDB</code>, it’s as important as we think because of embedding. <code class="highlighter-rouge">MongoDB</code> considers <strong>atomicity</strong> in a way. Also it <strong>doesn’t support transactions</strong>, however <strong>atomic operations</strong> are supported within one document. The data needs to be designed in such a way that it supports atomic operations.</p>
+
+<p>There’s <strong>no declared schema</strong> but there’s a good chance that an application is going to have a schema. By having a schema, we mean that every single document in a particular collection is probably going to have a pretty similar structure. There might be small changes to that structure depending on the different versions of your application. Even though it’s not declared ahead of time, it’s important to think about the data structure so that the data schema itself supports all the different features of your application</p>
+
+<h1 id="relational-normalization">Relational Normalization</h1>
+
+<p>Let’s look at the below denormalized table for a blog posts project. It’s not the 3rd normal form, it’s broken. Let’s say there are multiple
+posts with same author, we may update a few rows and leave others un-updated. Leaving the table data inconsistent.</p>
+
+<p><img src="https://lh3.googleusercontent.com/7uhXLc0vHEeIl6guinTbjKfrbn37RlT3Mii6nLdIdAGjR-66TPSDB9EyDkZeca71P7pA_tOphReWJ6xk4Y5vh7zO5eh4K8Twfroyh2N8GizTvbvWLvB_zgdnquVNCKK5vMXPCfigOUS_6MNjEftb8Vl-2Epr4nFOORfi3TlcekzYtPBUdJRHR7Km9MPKCYW8snNQBEvhWmQdJ2jDzUKvKqks38wwGV8tKT8ok6vNX3f9nEmniUOs0fTEcmX5BesT5HH-aufUbUExHOhl2JLqhJvYqIqw2bI6IK1SdhWlwsguJrusjr88ESwR3qVXdSdvTC7nAZrQTohidnlJ79U26c24EhQOpfTjfF1VKQ4jWM7ENAsurGinlQcV1zU2K7X2I0_qQ7oSQZ-O8loyKjzm-0GlfeWNhBnmH3azDKmCWsHsIzga_OCTCk8rGeWjbV-CTbxvnWhkTrqAhd99Y0TIQqMDJjUNPYHkTKBM2aTAq0TD0k9YPOYFheHxDZmmlx49apT2suoSzEQ41r3s9pZAzTsIq9UUwYSK8G7iRtYs4Hvv0rzqlp1TK1VJMQS4SF-8JeKAE8X8aBPlfokq9BjrFaDS8bBEtp81CKnNGFkupYqmM81z=w472-h95-no" alt="denormalized table for a blog posts project" /></p>
+
+<p>Hence this violates normalization because it violates a common way to describing normalized tables in 3rd normal form, which is that <strong><em>every non-key attribute in the table must provide a fact about the key, the whole key and nothing but the key</em></strong>. And that’s of a play on words for what you say in a US courtroom, telling the truth, the whole truth and nothing but the truth. The key in this case, is the <code class="highlighter-rouge">Post Id</code> and there is a non-key attribute <code class="highlighter-rouge">Author Email</code> which does not follow that. Because it does, in fact tell something about the author. And so it violates that 3rd normal form.</p>
+
+<p>The above table can be represented in <code class="highlighter-rouge">MongoDB</code> as:</p>
+
+<pre><code>
+{
+  id: 'some id',
+  title: 'some title',
+  body: 'some content here',
+  author: {
+    name: 'author name',
+    email: 'author email id'
+  }
+}
+</code></pre>
+
+<h1 id="refresher---what-are-the-goals-of-normalization">Refresher - what are the goals of normalization?</h1>
+
+<ul>
+  <li><strong>Frees the database from modification anomalies</strong> - For <code class="highlighter-rouge">MongoDB</code>, it looks like embedding data would mostly cause this. And in fact, we should try to avoid embedding data in documents in <code class="highlighter-rouge">MongoDB</code> which possibly create these anomalies. Occasionally, we might need to duplicate data in the documents for performance reasons. However that’s not the default approach. The default is to avoid it.</li>
+  <li><strong>Should minimize re-design when extending</strong> - <code class="highlighter-rouge">MongoDB</code> is flexible enough because it allows addition of keys without re-designing all the documents</li>
+  <li><strong>Avoid bias toward any particular access pattern</strong> - this is something, we’re not going to worry about when describing schema in <code class="highlighter-rouge">MongoDB</code>. And one of the ideas behind the <code class="highlighter-rouge">MongoDB</code> is to tune up your database to the applications that we’re trying to write and the problem we’re trying to solve.</li>
+</ul>
+
+<h1 id="living-without-constraints">Living Without Constraints</h1>
+
+<p>One of the great things about relational database is that it is really good at keeping the data consistent within the database. One of the ways it does that is by using foreign keys. A foreign key constraint is that let’s say there’s a table with some column which will have a foreign key column with values from another table’s column. In <code class="highlighter-rouge">MongoDB</code>, there’s no guarantee that foreign keys will be preserved. It’s upto the programmer to make sure that the data is consistent in that manner. This maybe possible in future versions of <code class="highlighter-rouge">MongoDB</code> but today, there’s no such option. The alternative for foreign key constraints is <strong>embedding data</strong>.</p>
+
+<h1 id="living-without-transactions">Living Without Transactions</h1>
+
+<p>Transactions support <a href="https://en.wikipedia.org/wiki/ACID">ACID</a> properties but although there are no transactions in <code class="highlighter-rouge">MongoDB</code>, we do have atomic operations. Well, atomic operations means that when you work on a single document that that work will be completed before anyone else sees the document. They’ll see all the changes we made or none of them. And using atomic operations, you can often accomplish the same thing we would have accomplished using transactions in a relational database. And the reason is that, in a relational database, we need to make changes across multiple tables. Usually tables that need to be joined and so we want to do that all at once. And to do it, since there are multiple tables, we’ll have to begin a transaction and do all those updates and then end the transaction. But with <code class="highlighter-rouge">MongoDB</code>, we’re going to embed the data, since we’re going to <strong>pre-join</strong> it in documents and they’re these rich documents that have hierarchy. We can often accomplish the same thing. For instance, in the blog example, if we wanted to make sure that we updated a blog post atomically, we can do that because we can update the entire blog post at once. Where as if it were a bunch of relational tables, we’d probably have to open a transaction so that we can update the post collection and comments collection.</p>
+
+<p>So what are our approaches that we can take in <code class="highlighter-rouge">MongoDB</code> to overcome a lack of transactions?</p>
+
+<ul>
+  <li><strong>restructure</strong> - restructure the code, so that we’re working within a single document and taking advantage of the atomic operations that we offer within that document. And if we do that, then usually we’re all set.</li>
+  <li><strong>implement in software</strong> - we can implement locking in software, by creating a critical section. We can build a test, test and set using find and modify. We can build semaphores, if needed. And in a way, that is the way the larger world works anyway. If we think about it, if one bank need to transfer money to another bank, they’re not living in the same relational system. And they each have their own relational databases often. And they’ve to be able to coordinate that operation even though we cannot begin transaction and end transaction across those database systems, only within one system within one bank. So there’s certainly ways in software to get around the problem.</li>
+  <li><strong>tolerate</strong> - the final approach, which often works in modern web apps and other applications that take in a tremendous amount of data is to just tolerate a bit of inconsistency. An example would, if we’re talking about a friend feed in Facebook, it doesn’t matter if everybody sees your wall update simultaneously. If okey, if one person’s a few beats behind for a few seconds and they catch up. It often isn’t critical in a lot of system designs that everything be kept perfectly consistent and that everyone have a perfectly consistent and the same view of the database. So we could simply tolerate a little bit of inconsistency that’s somewhat temporary.</li>
+</ul>
+
+<p><code class="highlighter-rouge">Update</code>, <code class="highlighter-rouge">findAndModify</code>, <code class="highlighter-rouge">$addToSet</code> (within an update) &amp; <code class="highlighter-rouge">$push</code> (within an update) operations operate atomically within a single document.</p>
+
+<h1 id="one-to-one-relations">One to one relations</h1>
+
+<p>1 to 1 relations are relations where each item corresponds to exactly one other item. e.g.:</p>
+
+<ul>
+  <li>an employee have a resume and vice versa</li>
+  <li>a building have and floor plan and vice versa</li>
+  <li>a patient have a medical history and vice versa</li>
+</ul>
+
+<pre>
+<code>
+ //employee
+ {
+ 	_id : '25',
+  	name: 'john doe',
+ 	resume: 30
+ }
+
+ //resume
+ {
+ 	_id : '30',
+  	jobs: [....],
+ 	education: [...],
+  employee: 25
+ }
+ </code>
+ </pre>
+
+<p>We can model the employee-resume relation by having a collection of employees and a collection of resumes and having the employee point to the resume through linking, where we have an <code class="highlighter-rouge">ID</code> that corresponds to an <code class="highlighter-rouge">ID</code> in th resume collection. Or if we prefer, we can link in another direction, where we have an employee key inside the resume collection, and it may point to the employee itself. Or if we want, we can embed. So we could take this entire resume document and we could embed it right inside the employee collection or vice versa.</p>
+
+<p>This embedding depends upon how the data is being accessed by the application and how frequently the data is being accessed. We need to consider:</p>
+
+<ul>
+  <li>frequency of access</li>
+  <li>the size of the items - what is growing all the time and what is not growing. So every time we add something to the document, there is a point beyond which the document need to be moved in the collection. If the document size goes beyond 16<a href="https://en.wikipedia.org/wiki/Megabyte">MB</a>, which is mostly unlikely.</li>
+  <li>atomicity of data  - there’re no transactions in <code class="highlighter-rouge">MongoDB</code>, there’re atomic operations on individual documents. So if we knew that we couldn’t withstand any inconsistency and that we wanted to be able to update the entire employee plus the resume all the time, we may decide to put them into the same document and embed them one way or the other so that we can update it all at once.</li>
+</ul>
+
+<h1 id="one-to-many-relations">One to Many Relations</h1>
+
+<p>In this relationship, there is many, many entities or many entities that map to the one entity. e.g.:</p>
+<ul>
+  <li>a city have many persons who live in that city. Say <a href="https://en.wikipedia.org/wiki/New_York_City">NYC</a> have 8 million people.</li>
+</ul>
+
+<p>Let’s assume the below data model:</p>
+
+<pre>
+ <code>
+  //city
+  {
+  _id: 1,
+  name: 'NYC',
+  area: 30,
+  people: [{
+      _id: 1,
+      name: 'name',
+      gender: 'gender'
+        .....
+    },
+    ....
+    8 million people data inside this array
+    ....
+  ]
+}
+</code>
+</pre>
+
+<p>This won’t work because that’s going to be REALLY HUGE. Let’s try to flip the head.</p>
+
+<pre>
+<code>
+ //people
+ {
+ _id: 1,
+ name: 'John Doe',
+ gender: gender,
+ city: {
+     _id: 1,
+     name: 'NYC',
+     area: '30'
+       .....
+   }
+}
+</code>
+</pre>
+
+<p>Now the problem with this design is that if there are obviously multiple people living in NYC, so we’ve done a lot of duplication for city data.</p>
+
+<p>Probably, the best way to model this data is to use <strong>true linking</strong>.</p>
+
+<pre>
+<code>
+ //people
+ {
+ _id: 1,
+ name: 'John Doe',
+ gender: gender,
+ city: 'NYC'
+}
+
+//city
+{
+_id: 'NYC',
+...
+}
+</code>
+</pre>
+
+<p>In this case, <code class="highlighter-rouge">people</code> collection can be linked to the <code class="highlighter-rouge">city</code> collection. Knowing we don’t have foreign key constraints, we’ve to be consistent about it. So, this is a <em>one to many</em> relation. It requires 2 collections. For small one to few (which is also one to many), relations like blog post to comments. Comments can be embedded inside post documents as an array.</p>
+
+<p>So, if it’s truly one to many, 2 collections works best with linking. But for one to few, one single collection is generally enough.</p>
+
+<h1 id="many-to-many-relations">Many to Many Relations</h1>
+
+<p>e.g.:</p>
+
+<ul>
+  <li>books to authors</li>
+  <li>students to teachers</li>
+</ul>
+
+<p>The books to authors is a <strong>few to few</strong> relationship, so we can have either an array of books or authors inside another’s document. Same goes for students to teachers. We could also embed at the risk of duplication. However this will required that each student has a teacher in the system before insertion and vice versa. The application logic may always not allow it. In other words, the parent object must exist for the child object to exist.</p>
+
+<h1 id="multikeys">Multikeys</h1>
+
+<p>Multikey indexes is the feature because of which linking and embedding works so well. Assume that we’ve 2 schemas for student and teachers.</p>
+
+<pre>
+<code>
+ //students
+ {
+ _id: 1,
+ name: 'John Doe',
+ teachers: [1,7,10,23]
+}
+
+//teachers
+{
+_id: '10',
+name:'Tony Stark'
+}
+</code>
+</pre>
+
+<p>Now there are 2 obvious queries.</p>
+
+<ul>
+  <li>How to find all the teachers a particular student has had? - this can be searched by looking for teachers key in the students collection</li>
+  <li>How to find all the students whom have had a particular teacher? - this is a little difficult query and requires to use <code class="highlighter-rouge">set</code> operators. And order for that we need to be efficient, we need use <strong>Multikey indexes</strong>.</li>
+</ul>
+
+<p>To create an index on <code class="highlighter-rouge">teachers</code> column on <code class="highlighter-rouge">students</code> collection, use <code class="highlighter-rouge">db.students.ensureIndex({ teachers : 1 })</code>.</p>
+
+<p><img src="https://lh3.googleusercontent.com/ed4cCRxNgf3FCq2JwHbq-PiHC1vgvvgE3S-rQ3UxA9R0cD3LxHGuI8t_YHk03wWxylFHEhNDjlJ-CfxitfLe35SbxPW9cK84bvTcghlpqf-vWBVC2xAruTx5jOPEesF8gc-9SvTeI8F2ZN-tmOEIuIQmRMrNYONPzkoXjFbs7-wVrMgjT0Jn7PHVyZQKzn9aaFasCcLrZzqHO8AW7qlIhraBZkd9BqbFC4fP6eKzskcbYVNTO4w7oG7CeKLFmc-riIxjZscSRm-_V6P8dZMp8W-l7XfSo_gcaiVyAXnZkAHsws7sd06q1v80IKa5i0lw82c53JoAZzQQKq-T3jxLC9xu1wkVOsprq0qEHODoh_LEc31C7M87lbAvRhkIlSNEjVADfevM8FFwyXlpr11ORFKBJJ4ZHxeMmxLdYgC8AMiegUXxs_LAnweV_A1SHe8N1R9CrC1h-EQXkv7XEFuCAl1Wh69VmxAGA12CbPpunPMiEjhh5vXU_DvCLBHfjvTRLo2aOG7Bdlvs1CAPtAZY5E3zW0nLlP9OHa4xT1TSV9Y6LWC0UMK9QnmOtQ6u0yPrkN1qEuX4i0fm8_VY7n53XFvQ7ZuVJkM4OvXnXdlpJ3gEYlwF=w424-h113-no" alt="creating indexes in MongoDB" /></p>
+
+<p>Now to find all the students whom have had a particular teacher? use the query <code class="highlighter-rouge">db.students.find( { 'teachers': {$all: [0,1]}} )</code>. Now, if we append <code class="highlighter-rouge">.explain()</code> to the above query - it shows the internal working by showing where the keys were applied etc.</p>
+
+<h1 id="benefits-of-embedding">Benefits of Embedding</h1>
+
+<p>The main reason for embedding documents in <code class="highlighter-rouge">MongoDB</code> is performance. The main performance benefit comes from improved read performance. Now, why do we get read performance. The reason is the nature of the way computer systems are built, which is they often have spinning disks and those spinning disks have a very <strong>high latency</strong>, which means they take a very long time (upto 1ms) to get to the first byte. But, when the first byte is access, each additional byte comes very quickly. So they tend to be pretty <strong>high bandwidth</strong>. So the idea is if we can co-locate the data to be used together in the same document, embed it and then we’re going to spin the disk, find the sector where we need this information and then we’re gonna start reading it. And we’re going to get all the information we need in one go. Also it means if we have 2 pieces of data that would normally be in 2 collections or in several relational database tables. Instead, they’re in one document, that we avoid <strong>round trips to the database</strong>.</p>
+
+<h1 id="trees">Trees</h1>
+
+<p>One classic problem from the world of schema design is how do you represent a tree inside the database? Let’s look at the example problem for representing the e-commerce categories in a e-commerce site, such as Amazon. Where we have home, outdoors, winter, snow. And the idea is that we’ve the <code class="highlighter-rouge">products</code>. Also we’ve a <code class="highlighter-rouge">category</code>, where we can lookup <strong>category 7</strong> and see the <code class="highlighter-rouge">categoryName</code>, some of the properties for the <code class="highlighter-rouge">category</code>.</p>
+
+<pre>
+<code>
+ //products
+ {
+category: 7,
+ productName: 'ABC'
+}
+
+//category
+{
+_id: '7',
+categoryName:'outdoors',
+parent: 6
+}
+</code>
+</pre>
+
+<p>One way to do it is to keep a <code class="highlighter-rouge">parent</code> id - this might be something we can do in a simple relational database. But this doesn’t make it easy to find all the <code class="highlighter-rouge">parent</code>s to this <code class="highlighter-rouge">category</code>. We’ve to iteratively query, find the parent of this and the parent of that until we get all the way to the top.</p>
+
+<p>So an alternative way to do it in <code class="highlighter-rouge">MongoDB</code> is to be able to list ancestors or children. So, let’s think about that and how that would work. So, we could decide to list all the children of this <code class="highlighter-rouge">category</code>:</p>
+
+<pre>
+<code>
+//category
+{
+_id: '7',
+categoryName:'outdoors',
+children: [3,6,7,9]
+}
+</code>
+</pre>
+
+<p>That’s also fairly limiting, if we’re looking to be able to look and find the entire sub-tree that is above a certain piece of tree. Instead, what works pretty well and again, enable by the ability to put arrays inside <code class="highlighter-rouge">MongoDB</code> is to list the ancestors from the top in order.</p>
+
+<pre>
+<code>
+//category
+{
+_id: '7',
+categoryName:'outdoors',
+ancestors: [3,7,5,8,9]
+}
+</code>
+</pre>
+
+<p>Again the ability to structure and express rich data is one of the things that makes <code class="highlighter-rouge">MongoDB</code> so interesting. This would be very difficult to do in a relational database. Now, in terms of how you represent the data for something like a <code class="highlighter-rouge">product</code> <code class="highlighter-rouge">category</code> hierarchy, again it all depends upon the access patterns. It depends on how we believe we’re going to need to show the data, access the data for the user. And then based on that, we know how to model it.</p>
+
+<h1 id="when-to-denormalize">When to Denormalize</h1>
+
+<p>One of the reasons for normalization in relational database is to avoid modification anomalies that come with the duplication of data. And when we look at <code class="highlighter-rouge">MongoDB</code> and how it’s structured, allowing these rich documents, it’s easy to assume that what we’re doing is we’re denormalizing the data. And to certain extent, that’s true. As long as we don’t duplicate data, we don’t open ourselves for modification anomalies.</p>
+
+<p>Generally it’s good to embed that data in case of <strong>one to one</strong> relationships. In case of <strong>one to many</strong> relationships, embedding can also work well without duplication of data as long as we embed from <strong>many to the one</strong>. Now, if we go from the one to the many, then linking would avoid the duplication of data. Now, if we want to embed something, even if it causes duplication of data for performance reasons to match the access patterns of the applications. That could make sense, especially if the data is rarely changing or being updated. But we can avoid it often enough, even in this relationship, if we go from the <strong>many to one</strong>. In <strong>many to many</strong> relation, which we looked at with <code class="highlighter-rouge">students</code> and <code class="highlighter-rouge">teachers</code> and <code class="highlighter-rouge">authors</code> and <code class="highlighter-rouge">books</code>, there if you want to avoid the modification anomalies that come with denormalization, all we need to do is link through the arrays of <code class="highlighter-rouge">object ids</code> in the documents.</p>
+
+<p><img src="https://lh3.googleusercontent.com/7ZmjMz8KulV4BR4hn8A_a2toNpau-CzJmZlpbv8WJ9iSdiwTQLwoJl-VzHQohfJOhYLOZKdwYQX5enzB4D6NyDwHoky95tes8IFlh07ReY_Zi7m8cRdS3AwY-oerBUnu6Nk76yS4QrVW14zLN4FW8jDI9jcizIE9SMw9HmKbtHpVUQ7Jwt8EY1pnOlycrB2Bcx0VmhTKJNawDKf4oFsVDajX0mCVC7DKmIBFWuh2RhKMWmhnf-SEjQt5RAFayO78yW__AZ7IXM7Jv8HA8ENqeDhlaUjr4mXfHq4fn8Z4oUkWPrcskbZihR6dqOjTQl8-Mpcw2afMCqdi06HkaeES8Zvdh6ua6p5lOjzTLq1Nn6Y_Op5k_ENe9sdj_UR-9OnU6ATnpZwRakacZRdlPXbaSLSMUc1doJtG8PSRZSlgf8yUe2UNdKV8xeuTuRBj7gWWeZKzSuN00PQp_Ej6rY9DZbPWlMxhwm2dT1VJDRZkSsmjScGsQdYSNmjGWlnsBUOU4lCEC0GmuDET8YwQPmfRtsc_1IZqdymJUy44q368UTgGWUDEG49532tEnwcv70crSN03dRWoGOdcC7R-lxNR_jNRr1-CPvDzKDIM10mDHGqqwTsW=w629-h270-no" alt="When to Denormalize in MongoDB" /></p>
+
+<p>These are all guidelines. For a real world application, we may need to embed data for performance reasons, to match the data access patterns - - it might be needed to embed the data.</p>
+
+<p><a href="https://goo.gl/photos/mTCgFQN8b9s9sNzSA">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-08-30 00:00:00 +0000" class="date">
+    Written on August 30, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=MongoDB schema design></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

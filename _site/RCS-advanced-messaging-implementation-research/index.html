@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RCS 2 / Advanced Messaging - implementation research – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="RCS 2 / Advanced Messaging - implementation research" />
+    <meta property="twitter:title" content="RCS 2 / Advanced Messaging - implementation research" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >RCS 2 / Advanced Messaging - implementation research</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://www.droid-life.com/wp-content/uploads/2014/11/google-messenger.jpg" alt="RCS Advanced Messaging" /></p>
+
+<p><a href="http://www.droid-life.com/2015/03/13/google-messenger-updated-with-gif-support-and-a-widget/">Courtesy</a></p>
+
+<p>Recently, I was doing some studies on implementation of <a href="http://www.gsma.com/network2020/rcs-2/">Advanced Messaging / RCS 2</a> as a channel for chat bots.</p>
+
+<p>The client implementation seems to be <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.messaging">Android Messages</a>.</p>
+
+<p>This platform needs to expose it’s APIs so that our bots can access it. The core people working on RCS / Advanced Messaging are <a href="https://jibe.google.com/jibe-platform/">Jibe</a>. They seems to be in process of providing Advanced Messaging / RCS 2 APIs but technically there’s nothing ready.</p>
+
+<p>Was having a look at the <a href="https://solaiemes-rcs-api.3scale.net/api">Solaiemes RCS API</a>. Solaiemes is the subsidiary of Mavenir/Xura. At this point, it’s <strong>API end points</strong> are not working:</p>
+
+<ul>
+  <li><a href="http://api.2445580839652.proxy.3scale.net:80/rcsapi/session">http://api.2445580839652.proxy.3scale.net:80/rcsapi/session</a></li>
+  <li><a href="https://tadhack.solaiemes-rcs-api.3scale.net/rcsapi">https://tadhack.solaiemes-rcs-api.3scale.net/rcsapi</a></li>
+  <li><a href="https://tadhack.3scale.net/rcsapi">https://tadhack.3scale.net/rcsapi</a></li>
+  <li><a href="http://tadhack.solaiemes.com/rcsapi">http://tadhack.solaiemes.com/rcsapi</a></li>
+</ul>
+
+<p>The following provider seems to be in a position to provide RCS 2 / Advanced Mesaging APIs:</p>
+
+<ul>
+  <li><a href="https://jibe.google.com/jibe-platform/">Jibe</a></li>
+  <li><a href="http://www.mavenir.com/our-solutions/rich-communication-rcs">Mavenir</a></li>
+  <li><a href="https://www.skycore.com/contact-us/">SkyCore</a></li>
+  <li><a href="https://www.clxcommunications.com/contact-us/">CLX</a></li>
+</ul>
+
+<p>The following vendors are yet to confirm whether they support Advanced Messaging / RCS 2:</p>
+
+<ul>
+  <li><a href="https://www.twilio.com/console/support/tickets/927458">Twilio</a></li>
+  <li><a href="mailto:info@solaiemes.com">Solaiemes</a> - end points not woring, probably closed</li>
+  <li><a href="mailto:info@muut.com">Muut</a></li>
+  <li><a href="mailto:sales@symsoft.com">Symsoft</a></li>
+  <li><a href="mailto:support@messagebird.com">MessageBird</a></li>
+  <li><a href="mailto:info@summit-tech.com">Summit Tech</a></li>
+  <li><a href="https://www.richcommunicationsuite.com/contact.php">RCS</a></li>
+  <li><a href="mailto:contact@nablecomm.com">Nablecomm</a></li>
+  <li><a href="mailto:sales@rcs-rds.ro">RCS-RDS</a></li>
+  <li><a href="http://www.newpace.ca/contact">NewPace</a></li>
+  <li><a href="mailto:carrier-support@infinite.com">Infinite Convergence</a></li>
+  <li><a href="mailto:8008309870@zte.com.cn">ZTE</a></li>
+  <li><a href="mailto:li-contact@utimaco.com">Utimaco</a></li>
+  <li><a href="mailto:dev_support@media5corp.com">Media 5 Corp</a></li>
+  <li><a href="mailto:contact@acision.com">Acision</a></li>
+  <li><a href="https://newnetmobility.com/contact/">Newnet Mobility</a></li>
+  <li><a href="https://www.wit-software.com/contacts/">Wit Software</a></li>
+  <li><a href="https://telestax.com/contact/">TelesTax</a></li>
+  <li><a href="https://www.tropo.com/help/contact-us/">Tropo</a></li>
+  <li><a href="https://www.tatango.com/platform/rcs-messaging/">Tatango</a></li>
+  <li><a href="http://interoptechnologies.com/rcs/">Interop</a></li>
+  <li><a href="https://www.3cinteractive.com/">3C</a></li>
+  <li><a href="https://www.experian.com/corporate/business-services-contacts.html">Experian</a></li>
+  <li><a href="http://www.mgage.com/products-services/channels/rcs">M Gage</a></li>
+  <li><a href="https://mobivity.com/contact/">Mobivity</a></li>
+  <li><a href="https://www.movile.com/en/contact/">Movile messaging</a></li>
+  <li><a href="https://www.nexmo.com/contact-sales/">Nexmo</a></li>
+  <li><a href="https://www.openmarket.com/contact/">Open market</a></li>
+  <li><a href="https://www.openmarket.com/contact/">Waterfall</a></li>
+  <li><a href="https://www.zipwhip.com/contact-us">Zip Whip</a></li>
+</ul>
+
+<p>As of april’2017, the following vendors do not support Advanced Messaging</p>
+
+<ul>
+  <li><a href="mailto:sales@fortytwo.com">FortyTwo</a></li>
+  <li><a href="mailto:info@rundexter.com">Dexter</a></li>
+  <li><a href="mailto:support@gatewayapi.com">Gateway API</a></li>
+  <li><a href="http://gupshup.io">GupShup</a></li>
+  <li><a href="https://www.infobip.com/">InfoBip</a></li>
+  <li><a href="https://www.telemessage.com/contact-us/">TeleMessage</a></li>
+  <li><a href="http://support.airbop.com/discussions/questions/662-how-rcsadvanced-messaging-can-be-used-with-botframework">Airbop</a></li>
+  <li><a href="mailto:support@spirent.com">Spirent</a></li>
+</ul>
+
+<p>Although, <a href="mailto:info@gsma.com">GSMA</a> is not supposed to, and has not responded to our technical questions. GSMA has specified <a href="http://www.gsma.com/network2020/wp-content/uploads/2013/08/RCC_13_v2.0.pdf">RCS API</a> requirements so far.</p>
+
+<h1 id="btw-what-is-rcs">Btw, what is RCS?</h1>
+
+<p><strong>Features of Advanced Messaging</strong></p>
+
+<ul>
+  <li>Ubiquity</li>
+  <li>Simplicity</li>
+  <li>Everyone is invited</li>
+  <li>All the features</li>
+  <li>Enhanced messaging experience</li>
+</ul>
+
+<p><strong>WHAT IS ‘MESSAGING AS A PLATFORM (MAAP)?</strong></p>
+
+<p>To most users messaging is just an ‘app’ 
+– a program on their phones they use to keep in touch. Advanced Messaging will change that though 
+– messaging is now becoming a ‘platform’ on which applications will be built to deliver whole new levels of interaction and experience.</p>
+
+<p>It is where SMS is headed. End-users simply want all the services they need as quickly and conveniently as possible, and MaaP lets operators deliver that. If you want to book a taxi, a flight or look up train times for example, you will not need to download a specific new app – just hit your messenger.</p>
+
+<p>MaaP removes that barrier of another app to download and connects suppliers directly to consumers. Messaging as a Platform will give operators all new possibilities for developing and implementing innovative services, and most importantly, for generating new revenues.</p>
+
+<p><strong>The potential for Messaging as a Platform</strong></p>
+
+<p>One of the more striking developments of messaging in recent times has been the evolution of messaging apps and clients into the ‘new home page’. End-users pick up their mobile devices in the morning and the first place many head to is their chat or messaging app. It has now become both their inbox and their home page. This is an evolution that operators can use to develop Messaging as a Platform propositions.</p>
+
+<p><strong>For users</strong></p>
+
+<p>This enables all sorts of companies to interact with customers in unprecedented ways – travellers, for example, could receive their actual electronic boarding pass securely from airlines rather than receiving an SMS with a link. When on holiday users can order a taxi or Uber, check the weather at their destination and the exchange rate, find a recommended restaurant and book a table and pay for it and learn some handy phrases in another language – all just by sending messages.</p>
+
+<p><strong>For marketers</strong></p>
+
+<p>Further to this progression in customer service and fulfilment, marketers too benefit from Advanced Messaging. They can use read receipts to tell if end-users have read promotional messages and where and when they read them. They can embed call-to-action codes in them, giving access to previously unavailable data to analyse. It all adds up to richer, more engaging advertising content.</p>
+
+<p><strong>For bots</strong></p>
+
+<p>Furthermore, Advanced Messaging also enables Bot-to-Person interactions, where end-user engagements are simply richer and more detailed. The Messaging as a Platform approach and its exponentially increased degree of interaction makes huge new monetization opportunities available to MNOs.</p>
+
+<p><strong>For  workplace</strong></p>
+
+<p>Operators can extend their blue sky thinking with Messaging as a Platform; why not a smart, Wi-Fi-enabled video doorbell which uses messaging to record a video message from a visitor when you are not home and ‘chat’ it direct to your mobile device? Built-in AI-based intelligent assistants are great in their place but some people do not like talking out loud to their phone in public places – chatbots can enable that same function via a messaging platform.</p>
+
+<p><strong>Advanced Messaging deployment models: getting it right</strong></p>
+
+<p>Another key benefit of Advanced Messaging is that deployment models can be mixtures of various approaches; operators do not need to commit entirely to a single method and limit their options.</p>
+
+<ol>
+  <li><strong>OWN IMS</strong>
+ PROS
+    <ul>
+      <li>Retain control of core service</li>
+      <li>Flexibility and ability to integrate with other services
+ CONS</li>
+      <li>Complex project, requires expertise</li>
+      <li>Costly in the short term, CAPEX</li>
+    </ul>
+  </li>
+  <li><strong>HOSTED SERVICE</strong>
+ PROS
+    <ul>
+      <li>Pay-as-you-grow model</li>
+      <li>Fast deployment and time to market</li>
+      <li>Benefit from third-party data centre infrastructure and expertise</li>
+      <li>Scope for complementing other services e.g. VoLTE
+ CONS</li>
+      <li>Limited service flexibility</li>
+      <li>No in-premises deployment option</li>
+    </ul>
+  </li>
+</ol>
+
+<p><a href="http://www.gsma.com/network2020/wp-content/uploads/2016/11/Network-2020-006-Advanced-Communications-eBook-edition-1-2.pdf">Source</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2017-04-10 00:00:00 +0000" class="date">
+    Written on April 10, 2017
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=RCS 2 / Advanced Messaging - implementation research></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

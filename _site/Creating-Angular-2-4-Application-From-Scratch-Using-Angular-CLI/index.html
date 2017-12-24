@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating Angular 2/4 Application From Scratch Using Angular CLI – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Creating Angular 2/4 Application From Scratch Using Angular CLI" />
+    <meta property="twitter:title" content="Creating Angular 2/4 Application From Scratch Using Angular CLI" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Creating Angular 2/4 Application From Scratch Using Angular CLI</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://aymen.co/wp-content/uploads/2017/01/angular-cli.jpg" alt="Angular CLI" /></p>
+
+<p><a href="https://aymen.co/javascript/angular-cli/">Courtesy</a></p>
+
+<p><strong>Installing Angular Dependencies</strong></p>
+<ul>
+  <li>Install a stable version of <a href="https://nodejs.org/">Node</a> (if not already installed) and verify the installation using <code class="highlighter-rouge">node -v</code></li>
+  <li>Install <a href="http://www.typescriptlang.org/">TypeScript</a> using <a href="http://www.typescriptlang.org/index.html#download-links">command <code class="highlighter-rouge">npm install -g typescript</code></a></li>
+  <li>Download and install <a href="https://cli.angular.io/">Angular CLI</a> using command <code class="highlighter-rouge">npm install -g @angular/cli</code></li>
+</ul>
+
+<p><code class="highlighter-rouge">Angular</code> is a component oriented framework. Many components needs to be created to make the whole application. A component is a group of <a href="//xameeramir.github.io/Custom-Elements-Shadow-DOM-Templates-in-HTML-by-Examples/">custom elements, <code class="highlighter-rouge">HTML</code> elements, <code class="highlighter-rouge">ShadowDOM</code> &amp; <code class="highlighter-rouge">HTML</code> imports.</a></p>
+
+<p><strong>Creating the Angular 4 app using Angular CLI</strong></p>
+
+<p>To create a fresh new Angular 4 app, use command <code class="highlighter-rouge">ng new newAppName</code>. This command takes some time to execute.</p>
+
+<p><code class="highlighter-rouge">package.json</code> - takes care of the development and app dependencies / packages / commands to execute</p>
+
+<p><code class="highlighter-rouge">src\main.ts</code> - takes care of the scaffolding the entire</p>
+
+<p><code class="highlighter-rouge">src\app\app.module.ts</code> - any newly created module has to added to the <code class="highlighter-rouge">declarations</code> and services has to be provided to the <code class="highlighter-rouge">providers</code> key parameter  of the function <code class="highlighter-rouge">@NgModule</code> to make them accessible across the entire application</p>
+
+<p><strong>Run the Angular 4 app using Angular CLI</strong></p>
+
+<p>To run the freshly created app using CLI, use command <code class="highlighter-rouge">ng serve</code> which will run the app on <a href="http://localhost:4200/">http://localhost:4200/</a>.</p>
+
+<p><strong>Add a component to the Angular 4 app using Angular CLI</strong></p>
+
+<p>To add a new Angular 4 component to the app, use command <code class="highlighter-rouge">ng g component componentName</code>. After execution of this command, Angular CLI adds a folder <code class="highlighter-rouge">component-name</code> under <code class="highlighter-rouge">src\app</code>. Also, the references of the same is added to <code class="highlighter-rouge">src\app\app.module.ts</code> file automatically.</p>
+
+<p>A component shall have a <code class="highlighter-rouge">@Component</code> decorator function followed by a <code class="highlighter-rouge">class</code> which needs to be <code class="highlighter-rouge">export</code>ed. The <code class="highlighter-rouge">@Component</code> decorator function accepts meta data.</p>
+
+<p><strong>Add a component to specific folder of the Angular 4 app using Angular CLI</strong></p>
+
+<p>To add a new component to a specific folder use the command <code class="highlighter-rouge">ng g component folderName/componentName</code></p>
+
+<p><strong>Add a service to the Angular 4 app using Angular CLI</strong></p>
+
+<p>An Angular 2 service is simply a javascript function along with it’s associated properties and methods, that can be included (via dependency injection) into Angular 2 components.</p>
+
+<p>To add a new Angular 4 service to the app, use the command <code class="highlighter-rouge">ng g service serviceName</code>. On creation of the service, the Angular CLI shows an error:</p>
+
+<p><img src="https://i.stack.imgur.com/ZZwBC.png" alt="WARNING Service is generated but not provided, it must be provided to be used" /></p>
+
+<p>To solve this, we need to provide the service reference to the <code class="highlighter-rouge">src\app\app.module.ts</code> inside <code class="highlighter-rouge">providers</code> input of <code class="highlighter-rouge">@NgModule</code> method.</p>
+
+<p>Initially, the default code in the service is:</p>
+
+<pre><code>
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ServiceNameService {
+
+  constructor() { }
+
+}
+</code></pre>
+
+<p>A service has to have a few public methods.</p>
+
+<p><strong>Adding an input to the Angular 4 app</strong></p>
+
+<p>Assuming that we have 2 components:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">parent-component</code></li>
+  <li><code class="highlighter-rouge">child-component</code></li>
+</ul>
+
+<p>We wanted to pass some value from <code class="highlighter-rouge">parent-component</code> to <code class="highlighter-rouge">child-component</code> i.e. an <code class="highlighter-rouge">@Input</code> from <code class="highlighter-rouge">parent-component.html</code> to <code class="highlighter-rouge">child-component.ts</code>. Below is an example which explains the implementation:</p>
+
+<p><code class="highlighter-rouge">parent-component.html</code> looks like this:</p>
+
+<p><code class="highlighter-rouge">&lt;child-component [someInputValue]="someInputValue"&gt;&lt;/child-component&gt;</code></p>
+
+<p><code class="highlighter-rouge">parent-component.ts</code> looks like this:</p>
+
+<pre><code>  
+  class ParentComponent {
+
+  someInputValue = 'Some Input Value';
+
+}
+</code></pre>
+
+<p><code class="highlighter-rouge">child-component.html</code> looks like this:</p>
+
+<p><code class="highlighter-rouge">&lt;p&gt;Some Input Value &lt;/p&gt;</code></p>
+
+<p><code class="highlighter-rouge">child-component.ts</code> looks like this:</p>
+
+<pre><code>
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html'
+})
+export class ChildComponent implements OnInit {
+
+  @Input() someInputValue: String = "Some default value";
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue += " modified";
+  }
+
+  constructor() {
+    console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
+  }
+
+  ngOnInit() {
+    console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
+  }
+}
+</code></pre>
+
+<p>Notice that the value of the <code class="highlighter-rouge">@Input</code> value is available inside <code class="highlighter-rouge">ngOnInit()</code> and not inside <code class="highlighter-rouge">constructor()</code>.</p>
+
+<p><strong>Objects reference behaviour in Angular 2 / 4</strong></p>
+
+<p>In Javascript, objects are stored as references:</p>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<p>This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:</p>
+
+<p><code class="highlighter-rouge">parent-component.ts</code> looks like this:</p>
+
+<pre><code>  
+  class ParentComponent {
+
+  someInputValue = {input: 'Some Input Value'};
+
+}
+</code></pre>
+
+<p><code class="highlighter-rouge">parent-component.html</code> looks like this:</p>
+
+<pre><code>  
+
+
+&lt;child-component [someInputValue]="someInputValue"&gt;&lt;/child-component&gt;
+
+</code></pre>
+
+<p><code class="highlighter-rouge">child-component.html</code> looks like this:</p>
+
+<pre><code>
+
+<p>Some Input Value </p>
+&lt;button (click)="changeInput()"&gt;change input&lt;/button&gt;
+
+</code></pre>
+
+<p><code class="highlighter-rouge">child-component.ts</code> looks like this:</p>
+
+<pre><code>
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html'
+})
+export class ChildComponent implements OnInit {
+
+  @Input() someInputValue = {input:"Some default value"};
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue.input += " set from setter";
+  }
+
+  constructor() {
+    console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
+  }
+
+  ngOnInit() {
+    console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
+  }
+
+  changeInput(){
+    this.someInputValue.input += " changed";
+  }
+}
+</code></pre>
+
+<p>The function <code class="highlighter-rouge">changeInput()</code> will change the value of <code class="highlighter-rouge">someInputValue</code> inside both <code class="highlighter-rouge">ChildComponent</code> &amp; <code class="highlighter-rouge">ParentComponent</code> because of their reference. Since, <code class="highlighter-rouge">someInputValue</code> is referenced from <code class="highlighter-rouge">ParentComponent</code>’s <code class="highlighter-rouge">someInputValue</code> <strong>object</strong> - the change in <code class="highlighter-rouge">ChildComponent</code>’s <code class="highlighter-rouge">someInputValue</code> <strong>object</strong> changes the value of <code class="highlighter-rouge">ParentComponent</code>’s <code class="highlighter-rouge">someInputValue</code> <strong>object</strong>. <em>THIS IS NOT CORRECT</em>. The references shall never be changed.</p>
+
+<p><strong>Angular 4 life cycle methods</strong></p>
+
+<p><code class="highlighter-rouge">ngOnInit()</code>, <code class="highlighter-rouge">ngOnChanges()</code> and <code class="highlighter-rouge">ngOnDestroy()</code> etc. are lifecycle methods. <code class="highlighter-rouge">ngOnChanges()</code> will be the first to be called, before <code class="highlighter-rouge">ngOnInit()</code>, when the value of a bound property changes, it will NOT be called if there is no change. <code class="highlighter-rouge">ngOnDestroy()</code> is called when the component is removed. To use it, <code class="highlighter-rouge">OnDestroy</code> needs to be <code class="highlighter-rouge">implement</code>ed by the class.</p>
+
+<p><strong>DOM Manipulation in Angular 4 app</strong></p>
+
+<p>To manipulate the DOM in Angular 2/4 apps, we need to <code class="highlighter-rouge">implement</code> the method <code class="highlighter-rouge">ngAfterViewInit()</code> of <code class="highlighter-rouge">AfterViewInit</code>. The method <code class="highlighter-rouge">ngAfterViewInit()</code> is called when the bindings of the children directives have been checked for the first time. In other words, <strong>when</strong> the view is initially rendered.</p>
+
+<p>The <code class="highlighter-rouge">@ViewChild</code> provides access to <code class="highlighter-rouge">nativeElement</code>. It is recommended to not access <code class="highlighter-rouge">nativeElement</code> inside the <code class="highlighter-rouge">ngAfterViewInit()</code> because it is not browser safe. Also, it’s not supported by web workers. Web workers will never know when the DOM updates.</p>
+
+<p>The right way is to use <code class="highlighter-rouge">renderer</code>. The renderer needs to be injected to the component constructor. We need to provide an <code class="highlighter-rouge">id</code> reference to the <code class="highlighter-rouge">HTML</code> element on the view something like this:</p>
+
+<p><code class="highlighter-rouge">&lt;p #p1&gt;&lt;/p&gt;</code></p>
+
+<p>It shall be accessed by the corresponding coponent <code class="highlighter-rouge">.ts</code> file, something like this:</p>
+
+<pre><code>
+export class SampleComponent implements AfterViewInit {
+
+  @ViewChild("p1") p1;
+
+  constructor(private renderer: Renderer2) //Renderer set to be depreciated soon
+  { }
+
+  ngAfterViewInit() {
+
+    //recommended DOM manipulation approach
+    this.renderer.setStyle(this.p1.nativeElement, //setElementStyle for soon to be depreciate Renderer
+      'color',
+      'red');
+
+    //not recommended DOM manipulation approach
+    //this.p1.nativeElement.style = "color:blue;";
+  }
+
+}
+</code></pre>
+
+<p><strong>Programmatically add components to DOM in Angular 2/4 app</strong></p>
+
+<p>We need to use <code class="highlighter-rouge">ngAfterContentInit()</code> lifecycle method from <code class="highlighter-rouge">AfterContentInit</code>. It is called after the directive content has been fully initialized.</p>
+
+<p>In the <code class="highlighter-rouge">parent-component.html</code>, add the a <code class="highlighter-rouge">div</code> like this:</p>
+
+<p><code class="highlighter-rouge">&lt;div #container&gt; &lt;/div&gt;</code></p>
+
+<p>The <code class="highlighter-rouge">parent-component.ts</code> file looks like this:</p>
+
+<pre><code>
+
+class ParentComponent implements AfterContentInit {
+
+  @ViewChild("container", { read: ViewContainerRef }) divContainer
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+
+  ngAfterContentInit() {
+    let childComponentFactory = this.componentFactoryResolver.resolveComponentFactory(childComponent);
+    this.divContainer.createComponent(childComponentFactory);
+    let childComponentRef = this.divContainer.createComponent(childComponentFactory);
+    childComponentRef.instance.someInputValue = "Assigned value";
+
+  }
+}
+</code></pre>
+
+<p>Inside <code class="highlighter-rouge">src\app\app.module.ts</code>, add the following entry to the <code class="highlighter-rouge">@NgModule()</code> method parameters:</p>
+
+<pre><code>
+  entryComponents:[
+    childComponent
+  ],
+</code></pre>
+
+<p>Notice that we’re not accessing the <code class="highlighter-rouge">div#container</code> using the <code class="highlighter-rouge">@ViewChild("container") divContainer</code> approach. We need it’s reference instead of the <code class="highlighter-rouge">nativeElement</code>. We will access it as <code class="highlighter-rouge">ViewContainerRef</code>:</p>
+
+<p><code class="highlighter-rouge">@ViewChild("container", {read: ViewContainerRef}) divContainer</code></p>
+
+<p>The <code class="highlighter-rouge">ViewContainerRef</code> has a method called <code class="highlighter-rouge">createComponent()</code> which requires a component factory to be passed as a parameter. For the same, we need to inject a <code class="highlighter-rouge">ComponentFactoryResolver</code>. It has a method which basically loads a component.</p>
+
+
+  </div>
+
+  <div itemprop="datePublished" content="2017-09-08 00:00:00 +0000" class="date">
+    Written on September  8, 2017
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Creating Angular 2/4 Application From Scratch Using Angular CLI></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

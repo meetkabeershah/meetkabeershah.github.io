@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting up git on Windows and Ubuntu linux – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Setting up git on Windows and Ubuntu linux" />
+    <meta property="twitter:title" content="Setting up git on Windows and Ubuntu linux" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Setting up git on Windows and Ubuntu linux</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://git-for-windows.github.io/img/git_logo.png" alt="git logo" /></p>
+
+<p><a href="https://git-for-windows.github.io/">courtesy</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/DevOps">DevOps</a> engineers who not only code but also take care of cofigurations know that <strong>system administration</strong> is <s>little</s> more <s>painful</s> than developing. I remember <a href="http://xameeramir.github.io/site-pre-requisites/">configuring an ASP.NET MVC 5 website</a> on a <a href="https://cloud.google.com/compute/">Google compute engine</a> instance running Windows server 2012 R2.</p>
+
+<p>To avoid such pain, I prefer using <a href="http://atulgawande.com/book/the-checklist-manifesto/"><em>check-lists</em></a> and <a href="http://xameeramir.github.io/seo-cheat-sheet/"><em>cheatsheets</em></a>. One can refer back to them for later use.</p>
+
+<p>This posts is a <a href="https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read">very short</a> and intuitive guide for installing <a href="https://en.wikipedia.org/wiki/Git_(software)"><code class="highlighter-rouge">git</code></a> on <a href="https://en.wikipedia.org/wiki/Windows_10">Windows 10</a> and <a href="http://www.ubuntu.com/">Ubuntu</a> linux.</p>
+
+<p>Yes, it’s in the direction of what I need to <a href="http://ionicframework.com/docs/guide/installation.html">do later</a>!</p>
+
+<p><a href="www.google.com/?q=by the way">Btw</a>, <a href="http://ionicframework.com">Ionic</a> can be controlled from a <a href="https://en.wikipedia.org/wiki/Command-line_interface">CLI</a> on Windows. and there are 2 options to use from:</p>
+
+<ul>
+  <li><a href="http://sourceforge.net/projects/console/">Console2</a></li>
+  <li><a href="http://git-scm.com/download/win">Git client</a></li>
+</ul>
+
+<h1 id="setting-up-git-and-ignoring-console2-on-windows">Setting up <code class="highlighter-rouge">git</code> (and ignoring Console2) on Windows</h1>
+
+<p>Download the latest <code class="highlighter-rouge">git</code> client from http://git-scm.com/download/win</p>
+
+<p>Open the downloaded setup file:</p>
+
+<p><img src="https://lh3.googleusercontent.com/qLDgWzw1qHknFZbudjF2YOJNRbC7-EVTuBvjpQ_xqRhSKrvDS3jyVluEq6lED-_wDE5fy8Yu_kKDYXtStDINeispEZ7KOZ27_ndF_LHCeG4eySxSPjaAruRmBQDxuaIYwxtd1GROuNAuYWsiAnZpADykSFy0S1gAq8vCjothd4b3ebu-_k9IcjZUTutu3NV70BKzp1-YDHW9SZsEMu-SBZ4mzg4BIa93omH5VjQA8qJJP72a1_iumVGe0PhhEs5EtUo36sOxa455clPBcilDJR06nXfVQbmIstSkqeoWyKQG4WlU1KkWqNKO9o8brGjiaYSKE9xBKkcjZsEx8ifnrCW5pt09JwgBimN3ISJ8LS423rEgIug8mc9f0RcAT7KQIJo6E3N7qXFWNQK9Ea5CQAZn8uTv1icU3AZlRYjyuGzXFVziiDiawhsACIyCAA5ZYPRuNrxDm6bc6lWFuNqWes-V49cAUa2VfK3IKiDyTeJxhNMzEgZEohWbvg-SQCAiJd3x42TxUMARSLGMwK3Si0Io5QVmBkfAnz5jVV7W-BabutfdYanBQmvYboKZwCghEemH=w499-h387-no" alt="Open the downloaded git setup file" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/EZSNjRfWj4LgsS2CLQ4BWBUy_n6oc3gSteQt5KkEVsDFLNzO9rv1dMqJjet00Yaq-t-JiP4ngLAHC4hb7xETCuC9Z-DBekjYObLE5HcRZIfD4phHtVHScafmos2Tk0fZPRfYN1ndljYv45c8C8OVMpbTRcJD7a0ltl8126tiv-MdY_oGBL9_CC26ZiV2BkbQ0MHWhOApg_02B50LcKsica94JiGjbCfprynQkXo2Pm8IB3qWBdIiTXbYHqoAwaobgE3pbVvQNR3G9XZEUzeKeOopDzlQgV3tXpBvUikPaKwcq3zov0K4JerXPXH9v9ZiGAfQ7EAi-m88U9ZDD_PGRXdEjvubZKJahBnFaDhXSs15fGxB2pdti15I8fY4atftTbf4sFj68fKdYcA3rfAGRbbotHmuVih5eW8o9W0NP1FVMsKd2w_FXgQIgUtfIPvqA8xeSCztReqoZEg9sVz1iWthQl54MjJBR4NXjuKkMpheo9nIKRzbCiPCna2I02VbyyQ96cuvKkGnowGplRh5m6pSoY56Ki7MWULG0xxQX4EFB1Vu-Sm5-OFms2jnfsfMmwBc=w499-h387-no" alt="Read git license" /></p>
+
+<p>On the <strong>3rd</strong> screen it asks whether the icons for launching points such as desktop shortcut and quick launch be provided or not.</p>
+
+<p><img src="https://lh3.googleusercontent.com/Va4gwuf32K7QNUdGQbk8Nc8JtsqmwQlDgCYY4z0v85rLZDr9S0Y337_Jnv58nhY6tnWHkoTn8mNsntFYH4tW4B8w6ihrqHIu9_aP8Iq-vekP5nk8x7ZEt1zFE1nbTW5TUyCz4xpTHSzTesQVhjyftOi4qs2FSLsOgYF1xZmdB7WUFd4saWqUbttAVmlwqXyz0M8T_x_edxq1hNZASX2ZVX_HhqwzdWpJjE3xbk9wAk_aJqxBq2RjIxEw0Hu4r2W4iIb8Ldy2oupUN7cXYA_3M9ubEMk2nfZTJ7l_w9gnWtwcVl-prm55w7WZToL30DalieU1JNixKcsj8541jMdqQVsT7yIBBZnneohMtbQKp4vD-hAGp6WocKq0f0btoEdZ9xqtXUz23AmKd1Mus9zmGS3Pm7poCX5_D0K7z5awpBuFCMTsvS0ZHOrOganSFZBUAfNuo68K-i2RHyPk-c66WSoDLEq_6vKGedBTk1A_MfynC4bFL83GKy3BFG7M_NKdu4ZQ4HfUhEs7yTpj8_YUTNzpB6S358YwJR3N-I0_WQlRXmWNnO9egnwnDlklguTE5mjt=w499-h387-no" alt="Decide launching points for Git" /></p>
+
+<p>In case of pre-configured contextualization, a warning will be shown:</p>
+
+<p><img src="https://lh3.googleusercontent.com/s67uLCnvWm_F0Mvge44IgQmQ4hYRIBHWCdhd4BwZXaJxpq8NU-Jwdw1-waL6I9kIwqh5nCWlZaYMBQPPdR7qxUKma6dmcFaSqVbsmGpDyBri9GMeJvPDw7Usf9heGrzemTwRpMbPZWgY_6Lj--2fZhLL7FirGE3OrUZXHLyNqpARd0f63Rl6_t7OZ8w8hu6iT3y3Ks1HzXixJC489TwU2wLFk6Qkmm9L8MP-cL4AJLKPAz4vrQerYQiXAwJl8c57wRe1uHTBTnyhmDG4kOb_l7I3VTiRFhDEEzr_CLvx_JmXNsX25iP6Szuc8WNA2F5soR6UsrrgUP6QlhG9SdOwZ4r7X-cN68SfmIFelr043a07Dt1sQx957Ah-x_PYR6_rZtxt9pRhKVBrQwV9W7SkMAuGqIUSG6LLnR10rftrNco6Hz0X8_zqIDBDP96zirULLXM0UgDdHss5k2kaEi5ylAKnZ_K8jDCWSrEeAvxxcNdOLQpAXf9jPN85lciiarTN91axB6mShwo8sODXzFPam0wtmD8BNtZvMd5BH0M31QijtNc_W6aYBjrXQYz_xBVHE6kD=w482-h248-no" alt="Git pre-configured contextualization warning" /></p>
+
+<p>As a windows user, it’s reasonable to use <code class="highlighter-rouge">git</code> from window’s command prompt.</p>
+
+<p><img src="https://lh3.googleusercontent.com/HKia0z3dKQKdPWzLfwUWYQ2Ag42fLfufMH2Y4HFnZPbmbCmgyhd2u_dCIwYLzRcnX19LqeE7RSphveo-ASZNmMBKiZS7sAiUSVhTn44H8jkP4fjYE3haEjLjunIIZGdNIaeQQeP1eYipT_gADotzU8aAP2hAHmaNcrCBQQuUR4z4Aawott_W_4WB4qbITNl4AhhuagioXTX0-I7_UvKFXJzmkhV9BNEbDbTRTSzqoAhBdVKwbYbq_90qwlSox9uvwmtTcaurHYlYuKJVgAhCmlxL7HPeZKE2qaJ1i_eNyFw_f9C1tWUiiUCpFAUaZhgWRBS843uxx7XwkinbZcHVO0LXAzvyUsuGRHUG4bD6oXwOqauzXOj63fJorx8z68zCtditU4x-Q5DGvEAq7M1YyFLdOGS8zo7REtLMm83M6aWcJSr_YxauvZeaCagm3HP0RJxp44qR0FiLoqtjnuK16F-lQyCdeQhoe0rKh7zRVackURSgkb4gYtsngFz8DAWBIdBU00g2j7Es_bZyLlRYhbomsRqucOE-gC-7d8gKROWsQ12Tpu8FM7KCTv4TA6-WT9Rx=w499-h387-no" alt="git from window's command prompt" /></p>
+
+<p>Decide <code class="highlighter-rouge">line endings</code> behaviour</p>
+
+<p><img src="https://lh3.googleusercontent.com/4HHKogr9jm5DgWG753Rkbbf3xZZYCQSz70H3E8GtoziO-he9LBdYK5aaXU3i4nzILLXuZTr1g2PEDVJii9siLt0Xc4gH28-KdAMKm_9NnOCe17q8qfoaJayKrb4SbzgH63ol9gliKLKbP-5dhxnCbHQ6Fd4tkhuLPxJqQ4IO5HujXx3DAtGXo0yo4RcUa90NiDpW6ZC1xxPyCB92N0wdNlv2l-q2rtp3tWDtIaXwNePEKpd-ipRMaIFMpBpuaM1EmEbTHlUX6Z4qi0Xd3UVVVHjnunUJ5MxkmdyQUeRwD1d8pUGEzZkoYmsV34D_tj2c6INvWNLPgV7ON2WT4h3asWZimkue5hL5Ku_nBvXQM3dbv_w2mL7C3sQYw3BJgRcUcQWacDM23dFAZfvnKEtaKPdtCiPrH8RcraNY2Ub0kIdxxBbDtNzk5kFRPPIZZRvNOWYSWq3D7Vub9_W0WavO3DEQnWsvdQRjqU6JYiFti-ZNa8cXshsvImqayfXGUbM6oIIDEQwIaDQqqUshSSZCn1m8VONP-vy4nk2YdwFVNBL3PLFtTrjst7tjaxwwhFagFBUS=w499-h387-no" alt="Decide line endings behaviour" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/NHh5K01HYcXtuIokaotmhFOKjun28_9zwaWHUgjNsn7jC-68DbepzmvCVNH3VVbSbpRszyrh354OmHQCCwD2ZQNkDDVRj6-8F1Z0kec7DkbJeWgbOjwxlcY0gaNkdMkZZU9S4iUvVMZpWvQcbgwK5fXGjTIy0lk6delYGsAcDfxMeSP24LlCCw_HCvIRQCTF1p1ya8G15Je0h98_JnjMgcPviKD-5zII_zxYSs8FXyuudE0qr8oKa-5-wADHehUICHBR05kducR22BlMiJQj4xeRKjJhbfIs7WxIRx0pL_Xy3tm5i6EkvbW_ukuYUD0WPZHDdtyWBldI17MrETPfOFmK9NjBYMNQLz7qiDdG4RBF50uEYy9X6D04g2l_3bNa1V0sLvYBCSEfAQaD3edle9IaDWUI8qf7N6GxqIYzU80chOuLU2apc1-7eFKqRdbpOh2Sc8I8gWn5MbKadizR9MzxOdYgqUz6JIcdGiCDaj6_Znf90RZ038WrABpB074Ncnwt82dA2HfA8ozfoRr1S8Q40YWY3ikfQobMV8D-B-B8kB48ycEyMUWof4QtrlJpHuww=w499-h387-no" alt="Installing git" /></p>
+
+<p><img src="https://lh3.googleusercontent.com/2lU1yAK2jZpLnDMbiBLjIAPT1e3Pzpilmbn5JZYyJd97Zj1Wz-spIIv06kW_fl0R2JHSDiYdeLXlb-Ly8quaPg36LWEEf_-TM7yG_JAtwEr5oruqVaYXA-gGXwPHRy9niPcpJ5_D_pX-U2pvgZImt6mtv8dWgn99QdpSZOEq25n83oJxcxmNtvbRlixd4Z-QFPT8iZPImxPLnwyVazYIMQpgWEdcEbTkJCpnKUXbDlN39euYlZyuQY5llhwKNAE3ItXde4yRLfi51DR6Z8RvANV6SNFmN6tycQACO9d-b81-vehRAIqqqJmbJqHzVpWpBHBVwD_nGkiZOtSauY8b23k2-877ZJq2WT_KiO4xkT7pj2fppYTUIS0689pPdBo1Q1g3H-XMEI8Z8d9gAssPOiCYjFP-dAhZe0STMwMAHc9fkE3ikwMhjiL_tgJwbDjkkmHb4YO8edGeHrMutYN-pr-5iuar70Y2snHHgTMMf9eMnvsbI1y0_2X8qh4i6AM40qKsmQowphR7oyxoW0UOzUCcriJdRQ8QmEeSnJIEVRdXa_dLT9YWOANZTNJ1CAgxUdHA=w499-h387-no" alt="Installing git completed" /></p>
+
+<h1 id="setting-up-git-on-ubuntu-linux">Setting up <code class="highlighter-rouge">git</code> on Ubuntu linux</h1>
+
+<p>Use <code class="highlighter-rouge">sudo apt-get install git</code> command and enter <strong>root</strong> password.</p>
+
+<p>The system takes care of the installation after successfull authentication.</p>
+
+<p>To check <code class="highlighter-rouge">git</code> version on Ubuntu</p>
+
+<p><img src="https://lh3.googleusercontent.com/-KwT-1YDEYEo7QIAerj4XluxGiG1nTFnVSWf7CbavRr1GnP7wndcfdzAzWlepQQIDhfil_hR35cUYYNbQ8G7oRXHZ9Xtq_Rpz3q8-HerpXLtPKWtRLxshXpl57RDYE72Moao9nb9KJ58ChU4DFFhh1-ibIXmvDCy_LAoW_PyY_drmX5vC9spx1mrNBbBDsK2IpRkQM0R0gIw6vSQzHWe_mQFUW3T0Xwif-mqz6KQBeEKwGX4h81sIxTkykHgd2WvvLqp_fOwOOd4lmzXUoUFQw9PHY5k2R_rLvGpeImWrnB352Pzik_ggPeU90I2xE1tuIrjeaWtoZCr4GEFm1aoyCyu9vNBVH97W6fK9b-MoMCRX68luw12suXLibf4BmedBipdytqMTKVwT8VgQAr5LsV5oQ97alVDf2ClK4GccUV6mTiME4l9Hc1kEi7HG40W_HrEbzbsk_iwlmBKhcx_pdB_n7I35UgL8lqN59z9u1CEz5xPt6XraL-BiV_qRjzIICgiYFpqHxub70XyaNB8DXhMvukKF-XP8W6BtFFB5kQBhlPEW67KxdfzBLssABa34bOh=w478-h124-no" alt="Checking git version on Ubuntu" /></p>
+
+<p>So, now things are ready for some <a href="https://try.github.io/"><code class="highlighter-rouge">git-init</code></a></p>
+
+<p><a href="https://goo.gl/photos/9DymJoWNntaW85Ez7">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-01 00:00:00 +0000" class="date">
+    Written on January  1, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Setting up git on Windows and Ubuntu linux></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

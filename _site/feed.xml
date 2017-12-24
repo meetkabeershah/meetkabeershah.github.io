@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog x</title>
+    <description>direction obsessed</description>
+    <link>http://xameeramir.github.io</link>
+    <atom:link href="http://xameeramir.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Tools for 360 development</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://pediaa.com/wp-content/uploads/2014/11/What-is-the-Difference-Between-Tools-and-Equipment.jpg&quot; alt=&quot;tools&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pediaa.com/what-is-the-difference-between-tools-and-equipment/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This post has no scientific reasons about which kind of tools a professional needs to use. The use of these tools spans from development to operations to maintainance to marketing to support and to PR and so on. Not everything may be needed by a &lt;strong&gt;[your favourite technology]&lt;/strong&gt; developer. The tools may be relevant to Internet startups. I use (or used) them for getting my work done.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://svencreations.com/stomp/generator/&quot;&gt;Stomp&lt;/a&gt; - Turn 100 words into a cinematic intro&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://trello.com/&quot;&gt;Trello&lt;/a&gt; - to track project(s)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.visualstudio.com/&quot;&gt;Visual studio&lt;/a&gt; - seems to be world’s most impressive IDE&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.getpostman.com/&quot;&gt;Postman&lt;/a&gt; - the super API test tool&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mysqlworkbench.org/&quot;&gt;Workbench&lt;/a&gt; and &lt;a href=&quot;http://microsoft.com/sqlserver&quot;&gt;SSMS&lt;/a&gt; - Database studios&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.red-gate.com/products/sql-development/sql-search/&quot;&gt;Sql search&lt;/a&gt; - to search anything in entire SQL server&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;www.skype.com&quot;&gt;Skype&lt;/a&gt; - for free chat&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;www.ubuntu.com/&quot;&gt;Ubuntu&lt;/a&gt; - less cost linux server&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.mono-project.com/&quot;&gt;Mono&lt;/a&gt; - cross platform .NET for removing windows licensing costs&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://news.ycombinator.com&quot;&gt;HackerNews&lt;/a&gt; - lot of lovely information&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.co.in/analytics/&quot;&gt;Google analytics&lt;/a&gt; - to track the site performance&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mailchimp.com/&quot;&gt;MailChimp&lt;/a&gt; - email marketing&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mailgun.com/&quot;&gt;Mail gun&lt;/a&gt; - for upto 10k free &amp;amp; automated monthly emails using simple API&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mail.zoho.com/zm/&quot;&gt;Zoho Email&lt;/a&gt; - for business emails&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.addthis.com&quot;&gt;AddThis&lt;/a&gt; - for socializing content&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.alexa.com/&quot;&gt;Alexa&lt;/a&gt; - to check global site ranking&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://getpocket.com/&quot;&gt;Pocket&lt;/a&gt; - to read later&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.dropbox.com/&quot;&gt;Dropbox&lt;/a&gt; - for file backup&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cloud.google.com/compute/&quot;&gt;Google Compute engine&lt;/a&gt; - for clouding&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://filezilla-project.org/&quot;&gt;FileZilla&lt;/a&gt; - for FTP-ing&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.godaddy.com&quot;&gt;GoDaddy&lt;/a&gt; - for DNS and SSL certificate management&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://getfirebug.com/&quot;&gt;Firebug&lt;/a&gt; - specially for sniffing http requests&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/chrome/&quot;&gt;Chrome&lt;/a&gt; - all in one web browser with the best &lt;a href=&quot;https://developer.chrome.com/devtools/docs/console&quot;&gt;developer console&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsfiddle.net/user/xameeramir&quot;&gt;jsFiddle&lt;/a&gt; - to test CSS, HTML and javascript elements&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Git_(software)&quot;&gt;Git&lt;/a&gt;  - for code control, while &lt;a href=&quot;https:github.com/&quot;&gt;Github&lt;/a&gt; is horribly expensive, &lt;a href=&quot;https://bitbucket.org/&quot;&gt;BitBucket&lt;/a&gt; is better for startups&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://yslow.org/&quot;&gt;YSlow?&lt;/a&gt; - for website health tests&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; - a hackable editor&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.httrack.com/&quot;&gt;HTTrack website Copier&lt;/a&gt; - to download entire web based documentations&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/ask&quot;&gt;Stackoverflow&lt;/a&gt; - technical knowledge collaboration&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.themuse.com/&quot;&gt;The muse&lt;/a&gt; - for executive education&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/speed/libraries/?hl=en&quot;&gt;CDN&lt;/a&gt; - for offloading our own servers&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://fortawesome.github.io/Font-Awesome/&quot;&gt;Font awesome&lt;/a&gt; - for free and &lt;a href=&quot;http://www.bootstrapcdn.com/#fontawesome_tab&quot;&gt;fast&lt;/a&gt; fonts&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt; - mature UI infrastructure&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://sass-lang.com/&quot;&gt;SASS&lt;/a&gt; - mature CSS pre-processor&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://scout-app.io/&quot;&gt;Scout App&lt;/a&gt; - mature SASS pre-processing tool&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ionicframework.com/&quot;&gt;Ionic&lt;/a&gt; - hybrid apps development framework&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt; - asynchronous javascript framework&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://vswebessentials.com/features&quot;&gt;Web Essentials&lt;/a&gt; - for so many web development features&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.producthunt.com/&quot;&gt;Product hunt&lt;/a&gt;, &lt;a href=&quot;https://angel.co&quot;&gt;AngelList&lt;/a&gt; and &lt;a href=&quot;http://techcrunch.com/&quot;&gt;Techcrunch&lt;/a&gt; - for latest startups&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github pages&lt;/a&gt; - for static pages hosting&lt;/p&gt;
+</description>
+        <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/360-tools/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/360-tools/</guid>
+      </item>
+    
+      <item>
+        <title>How to submit Facebook Messenger App for Review</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://picpicsocial.com/wp-content/uploads/2014/05/facebook-login-review.jpg&quot; alt=&quot;Facebook app review rejection reasons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://picpicsocial.com/update-to-facebook-app-review/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To publish a bot on the Facebook the following stuff are required to be ready:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Icon&lt;/strong&gt;: You can upload a JPG, GIF or PNG file. The size of the image must be 1024 x 1024 pixels. File size limit 5 MB&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;App display name&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contact Email&lt;/strong&gt; – In case if anyone (or Facebook) wants to contact a company&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Category&lt;/strong&gt; – the business category for which bot is getting published&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Privacy policy URL&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Terms of Service URL&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Video&lt;/strong&gt; - You’ll be prompted to upload a screen-cast of your chat-bot working&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Facebook page&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Most of the above stuff can be done with common sense and below is the actual review submission.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add messenger in Products if not already added&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/FIjdk.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/FIjdk.png&quot; alt=&quot;Add messenger in Products&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add permissions required by the app&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the Messenger tab in the App Dashboard. Find the App Review section and select the permissions needed by the app.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/EBgGi.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/EBgGi.png&quot; alt=&quot;Messenger app permissions&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit Notes for Each Submission&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After selecting the permissions, one can edit the notes for each submission. Click on &lt;kbd&gt;Edit Notes&lt;/kbd&gt; for each permission. Make sure to fill each form and any other missing items before clicking &lt;kbd&gt;Submit for Review&lt;/kbd&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/u1zBd.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/u1zBd.png&quot; alt=&quot;Edit Notes for Each Submission&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Facebook will need confirmation before submission:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/C9mHF.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/C9mHF.png&quot; alt=&quot;Facebook submission confirmation&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Submit for Approval&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve submitted your app, you can view the App Review section to see the status of your approval.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/rm40N.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/rm40N.png&quot; alt=&quot;Submit and Wait for Approval&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/B95dk.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/B95dk.png&quot; alt=&quot;Submission received&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Approval&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes, the approval can be partial too:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/PH4o9.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/PH4o9.png&quot; alt=&quot;Partial Permission granted&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If the app submission is approved/rejected, Facebook sends a notification. Also, the App Review section will show the green ticks to approved permissions, if the permissions are granted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/HEnPN.png&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/HEnPN.png&quot; alt=&quot;Approved permissions&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/How-to-submit-Facebook-Messenger-App-for-Review/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/How-to-submit-Facebook-Messenger-App-for-Review/</guid>
+      </item>
+    
+      <item>
+        <title>Setting up node app with SSL on a DigitalOcean droplet</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAJOAAAAJGMzZjVlNjM4LWI0ZTctNGY2YS1hOWFlLWI2YTRmMzNhN2U3Ng.png&quot; alt=&quot;Digital Ocean&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/pulse/five-reasons-why-developers-love-digitalocean-janakiram-msv/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You probably &lt;a href=&quot;https://www.google.com/search?q=Setting+up+node+app+with+SSL+on+a+DigitalOcean+droplet&quot;&gt;Googled it&lt;/a&gt; it and are here!
+Okey, no more time waste (for MYSELF in future)…&lt;/p&gt;
+
+&lt;p&gt;Let’s see how to setup node app with SSL on a DigitalOcean VPS&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/heroku-cli#debian-ubuntu&quot;&gt;Install Heroku for it’s versioning feature&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/git#deploying-code&quot;&gt;Git push the app to Heroku&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet&quot;&gt;Setup a drop let&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html&quot;&gt;Generate SSH keys&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://guides.beanstalkapp.com/version-control/git-on-windows.html&quot;&gt;Setup git bash for SSH-ing to droplet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh&quot;&gt;Connect to Droplet using SSH keys&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04&quot;&gt;Install node&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Confirm node installation using &lt;code class=&quot;highlighter-rouge&quot;&gt;node -v&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04&quot;&gt;Install MongoDB if the app needs to persist data&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Confirm if mongodb is running using the command &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl status mongodb&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps&quot;&gt;Setup and configure pm2 to orchestrate the node app&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Confirm pm2 installation using &lt;code class=&quot;highlighter-rouge&quot;&gt;pm2 -v&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://devcenter.heroku.com/articles/git-clone-heroku-app&quot;&gt;Clone to a location in the server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.npmjs.com/cli/start&quot;&gt;Start the node app for first cut testing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pm2.keymetrics.io/docs/usage/quick-start/#usage&quot;&gt;Start node app as a process&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04&quot;&gt;Install nginx&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Make sure that the nginx service is running using command &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl status nginx&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ubuntuforums.org/showthread.php?t=1514714&quot;&gt;Make sure that UFW is enabled&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04#set-up-nginx-as-a-reverse-proxy-server&quot;&gt;Setup nginx reverse proxy to the port on which the app is running&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;When reverse-proxying nginx server, keep &lt;code class=&quot;highlighter-rouge&quot;&gt;try_files $uri $uri/ =404;&lt;/code&gt; inside &lt;code class=&quot;highlighter-rouge&quot;&gt;location&lt;/code&gt; if absolutely necessary inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/default&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://in.godaddy.com/domains&quot;&gt;Purchase a domain&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-16-04&quot;&gt;Set up SSL with Let’s Encrypt for the purchased domain&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Keep a &lt;a href=&quot;https://gist.github.com/xameeramir/a5cb675fb6a6a64098365e89a239541d&quot;&gt;backup of default nginx configuration&lt;/a&gt; (and all other important stuff) to revert back in case of an &lt;a href=&quot;http://www.n1ads.com/data-recovery/pics/raid-server-data-recovery-services.jpg&quot;&gt;earthquack&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Notice that we shall use services like &lt;a href=&quot;https://devcenter.heroku.com/articles/git&quot;&gt;heroku’s git feature&lt;/a&gt; instead of the globally famous &lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt; for version control to keep code closed source.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Setting-up-node-app-with-SSL-on-a-DigitalOcean-droplet/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Setting-up-node-app-with-SSL-on-a-DigitalOcean-droplet/</guid>
+      </item>
+    
+      <item>
+        <title>Study on technical feasibility of WhatsApp bot implementation</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://www.whatsapp.com/img/fb-post.jpg&quot; alt=&quot;WhatsApp&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://web.whatsapp.com/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a secret pilot program which WhatsApp is working on with selected businesses&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://faq.whatsapp.com/general/26000052&quot;&gt;https://faq.whatsapp.com/general/26000052&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;News coverage:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/&quot;&gt;https://yourstory.com/2017/09/app-fridays-whatsapp-for-business-bookmyshow/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/&quot;&gt;https://yourstory.com/2017/09/bookmyshows-product-team-decrypts-how-whatsapp-for-business-works/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/&quot;&gt;http://indianexpress.com/article/technology/social/now-get-bookmyshow-ticket-confirmation-message-on-whatsapp-4844869/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740&quot;&gt;http://gadgets.ndtv.com/apps/news/whatsapp-business-bookmyshow-pilot-1750740&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For some of my technical experiments, I was trying to figure out how beneficial and feasible it is to implement bots for different chat platforms in terms of market share and so possibilities of adaptation. Especially when you have bankruptly failed twice, it’s important to validate ideas and fail more faster.&lt;/p&gt;
+
+&lt;p&gt;Popular chat platforms like &lt;a href=&quot;https://developers.facebook.com/docs/messenger-platform/&quot;&gt;Messenger&lt;/a&gt;, &lt;a href=&quot;https://api.slack.com/bot-users&quot;&gt;Slack&lt;/a&gt;, &lt;a href=&quot;https://dev.skype.com/bots&quot;&gt;Skype&lt;/a&gt; etc. have happily (in the sense officially) provided APIs for bots to interact with except, WhatsApp.&lt;/p&gt;
+
+&lt;p&gt;However, since many years, a lot of activities has happened around this - struggle towards automated interaction with WhatsApp platform:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/botsapp&quot;&gt;Bots App&lt;/a&gt;
+ Bots App is interesting because it shows that something is really tried and tested.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/tgalal/yowsup&quot;&gt;Yowsup&lt;/a&gt;
+ A project still actively developed to interact with WhatsApp platform.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.yallagenie.com/&quot;&gt;Yallagenie&lt;/a&gt; 
+ Yallagenie claim that there is a demo bot which can be interacted with at &lt;a href=&quot;tel://+971561126652&quot;&gt;+971 56 112 6652&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://hubtype.com/articles/how-to-create-a-whatsapp-chatbot.html&quot;&gt;Hubtype&lt;/a&gt;
+ Hubtype is working towards having a bot platform for &lt;strong&gt;WhatsApp for business&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://medium.com/@AlfredBaudisch/how-a-whatsapp-bot-got-famous-and-evolved-as-the-brazilian-wechat-and-conversational-commerce-e2213262183d&quot;&gt;Fred&lt;/a&gt;
+ Fred’s task was to automate WhatsApp conversations, however since it was not officially supported by WhatsApp - it was shut down.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.oyegennie.com/&quot;&gt;Oye Gennie&lt;/a&gt;
+ A bot &lt;a href=&quot;https://www.quora.com/How-do-I-build-a-simple-Whatsapp-bot/answer/Ankur-Rastogi?srid=hM8Hz&quot;&gt;blocked&lt;/a&gt; by WhatsApp.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://faq.whatsapp.com/en/android/28000012&quot;&gt;App/Website to WhatsApp&lt;/a&gt;
+ We can use custom URL schemes and Android intent system to interact with WhatsApp but still NOT WhatsApp API.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/Mawalu/chat-api-daemon&quot;&gt;Chat API daemon&lt;/a&gt;
+ Probably created by inspecting the API calls in WhatsApp web version. NOT affiliated with WhatsApp.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://devpost.com/software/whatsbot#updates&quot;&gt;WhatsBot&lt;/a&gt;
+ Deactivated WhatsApp bot. Created during a &lt;a href=&quot;https://techcrunch.com/2015/12/06/whatsbot-brings-a-virtual-assistant-to-whatsapp/&quot;&gt;hackathon&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://mashable.com/2015/03/25/whatsapp-developers-api/#CvXpmtrjROqA&quot;&gt;No API claim&lt;/a&gt;
+ WhatsApp co-founder clearly stated this in a conference that they did not had any plans for APIs for WhatsApp.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.botware.com.br/messenger-and-whatsapp-chatbot-development/&quot;&gt;Bot Ware&lt;/a&gt;
+ They probably are expecting WhatsApp to release their APIs for chat bot platforms.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://vixi.io/&quot;&gt;Vixi&lt;/a&gt;
+ They seems to be talking about how some platform which probably would work for WhatsApp. There is no clarity as such.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://market.mashape.com/datayuge/whatsapp&quot;&gt;Unofficial API&lt;/a&gt;
+ This API can shut off any time.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And the number goes on…&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Whatsapp-Bot-Implementation-Technical-Feasibility-Study/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Whatsapp-Bot-Implementation-Technical-Feasibility-Study/</guid>
+      </item>
+    
+      <item>
+        <title>Angular 4 by examples</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://terumi.me/blogs/meandev/Plunker-and-AngularJS.png&quot; alt=&quot;Plunkr + Angular&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://mean.ghost.io/sandbox-eval-plunker-and-angularjs/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;THIS POST IS WORK IN PROGRESS&lt;/p&gt;
+
+&lt;p&gt;The best way to learn programming is to see code in action:&lt;/p&gt;
+
+&lt;iframe style=&quot;width: 100%; height: 600px&quot; src=&quot;http://embed.plnkr.co/p9vMvlzEwUOOlcP2FsUG&quot; frameborder=&quot;0&quot; allowfullscren=&quot;allowfullscren&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I have kept the following notes for future reference:&lt;/p&gt;
+
+&lt;p&gt;Angular CLI helps development to debugging, testing to deploying the Angular apps.&lt;/p&gt;
+
+&lt;p&gt;Here is the terminology:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;angular-cli&lt;/code&gt; - refers to Angular 2&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@angular/cli&lt;/code&gt; - refers to Angular 4&lt;/p&gt;
+
+&lt;p&gt;To install  &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g @angular/cli&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The underlying language used is &lt;code class=&quot;highlighter-rouge&quot;&gt;typescript&lt;/code&gt; which is translated to javascript using &lt;code class=&quot;highlighter-rouge&quot;&gt;babel&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The task manager (like &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;grunt&lt;/code&gt;) used by Angular CLI is &lt;code class=&quot;highlighter-rouge&quot;&gt;webpack&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Old apps were page centric, modern apps are component based.&lt;/p&gt;
+
+&lt;h1 id=&quot;4-pillars-of-angular-4&quot;&gt;4 pillars of Angular 4&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Component - encapsulates the template (html), data (variables) but not source of data and the behaviour (functions) of a view.&lt;/li&gt;
+  &lt;li&gt;Directives - bridges the gap between backend and front end. Used for DOM manipulation.&lt;/li&gt;
+  &lt;li&gt;Routers - takes care of navigation between components.&lt;/li&gt;
+  &lt;li&gt;Services - reusable tags primarily used for manipulating DOM elements&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;adding-a-component&quot;&gt;Adding a component&lt;/h1&gt;
+
+&lt;p&gt;create a &lt;code class=&quot;highlighter-rouge&quot;&gt;mycomp.component.ts&lt;/code&gt; file&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+import {Component} from '@angular/core'
+
+@Component({
+selector:'my-component',
+template:'welcome to my custom component'
+})
+
+export class MyComponent{
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and add component reference to &lt;code class=&quot;highlighter-rouge&quot;&gt;app.module.ts&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;declarations&lt;/code&gt; parameter of &lt;code class=&quot;highlighter-rouge&quot;&gt;@NgModule&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+import { MyComponent } from './mycomp.component';
+
+@NgModule({
+  declarations: [
+    AppComponent, MyComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;adding-a-template-file-to-a-component&quot;&gt;Adding a template file to a component&lt;/h1&gt;
+
+&lt;p&gt;Create a file &lt;code class=&quot;highlighter-rouge&quot;&gt;footer.component.html&lt;/code&gt; and replace the &lt;code class=&quot;highlighter-rouge&quot;&gt;template&lt;/code&gt; key in &lt;code class=&quot;highlighter-rouge&quot;&gt;@Component&lt;/code&gt; of a component &lt;code class=&quot;highlighter-rouge&quot;&gt;templateUrl:'./footer.component.html'&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;one-way-binding&quot;&gt;One way binding&lt;/h1&gt;
+
+&lt;p&gt;Add properties to component class:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+export class FooterComponent {
+
+    title = &quot;welcome to footer component&quot;
+
+    courses = ['Angular', 'React', 'jQuery']
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And bind them like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+&lt;ul&gt;
+    &amp;lt;li *ngFor=&quot;let course of courses&quot;&amp;gt;
+        
+    &amp;lt;/li&amp;gt;
+&lt;/ul&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;adding-a-service&quot;&gt;Adding a service&lt;/h1&gt;
+
+&lt;p&gt;Add a file &lt;code class=&quot;highlighter-rouge&quot;&gt;course.service.ts&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+import { Injectable } from '@angular/core'
+
+@Injectable()
+
+export class CourseService {
+
+    getCourses() {
+        return ['Angular', 'React', 'jQuery'];
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Add the reference inside &lt;code class=&quot;highlighter-rouge&quot;&gt;app.module.ts&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;@NgModule&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;providers: [CourseService]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Inject it in a component through it’s constructor:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+    constructor(cs: CourseService) {
+        this.courses = cs.getCourses();
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;create-a-component-from-cli&quot;&gt;Create a component from CLI&lt;/h1&gt;
+
+&lt;p&gt;Fire the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng g c newComponent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are 5 types of binding are supported&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Property binding &lt;code class=&quot;highlighter-rouge&quot;&gt;[]&lt;/code&gt; - bind the ts component property with html template property&lt;/li&gt;
+  &lt;li&gt;Event binding &lt;code class=&quot;highlighter-rouge&quot;&gt;()&lt;/code&gt; - binding the html template event to ts component&lt;/li&gt;
+  &lt;li&gt;Two way data binding &lt;code class=&quot;highlighter-rouge&quot;&gt;[()]&lt;/code&gt; - for component to template and vice versa data flow&lt;/li&gt;
+  &lt;li&gt;Class binding - e.g.: [class.active]. Is used to add/remove a CSS class&lt;/li&gt;
+  &lt;li&gt;Style binding - used to set the CSS style rules&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;property-binding&quot;&gt;Property binding&lt;/h1&gt;
+
+&lt;p&gt;Add a property to class &lt;code class=&quot;highlighter-rouge&quot;&gt;profilePic = &quot;http://lorempixel.com/400/200&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Use the property in the component &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img [src]=profilePic /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;add-bootstrap-to-angular-app&quot;&gt;Add Bootstrap to Angular app&lt;/h1&gt;
+
+&lt;p&gt;As of this writing the most stable version of Bootstrap is 3.3. Hence, head over to http://getbootstrap.com/docs/3.3/getting-started/#download and et CDN link under Bootstrap CDN somewhat like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; integrity=&quot;sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u&quot; crossorigin=&quot;anonymous&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add this to &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;use-event-binding&quot;&gt;Use event binding&lt;/h1&gt;
+
+&lt;p&gt;Add a button like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button class=&quot;btn btn-danger&quot; (click)=&quot;clickHandler($event)&quot;&amp;gt;click me&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And it’s corresponding event handler in the component:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+    clickHandler($event) {
+        console.log($event);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;using-2-way-data-binging&quot;&gt;Using 2 way data binging&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;text&quot; [(ngModel)]=&quot;currentCity&quot; /&amp;gt; &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is similar to&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input type=&quot;text&quot; [value]=&quot;currentCity&quot; (input)=&quot;currentCity=$event.target.value&quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;class-binding&quot;&gt;Class binding&lt;/h1&gt;
+
+&lt;p&gt;With a property isActive in the component, this&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button class=&quot;btn btn-danger&quot; [class.active]=&quot;isActive&quot; &amp;gt;automatic active - click me&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;is equal to&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button class=&quot;btn btn-danger active&quot; &amp;gt;manually active - click me&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;style-binding&quot;&gt;Style binding&lt;/h1&gt;
+
+&lt;p&gt;We can set the style properties of an element using style properties&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;button class=&quot;btn btn-danger&quot; [style.backgroundColor]=&quot;isActive?'green':'red'&quot; &amp;gt;click me&amp;lt;/button&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;inputs&quot;&gt;Inputs&lt;/h1&gt;
+
+&lt;p&gt;Set a input property in the child component&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+@Component({
+    selector: 'header-component',
+    template: 'welcome to header component ',
+    inputs: ['dataFromParentComponent']
+})
+
+export class HeaderComponent {
+    
+    dataFromParentComponent = &quot;&quot;; //or @Input dataFromParentComponent = &quot;&quot;;
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice that there is no value assigned to &lt;code class=&quot;highlighter-rouge&quot;&gt;dataFromParentComponent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the parent component, set the value of this input with it’s own property:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;typecript&quot;&gt;
+@Component({
+    selector: 'my-component',
+    template: `&amp;lt;header-component [dataFromParentComponent]=&quot;myComponentData&quot; &amp;gt;&amp;lt;/header-component&amp;gt;`
+})
+
+export class MyComponent {
+
+    myComponentData = &quot;Parent data&quot;
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Angular-4-by-examples/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Angular-4-by-examples/</guid>
+      </item>
+    
+      <item>
+        <title>Facebook API - The URL couldn't be validated. Callback verification failed with the following errors</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://images.kualo.com/mailmachine/wufoowebhook.png&quot; alt=&quot;Webhooks&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://my.kualo.com/uk/knowledgebasekualo.php?kbcat=0&amp;amp;article=120&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Was trying to &lt;a href=&quot;https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup/#webhook_setup&quot;&gt;setup FB messenger webhook&lt;/a&gt; with a strong verify token. Somewhat like this: &lt;code class=&quot;highlighter-rouge&quot;&gt;o\/ERviEE\/vt0|&amp;lt;E|\|&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/RBumW.png&quot; alt=&quot;set token&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The same is been verified in the code:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;req.query['hub.verify_token'] === 'o\/ERviEE\/vt0|&amp;lt;E|\|'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;However, the value received from FB is: &lt;code class=&quot;highlighter-rouge&quot;&gt;o\\/ERviEE\\/vt0|&amp;lt;E|\\|&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/MKtwP.png&quot; alt=&quot;get token&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;This is strange&lt;/strong&gt;. There seems to be no document reference as such which talks about how Facebook escapes special characters for verify tokens or alike. Not sure if this happens for other entities as well.&lt;/p&gt;
+
+&lt;p&gt;Conclusion: need to be a little bit cautious when using special characters for verify tokens.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/facebook-callback-verification-failed-with-the-following-errors/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/facebook-callback-verification-failed-with-the-following-errors/</guid>
+      </item>
+    
+      <item>
+        <title>Creating Angular 2/4 Application From Scratch Using Angular CLI</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://aymen.co/wp-content/uploads/2017/01/angular-cli.jpg&quot; alt=&quot;Angular CLI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://aymen.co/javascript/angular-cli/&quot;&gt;Courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Installing Angular Dependencies&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Install a stable version of &lt;a href=&quot;https://nodejs.org/&quot;&gt;Node&lt;/a&gt; (if not already installed) and verify the installation using &lt;code class=&quot;highlighter-rouge&quot;&gt;node -v&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;http://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; using &lt;a href=&quot;http://www.typescriptlang.org/index.html#download-links&quot;&gt;command &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g typescript&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Download and install &lt;a href=&quot;https://cli.angular.io/&quot;&gt;Angular CLI&lt;/a&gt; using command &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install -g @angular/cli&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Angular&lt;/code&gt; is a component oriented framework. Many components needs to be created to make the whole application. A component is a group of &lt;a href=&quot;//xameeramir.github.io/Custom-Elements-Shadow-DOM-Templates-in-HTML-by-Examples/&quot;&gt;custom elements, &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; elements, &lt;code class=&quot;highlighter-rouge&quot;&gt;ShadowDOM&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; imports.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating the Angular 4 app using Angular CLI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To create a fresh new Angular 4 app, use command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng new newAppName&lt;/code&gt;. This command takes some time to execute.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; - takes care of the development and app dependencies / packages / commands to execute&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src\main.ts&lt;/code&gt; - takes care of the scaffolding the entire&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src\app\app.module.ts&lt;/code&gt; - any newly created module has to added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;declarations&lt;/code&gt; and services has to be provided to the &lt;code class=&quot;highlighter-rouge&quot;&gt;providers&lt;/code&gt; key parameter  of the function &lt;code class=&quot;highlighter-rouge&quot;&gt;@NgModule&lt;/code&gt; to make them accessible across the entire application&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run the Angular 4 app using Angular CLI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To run the freshly created app using CLI, use command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng serve&lt;/code&gt; which will run the app on &lt;a href=&quot;http://localhost:4200/&quot;&gt;http://localhost:4200/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add a component to the Angular 4 app using Angular CLI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To add a new Angular 4 component to the app, use command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng g component componentName&lt;/code&gt;. After execution of this command, Angular CLI adds a folder &lt;code class=&quot;highlighter-rouge&quot;&gt;component-name&lt;/code&gt; under &lt;code class=&quot;highlighter-rouge&quot;&gt;src\app&lt;/code&gt;. Also, the references of the same is added to &lt;code class=&quot;highlighter-rouge&quot;&gt;src\app\app.module.ts&lt;/code&gt; file automatically.&lt;/p&gt;
+
+&lt;p&gt;A component shall have a &lt;code class=&quot;highlighter-rouge&quot;&gt;@Component&lt;/code&gt; decorator function followed by a &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; which needs to be &lt;code class=&quot;highlighter-rouge&quot;&gt;export&lt;/code&gt;ed. The &lt;code class=&quot;highlighter-rouge&quot;&gt;@Component&lt;/code&gt; decorator function accepts meta data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add a component to specific folder of the Angular 4 app using Angular CLI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To add a new component to a specific folder use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng g component folderName/componentName&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Add a service to the Angular 4 app using Angular CLI&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An Angular 2 service is simply a javascript function along with it’s associated properties and methods, that can be included (via dependency injection) into Angular 2 components.&lt;/p&gt;
+
+&lt;p&gt;To add a new Angular 4 service to the app, use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;ng g service serviceName&lt;/code&gt;. On creation of the service, the Angular CLI shows an error:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.stack.imgur.com/ZZwBC.png&quot; alt=&quot;WARNING Service is generated but not provided, it must be provided to be used&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To solve this, we need to provide the service reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;src\app\app.module.ts&lt;/code&gt; inside &lt;code class=&quot;highlighter-rouge&quot;&gt;providers&lt;/code&gt; input of &lt;code class=&quot;highlighter-rouge&quot;&gt;@NgModule&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;Initially, the default code in the service is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ServiceNameService {
+
+  constructor() { }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A service has to have a few public methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Adding an input to the Angular 4 app&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Assuming that we have 2 components:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;child-component&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We wanted to pass some value from &lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;child-component&lt;/code&gt; i.e. an &lt;code class=&quot;highlighter-rouge&quot;&gt;@Input&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.html&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;child-component.ts&lt;/code&gt;. Below is an example which explains the implementation:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.html&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;child-component [someInputValue]=&quot;someInputValue&quot;&amp;gt;&amp;lt;/child-component&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.ts&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  
+  class ParentComponent {
+
+  someInputValue = 'Some Input Value';
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;child-component.html&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;Some Input Value &amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;child-component.ts&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html'
+})
+export class ChildComponent implements OnInit {
+
+  @Input() someInputValue: String = &quot;Some default value&quot;;
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue += &quot; modified&quot;;
+  }
+
+  constructor() {
+    console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
+  }
+
+  ngOnInit() {
+    console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice that the value of the &lt;code class=&quot;highlighter-rouge&quot;&gt;@Input&lt;/code&gt; value is available inside &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnInit()&lt;/code&gt; and not inside &lt;code class=&quot;highlighter-rouge&quot;&gt;constructor()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objects reference behaviour in Angular 2 / 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Javascript, objects are stored as references:&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/dftagmaf/embedded/js/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.ts&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  
+  class ParentComponent {
+
+  someInputValue = {input: 'Some Input Value'};
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.html&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  
+
+
+&amp;lt;child-component [someInputValue]=&quot;someInputValue&quot;&amp;gt;&amp;lt;/child-component&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;child-component.html&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+&lt;p&gt;Some Input Value &lt;/p&gt;
+&amp;lt;button (click)=&quot;changeInput()&quot;&amp;gt;change input&amp;lt;/button&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;child-component.ts&lt;/code&gt; looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'child-component',
+  templateUrl: './child-component.html'
+})
+export class ChildComponent implements OnInit {
+
+  @Input() someInputValue = {input:&quot;Some default value&quot;};
+
+  @Input()
+  set setSomeInputValue(val) {
+    this.someInputValue.input += &quot; set from setter&quot;;
+  }
+
+  constructor() {
+    console.log('someInputValue in constructor ************** ', this.someInputValue); //someInputValue in constructor ************** undefined
+  }
+
+  ngOnInit() {
+    console.log('someInputValue  in ngOnInit ************** ', this.someInputValue); //someInputValue  in ngOnInit ************** Some Input Value
+  }
+
+  changeInput(){
+    this.someInputValue.input += &quot; changed&quot;;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The function &lt;code class=&quot;highlighter-rouge&quot;&gt;changeInput()&lt;/code&gt; will change the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;someInputValue&lt;/code&gt; inside both &lt;code class=&quot;highlighter-rouge&quot;&gt;ChildComponent&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;ParentComponent&lt;/code&gt; because of their reference. Since, &lt;code class=&quot;highlighter-rouge&quot;&gt;someInputValue&lt;/code&gt; is referenced from &lt;code class=&quot;highlighter-rouge&quot;&gt;ParentComponent&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;someInputValue&lt;/code&gt; &lt;strong&gt;object&lt;/strong&gt; - the change in &lt;code class=&quot;highlighter-rouge&quot;&gt;ChildComponent&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;someInputValue&lt;/code&gt; &lt;strong&gt;object&lt;/strong&gt; changes the value of &lt;code class=&quot;highlighter-rouge&quot;&gt;ParentComponent&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;someInputValue&lt;/code&gt; &lt;strong&gt;object&lt;/strong&gt;. &lt;em&gt;THIS IS NOT CORRECT&lt;/em&gt;. The references shall never be changed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Angular 4 life cycle methods&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnInit()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnChanges()&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnDestroy()&lt;/code&gt; etc. are lifecycle methods. &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnChanges()&lt;/code&gt; will be the first to be called, before &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnInit()&lt;/code&gt;, when the value of a bound property changes, it will NOT be called if there is no change. &lt;code class=&quot;highlighter-rouge&quot;&gt;ngOnDestroy()&lt;/code&gt; is called when the component is removed. To use it, &lt;code class=&quot;highlighter-rouge&quot;&gt;OnDestroy&lt;/code&gt; needs to be &lt;code class=&quot;highlighter-rouge&quot;&gt;implement&lt;/code&gt;ed by the class.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DOM Manipulation in Angular 4 app&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To manipulate the DOM in Angular 2/4 apps, we need to &lt;code class=&quot;highlighter-rouge&quot;&gt;implement&lt;/code&gt; the method &lt;code class=&quot;highlighter-rouge&quot;&gt;ngAfterViewInit()&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;AfterViewInit&lt;/code&gt;. The method &lt;code class=&quot;highlighter-rouge&quot;&gt;ngAfterViewInit()&lt;/code&gt; is called when the bindings of the children directives have been checked for the first time. In other words, &lt;strong&gt;when&lt;/strong&gt; the view is initially rendered.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;@ViewChild&lt;/code&gt; provides access to &lt;code class=&quot;highlighter-rouge&quot;&gt;nativeElement&lt;/code&gt;. It is recommended to not access &lt;code class=&quot;highlighter-rouge&quot;&gt;nativeElement&lt;/code&gt; inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;ngAfterViewInit()&lt;/code&gt; because it is not browser safe. Also, it’s not supported by web workers. Web workers will never know when the DOM updates.&lt;/p&gt;
+
+&lt;p&gt;The right way is to use &lt;code class=&quot;highlighter-rouge&quot;&gt;renderer&lt;/code&gt;. The renderer needs to be injected to the component constructor. We need to provide an &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; reference to the &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; element on the view something like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p #p1&amp;gt;&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It shall be accessed by the corresponding coponent &lt;code class=&quot;highlighter-rouge&quot;&gt;.ts&lt;/code&gt; file, something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+export class SampleComponent implements AfterViewInit {
+
+  @ViewChild(&quot;p1&quot;) p1;
+
+  constructor(private renderer: Renderer2) //Renderer set to be depreciated soon
+  { }
+
+  ngAfterViewInit() {
+
+    //recommended DOM manipulation approach
+    this.renderer.setStyle(this.p1.nativeElement, //setElementStyle for soon to be depreciate Renderer
+      'color',
+      'red');
+
+    //not recommended DOM manipulation approach
+    //this.p1.nativeElement.style = &quot;color:blue;&quot;;
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Programmatically add components to DOM in Angular 2/4 app&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We need to use &lt;code class=&quot;highlighter-rouge&quot;&gt;ngAfterContentInit()&lt;/code&gt; lifecycle method from &lt;code class=&quot;highlighter-rouge&quot;&gt;AfterContentInit&lt;/code&gt;. It is called after the directive content has been fully initialized.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.html&lt;/code&gt;, add the a &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div #container&amp;gt; &amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;parent-component.ts&lt;/code&gt; file looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+
+class ParentComponent implements AfterContentInit {
+
+  @ViewChild(&quot;container&quot;, { read: ViewContainerRef }) divContainer
+
+  constructor(private componentFactoryResolver: ComponentFactoryResolver) { }
+
+  ngAfterContentInit() {
+    let childComponentFactory = this.componentFactoryResolver.resolveComponentFactory(childComponent);
+    this.divContainer.createComponent(childComponentFactory);
+    let childComponentRef = this.divContainer.createComponent(childComponentFactory);
+    childComponentRef.instance.someInputValue = &quot;Assigned value&quot;;
+
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Inside &lt;code class=&quot;highlighter-rouge&quot;&gt;src\app\app.module.ts&lt;/code&gt;, add the following entry to the &lt;code class=&quot;highlighter-rouge&quot;&gt;@NgModule()&lt;/code&gt; method parameters:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+  entryComponents:[
+    childComponent
+  ],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Notice that we’re not accessing the &lt;code class=&quot;highlighter-rouge&quot;&gt;div#container&lt;/code&gt; using the &lt;code class=&quot;highlighter-rouge&quot;&gt;@ViewChild(&quot;container&quot;) divContainer&lt;/code&gt; approach. We need it’s reference instead of the &lt;code class=&quot;highlighter-rouge&quot;&gt;nativeElement&lt;/code&gt;. We will access it as &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewContainerRef&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@ViewChild(&quot;container&quot;, {read: ViewContainerRef}) divContainer&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewContainerRef&lt;/code&gt; has a method called &lt;code class=&quot;highlighter-rouge&quot;&gt;createComponent()&lt;/code&gt; which requires a component factory to be passed as a parameter. For the same, we need to inject a &lt;code class=&quot;highlighter-rouge&quot;&gt;ComponentFactoryResolver&lt;/code&gt;. It has a method which basically loads a component.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Creating-Angular-2-4-Application-From-Scratch-Using-Angular-CLI/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Creating-Angular-2-4-Application-From-Scratch-Using-Angular-CLI/</guid>
+      </item>
+    
+      <item>
+        <title>Custom Elements, Shadow DOM &amp; Templates in HTML by Examples</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://blog.teamtreehouse.com/wp-content/uploads/2014/04/Lego-Kenny-Louie-Flickr-2.jpg&quot; alt=&quot;Custom Elements&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://blog.teamtreehouse.com/create-custom-html-elements-2&quot;&gt;Courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating Custom Elements&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is an example which demonstrate creating custom elements:&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/n8xs8dq0/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Using ShadowDOM with Custom Elements&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Shadow DOM is a way to encapsulate DOM of our custom component. This encapsulation means that the style sheet and javascript logic of our app is combined into that shadow DOM element.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/x5u3yd05/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;strong&gt;Using Templates for ShadowDOM with Custom Elements&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The ShadowDOMs can also be provided with HTML templates like so:&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/0qe1jfyc/embedded/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aQxccPmNhHw&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Aug 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Custom-Elements-Shadow-DOM-Templates-in-HTML-by-Examples/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Custom-Elements-Shadow-DOM-Templates-in-HTML-by-Examples/</guid>
+      </item>
+    
+      <item>
+        <title>Implementing ng-file-upload in Angular 2 app</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://www.uploadify.com/wp-content/themes/uploadify/img/splash.png&quot; alt=&quot;Upload file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.uploadify.com/&quot;&gt;courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We needed to implement drag drop file input feature in one of our &lt;a href=&quot;https://angular.io/&quot;&gt;Angular 2&lt;/a&gt; app.&lt;/p&gt;
+
+&lt;p&gt;We selected &lt;a href=&quot;https://github.com/valor-software/ng2-file-upload&quot;&gt;ng-file-upload&lt;/a&gt; for this.&lt;/p&gt;
+
+&lt;p&gt;We tried to follow the &lt;a href=&quot;http://valor-software.com/ng2-file-upload/&quot;&gt;help page&lt;/a&gt;. As suggested, implemented &lt;a href=&quot;https://github.com/valor-software/ng2-file-upload/blob/development/demo/src/app/components/file-upload/simple-demo.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;drag-upload-input.html&lt;/code&gt;&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://github.com/valor-software/ng2-file-upload/blob/development/demo/src/app/components/file-upload/simple-demo.ts&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;drag-upload-input.component.ts&lt;/code&gt;&lt;/a&gt; like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;drag-upload-input.html&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- we only need single file upload --&amp;gt;
+&amp;lt;input type=&quot;file&quot; ng2FileSelect [uploader]=&quot;uploader&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;drag-upload-input.component.ts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import { Component } from '@angular/core';
+import { FileUploader } from 'ng2-file-upload';
+
+// const URL = '/api/';
+const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
+
+@Component({
+  moduleId: module.id,
+  selector: 'drag-upload-input',
+  templateUrl: './drag-upload-input.html'
+})
+export class DragUploadInput {
+  public uploader: FileUploader = new FileUploader({ url: URL });
+  public hasBaseDropZoneOver: boolean = false;
+  public hasAnotherDropZoneOver: boolean = false;
+
+  public fileOverBase(e: any): void {
+    this.hasBaseDropZoneOver = e;
+  }
+
+  public fileOverAnother(e: any): void {
+    this.hasAnotherDropZoneOver = e;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/valor-software/ng2-file-upload/blob/development/demo/src/app/app.module.ts&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;app.module.ts&lt;/code&gt;&lt;/a&gt; has got &lt;code class=&quot;highlighter-rouge&quot;&gt;FileUploadModule&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// File upload modules
+import { FileUploadModule } from 'ng2-file-upload';
+import { DragUploadInput } from './file-upload/drag-upload-input.component';
+
+//other imports
+
+@NgModule({
+  imports: [ ... other imports
+FileUploadModule
+],
+  declarations: [  ... other declarations
+DragUploadInput],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And the &lt;a href=&quot;http://stackoverflow.com/a/37167153/2404470&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;systemjs.config.js&lt;/code&gt;&lt;/a&gt; looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(function (global) {
+  System.config({
+    // map tells the System loader where to look for things
+    map: {
+      // other libraries
+      'ng2-file-upload': 'node_modules/ng2-file-upload',
+    },
+    packages: {
+	  // other packages
+      ng2-file-upload': {
+        main: 'ng2-file-upload.js',
+        defaultExtension: 'js'
+      }
+    }
+  });
+})(this);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/Implementing-ng-file-upload-in-Angular-2-app/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/Implementing-ng-file-upload-in-Angular-2-app/</guid>
+      </item>
+    
+      <item>
+        <title>RCS 2 / Advanced Messaging - implementation research</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://www.droid-life.com/wp-content/uploads/2014/11/google-messenger.jpg&quot; alt=&quot;RCS Advanced Messaging&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.droid-life.com/2015/03/13/google-messenger-updated-with-gif-support-and-a-widget/&quot;&gt;Courtesy&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Recently, I was doing some studies on implementation of &lt;a href=&quot;http://www.gsma.com/network2020/rcs-2/&quot;&gt;Advanced Messaging / RCS 2&lt;/a&gt; as a channel for chat bots.&lt;/p&gt;
+
+&lt;p&gt;The client implementation seems to be &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.google.android.apps.messaging&quot;&gt;Android Messages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This platform needs to expose it’s APIs so that our bots can access it. The core people working on RCS / Advanced Messaging are &lt;a href=&quot;https://jibe.google.com/jibe-platform/&quot;&gt;Jibe&lt;/a&gt;. They seems to be in process of providing Advanced Messaging / RCS 2 APIs but technically there’s nothing ready.&lt;/p&gt;
+
+&lt;p&gt;Was having a look at the &lt;a href=&quot;https://solaiemes-rcs-api.3scale.net/api&quot;&gt;Solaiemes RCS API&lt;/a&gt;. Solaiemes is the subsidiary of Mavenir/Xura. At this point, it’s &lt;strong&gt;API end points&lt;/strong&gt; are not working:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://api.2445580839652.proxy.3scale.net:80/rcsapi/session&quot;&gt;http://api.2445580839652.proxy.3scale.net:80/rcsapi/session&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tadhack.solaiemes-rcs-api.3scale.net/rcsapi&quot;&gt;https://tadhack.solaiemes-rcs-api.3scale.net/rcsapi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tadhack.3scale.net/rcsapi&quot;&gt;https://tadhack.3scale.net/rcsapi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tadhack.solaiemes.com/rcsapi&quot;&gt;http://tadhack.solaiemes.com/rcsapi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following provider seems to be in a position to provide RCS 2 / Advanced Mesaging APIs:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jibe.google.com/jibe-platform/&quot;&gt;Jibe&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mavenir.com/our-solutions/rich-communication-rcs&quot;&gt;Mavenir&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.skycore.com/contact-us/&quot;&gt;SkyCore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.clxcommunications.com/contact-us/&quot;&gt;CLX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following vendors are yet to confirm whether they support Advanced Messaging / RCS 2:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.twilio.com/console/support/tickets/927458&quot;&gt;Twilio&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:info@solaiemes.com&quot;&gt;Solaiemes&lt;/a&gt; - end points not woring, probably closed&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:info@muut.com&quot;&gt;Muut&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:sales@symsoft.com&quot;&gt;Symsoft&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:support@messagebird.com&quot;&gt;MessageBird&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:info@summit-tech.com&quot;&gt;Summit Tech&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.richcommunicationsuite.com/contact.php&quot;&gt;RCS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:contact@nablecomm.com&quot;&gt;Nablecomm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:sales@rcs-rds.ro&quot;&gt;RCS-RDS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.newpace.ca/contact&quot;&gt;NewPace&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:carrier-support@infinite.com&quot;&gt;Infinite Convergence&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:8008309870@zte.com.cn&quot;&gt;ZTE&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:li-contact@utimaco.com&quot;&gt;Utimaco&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:dev_support@media5corp.com&quot;&gt;Media 5 Corp&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:contact@acision.com&quot;&gt;Acision&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://newnetmobility.com/contact/&quot;&gt;Newnet Mobility&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.wit-software.com/contacts/&quot;&gt;Wit Software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://telestax.com/contact/&quot;&gt;TelesTax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tropo.com/help/contact-us/&quot;&gt;Tropo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.tatango.com/platform/rcs-messaging/&quot;&gt;Tatango&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://interoptechnologies.com/rcs/&quot;&gt;Interop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.3cinteractive.com/&quot;&gt;3C&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.experian.com/corporate/business-services-contacts.html&quot;&gt;Experian&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mgage.com/products-services/channels/rcs&quot;&gt;M Gage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mobivity.com/contact/&quot;&gt;Mobivity&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.movile.com/en/contact/&quot;&gt;Movile messaging&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.nexmo.com/contact-sales/&quot;&gt;Nexmo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.openmarket.com/contact/&quot;&gt;Open market&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.openmarket.com/contact/&quot;&gt;Waterfall&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zipwhip.com/contact-us&quot;&gt;Zip Whip&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As of april’2017, the following vendors do not support Advanced Messaging&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:sales@fortytwo.com&quot;&gt;FortyTwo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:info@rundexter.com&quot;&gt;Dexter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:support@gatewayapi.com&quot;&gt;Gateway API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gupshup.io&quot;&gt;GupShup&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.infobip.com/&quot;&gt;InfoBip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.telemessage.com/contact-us/&quot;&gt;TeleMessage&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://support.airbop.com/discussions/questions/662-how-rcsadvanced-messaging-can-be-used-with-botframework&quot;&gt;Airbop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:support@spirent.com&quot;&gt;Spirent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although, &lt;a href=&quot;mailto:info@gsma.com&quot;&gt;GSMA&lt;/a&gt; is not supposed to, and has not responded to our technical questions. GSMA has specified &lt;a href=&quot;http://www.gsma.com/network2020/wp-content/uploads/2013/08/RCC_13_v2.0.pdf&quot;&gt;RCS API&lt;/a&gt; requirements so far.&lt;/p&gt;
+
+&lt;h1 id=&quot;btw-what-is-rcs&quot;&gt;Btw, what is RCS?&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Features of Advanced Messaging&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ubiquity&lt;/li&gt;
+  &lt;li&gt;Simplicity&lt;/li&gt;
+  &lt;li&gt;Everyone is invited&lt;/li&gt;
+  &lt;li&gt;All the features&lt;/li&gt;
+  &lt;li&gt;Enhanced messaging experience&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;WHAT IS ‘MESSAGING AS A PLATFORM (MAAP)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To most users messaging is just an ‘app’ 
+– a program on their phones they use to keep in touch. Advanced Messaging will change that though 
+– messaging is now becoming a ‘platform’ on which applications will be built to deliver whole new levels of interaction and experience.&lt;/p&gt;
+
+&lt;p&gt;It is where SMS is headed. End-users simply want all the services they need as quickly and conveniently as possible, and MaaP lets operators deliver that. If you want to book a taxi, a flight or look up train times for example, you will not need to download a specific new app – just hit your messenger.&lt;/p&gt;
+
+&lt;p&gt;MaaP removes that barrier of another app to download and connects suppliers directly to consumers. Messaging as a Platform will give operators all new possibilities for developing and implementing innovative services, and most importantly, for generating new revenues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The potential for Messaging as a Platform&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the more striking developments of messaging in recent times has been the evolution of messaging apps and clients into the ‘new home page’. End-users pick up their mobile devices in the morning and the first place many head to is their chat or messaging app. It has now become both their inbox and their home page. This is an evolution that operators can use to develop Messaging as a Platform propositions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For users&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This enables all sorts of companies to interact with customers in unprecedented ways – travellers, for example, could receive their actual electronic boarding pass securely from airlines rather than receiving an SMS with a link. When on holiday users can order a taxi or Uber, check the weather at their destination and the exchange rate, find a recommended restaurant and book a table and pay for it and learn some handy phrases in another language – all just by sending messages.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For marketers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Further to this progression in customer service and fulfilment, marketers too benefit from Advanced Messaging. They can use read receipts to tell if end-users have read promotional messages and where and when they read them. They can embed call-to-action codes in them, giving access to previously unavailable data to analyse. It all adds up to richer, more engaging advertising content.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For bots&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Furthermore, Advanced Messaging also enables Bot-to-Person interactions, where end-user engagements are simply richer and more detailed. The Messaging as a Platform approach and its exponentially increased degree of interaction makes huge new monetization opportunities available to MNOs.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For  workplace&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Operators can extend their blue sky thinking with Messaging as a Platform; why not a smart, Wi-Fi-enabled video doorbell which uses messaging to record a video message from a visitor when you are not home and ‘chat’ it direct to your mobile device? Built-in AI-based intelligent assistants are great in their place but some people do not like talking out loud to their phone in public places – chatbots can enable that same function via a messaging platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advanced Messaging deployment models: getting it right&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Another key benefit of Advanced Messaging is that deployment models can be mixtures of various approaches; operators do not need to commit entirely to a single method and limit their options.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;OWN IMS&lt;/strong&gt;
+ PROS
+    &lt;ul&gt;
+      &lt;li&gt;Retain control of core service&lt;/li&gt;
+      &lt;li&gt;Flexibility and ability to integrate with other services
+ CONS&lt;/li&gt;
+      &lt;li&gt;Complex project, requires expertise&lt;/li&gt;
+      &lt;li&gt;Costly in the short term, CAPEX&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;HOSTED SERVICE&lt;/strong&gt;
+ PROS
+    &lt;ul&gt;
+      &lt;li&gt;Pay-as-you-grow model&lt;/li&gt;
+      &lt;li&gt;Fast deployment and time to market&lt;/li&gt;
+      &lt;li&gt;Benefit from third-party data centre infrastructure and expertise&lt;/li&gt;
+      &lt;li&gt;Scope for complementing other services e.g. VoLTE
+ CONS&lt;/li&gt;
+      &lt;li&gt;Limited service flexibility&lt;/li&gt;
+      &lt;li&gt;No in-premises deployment option&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.gsma.com/network2020/wp-content/uploads/2016/11/Network-2020-006-Advanced-Communications-eBook-edition-1-2.pdf&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+        <link>http://xameeramir.github.io/RCS-advanced-messaging-implementation-research/</link>
+        <guid isPermaLink="true">http://xameeramir.github.io/RCS-advanced-messaging-implementation-research/</guid>
+      </item>
+    
+  </channel>
+</rss>

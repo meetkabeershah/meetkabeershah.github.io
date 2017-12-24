@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C# code documentation – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="C# code documentation" />
+    <meta property="twitter:title" content="C# code documentation" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >C# code documentation</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="http://www.webpal.net/blog/wp-content/uploads/2011/11/clutter_cartoon_3.png" alt="Documentation please" /></p>
+
+<p><a href="http://www.webpal.net/blog/tag/document-management-2/">courtesy</a></p>
+
+<p>The golden rule of code documentation:</p>
+
+<blockquote>
+  <p>Try to document <a href="http://stackoverflow.com/a/4929769">why</a> (code design decisions) and avoid what (code design descriptions).</p>
+</blockquote>
+
+<p>To keep up with the increasing complexity of the project, it’s very important to document the coding decisions. It’s one of the best practices.</p>
+
+<p><a href="https://www.visualstudio.com/">Visual studio</a> provides some elegant ways for code documentation to keep the code understandable. It can also understand the changes that one make on hard code.</p>
+
+<h1 id="single-or-multi-line-comments">Single or multi line comments</h1>
+
+<ul>
+  <li>Short (or long) functional descriptions</li>
+</ul>
+
+<pre>
+<code class="csharp">
+	//single line comment
+</code>
+</pre>
+
+<p>These are necessary to describe functionality in little.</p>
+
+<pre>
+  <code class="csharp">
+	
+	/*
+	multiple
+	line
+	comments
+	*/
+	
+</code>
+</pre>
+
+<p>Avoid them. It is advisable to avoid writing essays about code. The end product shall be code not their long descriptions.</p>
+
+<h1 id="collapsible-regions">Collapsible regions</h1>
+
+<ul>
+  <li>Summary of the functional block</li>
+</ul>
+
+<pre>
+  <code class="csharp">
+	
+	#region Some code block
+
+	//some code here
+    	//some foo bar
+    	//Fizz Buzz
+    	//some unicorns
+    
+	#endregion
+    
+</code>
+</pre>
+
+<p>Regions are collapsible. Just hover over the collapsed region and get a glance.</p>
+
+<p><img src="http://i.imgur.com/wsEL9yo.png" alt="Glance in collapsed code" /></p>
+
+<p><a href="http://imgur.com/">courtesy</a></p>
+
+<h1 id="summary">Summary</h1>
+
+<ul>
+  <li>Summary of the function or property</li>
+</ul>
+
+<pre>
+<code class="csharp">
+	
+	/// &lt;summary&gt;
+        /// Summary description for the function or property goes here
+        /// &lt;/summary&gt;
+        
+     </code>
+</pre>
+
+<p><img src="http://i.imgur.com/ksUWv5O.png" alt="summary method description" /></p>
+
+<p><a href="http://imgur.com/">courtesy</a></p>
+
+<ul>
+  <li>Summary of the function parameter</li>
+</ul>
+
+<pre>
+<code class="csharp">
+        /// &lt;param name="TestParameter"&gt;Summary description for the parameter goes here&lt;/param&gt;
+     </code>
+</pre>
+
+<p><img src="http://i.imgur.com/zwKtSLt.png" alt="parameter desc" /></p>
+
+<p><a href="http://imgur.com/">courtesy</a></p>
+
+<p>Visual studio changes this section after change of the parameter name.</p>
+
+<p><img src="http://i.imgur.com/5RWuBMJ.png" alt="Change of parameters" /></p>
+
+<p><a href="http://imgur.com/">courtesy</a></p>
+
+<ul>
+  <li>Summary of the returning stuff</li>
+</ul>
+
+<pre>
+<code class="csharp">
+	///&lt;returns&gt;Summary description for the function result goes here&lt;/returns&gt;
+   </code>
+</pre>
+
+<p>A simple example:</p>
+
+<pre>
+<code class="csharp">
+
+    /// &lt;summary&gt;
+    /// Main class of the project
+    /// &lt;/summary&gt;
+    class Program
+    {
+        /// &lt;summary&gt;
+        /// Main entry point of the program
+        /// &lt;/summary&gt;
+        /// &lt;param name="args"&gt;Command line args&lt;/param&gt;
+        static void Main(string[] args)
+        {
+            //Do stuff
+        }
+    }
+    
+</code>
+</pre>
+
+
+  </div>
+
+  <div itemprop="datePublished" content="2015-11-22 00:00:00 +0000" class="date">
+    Written on November 22, 2015
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=C# code documentation></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>

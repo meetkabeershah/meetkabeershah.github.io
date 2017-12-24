@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Solving ASP.NET MVC project runtime errors on Mono – Blog x – direction obsessed</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Microdata markup added by Google Structured Data Markup Helper. https://www.google.com/webmasters/markup-helper/ -->
+
+<!--Add Highlight.js https://highlightjs.org/download/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+
+<!-- Using Highight.js https://highlightjs.org/usage/-->
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+$(document).ready(function(){
+     $(".atss").css(css({"position":"absolute","top": "20%", "width" :"48px", "z-index": "100020"}));
+});
+</script>
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+
+" />
+    <meta property="og:description" content="
+
+" />
+    
+    <meta name="author" content="Blog x" />
+
+    
+    <meta property="og:title" content="Solving ASP.NET MVC project runtime errors on Mono" />
+    <meta property="twitter:title" content="Solving ASP.NET MVC project runtime errors on Mono" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/Site.css" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog x - direction obsessed" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+ 
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="" class="site-avatar"><img src="https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog x</a></h1>
+            <p class="site-description">direction obsessed</p>
+          </div>
+
+          <nav>
+            <!-- <a href="http://nordible.com/" target="_blank" >nordible</a> -->
+            <a href="http://stackoverflow.com/cv/xameeramir" target="_blank">CV</a>
+            <a href="/about">About</a>
+            <a href="http://jsfiddle.net/xameeramir/gbzjsLj2/embedded/result/#Result" target="_blank">Contact</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <!--
+<script type="text/javascript">!function(t,e,n){
+function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async=!0,a.src=("https:"===e.location.protocol?"https":"http")+":"+n,(t||e.body||e.head).appendChild(a)}function o(){var  t=e.getElementsByTagName("script"),n=t[t.length-1];return n.parentNode} var  p=o();t.spotId="sp_8GjteeKE",t.parentElement=p,a(p)}(window.SPOTIM={},document,"//www.spot.im/launcher/bundle.js");</script>
+-->
+
+<article itemscope itemtype="http://schema.org/Article" class="post">
+    
+             <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+<h1 itemprop="name" >Solving ASP.NET MVC project runtime errors on Mono</h1>
+
+  <div itemprop="articleBody" class="entry">
+    <p><img src="https://chornsokun.files.wordpress.com/2011/11/monodevelop-2-8-2-git.png" alt="Monodevelop logo" /></p>
+
+<p><a href="https://chornsokun.wordpress.com/2011/11/11/build-monodevelop-on-ubuntu-11-10/">courtesy</a></p>
+
+<p>In case we’re running an <a href="http://www.mono-project.com/docs/web/aspnet/">ASP.NET application on Mono</a> using <a href="http://www.monodevelop.com/">Monodevelop</a> for the first time, <a href="http://stackoverflow.com/a/34872143/2404470">we may receive the below error</a>:</p>
+
+<p><img src="https://lh3.googleusercontent.com/2vI7SdMsVHBFLR7cOuqb7eoTF561t5BRLLmEfliOvKXH-9zZZ0t8dRM_2_t6jFF75C9kIz8fN3mgXRgg9ZiLzw80bbBMmvEVgevbBFgnuJpQXJ8E9kKQSKXbORy9rhFyIznWRgm7RaEJn_JjRGtAqIbgiCGW69GcoEwDjGloJW3pO0ayMt1J8N0V-4VhRllq-I9HWzEOJcC9SoDelR3d-zdYBxqQQ_M58USmJuYN5YtpulFfrh4UeeOPcJFrBGXMdwdXWvxLOt4mvf-QHHbYXV004KME6iZOZSN9g3O6MT2Iy3KtN13YlvRip_bERgyqRRs2BxJmfQoWnuEGVC7eymjcE5Qjf2pLuCg9RB_mZuOsleCyh2vlxzWKSpaU63Hp6U2aPrMko2-qmobCjSJNMCMi2Qfg9EzJ3ObWQ88W0alel_Lzfd_rWPoQLpJEnEKhP7ZkC8HQYezKj4jEPzSP4zF_S8TBGqAd-LGSb44m2OniZYHoev6Z9fjVjyX3fSWDKu2D48i9VIk6a8UyrVhveJerlZQk3aYOexOoaToYEmnaSE-1ZULem0dH-hG2N4eBI6Zh=w478-h179-no" alt="Could not launch ASP.NET web server" /></p>
+
+<p>In some cases, the problem is incorrect installation of <a href="http://packages.ubuntu.com/precise/web/mono-xsp4"><code class="highlighter-rouge">xsp4</code></a> server.</p>
+
+<p>Install it using:</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install mono-xsp4</code></p>
+
+<p>This solved the above error.</p>
+
+<p><strong>Optional:</strong> get it from <strong>Ubuntu software center</strong> by searching for <code class="highlighter-rouge">xsp4</code></p>
+
+<p><img src="https://lh3.googleusercontent.com/C5-5C3FHK2RE7--bmz6VSqU6keQXyvUAxhtoGOPt2xXrp1oZVOhMdgF0-J91A7ptJWyyu33OY1I6s6oToOeV8B3IvC2XT6pU1FNb-WqIOA4xs3Xp6Eo0lK8CRsNrza4j6HXGZQUg536VoCbAaCvOykTkll0Rxo7aJp8etcKT6v7UvQvqUv5si9agQoVeF5n6fenW9evfZ55VoHldYUnYM2qcKe8BKIg5GXEya4sv0ESPktYXfZfi3VPVvhuzk-NqvNJrriTGiWnUgPm9Vci1efPzeriHgVx6L91WoBwrs0d5M8eNZxm1dg9G_22i5f3WuZe65QOkuT9AO_3ysC9o9ZLpIM6JQNNS6expj9sXAqMVUhTBm7yzV5EoeHOWE9XIA6R1C9eo-00JvWxDDhABP6U8aMbYeT_10yy0v_jfP2Y-qk3m1st-lnSBnQyCNBuj_qNMcxK7sR0zh4lDIbNEha_wKMy1rsfUEUexYFspMDBXLkZz1kJt9qnPgyVMp5rYIGLt5i_Kn32IfLDmqwA2aePfyTE3i_6LIq7S5eU3cuP6VqiSMxI11hcB8lYAFjI0ofbo=w1088-h637-no" alt="mono-xsp4 in Ubuntu software center" /></p>
+
+<p>After the <code class="highlighter-rouge">xsp4</code> server is installed and ready. The project will start running at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080/</a></p>
+
+<p>A directory access error saying <a href="http://stackoverflow.com/q/24872394/2404470"><code class="highlighter-rouge">Access to the path “/etc/mono/registry” is denied</code></a> may also show up which can be solved by <em>simply</em> creating the folder using <a href="http://alvinalexander.com/unix/edu/examples/mkdir.shtml"><code class="highlighter-rouge">mkdir</code></a></p>
+
+<p><code class="highlighter-rouge">sudo mkdir /etc/mono/registry</code></p>
+
+<p>and setting the right permissions using <a href="https://en.wikipedia.org/wiki/Chmod"><code class="highlighter-rouge">chmod</code></a></p>
+
+<p><code class="highlighter-rouge">sudo chmod uog+rw /etc/mono/registry</code></p>
+
+<p><a href="https://goo.gl/photos/1GKy1Q5cQErmafNWA">Photos</a></p>
+
+  </div>
+
+  <div itemprop="datePublished" content="2016-01-19 00:00:00 +0000" class="date">
+    Written on January 19, 2016
+  </div>
+
+  <!-- Facebook comments
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=127694174237400";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-comments" data-href="http://blogx.nerdspal.com/" data-numposts="5"></div>
+
+  <div id="spot-im-frame-inpage" data-post-id=Solving ASP.NET MVC project runtime errors on Mono></div>
+-->
+
+
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = 'xameeramir';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <a href="https://www.google.com/search?q=xameeramir"><i class="svg-icon google"></i></a>
+
+
+
+
+<a href="https://github.com/xameeramir"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/xameeramir"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/xameeramir"><i class="svg-icon twitter"></i></a>
+<a href="http://stackoverflow.com/u/2404470"><i class="svg-icon stackoverflow"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id='UA-109226104-1'"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109226104-1');
+</script>
+	<!-- End Google Analytics -->
+
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a4b7e50f238905" async="async"></script>
+
+  </body>
+</html>
