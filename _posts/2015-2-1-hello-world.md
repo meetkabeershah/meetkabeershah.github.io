@@ -7,7 +7,7 @@ title: Hello world!
 
 [courtesy](http://www.espni.co.uk/hello-world/)
 
-This is [Zameer](http://stackoverflow.com/cv/xameeramir) from [India's financial capital](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in). I believe that by *doing yourself* and by interacting with other people, one can learn a lot.
+This is [Zameer](https://stackoverflow.com/jobs/apply/preview-pdf) from [India's financial capital](http://www.incredibleindia.org/travel/destination/mumbai/mumbai-introduction). I have graduated in IT from [Mumbai University](http://mu.ac.in). I believe that by *doing yourself* and by interacting with other people, one can learn a lot.
 
 [Here](https://www.gravatar.com/avatar/0964ab778245068b9d910764125004c9) is my [avatar](https://gravatar.com/)
 
