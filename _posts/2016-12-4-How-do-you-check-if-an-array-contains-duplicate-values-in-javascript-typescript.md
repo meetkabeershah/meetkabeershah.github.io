@@ -13,7 +13,11 @@ This is a data structures related interview question. So language is not a bar f
 function CheckIfAnArrayContainsDuplicateValues(myArray) {
   return myArray.length === new Set(myArray).size;
 }
+```
 
+This is how you can test it:
+
+```
 let uniqueArray = [1, 2, 3, 4, 5];
 console.log(`Does ${uniqueArray} contains duplicates? : ${CheckIfAnArrayContainsDuplicateValues(uniqueArray)}`);
 
