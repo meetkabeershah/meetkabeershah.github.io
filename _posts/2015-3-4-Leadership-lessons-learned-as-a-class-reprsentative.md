@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lessons learned as a class rep
+title: Leadership lessons learned as a class reprsentative
 ---
 
 ![leadership](https://media.licdn.com/mpr/mpr/jc/AAEAAQAAAAAAAAOeAAAAJGVlZjk5NmMyLTM2NWEtNDliZi04N2Y5LTAwYjUxYjBkZDQ1Yg.jpg)
