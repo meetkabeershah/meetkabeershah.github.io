@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How do you find the largest and smallest number for an unsorted integer array in typescript/javascript?
+title: How do you find the largest and smallest number for an unsorted integer array in typescript or javascript?
 ---
 
 One of the most famous interview questions is:
 
 > How do you find the largest and smallest number for an unsorted integer array?
 
-This question relates to data structures. Hence can be implemented using any language or approach. I suggest the javascript/typescript implementation as this:
+This question relates to data structures. Hence can be implemented using any language or approach. I suggest the typescript or javascript implementation as this:
 
 ```
 const numbers = [2, 40, 9, 21, 1, 16, 24];

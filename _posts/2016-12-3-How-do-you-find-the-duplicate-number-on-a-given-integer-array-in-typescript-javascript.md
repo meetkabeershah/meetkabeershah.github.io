@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How do you find the duplicate number on a given integer array in typescript/javascript?
+title: How do you find the duplicate number on a given integer array in typescript or javascript?
 ---
 
 This is one of the famous interview question of all times. 
 > How do you find the duplicate number on a given integer array?
 
-There are so many ways to solve it in many languages with many different approaches. The one I suggest in javascript/typescript is:
+There are so many ways to solve it in many languages with many different approaches. The one I suggest in typescript or javascript is:
 
 ```
 const findDuplicatesInAnArray = (inpArr) => {

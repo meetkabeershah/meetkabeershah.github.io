@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How do you find the missing number in a given integer array of 1 to 10 in javascript/typescript?
+title: How do you find the missing number in a given integer array of 1 to 10 in typescript or javascript?
 ---
 
 One of the most famous interview question is 
 
 > How do you find the missing number in a given integer array of 1 to 10?
 
-There are so many ways to solve it! Since, I work on javascript/typescript - I have formulized this solution:
+There are so many ways to solve it! Since, I work on typescript or javascript - I have formulized this solution:
 
 ```
 var a = [1,2,3,5,6,8,9,10],

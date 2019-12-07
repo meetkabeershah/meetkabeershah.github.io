@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How do you check if an array contains duplicate values in javascript/typescript?
+title: How do you check if an array contains duplicate values in typescript or javascript?
 ---
 
 One of the famous interview question is:
