@@ -8,3 +8,5 @@ There are so many way to implementation approaches for implementing least recent
 If you have came across such question and looking for an answer in typescript then see below reference:
 
 <script src="https://gist-it.appspot.com/https://github.com/nordible/lru-typescript/blob/master/src/index.ts"></script>
+
+[Reference](https://dev.to/udayvunnam/implementing-lru-cache-in-javascript-3c8g)
