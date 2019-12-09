@@ -3,3 +3,8 @@ layout: post
 title: Least recently used cache in typescript
 ---
 
+There are so many way to implementation approaches for implementing least recently used cache in so many languages.
+
+If you have came across such question and looking for an answer in typescript then see below reference:
+
+<script src="https://gist-it.appspot.com/https://github.com/nordible/lru-typescript/blob/master/src/index.ts"></script>
