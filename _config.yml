@@ -18,19 +18,19 @@ avatar: https://www.gravatar.com/avatar/9f0e86127334688292f2c7928b0750e7
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: zameeramir@gmail.com
+  email: info@nordible.com
   facebook:
   flickr:
-  github: xameeramir
+  github: nordible
   instagram:
   linkedin: xameeramir
   pinterest:
   rss: http://xameeramir.github.io # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: xameeramir
+  twitter: nordiblehq
   stackoverflow: u/2404470 # your stackoverflow profile, e.g. "users/2404470/xameeramir"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
-  google: xameeramir
+  google: ordible
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
