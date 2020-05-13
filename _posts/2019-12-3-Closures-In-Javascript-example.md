@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closures in Javascript simplified!
+title: Closures in Javascript example!
 ---
 
 ![Javascript Closures in English simplified!](https://www.debuggr.io/static/deed0850c5939ca6f2e263e03e0a9249/ba299/cover.png)
