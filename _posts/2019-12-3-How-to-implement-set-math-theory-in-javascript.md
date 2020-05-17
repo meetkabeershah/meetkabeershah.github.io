@@ -8,7 +8,7 @@ title: Implementing Maths in Javascript - Set theory
 
 [credit](https://en.wikipedia.org/wiki/Set_(mathematics))
 
-The set is used for checking the presence of an item. Set thoey is an important part of mathamatics.
+The set is used for checking the presence of an item. Set theory is an important part of mathematics.
 
 The below example takes input from the user and performs multiple set operations like:
 
