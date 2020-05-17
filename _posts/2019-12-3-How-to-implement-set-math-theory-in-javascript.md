@@ -13,7 +13,7 @@ The set is used for checking the presence of an item. Set theory is an important
 The below example takes input from the user and performs multiple set operations like:
 
 - adding elements to set
-- deleting elements from set
+- deleting elements from a set
 - union
 - intersection
 - difference
