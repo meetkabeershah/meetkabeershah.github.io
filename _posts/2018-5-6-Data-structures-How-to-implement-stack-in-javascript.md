@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to implement stack in javascript
+title: Data structures - How to implement stack in javascript?
 ---
 
 The stack is a first in last out data structure.
