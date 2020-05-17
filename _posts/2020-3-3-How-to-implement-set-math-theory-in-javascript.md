@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to implement set math theory in javascript
+title: Implementing Maths in Javascript : Set theory
 ---
 
 
