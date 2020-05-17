@@ -8,4 +8,4 @@ permalink: /about/
 
 Code licensed under [MIT](https://opensource.org/licenses/MIT). Everything else is [CC](http://creativecommons.org/)
 
-[&copy; Zameer](https://stackoverflow.com/cv/xameeramir)
+[&copy; Zameer](https://xameeramir.github.io/hello-world/)
