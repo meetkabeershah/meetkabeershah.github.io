@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-[Source code of this site](https://github.com/xameeramir/xameeramir.github.io)
+Official blog of Nordible digital solutions.
 
-Code licensed under [MIT](https://opensource.org/licenses/MIT). Everything else is [CC](http://creativecommons.org/)
-
-[&copy; Zameer](http://xameeramir.github.io/hello-world/)
+&copy; Nordible
