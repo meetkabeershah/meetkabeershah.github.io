@@ -8,19 +8,45 @@ function a(t){var  a=e.createElement("script");a.type="text/javascript" ,a.async
 -->
 
 <article itemscope itemtype="http://schema.org/Article" class="post">
-    
-             <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div style="float:right;" class="addthis_sharing_toolbox"></div>
 
-<h1 itemprop="name" >{{ page.title }}</h1>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <div style="float:right;" class="addthis_sharing_toolbox"></div>
+
+  <h1 itemprop="name">{{ page.title }}</h1>
 
   <div itemprop="articleBody" class="entry">
     {{ content }}
   </div>
 
   <div itemprop="datePublished" content="{{page.date}}" class="postmetadata">
-   Written on <span class="updated"> {{ page.date | date: "%B %e, %Y" }}</span> 
+    Written on <span class="updated"> {{ page.date | date: "%B %e, %Y" }}</span>
   </div>
+
+  <div>
+    <p>Nordible is a digital solutions provider helping organizations achieve their digital goals.</p>
+    <p>We develop and measure digital solutions, implement impactful brand promotion and SEO strategies and develop
+      software driven by rigorous testing that help your business succeed online and beyond.</p>
+      
+      <p>Follow us:</p>
+      <ul>
+        <li>
+          <a href="https://twitter.com/nordiblehq">Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCxdeeYKb4Nogyre5tBg4hAw">Youtube</a>
+        </li>
+        <li>
+          <a href=" https://www.instagram.com/nordible/">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/nordible">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/nordible-solutions/">LinkedIn</a>
+        </li>
+      </ul>
+  </div>
+
 
   {% include commentsSection.html %}
   {% include addThis.html %}
