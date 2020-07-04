@@ -19,6 +19,6 @@ The below example takes input from the user and performs multiple set operations
 - difference
 - checking for subset condition
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/sn1oL9uw/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/sn1oL9uw/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-[Here is the complete code](https://jsfiddle.net/xameeramir/sn1oL9uw/) for your reference!
+[Here is the complete code](https://jsfiddle.net/nordible/sn1oL9uw/) for your reference!
