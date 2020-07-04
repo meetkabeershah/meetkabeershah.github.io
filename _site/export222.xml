@@ -827,7 +827,7 @@ export class ChildComponent implements OnInit {
 
 <p>In Javascript, objects are stored as references:</p>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:</p>
 
@@ -1008,19 +1008,19 @@ class ParentComponent implements AfterContentInit {
 
 <p>Here is an example which demonstrate creating custom elements:</p>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/n8xs8dq0/embedded/js,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/n8xs8dq0/embedded/js,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p><strong>Using ShadowDOM with Custom Elements</strong></p>
 
 <p>Shadow DOM is a way to encapsulate DOM of our custom component. This encapsulation means that the style sheet and javascript logic of our app is combined into that shadow DOM element.</p>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/x5u3yd05/embedded/js,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/x5u3yd05/embedded/js,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p><strong>Using Templates for ShadowDOM with Custom Elements</strong></p>
 
 <p>The ShadowDOMs can also be provided with HTML templates like so:</p>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/0qe1jfyc/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/0qe1jfyc/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p><a href="https://www.youtube.com/watch?v=aQxccPmNhHw">Source</a></p>
 ]]></content:encoded>
@@ -1347,7 +1347,7 @@ export class AppModule { }
 
 <p>Recently I was given a task to consume an <a href="http://openweathermap.org/">open</a> rest based API from <a href="http://openweathermap.org/api">Open Weather</a> using <a href="http://www.ractivejs.org/">Ractive.js</a> and <a href="https://developer.mozilla.org/en/docs/Web/API/Fetch_API">HTML5’s Fetch API</a></p>
 
-<p>The sample <a href="http://jsfiddle.net/xameeramir/boe2vcj6/embedded/result/#Result">app here</a> takes the city name as input and shows the corresponding weather information below it.</p>
+<p>The sample <a href="http://jsfiddle.net/nordible/boe2vcj6/embedded/result/#Result">app here</a> takes the city name as input and shows the corresponding weather information below it.</p>
 
 <h1 id="get-the-openweather-api-keys-for-free">Get the OpenWeather API keys for FREE!!!</h1>
 
@@ -1391,7 +1391,7 @@ export class AppModule { }
 
 <p>The city input is stored in the localStorage instance as an array and displayed as the <code>li</code> of <code>ul</code> on click of each is the weather fetching request recap-ed.</p>
 
-<p>See the <a href="http://jsfiddle.net/xameeramir/boe2vcj6/">whole code</a> here.</p>
+<p>See the <a href="http://jsfiddle.net/nordible/boe2vcj6/">whole code</a> here.</p>
 
 <p><strong>Sources:</strong></p>
 
@@ -6805,9 +6805,9 @@ $ npm -v
 
 <p>Below is an example of <strong>good-enough</strong> <a href="http://www.w3.org/TR/html5/">HTML5</a> blog article template document.</p>
 
-<iframe frameborder="0" style="top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden;" src="//jsfiddle.net/xameeramir/0dthd7c4/embedded/result/" allowfullscreen="allowfullscreen"></iframe>
+<iframe frameborder="0" style="top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100vh; border:none; margin:0; padding:0; overflow:hidden;" src="//jsfiddle.net/nordible/0dthd7c4/embedded/result/" allowfullscreen="allowfullscreen"></iframe>
 
-<p><a href="http://jsfiddle.net/xameeramir/0dthd7c4/">Source of this document</a></p>
+<p><a href="http://jsfiddle.net/nordible/0dthd7c4/">Source of this document</a></p>
 
 <p><a href="http://www.tutorialspoint.com/seo/">Courtesy</a></p>
 ]]></content:encoded>
@@ -7627,7 +7627,7 @@ It's important to understand these things along with knowing how to cook an omel
 
 <p><a href="https://www.gravatar.com/avatar/0964ab778245068b9d910764125004c9">Here</a> is my <a href="https://gravatar.com/">avatar</a></p>
 
-<p>I’m a continuous learner with a <strong>go do it</strong> attitude. Developing others help me learn &amp; grow more. I listen carefully, <a href="http://stackexchange.com/users/2795104/student">ask questions</a> and collaborate closely with different kind of people. I prefer <a href="http://techcrunch.com/">staying up to date with the industry</a>, reading a lot of <a href="http://blog.codinghorror.com/"><em>technical</em></a> and <a href="https://www.themuse.com/">formal</a> articles, contribute to the <a href="https://news.ycombinator.com/">community</a>, <a href="http://xameeramir.github.io/">stay mission focused</a>, <a href="http://jsfiddle.net/xameeramir/mLgkb8d9/embedded/result/#Result">time bound</a>, physically fit and mentally calm.</p>
+<p>I’m a continuous learner with a <strong>go do it</strong> attitude. Developing others help me learn &amp; grow more. I listen carefully, <a href="http://stackexchange.com/users/2795104/student">ask questions</a> and collaborate closely with different kind of people. I prefer <a href="http://techcrunch.com/">staying up to date with the industry</a>, reading a lot of <a href="http://blog.codinghorror.com/"><em>technical</em></a> and <a href="https://www.themuse.com/">formal</a> articles, contribute to the <a href="https://news.ycombinator.com/">community</a>, <a href="http://xameeramir.github.io/">stay mission focused</a>, <a href="http://jsfiddle.net/nordible/mLgkb8d9/embedded/result/#Result">time bound</a>, physically fit and mentally calm.</p>
 ]]></content:encoded>
         <excerpt:encoded><![CDATA[]]></excerpt:encoded>
         <wp:post_id>/hello-world</wp:post_id>

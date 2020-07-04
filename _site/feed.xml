@@ -689,7 +689,7 @@ export class ChildComponent implements OnInit {
 
 &lt;p&gt;In Javascript, objects are stored as references:&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/dftagmaf/embedded/js/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/nordible/dftagmaf/embedded/js/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:&lt;/p&gt;
 
@@ -851,19 +851,19 @@ class ParentComponent implements AfterContentInit {
 
 &lt;p&gt;Here is an example which demonstrate creating custom elements:&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/n8xs8dq0/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/nordible/n8xs8dq0/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;Using ShadowDOM with Custom Elements&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Shadow DOM is a way to encapsulate DOM of our custom component. This encapsulation means that the style sheet and javascript logic of our app is combined into that shadow DOM element.&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/x5u3yd05/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/nordible/x5u3yd05/embedded/js,css,result/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;strong&gt;Using Templates for ShadowDOM with Custom Elements&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The ShadowDOMs can also be provided with HTML templates like so:&lt;/p&gt;
 
-&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/xameeramir/0qe1jfyc/embedded/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/nordible/0qe1jfyc/embedded/&quot; allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=aQxccPmNhHw&quot;&gt;Source&lt;/a&gt;&lt;/p&gt;
 </description>

@@ -20,6 +20,6 @@ Here is an example of how the queue can be implemented in javascript. The queue 
 
 - `first`: returns the first item of the queue without removal, just like peeking in the Stack data structure
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/h38zL5va/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/h38zL5va/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
-[Here is the complete source code](https://jsfiddle.net/xameeramir/h38zL5va/)
+[Here is the complete source code](https://jsfiddle.net/nordible/h38zL5va/)

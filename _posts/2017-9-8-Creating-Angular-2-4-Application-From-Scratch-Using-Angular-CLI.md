@@ -124,7 +124,7 @@ Notice that the value of the `@Input` value is available inside `ngOnInit()` and
 
 In Javascript, objects are stored as references:
 
-<iframe width="100%" height="300" src="//jsfiddle.net/xameeramir/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/nordible/dftagmaf/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 This exact behaviour can be re-produced with the help of Angular 2 / 4. Below is an example which explains the implementation:
 
