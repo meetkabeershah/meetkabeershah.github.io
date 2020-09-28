@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coding best practices: Implement a serious code review process
+title: Coding best practices - Implement a serious code review process
 ---
 
 A. Provide constructive criticism for code improvement to team members
