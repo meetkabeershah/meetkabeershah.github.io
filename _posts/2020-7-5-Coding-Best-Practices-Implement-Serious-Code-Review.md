@@ -5,7 +5,7 @@ title: Coding best practices - Implement a serious code review process
 
 A. Provide constructive criticism for code improvement to team members
 
-B. Try to get everyone to give PR comments (or atleast have a look at other's code changes) irrespective of anything
+B. Try to get everyone to give PR comments (or at least have a look at other's code changes) irrespective of anything
 
 C. Learn from others code
 
