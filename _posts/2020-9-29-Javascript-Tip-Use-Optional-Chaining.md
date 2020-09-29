@@ -20,4 +20,4 @@ This can be written in short link this:
 
 The magical operator being used here i.e. `?.` is called Optional chaining operator. Use it to shortify your code base.
 
-Read more: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+Read more: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
