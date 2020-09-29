@@ -14,7 +14,7 @@ if (family && family.mother && family.mother.child){
 </pre>
 
 
-This can be written in short link this:
+This can be written in short like this:
 
 `console.log(family?.mother?.child);`
 
