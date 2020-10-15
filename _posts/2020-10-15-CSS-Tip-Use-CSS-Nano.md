@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS recommendation - Use CSS Nano
+title: CSS tip - Use CSS Nano
 ---
 
 It changes
