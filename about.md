@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Official blog of Nordible digital solutions.
+Official blog of Zameer Ansari.
 
-&copy; Nordible
+&copy; xameeramir
